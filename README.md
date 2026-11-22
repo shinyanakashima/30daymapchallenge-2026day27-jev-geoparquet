@@ -4,17 +4,19 @@
 
 ![screenshot](docs/screenshot.png)
 
-## Cloudflare のビルド設定
+## 公開先
 
-| 項目 | 値 |
-|---|---|
-| Root directory（ルートディレクトリ） | `web` |
-| Build command（ビルドコマンド） | `npm ci && npm run build` |
-| Build output directory（出力先） | `dist` |
-| Node のバージョン | 22（`web/.node-version` で指定。環境変数 `NODE_VERSION=22` でも可） |
+| 対象 | 公開先 | URL |
+|---|---|---|
+| 地図の作品（`web/`） | GitHub Pages | https://shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/ |
+| 検索 API（`container/`） | Cloudflare Containers ＋ R2 | 手順は [`container/README.md`](container/README.md) |
 
-- 配信物は静的ファイルだけです（HTML・JS・CSS・JSON）。Jev の結果は計算済みの JSON（`web/public/data/`）として同梱しており、配信物に API キーは入りません。
-- 最も大きいファイルは札幌の地物データ（約 4.4 MB）、全体で約 7 MB です。Cloudflare の静的ファイルの上限（1ファイル 25 MiB）に収まります。
+### GitHub Pages
+
+- `main` に `web/` の変更を push すると、`.github/workflows/pages.yml` がビルドして公開します（Node 22、`npm ci && npm run build`、出力先 `web/dist`）。
+- 初回だけ、リポジトリの Settings → Pages → Build and deployment の Source を「GitHub Actions」にします。
+- 作品は静的なファイルだけで動きます（HTML・JS・CSS・JSON）。Jev の結果は計算済みの JSON（`web/public/data/`）として同梱しており、配信物に API キーは入りません。
+- 最も大きいファイルは札幌の地物データ（約 4.4 MB）、全体で約 7 MB です。
 
 ## 作品について
 
