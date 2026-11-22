@@ -328,7 +328,8 @@ label(s, [
   { text: "効くのは目録の書き方。要約に載らない地物はファイルごと落ちうる", options: { bullet: true } },
 ], 0.6, 2.75, 8.8, 2.6, { fontSize: 16, color: C.background1, paraSpaceAfter: 10 });
 label(s, "次：正解データでの評価、目録の改善、COGP の詳細度を使った段階的な検索", 0.6, 5.45, 8.8, 0.5, { fontSize: 13, color: C.lt2 });
-label(s, "github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet", 0.6, 6.15, 8.8, 0.35, { fontSize: 11, color: C.lt2 });
+label(s, "作品：shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/", 0.6, 5.95, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
+label(s, "コード：github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet", 0.6, 6.25, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "データ © OpenStreetMap contributors（ODbL）／背景地図：地理院タイル／Jev は TypeSafe AI のモデル", 0.6, 6.55, 8.8, 0.35, { fontSize: 10, color: C.lt2 });
 s.addNotes("まとめです。目録を Jev に読ませてファイルを選ぶと、取りこぼしはほぼ抑えられました。速さと費用の効果は規模と質問次第で、小さなデータでは逆効果でした。効くのは目録の書き方です。次は、正解データでの評価、目録の改善、COGP の詳細度を使った段階的な検索です。");
 
