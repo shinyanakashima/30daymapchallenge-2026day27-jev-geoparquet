@@ -174,6 +174,15 @@ cd web && npm ci && npm run build && npx vite preview
 - Geofabrik の抽出データ（`https://download.geofabrik.de/asia/japan/hokkaido-latest.osm.pbf`）も同じ形式なので、そのまま使えます。
 - 抽出データの時点が違うと、地物の件数や結果が変わります。
 
+## チュートリアル
+
+手を動かして確かめる手順は [`tutorial/README.md`](tutorial/README.md) にあります。
+
+- Google Colab：DuckDB から Jev を呼ぶ処理と、jev 拡張の仕組みを、1 段ずつ確かめる（[Colab で開く](https://colab.research.google.com/github/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet/blob/main/tutorial/jev_geoparquet_colab.ipynb)）
+- Docker：Cloudflare Containers で動かすのと同じ検索 API を、手元で動かす
+
+同じ検索を Cloudflare Containers + R2 で動かす構成は [`container/README.md`](container/README.md) にあります。
+
 ## API キーの扱い
 
 - API キーは、リポジトリにも配信物にも入れません。
