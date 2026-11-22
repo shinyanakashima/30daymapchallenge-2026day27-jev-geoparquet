@@ -1,0 +1,16 @@
+{
+  "name": "before-reading-the-ai-picks-the-files",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "maplibre-gl": "^5.6.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}

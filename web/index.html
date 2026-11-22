@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Before reading, the AI picks the files</title>
+  <meta name="description" content="#30DayMapChallenge 2026 Day 27 New tool: choosing GeoParquet files with Jev before reading them with DuckDB. Kitahiroshima, Hokkaido." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='14' height='14' rx='2' fill='%230f7b5f'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="top">
+    <div class="titles">
+      <h1 data-i18n="title"></h1>
+      <p class="sub" data-i18n="subtitle"></p>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ja">日本語</button>
+    </div>
+  </header>
+  <main class="layout">
+    <aside class="panel">
+      <section>
+        <h2 data-i18n="question"></h2>
+        <div id="questions" class="seg seg-col"></div>
+      </section>
+      <section>
+        <h2 data-i18n="method"></h2>
+        <div id="methods" class="seg"></div>
+        <p id="method-desc" class="note"></p>
+      </section>
+      <section>
+        <div class="row-between">
+          <h2 data-i18n="files"></h2>
+          <div id="runs" class="seg seg-small"></div>
+        </div>
+        <div id="matrix"></div>
+      </section>
+      <section>
+        <h2 data-i18n="compare"></h2>
+        <table id="metrics"></table>
+        <p class="note" data-i18n="metricsNote"></p>
+      </section>
+      <section id="missed-box" hidden>
+        <h2 data-i18n="missedTitle"></h2>
+        <ul id="missed"></ul>
+      </section>
+    </aside>
+    <div class="mapwrap">
+      <div id="map"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+  </main>
+  <footer class="foot">
+    <p class="presented"><a href="https://foss4g.hokkaido.jp/2026/" target="_blank" rel="noopener">Presented at FOSS4G Hokkaido 2026, 28 November</a></p>
+    <p data-i18n="disclaimer"></p>
+    <p id="versions"></p>
+    <p data-i18n="credits"></p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

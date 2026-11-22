@@ -1,0 +1,7 @@
+{
+ "name": "OpenStreetMap extract: Hokkaido (hokkaido-latest.osm.pbf)",
+ "provider": "OpenStreetMap France extracts (download.openstreetmap.fr)",
+ "url": "https://download.openstreetmap.fr/extracts/asia/japan/hokkaido-latest.osm.pbf",
+ "replication_timestamp": "2026-11-21T00:15:44Z",
+ "license": "© OpenStreetMap contributors, ODbL 1.0"
+}

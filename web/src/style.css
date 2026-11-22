@@ -1,0 +1,104 @@
+:root {
+  --bg: #f6f5f1;
+  --panel: #ffffff;
+  --ink: #1d2124;
+  --muted: #5d666e;
+  --line: #dedbd3;
+  --accent: #0f7b5f;
+  --on: #eaf3ef;
+  --font: "Helvetica Neue", Arial, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.45 var(--font); display: flex; flex-direction: column; }
+a { color: var(--accent); }
+button { font: inherit; color: inherit; }
+
+.top { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; padding: 12px 16px 10px; border-bottom: 1px solid var(--line); background: var(--panel); }
+.top h1 { margin: 0; font-size: 22px; letter-spacing: -0.01em; }
+.top .sub { margin: 3px 0 0; color: var(--muted); font-size: 12.5px; max-width: 900px; }
+.lang { display: flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; flex: none; }
+.lang button { border: 0; background: none; padding: 5px 10px; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+
+.layout { flex: 1; display: grid; grid-template-columns: 420px 1fr; min-height: 0; }
+.panel { overflow-y: auto; padding: 10px 14px 14px; background: var(--panel); border-right: 1px solid var(--line); }
+.panel section { margin-bottom: 12px; }
+.panel h2 { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 5px; font-weight: 600; }
+.row-between { display: flex; align-items: center; justify-content: space-between; }
+.note { color: var(--muted); font-size: 12px; margin: 5px 0 0; }
+
+.seg { display: flex; gap: 4px; flex-wrap: wrap; }
+.seg button { border: 1px solid var(--line); background: #fff; border-radius: 4px; padding: 5px 9px; cursor: pointer; text-align: left; }
+.seg button:hover { border-color: #b9b5aa; }
+.seg button[aria-pressed="true"] { border-color: var(--accent); background: var(--on); box-shadow: inset 3px 0 0 var(--accent); }
+.seg-col { display: grid; grid-template-columns: 1fr 1fr; }
+.seg-col button { font-size: 13px; line-height: 1.3; }
+.seg-small { align-items: center; margin-bottom: 5px; }
+.seg-small .lbl { color: var(--muted); font-size: 12px; margin-right: 2px; }
+.seg-small button { padding: 1px 8px; font-size: 12px; }
+
+.matrix { width: 100%; border-collapse: collapse; font-size: 12px; table-layout: fixed; }
+.matrix th { font-weight: 500; color: var(--muted); text-align: left; padding: 1px 2px; }
+.matrix thead th { text-align: center; }
+.matrix tbody th { width: 112px; }
+.matrix td { padding: 2px; }
+.cell { width: 100%; border: 1.5px dashed; border-radius: 3px; background: #fff; padding: 2px 4px; display: flex; justify-content: space-between; gap: 2px; cursor: pointer; font-size: 11px; line-height: 1.3; }
+.cell-s { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cell-n { color: var(--muted); }
+.cell-n b { color: #d1342f; }
+.s-candidate { border-color: #0f7b5f; background: #eaf3ef; }
+.s-insufficient_information { border-color: #d49a12; background: #fbf3e0; }
+.s-exclude, .s-skipped { border-color: #a7aeb5; color: #7d8894; background: #f3f3f1; }
+.s-read { border-color: #2b63b0; background: #e9eff8; }
+
+#metrics { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+#metrics th, #metrics td { padding: 3px 5px; border-bottom: 1px solid #eeebe4; }
+#metrics thead th { text-align: right; font-size: 13px; }
+#metrics tbody th { text-align: left; font-weight: 400; white-space: pre; }
+#metrics td { text-align: right; font-variant-numeric: tabular-nums; }
+#metrics td small { display: block; color: var(--muted); font-size: 10.5px; }
+#metrics .on { background: var(--on); font-weight: 600; }
+#metrics .subrow th, #metrics .subrow td { color: var(--muted); font-size: 11.5px; }
+.nm { color: #a05a00; font-style: italic; font-weight: 400; }
+
+#missed { list-style: none; margin: 0; padding: 0; font-size: 12px; max-height: 150px; overflow-y: auto; }
+#missed li { padding: 2px 0; border-bottom: 1px solid #f0ede6; }
+#missed li span { color: var(--muted); }
+#missed button { border: 0; background: none; padding: 0; color: #b42a26; text-decoration: underline; cursor: pointer; }
+#missed .none { color: var(--muted); }
+
+.mapwrap { position: relative; min-height: 0; }
+#map { position: absolute; inset: 0; }
+.legend { position: absolute; right: 10px; bottom: 28px; background: rgba(255,255,255,0.94); border: 1px solid var(--line); border-radius: 4px; padding: 7px 10px; font-size: 12px; max-width: 270px; }
+.lg-h { font-weight: 600; margin: 4px 0 3px; font-size: 11.5px; }
+.lg-h:first-child { margin-top: 0; }
+.lg-r { display: flex; align-items: center; gap: 7px; line-height: 1.6; }
+.sw-box { width: 18px; height: 11px; border: 2px dashed; flex: none; }
+.dot { width: 11px; height: 11px; border-radius: 50%; border: 1.5px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,0.12); flex: none; display: inline-block; }
+
+.pop { font: 12.5px/1.4 var(--font); }
+.pop strong { font-size: 14px; }
+.pop-j { display: flex; align-items: center; gap: 6px; margin: 4px 0 2px; }
+.pop-f { color: var(--muted); font-size: 11.5px; }
+.pop-h { margin-top: 6px; font-weight: 600; font-size: 11.5px; }
+.pop table { border-collapse: collapse; font-size: 11.5px; }
+.pop th { text-align: left; color: var(--muted); font-weight: 400; padding: 0 8px 0 0; vertical-align: top; }
+
+.foot { border-top: 1px solid var(--line); background: var(--panel); padding: 6px 16px 8px; font-size: 11.5px; color: var(--muted); }
+.foot p { margin: 1px 0; }
+.foot .presented { font-size: 13px; color: var(--ink); }
+.foot .presented a { font-weight: 600; }
+
+@media (max-width: 860px) {
+  body { height: auto; }
+  .top { flex-direction: column; gap: 8px; }
+  .layout { grid-template-columns: 1fr; }
+  .panel { border-right: 0; order: 2; overflow: visible; }
+  .mapwrap { order: 1; display: flex; flex-direction: column; }
+  #map { position: relative; height: 58vh; }
+  .legend { position: static; max-width: none; border-width: 1px 0; border-radius: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 10px; }
+  .lg-h { grid-column: 1 / -1; }
+  .seg-col { grid-template-columns: 1fr; }
+  .matrix tbody th { width: 84px; }
+}

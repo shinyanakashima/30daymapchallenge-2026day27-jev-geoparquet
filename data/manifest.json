@@ -1,0 +1,649 @@
+{
+ "version": "m1",
+ "dataset": "OpenStreetMap POIs, Kitahiroshima, Hokkaido",
+ "zone_split": {
+  "lon": 141.546084,
+  "lat": 42.9790985
+ },
+ "files": [
+  {
+   "file": "parts/parks_play__nw.parquet",
+   "id": "parks_play__nw",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "nw",
+   "rows": 19,
+   "bytes": 3587,
+   "bbox": [
+    141.473121,
+    42.979415,
+    141.506907,
+    43.022502
+   ],
+   "tag_counts": {
+    "leisure=park": 19
+   },
+   "unnamed_rows": 2,
+   "sample_names": [
+    "東部緑地",
+    "遮断緑地 光-1",
+    "のびのび公園",
+    "大曲東公園",
+    "すくすく公園",
+    "ほのぼの公園"
+   ]
+  },
+  {
+   "file": "parts/parks_play__ne.parquet",
+   "id": "parks_play__ne",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "ne",
+   "rows": 35,
+   "bytes": 4268,
+   "bbox": [
+    141.547089,
+    42.979635,
+    141.573658,
+    43.002412
+   ],
+   "tag_counts": {
+    "leisure=park": 31,
+    "leisure=garden": 4
+   },
+   "unnamed_rows": 5,
+   "sample_names": [
+    "アドベンチャーパーク",
+    "ユニ・チャーム DOG PARK",
+    "あじさい公園",
+    "ほたる公園",
+    "みつばち公園",
+    "広島公園"
+   ]
+  },
+  {
+   "file": "parts/parks_play__sw.parquet",
+   "id": "parks_play__sw",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "sw",
+   "rows": 35,
+   "bytes": 4895,
+   "bbox": [
+    141.469332,
+    42.91815,
+    141.54525,
+    42.978891
+   ],
+   "tag_counts": {
+    "leisure=park": 31,
+    "tourism=camp_site": 4,
+    "shop=yes": 1
+   },
+   "unnamed_rows": 4,
+   "sample_names": [
+    "キツツキの森キャンプ場",
+    "北広島かえるキャンプ場",
+    "エーデルワイスファームのBBQ&グランピング",
+    "北広島市自然の森キャンプ場",
+    "のぞみの公園",
+    "大曲公園"
+   ]
+  },
+  {
+   "file": "parts/parks_play__se.parquet",
+   "id": "parks_play__se",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "se",
+   "rows": 32,
+   "bytes": 4599,
+   "bbox": [
+    141.546304,
+    42.945109,
+    141.572125,
+    42.978541
+   ],
+   "tag_counts": {
+    "leisure=park": 29,
+    "tourism=viewpoint": 2,
+    "leisure=nature_reserve": 1
+   },
+   "unnamed_rows": 2,
+   "sample_names": [
+    "展望台",
+    "コオロギの家",
+    "南の里緑地",
+    "さつき公園",
+    "見晴広場",
+    "あやめ公園"
+   ]
+  },
+  {
+   "file": "parts/sports__nw.parquet",
+   "id": "sports__nw",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "nw",
+   "rows": 29,
+   "bytes": 4563,
+   "bbox": [
+    141.480592,
+    42.980361,
+    141.536775,
+    43.019663
+   ],
+   "tag_counts": {
+    "leisure=pitch": 20,
+    "sport=tennis": 9,
+    "sport=multi": 8,
+    "sport=baseball": 4,
+    "leisure=golf_course": 2,
+    "leisure=sports_centre": 2,
+    "leisure=miniature_golf": 2,
+    "leisure=sports_hall": 2
+   },
+   "unnamed_rows": 25,
+   "sample_names": [
+    "山根園パークゴルフ 里のコース",
+    "山根園パークゴルフ 森のコース",
+    "西の里ファミリー体育館",
+    "西の里住民プール"
+   ]
+  },
+  {
+   "file": "parts/sports__ne.parquet",
+   "id": "sports__ne",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "ne",
+   "rows": 30,
+   "bytes": 5363,
+   "bbox": [
+    141.547179,
+    42.983966,
+    141.573783,
+    42.996152
+   ],
+   "tag_counts": {
+    "leisure=pitch": 20,
+    "sport=tennis": 10,
+    "sport=multi": 7,
+    "sport=baseball": 5,
+    "leisure=sports_centre": 3,
+    "leisure=sports_hall": 3,
+    "leisure=track": 2,
+    "sport=soccer": 2
+   },
+   "unnamed_rows": 26,
+   "sample_names": [
+    "北海道ボールパーク",
+    "北広島市総合体育館",
+    "東部住民プール",
+    "ES CON FIELD HOKKAIDO"
+   ]
+  },
+  {
+   "file": "parts/sports__sw.parquet",
+   "id": "sports__sw",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "sw",
+   "rows": 37,
+   "bytes": 5173,
+   "bbox": [
+    141.457559,
+    42.907535,
+    141.545398,
+    42.978434
+   ],
+   "tag_counts": {
+    "leisure=pitch": 21,
+    "sport=multi": 11,
+    "leisure=golf_course": 9,
+    "sport=tennis": 6,
+    "sport=baseball": 5,
+    "leisure=sports_centre": 4,
+    "leisure=sports_hall": 2,
+    "sport=swimming": 2
+   },
+   "unnamed_rows": 23,
+   "sample_names": [
+    "サンパーク札幌ゴルフコース",
+    "札幌国際カントリークラブ",
+    "札幌ゴルフ倶楽部輪厚コース",
+    "ダイナスティゴルフクラブ北広島",
+    "札幌リージェントゴルフ倶楽部",
+    "クラークカントリークラブ"
+   ]
+  },
+  {
+   "file": "parts/sports__se.parquet",
+   "id": "sports__se",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "se",
+   "rows": 11,
+   "bytes": 4035,
+   "bbox": [
+    141.548988,
+    42.955261,
+    141.559314,
+    42.978489
+   ],
+   "tag_counts": {
+    "leisure=pitch": 7,
+    "sport=multi": 4,
+    "sport=tennis": 3,
+    "leisure=sports_hall": 2,
+    "leisure=sports_centre": 2,
+    "sport=swimming": 2,
+    "sport=soccer": 1,
+    "sport=baseball": 1
+   },
+   "unnamed_rows": 8,
+   "sample_names": [
+    "白樺プール",
+    "緑葉公園プール",
+    "きたひろサンパークテニスコート"
+   ]
+  },
+  {
+   "file": "parts/commercial__nw.parquet",
+   "id": "commercial__nw",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "nw",
+   "rows": 18,
+   "bytes": 5372,
+   "bbox": [
+    141.483034,
+    42.97938,
+    141.52256,
+    43.021935
+   ],
+   "tag_counts": {
+    "amenity=fuel": 3,
+    "shop=convenience": 3,
+    "office=company": 3,
+    "amenity=pharmacy": 1,
+    "amenity=ice_cream": 1,
+    "leisure=adult_gaming_centre": 1,
+    "shop=car_repair": 1,
+    "shop=car": 1
+   },
+   "unnamed_rows": 1,
+   "sample_names": [
+    "コスモ",
+    "H.CS観光 北広島バスセンター",
+    "北海広島食品株式会社",
+    "ENEOS",
+    "ガレージライト",
+    "COSMO"
+   ]
+  },
+  {
+   "file": "parts/commercial__ne.parquet",
+   "id": "commercial__ne",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "ne",
+   "rows": 55,
+   "bytes": 7636,
+   "bbox": [
+    141.548635,
+    42.979103,
+    141.569927,
+    43.010514
+   ],
+   "tag_counts": {
+    "shop=convenience": 10,
+    "amenity=fuel": 5,
+    "shop=clothes": 4,
+    "amenity=fast_food": 3,
+    "amenity=pharmacy": 3,
+    "amenity=restaurant": 3,
+    "shop=chemist": 3,
+    "shop=mobile_phone": 3
+   },
+   "unnamed_rows": 5,
+   "sample_names": [
+    "ワークマン",
+    "ローソン",
+    "ダイナム",
+    "カラオケ歌屋 北広島店",
+    "無印良品",
+    "シマウマバーガー 北広島店"
+   ]
+  },
+  {
+   "file": "parts/commercial__sw.parquet",
+   "id": "commercial__sw",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "sw",
+   "rows": 56,
+   "bytes": 7333,
+   "bbox": [
+    141.468352,
+    42.937432,
+    141.54603,
+    42.978437
+   ],
+   "tag_counts": {
+    "shop=convenience": 11,
+    "amenity=fuel": 7,
+    "amenity=restaurant": 4,
+    "shop=car": 4,
+    "amenity=pharmacy": 3,
+    "shop=chemist": 3,
+    "healthcare=pharmacy": 3,
+    "amenity=food_court": 2
+   },
+   "unnamed_rows": 5,
+   "sample_names": [
+    "ナリス ビューティーステーション デ・アイム",
+    "買取大吉",
+    "Cut Life Amu",
+    "あぷかの森",
+    "ローソン",
+    "きたみちフードコート"
+   ]
+  },
+  {
+   "file": "parts/commercial__se.parquet",
+   "id": "commercial__se",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "se",
+   "rows": 25,
+   "bytes": 5634,
+   "bbox": [
+    141.551743,
+    42.964164,
+    141.56916,
+    42.978907
+   ],
+   "tag_counts": {
+    "amenity=restaurant": 4,
+    "shop=supermarket": 3,
+    "shop=newsagent": 3,
+    "amenity=bank": 2,
+    "amenity=cafe": 2,
+    "shop=convenience": 2,
+    "office=company": 2,
+    "amenity=pub": 1
+   },
+   "unnamed_rows": 1,
+   "sample_names": [
+    "セブン-イレブン",
+    "エスコンフィールドHOKKAIDOホテル北広島駅前",
+    "ふなこしや",
+    "オカモトサイクル",
+    "ラーメン山岡家",
+    "串鳥"
+   ]
+  },
+  {
+   "file": "parts/public_culture__nw.parquet",
+   "id": "public_culture__nw",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "nw",
+   "rows": 33,
+   "bytes": 5998,
+   "bbox": [
+    141.482219,
+    42.979732,
+    141.545457,
+    43.019512
+   ],
+   "tag_counts": {
+    "amenity=social_facility": 9,
+    "amenity=school": 9,
+    "amenity=kindergarten": 2,
+    "amenity=public_building": 2,
+    "amenity=place_of_worship": 2,
+    "amenity=university": 1,
+    "amenity=hospital": 1,
+    "amenity=community_centre": 1
+   },
+   "unnamed_rows": 6,
+   "sample_names": [
+    "星槎道都大学 第2キャンパス",
+    "大地太陽幼稚園",
+    "えみの里 順天",
+    "西の里中学校 陽香分校",
+    "札幌日本大学中学校",
+    "札幌日本大学高等学校"
+   ]
+  },
+  {
+   "file": "parts/public_culture__ne.parquet",
+   "id": "public_culture__ne",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "ne",
+   "rows": 48,
+   "bytes": 7123,
+   "bbox": [
+    141.547096,
+    42.979098,
+    141.576039,
+    43.010546
+   ],
+   "tag_counts": {
+    "amenity=place_of_worship": 9,
+    "amenity=school": 5,
+    "amenity=doctors": 4,
+    "amenity=community_centre": 4,
+    "healthcare=doctor": 4,
+    "amenity=hospital": 3,
+    "amenity=pharmacy": 3,
+    "amenity=veterinary": 3
+   },
+   "unnamed_rows": 0,
+   "sample_names": [
+    "北海道歯科技術専門学校",
+    "札幌方面厚別警察署 北広島駅前交番",
+    "北広島病院",
+    "北広島市芸術文化ホール",
+    "北広島緑ヶ丘内科",
+    "北広島耳鼻咽喉科"
+   ]
+  },
+  {
+   "file": "parts/public_culture__sw.parquet",
+   "id": "public_culture__sw",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "sw",
+   "rows": 48,
+   "bytes": 6596,
+   "bbox": [
+    141.451125,
+    42.923999,
+    141.545943,
+    42.97895
+   ],
+   "tag_counts": {
+    "amenity=community_centre": 10,
+    "amenity=place_of_worship": 8,
+    "amenity=school": 7,
+    "amenity=social_facility": 5,
+    "amenity=dentist": 2,
+    "amenity=post_office": 2,
+    "amenity=kindergarten": 2,
+    "amenity=public_building": 2
+   },
+   "unnamed_rows": 2,
+   "sample_names": [
+    "大曲こどもクリニック",
+    "セリオ歯科",
+    "コスモス保険薬局",
+    "遊歩道入口の看板",
+    "中の沢チャシ跡",
+    "藤川歯科小児歯科医院"
+   ]
+  },
+  {
+   "file": "parts/public_culture__se.parquet",
+   "id": "public_culture__se",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "se",
+   "rows": 35,
+   "bytes": 6549,
+   "bbox": [
+    141.54628,
+    42.927173,
+    141.573587,
+    42.978927
+   ],
+   "tag_counts": {
+    "amenity=place_of_worship": 9,
+    "amenity=community_centre": 4,
+    "amenity=post_office": 3,
+    "amenity=doctors": 3,
+    "tourism=attraction": 3,
+    "healthcare=doctor": 3,
+    "amenity=veterinary": 2,
+    "amenity=school": 2
+   },
+   "unnamed_rows": 0,
+   "sample_names": [
+    "見晴広場",
+    "新生",
+    "さつき公園の鉄のバスケット",
+    "輪厚自然村",
+    "北広島市図書館",
+    "北広島郵便局"
+   ]
+  },
+  {
+   "file": "parts/other_unknown__nw.parquet",
+   "id": "other_unknown__nw",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "nw",
+   "rows": 9,
+   "bytes": 4549,
+   "bbox": [
+    141.489837,
+    42.992634,
+    141.524804,
+    43.017995
+   ],
+   "tag_counts": {
+    "amenity=bicycle_rental": 2,
+    "amenity=public_bath": 2,
+    "amenity=toilets": 1,
+    "amenity=love_hotel": 1,
+    "amenity=driving_school": 1,
+    "amenity=driver_training": 1,
+    "office=research": 1
+   },
+   "unnamed_rows": 3,
+   "sample_names": [
+    "エルフィンロード自転車の駅",
+    "天然温泉 森のゆ",
+    "湯処ほのか",
+    "種苗管理センター北海道中央農場",
+    "里の森 天然温泉 森のゆ",
+    "新札幌自動車学園"
+   ]
+  },
+  {
+   "file": "parts/other_unknown__ne.parquet",
+   "id": "other_unknown__ne",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "ne",
+   "rows": 19,
+   "bytes": 4955,
+   "bbox": [
+    141.546084,
+    42.979426,
+    141.573016,
+    43.002696
+   ],
+   "tag_counts": {
+    "amenity=bicycle_rental": 9,
+    "amenity=toilets": 3,
+    "amenity=taxi": 2,
+    "amenity=driving_school": 1,
+    "amenity=gambling": 1,
+    "amenity=driver_training": 1,
+    "office=ngo": 1,
+    "office=chamber": 1
+   },
+   "unnamed_rows": 6,
+   "sample_names": [
+    "キャンパーズアンドアングラーズ北広島",
+    "北広島市役所",
+    "北広島駅東口駐輪場",
+    "総合体育館駐輪場",
+    "Bicycle Lot B（Fビレッジ外周駐輪場）",
+    "北広島駅東口"
+   ]
+  },
+  {
+   "file": "parts/other_unknown__sw.parquet",
+   "id": "other_unknown__sw",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "sw",
+   "rows": 10,
+   "bytes": 4434,
+   "bbox": [
+    141.454149,
+    42.936226,
+    141.544437,
+    42.979
+   ],
+   "tag_counts": {
+    "amenity=toilets": 3,
+    "amenity=bicycle_rental": 2,
+    "office=yes": 2,
+    "amenity=public_bath": 1,
+    "amenity=grave_yard": 1,
+    "office=research": 1
+   },
+   "unnamed_rows": 3,
+   "sample_names": [
+    "団地地域サポートセンターともに",
+    "星槎道都大学駐輪場",
+    "竹山高原温泉",
+    "沿岸バス 札幌営業所",
+    "北広島霊園",
+    "よつ葉乳業中央研究所"
+   ]
+  },
+  {
+   "file": "parts/other_unknown__se.parquet",
+   "id": "other_unknown__se",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "se",
+   "rows": 5,
+   "bytes": 3784,
+   "bbox": [
+    141.55084,
+    42.964415,
+    141.562816,
+    42.979093
+   ],
+   "tag_counts": {
+    "amenity=bicycle_rental": 4,
+    "amenity=taxi": 1
+   },
+   "unnamed_rows": 1,
+   "sample_names": [
+    "広葉交流センターいこーよ",
+    "北広島団地住民センター",
+    "北広島駅西口スロープ前",
+    "北広島駅西口"
+   ]
+  }
+ ]
+}

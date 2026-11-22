@@ -1,0 +1,8 @@
+node_modules/
+web/dist/
+*.osm.pbf
+work/
+__pycache__/
+.env
+.env.*
+.DS_Store
