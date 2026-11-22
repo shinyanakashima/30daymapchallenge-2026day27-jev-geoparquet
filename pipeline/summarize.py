@@ -1,6 +1,9 @@
 """Summarize results/runs.json and write the JSON files the web page loads.
 
-Usage: python pipeline/summarize.py <data_dir> <questions.json> <runs.json> <web_data_dir>
+Usage: python pipeline/summarize.py <data_dir> <questions.json> <runs.json> <web_data_dir>/<city>
+
+Per-feature judgments are stored as one string per run, one character per feature in the order of
+features.geojson: s = supported, c = contradicted, i = insufficient_information, - = not sent.
 """
 import json
 import statistics as st
@@ -12,6 +15,9 @@ import duckdb
 ATTR_COLS = ["name", "name_en", "amenity", "leisure", "shop", "tourism", "historic", "office",
              "healthcare", "craft", "sport", "club", "cuisine", "operator", "brand", "access", "fee",
              "opening_hours", "description", "religion", "building", "playground", "indoor"]
+
+
+CODE = {"supported": "s", "contradicted": "c", "insufficient_information": "i"}
 
 
 def med(xs):
@@ -35,10 +41,12 @@ def main(data_dir, questions, runs_path, out_dir):
             file_of[row[0]] = f["id"]
             feats.append({"type": "Feature", "geometry": {"type": "Point", "coordinates": [round(row[1], 6), round(row[2], 6)]},
                           "properties": {"id": row[0], "file": f["id"], "category": f["category"], "attrs": attrs}})
-    (out / "features.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": feats}, ensure_ascii=False))
+    (out / "features.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": feats},
+                                                     ensure_ascii=False, separators=(",", ":")))
     (out / "boundary.geojson").write_text((data / "boundary.geojson").read_text())
-    (out / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False))
+    (out / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, separators=(",", ":")))
 
+    order = [f["properties"]["id"] for f in feats]
     by = {}
     for r in runs["runs"]:
         by.setdefault((r["question"], r["method"]), []).append(r)
@@ -69,7 +77,7 @@ def main(data_dir, questions, runs_path, out_dir):
                     "retained": len(kept),
                     "retention": round(len(kept) / len(ref), 4) if ref else None,
                     "missed": missed,
-                    "judgments": r["judgments"],
+                    "j": "".join(CODE.get(r["judgments"].get(fid), "-") for fid in order),
                 })
             entry["methods"][m] = {
                 "runs": per_run,
@@ -102,8 +110,10 @@ def main(data_dir, questions, runs_path, out_dir):
                                  "jev_extension", "manifest_version", "questions_version", "reps"]}
     meta["features"] = len(feats)
     meta["files"] = len(manifest["files"])
+    meta["files_areas"] = len(manifest["zones"])
     meta["osm_extract"] = json.loads((data / "source.json").read_text()) if (data / "source.json").exists() else None
-    (out / "results.json").write_text(json.dumps({"meta": meta, "questions": summary}, ensure_ascii=False))
+    (out / "results.json").write_text(json.dumps({"meta": meta, "questions": summary}, ensure_ascii=False,
+                                                 separators=(",", ":")))
     for e in summary:
         print(e["id"], "agreeA", e["a_judgment_agreement"])
         for m, v in e["methods"].items():

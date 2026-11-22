@@ -1,7 +1,9 @@
 """Extract the Kitahiroshima city boundary and points of interest from an OSM PBF extract.
 
-Usage: python pipeline/extract.py <hokkaido-latest.osm.pbf> <out_dir>
-Writes <out_dir>/boundary.geojson and <out_dir>/features.parquet (WKT geometry, lon/lat, tags).
+Usage: python pipeline/extract.py <hokkaido-latest.osm.pbf> <out_dir> [city]
+city: kitahiroshima (default) or sapporo
+Writes <out_dir>/boundary.geojson and <out_dir>/features.parquet (lon/lat and tags), and, for cities
+with wards (区), <out_dir>/wards.geojson.
 """
 import json
 import sys
@@ -14,9 +16,12 @@ from shapely import wkb as swkb
 from shapely.geometry import mapping, shape
 from shapely.prepared import prep
 
-CITY_NAME = "北広島市"
-# Rough window around the city, used only to skip far-away objects quickly.
-WINDOW = (141.40, 42.86, 141.75, 43.06)
+# name in OSM, and a rough window around the city used only to skip far-away objects quickly
+CITIES = {
+    "kitahiroshima": ("北広島市", (141.40, 42.86, 141.75, 43.06)),
+    "sapporo": ("札幌市", (140.95, 42.75, 141.60, 43.22)),
+}
+CITY_NAME, WINDOW = CITIES["kitahiroshima"]
 
 POI_KEYS = ["amenity", "leisure", "shop", "tourism", "historic", "office",
             "healthcare", "craft", "sport", "club"]
@@ -51,11 +56,14 @@ def in_window(lon, lat):
     return WINDOW[0] <= lon <= WINDOW[2] and WINDOW[1] <= lat <= WINDOW[3]
 
 
-def main(pbf, out_dir):
+def main(pbf, out_dir, city="kitahiroshima"):
+    global CITY_NAME, WINDOW
+    CITY_NAME, WINDOW = CITIES[city]
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     wkbf = osmium.geom.WKBFactory()
     boundary = None
+    wards = []
     rows = []
     fp = osmium.FileProcessor(pbf).with_areas().with_filter(osmium.filter.KeyFilter(*POI_KEYS, "boundary"))
     for obj in fp:
@@ -64,6 +72,13 @@ def main(pbf, out_dir):
             if tags.get("boundary") == "administrative" and tags.get("name") == CITY_NAME \
                     and tags.get("admin_level") == "7":
                 boundary = swkb.loads(wkbf.create_multipolygon(obj), hex=True)
+                continue
+            if tags.get("boundary") == "administrative" and tags.get("admin_level") == "8" \
+                    and tags.get("name", "").endswith("区"):
+                g = swkb.loads(wkbf.create_multipolygon(obj), hex=True)
+                c = g.representative_point()
+                if in_window(c.x, c.y):
+                    wards.append((tags["name"], tags.get("name:en", ""), g))
                 continue
             if not is_poi(tags):
                 continue
@@ -95,8 +110,14 @@ def main(pbf, out_dir):
     for t in KEEP_TAGS:
         cols[t.replace(":", "_")] = [r[4].get(t) for r in kept]
     pq.write_table(pa.table(cols), out / "features.parquet")
+    wards = [w for w in wards if boundary.buffer(1e-4).contains(w[2])]
+    if wards:
+        (out / "wards.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": [
+            {"type": "Feature", "properties": {"name": n, "name_en": en}, "geometry": mapping(g)}
+            for n, en, g in wards]}, ensure_ascii=False))
+        print("wards:", [w[0] for w in wards])
     print(f"boundary area deg2={boundary.area:.4f}; candidates in window={len(rows)}; in city={len(kept)}")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    main(*sys.argv[1:4])

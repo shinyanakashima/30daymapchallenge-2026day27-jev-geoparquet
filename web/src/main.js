@@ -15,11 +15,12 @@ const COLORS = {
   skipped: '#7d8894',
 };
 const CATS = ['parks_play', 'sports', 'commercial', 'public_culture', 'other_unknown'];
-const ZONES = ['nw', 'ne', 'sw', 'se'];
+const CITIES = ['kitahiroshima', 'sapporo'];
+const JCODE = { s: 'supported', c: 'contradicted', i: 'insufficient_information' };
 const ROWS = ['files_read', 'bytes_read', 'rows_read', 'features_sent', 'total_s', 'select_s', 'judge_s',
   'input_tokens', 'requests', 'estimated_cost_usd', 'retention'];
 
-const state = { lang: 'en', q: 0, method: 'C', run: 0, hoverFile: null };
+const state = { lang: 'en', city: 'kitahiroshima', q: 0, method: 'C', run: 0, hoverFile: null };
 try {
   const saved = localStorage.getItem('lang');
   if (saved === 'ja' || saved === 'en') state.lang = saved;
@@ -28,14 +29,28 @@ const params = new URLSearchParams(location.search);
 if (params.get('lang') === 'ja') state.lang = 'ja';
 if (['A', 'B', 'C'].includes(params.get('m'))) state.method = params.get('m');
 if (params.get('q')) state.q = Math.max(0, Number(params.get('q')) || 0);
+if (CITIES.includes(params.get('city'))) state.city = params.get('city');
 
-const [results, features, manifest, boundary] = await Promise.all(
-  ['results.json', 'features.geojson', 'manifest.json', 'boundary.geojson'].map((f) =>
-    fetch(`${import.meta.env.BASE_URL}data/${f}`).then((r) => r.json())),
-);
+const cache = {};
+let results, features, manifest, boundary, fileById, idIndex;
+async function loadCity(city) {
+  if (!cache[city]) {
+    const [r, f, m, b] = await Promise.all(
+      ['results.json', 'features.geojson', 'manifest.json', 'boundary.geojson'].map((x) =>
+        fetch(`${import.meta.env.BASE_URL}data/${city}/${x}`).then((res) => res.json())),
+    );
+    cache[city] = {
+      results: r, features: f, manifest: m, boundary: b,
+      fileById: Object.fromEntries(m.files.map((x) => [x.id, x])),
+      idIndex: new Map(f.features.map((x, i) => [x.properties.id, i])),
+    };
+  }
+  ({ results, features, manifest, boundary, fileById, idIndex } = cache[city]);
+}
+await loadCity(state.city);
 state.q = Math.min(state.q, results.questions.length - 1);
-const fileById = Object.fromEntries(manifest.files.map((f) => [f.id, f]));
 const t = () => T[state.lang];
+const featOf = (id) => features.features[idIndex.get(id)];
 const cur = () => results.questions[state.q];
 const curRun = () => cur().methods[state.method].runs[state.run];
 
@@ -76,7 +91,7 @@ const map = new maplibregl.Map({
     },
     layers: [{ id: 'gsi', type: 'raster', source: 'gsi', paint: { 'raster-saturation': -0.6, 'raster-opacity': 0.85 } }],
   },
-  bounds: [141.47, 42.9, 141.66, 43.03],
+  bounds: boundsOf(boundary),
   fitBoundsOptions: { padding: 24 },
   attributionControl: { compact: true },
 });
@@ -96,9 +111,9 @@ function pointData() {
   const missed = new Set(run.missed);
   return {
     type: 'FeatureCollection',
-    features: features.features.map((f) => {
+    features: features.features.map((f, i) => {
       const p = f.properties;
-      let j = run.judgments[p.id];
+      let j = JCODE[run.j[i]];
       if (!read.has(p.file)) j = missed.has(p.id) ? 'missed' : 'notread';
       return { ...f, properties: { id: p.id, file: p.file, j } };
     }),
@@ -141,8 +156,7 @@ map.on('load', () => {
   map.on('mouseleave', 'pts', () => { map.getCanvas().style.cursor = ''; });
   map.on('click', 'pts', (e) => {
     const f = e.features[0];
-    const src = features.features.find((x) => x.properties.id === f.properties.id);
-    showPopup(e.lngLat, src.properties, f.properties.j);
+    showPopup(e.lngLat, featOf(f.properties.id).properties, f.properties.j);
   });
   map.resize();
   map.fitBounds(boundsOf(boundary), { padding: 24, duration: 0 });
@@ -161,6 +175,19 @@ function showPopup(lngLat, p, j) {
     <div class="pop-h">${esc(L.popupAttrs)}</div><table>${attrs}</table></div>`;
   if (popup) popup.remove();
   popup = new maplibregl.Popup({ maxWidth: '320px' }).setLngLat(lngLat).setHTML(html).addTo(map);
+}
+
+async function switchCity(city) {
+  await loadCity(city);
+  state.city = city;
+  state.q = Math.min(state.q, results.questions.length - 1);
+  if (map.getSource('pts')) {
+    map.getSource('boundary').setData(boundary);
+    map.getSource('bbox').setData(bboxFeatures());
+    state.hoverFile = null;
+    map.fitBounds(boundsOf(boundary), { padding: 24, duration: 0 });
+  }
+  render();
 }
 
 function updateMap() {
@@ -194,6 +221,19 @@ function renderControls() {
   document.title = L.title;
   document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = L[el.dataset.i18n]; });
   document.querySelectorAll('[data-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === state.lang)));
+
+  const cs = document.getElementById('cities');
+  cs.innerHTML = '';
+  CITIES.forEach((c) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = L.cities[c];
+    b.setAttribute('aria-pressed', String(c === state.city));
+    b.onclick = () => { if (c !== state.city) switchCity(c); };
+    cs.appendChild(b);
+  });
+  const meta = results.meta;
+  document.getElementById('city-desc').textContent = L.cityDesc(meta);
 
   const qs = document.getElementById('questions');
   qs.innerHTML = '';
@@ -238,21 +278,28 @@ function renderControls() {
 function renderMatrix() {
   const L = t();
   const run = curRun();
-  let html = `<table class="matrix"><thead><tr><th></th>${ZONES.map((z) => `<th>${L.zones[z]}</th>`).join('')}</tr></thead><tbody>`;
-  for (const c of CATS) {
-    html += `<tr><th>${L.categories[c]}</th>`;
-    for (const z of ZONES) {
-      const fid = `${c}__${z}`;
+  const missedByFile = {};
+  for (const id of run.missed) {
+    const fid = featOf(id).properties.file;
+    missedByFile[fid] = (missedByFile[fid] || 0) + 1;
+  }
+  let html = `<table class="matrix"><thead><tr><th></th>${CATS.map((c) => `<th title="${L.categories[c]}">${L.catShort[c]}</th>`).join('')}</tr></thead><tbody>`;
+  for (const z of manifest.zones) {
+    html += `<tr><th>${state.lang === 'ja' ? z.ja : z.en}</th>`;
+    for (const c of CATS) {
+      const fid = `${c}__${z.id}`;
       const s = run.file_status[fid];
       const f = fileById[fid];
       if (!s) { html += '<td></td>'; continue; }
-      const nMissed = run.missed.filter((id) => features.features.find((x) => x.properties.id === id)?.properties.file === fid).length;
-      html += `<td><button type="button" class="cell s-${s}" data-file="${fid}" title="${fid}: ${L.status[s]} · ${f.rows} rows">
-        <span class="cell-s">${L.statusShort[s]}</span><span class="cell-n">${f.rows}${nMissed ? ` <b>−${nMissed}</b>` : ''}</span></button></td>`;
+      const nMissed = missedByFile[fid] || 0;
+      html += `<td><button type="button" class="cell s-${s}" data-file="${fid}" title="${L.categories[c]} · ${state.lang === 'ja' ? z.ja : z.en}: ${L.status[s]} · ${f.rows} rows${nMissed ? ` · ${L.judg.missed}: ${nMissed}` : ''}">
+        <span class="cell-n">${f.rows.toLocaleString('en-US')}</span>${nMissed ? `<b>−${nMissed}</b>` : ''}</button></td>`;
     }
     html += '</tr>';
   }
   html += '</tbody></table>';
+  const fileKeys = state.method === 'C' ? ['candidate', 'insufficient_information', 'exclude'] : ['read', 'skipped'];
+  html += `<div class="matrix-key">${fileKeys.map((k) => `<span><i class="s-${k}"></i>${L.status[k]}</span>`).join('')}<span><b>−n</b> ${L.missedShort}</span></div>`;
   const el = document.getElementById('matrix');
   el.innerHTML = html;
   el.querySelectorAll('.cell').forEach((b) => {
@@ -300,13 +347,13 @@ function renderMetrics() {
   if (run.missed.length === 0) {
     ul.innerHTML = `<li class="none">${L.noMissed} (${run.retained}/${run.reference_candidates})</li>`;
   } else {
-    ul.innerHTML = run.missed.map((id) => {
-      const p = features.features.find((x) => x.properties.id === id).properties;
+    ul.innerHTML = run.missed.slice(0, 200).map((id) => {
+      const p = featOf(id).properties;
       const tags = Object.entries(p.attrs).filter(([k]) => k !== 'name').slice(0, 3).map(([k, v]) => `${k}=${v}`).join(', ');
       return `<li><button type="button" data-id="${esc(id)}">${esc(p.attrs.name || L.unnamed)}</button> <span>${esc(tags)} · ${esc(L.categories[p.category])}</span></li>`;
     }).join('');
     ul.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
-      const f = features.features.find((x) => x.properties.id === b.dataset.id);
+      const f = featOf(b.dataset.id);
       map.flyTo({ center: f.geometry.coordinates, zoom: 15 });
       showPopup(f.geometry.coordinates, f.properties, 'missed');
     }));

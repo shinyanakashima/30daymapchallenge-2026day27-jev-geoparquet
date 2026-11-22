@@ -2,9 +2,32 @@
  "version": "m1",
  "dataset": "OpenStreetMap POIs, Kitahiroshima, Hokkaido",
  "zone_split": {
+  "method": "median",
   "lon": 141.546084,
   "lat": 42.9790985
  },
+ "zones": [
+  {
+   "id": "nw",
+   "ja": "北西",
+   "en": "NW"
+  },
+  {
+   "id": "ne",
+   "ja": "北東",
+   "en": "NE"
+  },
+  {
+   "id": "sw",
+   "ja": "南西",
+   "en": "SW"
+  },
+  {
+   "id": "se",
+   "ja": "南東",
+   "en": "SE"
+  }
+ ],
  "files": [
   {
    "file": "parts/parks_play__nw.parquet",

@@ -1,7 +1,10 @@
 """Split the extracted features into GeoParquet files by attribute category x area,
 and write a manifest (one entry per file) that the file selector reads.
 
-Usage: python pipeline/partition.py <work_dir> <data_dir>
+Area: the city's wards when <work_dir>/wards.geojson exists (Sapporo), otherwise four
+quadrants split at the median longitude and latitude of the features (Kitahiroshima).
+
+Usage: python pipeline/partition.py <work_dir> <data_dir> <city label, e.g. Sapporo>
 """
 import json
 import os
@@ -10,6 +13,8 @@ from collections import Counter
 from pathlib import Path
 
 import duckdb
+from shapely.geometry import Point, shape
+from shapely.prepared import prep
 import pandas as pd
 
 CATEGORIES = {
@@ -57,20 +62,40 @@ def categorize(row):
     return "other_unknown"
 
 
-def main(work_dir, data_dir):
+def main(work_dir, data_dir, city_label):
     work, data = Path(work_dir), Path(data_dir)
     (data / "parts").mkdir(parents=True, exist_ok=True)
     con = duckdb.connect()
     con.sql("INSTALL spatial; LOAD spatial;")
     feats = con.sql(f"select * from '{work / 'features.parquet'}' order by osm_id").fetchdf()
     feats["category"] = [categorize(r) for _, r in feats.iterrows()]
-    lon_mid, lat_mid = float(feats["lon"].median()), float(feats["lat"].median())
-    feats["zone"] = [("n" if la >= lat_mid else "s") + ("w" if lo < lon_mid else "e")
-                     for lo, la in zip(feats["lon"], feats["lat"])]
+    wards_path = work / "wards.geojson"
+    if wards_path.exists():
+        wards = json.loads(wards_path.read_text())["features"]
+        zones = [{"id": w["properties"]["name_en"].split()[0].lower(), "ja": w["properties"]["name"],
+                  "en": w["properties"]["name_en"].replace(" Ward", "")} for w in wards]
+        polys = [(z["id"], prep(shape(w["geometry"])), shape(w["geometry"])) for z, w in zip(zones, wards)]
+
+        def zone_of(lo, la):
+            p = Point(lo, la)
+            for zid, pp, _ in polys:
+                if pp.contains(p):
+                    return zid
+            return min(polys, key=lambda t: t[2].distance(p))[0]  # on a ward border
+        feats["zone"] = [zone_of(lo, la) for lo, la in zip(feats["lon"], feats["lat"])]
+        zone_split = {"method": "ward"}
+        zones.sort(key=lambda z: z["id"])
+    else:
+        lon_mid, lat_mid = float(feats["lon"].median()), float(feats["lat"].median())
+        feats["zone"] = [("n" if la >= lat_mid else "s") + ("w" if lo < lon_mid else "e")
+                         for lo, la in zip(feats["lon"], feats["lat"])]
+        zone_split = {"method": "median", "lon": lon_mid, "lat": lat_mid}
+        zones = [{"id": "nw", "ja": "北西", "en": "NW"}, {"id": "ne", "ja": "北東", "en": "NE"},
+                 {"id": "sw", "ja": "南西", "en": "SW"}, {"id": "se", "ja": "南東", "en": "SE"}]
     con.register("feats", feats)
     entries = []
     for cat, label in CATEGORIES.items():
-        for zone in ["nw", "ne", "sw", "se"]:
+        for zone in [z["id"] for z in zones]:
             sub = feats[(feats.category == cat) & (feats.zone == zone)]
             if sub.empty:
                 continue
@@ -99,12 +124,12 @@ def main(work_dir, data_dir):
                 "unnamed_rows": int(sub["name"].isna().sum()),
                 "sample_names": names,
             })
-    manifest = {"version": "m1", "dataset": "OpenStreetMap POIs, Kitahiroshima, Hokkaido",
-                "zone_split": {"lon": lon_mid, "lat": lat_mid}, "files": entries}
+    manifest = {"version": "m1", "dataset": f"OpenStreetMap POIs, {city_label}, Hokkaido",
+                "zone_split": zone_split, "zones": zones, "files": entries}
     (data / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
     print(len(entries), "files;", int(feats.shape[0]), "features")
     print(feats.groupby("category").size().to_dict())
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    main(*sys.argv[1:4])
