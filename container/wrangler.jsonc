@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "jev-geoparquet-search",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-20",
+  "observability": { "enabled": true },
+  "containers": [
+    {
+      "class_name": "SearchContainer",
+      "scheduling_policy": "durable_object",
+      "images": { "base": { "dockerfile": "./Dockerfile" } }
+    }
+  ],
+  "durable_objects": {
+    "bindings": [{ "name": "SEARCH", "class_name": "SearchContainer" }]
+  },
+  "exports": {
+    "SearchContainer": { "type": "durable-object", "storage": "sqlite" }
+  },
+  "vars": {
+    // r2://<bucket>/<prefix>; the files are uploaded by pipeline/upload_r2.py
+    "DATA_BASE": "r2://jev-geoparquet/data",
+    "JEV_MODEL": "jev-latest",
+    "JEV_MAX_ROWS_PER_STATEMENT": "20000"
+  }
+  // Secrets (wrangler secret put ...): TYPESAFE_API_KEY, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY,
+  // R2_ACCOUNT_ID, and optionally DEMO_TOKEN
+}

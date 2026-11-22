@@ -1,0 +1,13 @@
+{
+ "version": "q1",
+ "questions": [
+  {"id": "kids_play", "en": "A place where children can play", "ja": "子どもが遊べる場所",
+   "rule_categories": ["parks_play"]},
+  {"id": "rainy_day", "en": "A place to spend time indoors on a rainy day", "ja": "雨の日に屋内で過ごせる場所",
+   "rule_categories": ["commercial", "public_culture"]},
+  {"id": "groceries", "en": "A place to buy food or daily necessities", "ja": "食料品や日用品を買える場所",
+   "rule_categories": ["commercial"]},
+  {"id": "local_history", "en": "A place to learn about local history or culture", "ja": "地域の歴史や文化を学べる場所",
+   "rule_categories": ["public_culture"]}
+ ]
+}
