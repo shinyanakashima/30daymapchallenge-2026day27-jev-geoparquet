@@ -54,14 +54,23 @@
    - `public_culture`（文化・公共施設）
    - `other_unknown`（その他／分類不明）
 
-   区域×カテゴリごとに 1 ファイルとし、GeoParquet 1.0（点のジオメトリ・WKB、zstd 圧縮）で書き出します（`data/<地域>/parts/`）。
-3. 目録 `manifest.json` には、ファイルごとに次の項目を入れています。
+   区域×カテゴリごとに 1 ファイルとし、GeoParquet 1.0（点のジオメトリ・WKB、zstd 圧縮）で書き出します。ファイルは Hive 形式（`data/<地域>/category=<カテゴリ>/area=<区域>/part-0.parquet`）で並べています。
+3. 目録 `manifest.m1.json`（`m1` は目録の書き方の版）には、ファイルごとに次の項目を入れています。
    - ファイル名、カテゴリ、区域、bbox、行数、ファイルサイズ
    - 多いタグの上位 8 件とその件数
    - 名称の無い行の数
    - 名称の例（最大 6 件）
 
    目録は、この検索のために用意した補助のメタデータです。
+
+R2 には、バケット `geo-opendata` のほかのデータと同じ決まり（出典-データ名 / 形式 / 時点）で置きます（`pipeline/upload_r2.py`）。
+
+```
+geo-opendata/osm-poi/source/2026-11-21/_source.json        出典・ライセンス・抽出の条件
+geo-opendata/osm-poi/parquet/2026-11-21/<地域>/manifest.m1.json
+geo-opendata/osm-poi/parquet/2026-11-21/<地域>/boundary.geojson
+geo-opendata/osm-poi/parquet/2026-11-21/<地域>/category=<カテゴリ>/area=<区域>/part-0.parquet
+```
 
 ## 比較の方法
 

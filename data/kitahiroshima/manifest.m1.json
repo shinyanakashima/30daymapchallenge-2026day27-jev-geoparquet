@@ -30,7 +30,7 @@
  ],
  "files": [
   {
-   "file": "parts/parks_play__nw.parquet",
+   "file": "category=parks_play/area=nw/part-0.parquet",
    "id": "parks_play__nw",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -57,7 +57,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__ne.parquet",
+   "file": "category=parks_play/area=ne/part-0.parquet",
    "id": "parks_play__ne",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -85,7 +85,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__sw.parquet",
+   "file": "category=parks_play/area=sw/part-0.parquet",
    "id": "parks_play__sw",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -114,7 +114,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__se.parquet",
+   "file": "category=parks_play/area=se/part-0.parquet",
    "id": "parks_play__se",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -143,7 +143,7 @@
    ]
   },
   {
-   "file": "parts/sports__nw.parquet",
+   "file": "category=sports/area=nw/part-0.parquet",
    "id": "sports__nw",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -175,7 +175,7 @@
    ]
   },
   {
-   "file": "parts/sports__ne.parquet",
+   "file": "category=sports/area=ne/part-0.parquet",
    "id": "sports__ne",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -207,7 +207,7 @@
    ]
   },
   {
-   "file": "parts/sports__sw.parquet",
+   "file": "category=sports/area=sw/part-0.parquet",
    "id": "sports__sw",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -241,7 +241,7 @@
    ]
   },
   {
-   "file": "parts/sports__se.parquet",
+   "file": "category=sports/area=se/part-0.parquet",
    "id": "sports__se",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -272,7 +272,7 @@
    ]
   },
   {
-   "file": "parts/commercial__nw.parquet",
+   "file": "category=commercial/area=nw/part-0.parquet",
    "id": "commercial__nw",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -306,7 +306,7 @@
    ]
   },
   {
-   "file": "parts/commercial__ne.parquet",
+   "file": "category=commercial/area=ne/part-0.parquet",
    "id": "commercial__ne",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -340,7 +340,7 @@
    ]
   },
   {
-   "file": "parts/commercial__sw.parquet",
+   "file": "category=commercial/area=sw/part-0.parquet",
    "id": "commercial__sw",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -374,7 +374,7 @@
    ]
   },
   {
-   "file": "parts/commercial__se.parquet",
+   "file": "category=commercial/area=se/part-0.parquet",
    "id": "commercial__se",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -408,7 +408,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__nw.parquet",
+   "file": "category=public_culture/area=nw/part-0.parquet",
    "id": "public_culture__nw",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -442,7 +442,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__ne.parquet",
+   "file": "category=public_culture/area=ne/part-0.parquet",
    "id": "public_culture__ne",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -476,7 +476,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__sw.parquet",
+   "file": "category=public_culture/area=sw/part-0.parquet",
    "id": "public_culture__sw",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -510,7 +510,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__se.parquet",
+   "file": "category=public_culture/area=se/part-0.parquet",
    "id": "public_culture__se",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -544,7 +544,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__nw.parquet",
+   "file": "category=other_unknown/area=nw/part-0.parquet",
    "id": "other_unknown__nw",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -577,7 +577,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__ne.parquet",
+   "file": "category=other_unknown/area=ne/part-0.parquet",
    "id": "other_unknown__ne",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -611,7 +611,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__sw.parquet",
+   "file": "category=other_unknown/area=sw/part-0.parquet",
    "id": "other_unknown__sw",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -643,7 +643,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__se.parquet",
+   "file": "category=other_unknown/area=se/part-0.parquet",
    "id": "other_unknown__se",
    "category": "other_unknown",
    "category_label": "Other / not classified",

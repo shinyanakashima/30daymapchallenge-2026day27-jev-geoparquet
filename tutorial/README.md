@@ -124,7 +124,7 @@ read -rs R2_SECRET_ACCESS_KEY && export R2_SECRET_ACCESS_KEY
 ```
 
 ```bash
-docker run --rm -p 8080:8080 -e TYPESAFE_API_KEY -e R2_SECRET_ACCESS_KEY -e R2_ACCOUNT_ID=<アカウントID> -e R2_ACCESS_KEY_ID=<アクセスキーID> -e DATA_BASE=r2://jev-geoparquet/data jev-search
+docker run --rm -p 8080:8080 -e TYPESAFE_API_KEY -e R2_SECRET_ACCESS_KEY -e R2_ACCOUNT_ID=<アカウントID> -e R2_ACCESS_KEY_ID=<アクセスキーID> -e DATA_BASE=r2://geo-opendata/osm-poi/parquet/2026-11-21 jev-search
 ```
 
 ここまで動けば、`container/README.md` の手順で Cloudflare に配信できます。

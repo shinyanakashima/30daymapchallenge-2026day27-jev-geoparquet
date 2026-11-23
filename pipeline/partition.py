@@ -1,6 +1,9 @@
 """Split the extracted features into GeoParquet files by attribute category x area,
 and write a manifest (one entry per file) that the file selector reads.
 
+Files are laid out Hive-style: <data_dir>/category=<category>/area=<area>/part-0.parquet.
+The manifest is <data_dir>/manifest.m1.json ("m1" is the manifest format version).
+
 Area: the city's wards when <work_dir>/wards.geojson exists (Sapporo), otherwise four
 quadrants split at the median longitude and latitude of the features (Kitahiroshima).
 
@@ -64,7 +67,6 @@ def categorize(row):
 
 def main(work_dir, data_dir, city_label):
     work, data = Path(work_dir), Path(data_dir)
-    (data / "parts").mkdir(parents=True, exist_ok=True)
     con = duckdb.connect()
     con.sql("INSTALL spatial; LOAD spatial;")
     feats = con.sql(f"select * from '{work / 'features.parquet'}' order by osm_id").fetchdf()
@@ -100,7 +102,9 @@ def main(work_dir, data_dir, city_label):
             if sub.empty:
                 continue
             fid = f"{cat}__{zone}"
-            path = data / "parts" / f"{fid}.parquet"
+            rel = f"category={cat}/area={zone}/part-0.parquet"
+            path = data / rel
+            path.parent.mkdir(parents=True, exist_ok=True)
             cols = ", ".join(ATTR_COLS)
             con.sql(f"""COPY (SELECT osm_id, osm_geom, {cols}, ST_Point(lon, lat) AS geometry
                         FROM feats WHERE category = '{cat}' AND zone = '{zone}' ORDER BY osm_id)
@@ -111,7 +115,7 @@ def main(work_dir, data_dir, city_label):
                     counts[f"{k}={v}"] += 1
             names = [n for n in sub["name"].dropna().tolist()][:6]
             entries.append({
-                "file": f"parts/{fid}.parquet",
+                "file": rel,
                 "id": fid,
                 "category": cat,
                 "category_label": label,
@@ -126,7 +130,7 @@ def main(work_dir, data_dir, city_label):
             })
     manifest = {"version": "m1", "dataset": f"OpenStreetMap POIs, {city_label}, Hokkaido",
                 "zone_split": zone_split, "zones": zones, "files": entries}
-    (data / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
+    (data / "manifest.m1.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
     print(len(entries), "files;", int(feats.shape[0]), "features")
     print(feats.groupby("category").size().to_dict())
 

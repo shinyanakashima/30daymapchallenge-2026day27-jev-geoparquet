@@ -150,7 +150,7 @@ def main():
     ap.add_argument("--api-url", default=None)
     ap.add_argument("--model", default="jev-latest")
     args = ap.parse_args()
-    manifest = json.loads((Path(args.data_dir) / "manifest.json").read_text())
+    manifest = json.loads((Path(args.data_dir) / "manifest.m1.json").read_text())
     qs = json.loads(Path(args.questions).read_text())
     con = duckdb.connect()
     con.sql("LOAD spatial")

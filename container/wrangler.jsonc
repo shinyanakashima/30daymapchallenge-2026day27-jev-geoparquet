@@ -18,8 +18,8 @@
     "SearchContainer": { "type": "durable-object", "storage": "sqlite" }
   },
   "vars": {
-    // r2://<bucket>/<prefix>; the files are uploaded by pipeline/upload_r2.py
-    "DATA_BASE": "r2://jev-geoparquet/data",
+    // r2://<bucket>/<dataset>/<format>/<OSM extract date>; uploaded by pipeline/upload_r2.py
+    "DATA_BASE": "r2://geo-opendata/osm-poi/parquet/2026-11-21",
     "JEV_MODEL": "jev-latest",
     "JEV_MAX_ROWS_PER_STATEMENT": "20000"
   }

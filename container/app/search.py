@@ -39,7 +39,7 @@ def sql_str(s):
 
 class Searcher:
     def __init__(self):
-        # DATA_BASE: r2://<bucket>/<prefix> on Cloudflare, or a local folder such as ../data
+        # DATA_BASE: r2://geo-opendata/osm-poi/parquet/<date> on Cloudflare, or a local folder such as ../data
         self.base = os.environ.get("DATA_BASE", "../data").rstrip("/")
         self.model = os.environ.get("JEV_MODEL", "jev-latest")
         self.max_rows = int(os.environ.get("JEV_MAX_ROWS_PER_STATEMENT", "20000"))
@@ -68,7 +68,7 @@ class Searcher:
     def city(self, con, city):
         if city not in self._cities:
             base = f"{self.base}/{city}"
-            manifest = json.loads(con.sql(f"SELECT content FROM read_text({sql_str(base + '/manifest.json')})").fetchone()[0])
+            manifest = json.loads(con.sql(f"SELECT content FROM read_text({sql_str(base + '/manifest.m1.json')})").fetchone()[0])
             gj = json.loads(con.sql(f"SELECT content FROM read_text({sql_str(base + '/boundary.geojson')})").fetchone()[0])
             geom = json.dumps(gj.get("geometry", gj))
             wkt = con.sql(f"SELECT ST_AsText(ST_GeomFromGeoJSON({sql_str(geom)}))").fetchone()[0]

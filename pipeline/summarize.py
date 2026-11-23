@@ -27,7 +27,7 @@ def med(xs):
 def main(data_dir, questions, runs_path, out_dir):
     data, out = Path(data_dir), Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    manifest = json.loads((data / "manifest.json").read_text())
+    manifest = json.loads((data / "manifest.m1.json").read_text())
     qs = json.loads(Path(questions).read_text())
     runs = json.loads(Path(runs_path).read_text())
     file_of = {}

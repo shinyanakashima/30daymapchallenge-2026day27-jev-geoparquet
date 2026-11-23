@@ -7,7 +7,7 @@
 
 ```
 ブラウザ / curl ──> Worker ──> Durable Object ──> Container（Python + DuckDB 1.5.5 + spatial / httpfs / jev）
-                                                     ├─ r2://<bucket>/data/<地域>/manifest.json, parts/*.parquet
+                                                     ├─ r2://geo-opendata/osm-poi/parquet/2026-11-21/<地域>/…
                                                      └─ api.typesafe.ai（Jev）
 ```
 
@@ -38,21 +38,21 @@
 
 ## 配信の手順
 
-1. **R2 のバケットを作り、データを入れる**
+1. **R2 にデータを入れる**（バケット `geo-opendata`）
+
+   書き込みのできる R2 の API トークンで、リポジトリの直下から実行します。先に `--dry-run` で送り先を確かめられます。
 
    ```bash
-   npx wrangler r2 bucket create jev-geoparquet
+   R2_ACCOUNT_ID=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... python pipeline/upload_r2.py --dry-run
    ```
-
-   R2 の API トークン（読み取り・書き込み）を作り、そのキーでアップロードします。
 
    ```bash
-   R2_ACCOUNT_ID=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... python pipeline/upload_r2.py jev-geoparquet
+   R2_ACCOUNT_ID=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... python pipeline/upload_r2.py
    ```
 
-   アップロード先は `data/kitahiroshima/` と `data/sapporo/` です（全部で 76 ファイル、約 1 MB）。
+   送り先は `osm-poi/parquet/2026-11-21/<地域>/`（目録・境界・Hive 形式の GeoParquet）と `osm-poi/source/2026-11-21/_source.json` です（全部で 75 オブジェクト、約 1 MB）。`geo-opendata` は公開 URL でも読めるバケットなので、置いたものは公開されます（OSM 由来のデータは ODbL で、出典を `_source.json` に書いています）。
 
-2. **秘密情報を登録する**（コンテナから R2 を読むためのキーは、読み取り専用のトークンで作ります）
+2. **秘密情報を登録する**（コンテナから R2 を読むためのキーは、`geo-opendata` の読み取り専用のトークンで作ります）
 
    ```bash
    cd container

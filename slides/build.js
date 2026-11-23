@@ -108,7 +108,7 @@ s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "仕組み" });
 s.addText("仕組み：目録を見て、読むファイルを選ぶ", { placeholder: "title" });
 // step 1: manifest
 s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y: 1.5, w: 2.6, h: 2.3, fill: { color: HEX.lt2 }, line: { type: "none" }, objectName: "manifest" });
-label(s, "目録（manifest.json）", 0.65, 1.6, 2.3, 0.35, { fontSize: 13, bold: true });
+label(s, "目録（manifest.m1.json）", 0.65, 1.6, 2.3, 0.35, { fontSize: 13, bold: true });
 label(s, "ファイルごとに\nカテゴリ・行数・bbox\n多いタグの上位8件\n名称の例", 0.65, 2.0, 2.3, 1.6, { fontSize: 12, ...muted });
 arrow(s, 3.15, 2.65, 3.6, 2.65);
 // step 2: file selection

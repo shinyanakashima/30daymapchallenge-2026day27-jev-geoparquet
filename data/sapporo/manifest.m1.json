@@ -58,7 +58,7 @@
  ],
  "files": [
   {
-   "file": "parts/parks_play__atsubetsu.parquet",
+   "file": "category=parks_play/area=atsubetsu/part-0.parquet",
    "id": "parks_play__atsubetsu",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -87,7 +87,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__chuo.parquet",
+   "file": "category=parks_play/area=chuo/part-0.parquet",
    "id": "parks_play__chuo",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -121,7 +121,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__higashi.parquet",
+   "file": "category=parks_play/area=higashi/part-0.parquet",
    "id": "parks_play__higashi",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -151,7 +151,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__kita.parquet",
+   "file": "category=parks_play/area=kita/part-0.parquet",
    "id": "parks_play__kita",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -184,7 +184,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__kiyota.parquet",
+   "file": "category=parks_play/area=kiyota/part-0.parquet",
    "id": "parks_play__kiyota",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -217,7 +217,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__minami.parquet",
+   "file": "category=parks_play/area=minami/part-0.parquet",
    "id": "parks_play__minami",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -248,7 +248,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__nishi.parquet",
+   "file": "category=parks_play/area=nishi/part-0.parquet",
    "id": "parks_play__nishi",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -279,7 +279,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__shiroishi.parquet",
+   "file": "category=parks_play/area=shiroishi/part-0.parquet",
    "id": "parks_play__shiroishi",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -307,7 +307,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__teine.parquet",
+   "file": "category=parks_play/area=teine/part-0.parquet",
    "id": "parks_play__teine",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -337,7 +337,7 @@
    ]
   },
   {
-   "file": "parts/parks_play__toyohira.parquet",
+   "file": "category=parks_play/area=toyohira/part-0.parquet",
    "id": "parks_play__toyohira",
    "category": "parks_play",
    "category_label": "Parks and play areas",
@@ -368,7 +368,7 @@
    ]
   },
   {
-   "file": "parts/sports__atsubetsu.parquet",
+   "file": "category=sports/area=atsubetsu/part-0.parquet",
    "id": "sports__atsubetsu",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -402,7 +402,7 @@
    ]
   },
   {
-   "file": "parts/sports__chuo.parquet",
+   "file": "category=sports/area=chuo/part-0.parquet",
    "id": "sports__chuo",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -436,7 +436,7 @@
    ]
   },
   {
-   "file": "parts/sports__higashi.parquet",
+   "file": "category=sports/area=higashi/part-0.parquet",
    "id": "sports__higashi",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -470,7 +470,7 @@
    ]
   },
   {
-   "file": "parts/sports__kita.parquet",
+   "file": "category=sports/area=kita/part-0.parquet",
    "id": "sports__kita",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -504,7 +504,7 @@
    ]
   },
   {
-   "file": "parts/sports__kiyota.parquet",
+   "file": "category=sports/area=kiyota/part-0.parquet",
    "id": "sports__kiyota",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -538,7 +538,7 @@
    ]
   },
   {
-   "file": "parts/sports__minami.parquet",
+   "file": "category=sports/area=minami/part-0.parquet",
    "id": "sports__minami",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -572,7 +572,7 @@
    ]
   },
   {
-   "file": "parts/sports__nishi.parquet",
+   "file": "category=sports/area=nishi/part-0.parquet",
    "id": "sports__nishi",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -606,7 +606,7 @@
    ]
   },
   {
-   "file": "parts/sports__shiroishi.parquet",
+   "file": "category=sports/area=shiroishi/part-0.parquet",
    "id": "sports__shiroishi",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -640,7 +640,7 @@
    ]
   },
   {
-   "file": "parts/sports__teine.parquet",
+   "file": "category=sports/area=teine/part-0.parquet",
    "id": "sports__teine",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -674,7 +674,7 @@
    ]
   },
   {
-   "file": "parts/sports__toyohira.parquet",
+   "file": "category=sports/area=toyohira/part-0.parquet",
    "id": "sports__toyohira",
    "category": "sports",
    "category_label": "Sports facilities",
@@ -708,7 +708,7 @@
    ]
   },
   {
-   "file": "parts/commercial__atsubetsu.parquet",
+   "file": "category=commercial/area=atsubetsu/part-0.parquet",
    "id": "commercial__atsubetsu",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -742,7 +742,7 @@
    ]
   },
   {
-   "file": "parts/commercial__chuo.parquet",
+   "file": "category=commercial/area=chuo/part-0.parquet",
    "id": "commercial__chuo",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -776,7 +776,7 @@
    ]
   },
   {
-   "file": "parts/commercial__higashi.parquet",
+   "file": "category=commercial/area=higashi/part-0.parquet",
    "id": "commercial__higashi",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -810,7 +810,7 @@
    ]
   },
   {
-   "file": "parts/commercial__kita.parquet",
+   "file": "category=commercial/area=kita/part-0.parquet",
    "id": "commercial__kita",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -844,7 +844,7 @@
    ]
   },
   {
-   "file": "parts/commercial__kiyota.parquet",
+   "file": "category=commercial/area=kiyota/part-0.parquet",
    "id": "commercial__kiyota",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -878,7 +878,7 @@
    ]
   },
   {
-   "file": "parts/commercial__minami.parquet",
+   "file": "category=commercial/area=minami/part-0.parquet",
    "id": "commercial__minami",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -912,7 +912,7 @@
    ]
   },
   {
-   "file": "parts/commercial__nishi.parquet",
+   "file": "category=commercial/area=nishi/part-0.parquet",
    "id": "commercial__nishi",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -946,7 +946,7 @@
    ]
   },
   {
-   "file": "parts/commercial__shiroishi.parquet",
+   "file": "category=commercial/area=shiroishi/part-0.parquet",
    "id": "commercial__shiroishi",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -980,7 +980,7 @@
    ]
   },
   {
-   "file": "parts/commercial__teine.parquet",
+   "file": "category=commercial/area=teine/part-0.parquet",
    "id": "commercial__teine",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -1014,7 +1014,7 @@
    ]
   },
   {
-   "file": "parts/commercial__toyohira.parquet",
+   "file": "category=commercial/area=toyohira/part-0.parquet",
    "id": "commercial__toyohira",
    "category": "commercial",
    "category_label": "Shops, food and other businesses",
@@ -1048,7 +1048,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__atsubetsu.parquet",
+   "file": "category=public_culture/area=atsubetsu/part-0.parquet",
    "id": "public_culture__atsubetsu",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1082,7 +1082,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__chuo.parquet",
+   "file": "category=public_culture/area=chuo/part-0.parquet",
    "id": "public_culture__chuo",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1116,7 +1116,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__higashi.parquet",
+   "file": "category=public_culture/area=higashi/part-0.parquet",
    "id": "public_culture__higashi",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1150,7 +1150,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__kita.parquet",
+   "file": "category=public_culture/area=kita/part-0.parquet",
    "id": "public_culture__kita",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1184,7 +1184,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__kiyota.parquet",
+   "file": "category=public_culture/area=kiyota/part-0.parquet",
    "id": "public_culture__kiyota",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1218,7 +1218,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__minami.parquet",
+   "file": "category=public_culture/area=minami/part-0.parquet",
    "id": "public_culture__minami",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1252,7 +1252,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__nishi.parquet",
+   "file": "category=public_culture/area=nishi/part-0.parquet",
    "id": "public_culture__nishi",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1286,7 +1286,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__shiroishi.parquet",
+   "file": "category=public_culture/area=shiroishi/part-0.parquet",
    "id": "public_culture__shiroishi",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1320,7 +1320,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__teine.parquet",
+   "file": "category=public_culture/area=teine/part-0.parquet",
    "id": "public_culture__teine",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1354,7 +1354,7 @@
    ]
   },
   {
-   "file": "parts/public_culture__toyohira.parquet",
+   "file": "category=public_culture/area=toyohira/part-0.parquet",
    "id": "public_culture__toyohira",
    "category": "public_culture",
    "category_label": "Public, cultural, education and health facilities",
@@ -1388,7 +1388,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__atsubetsu.parquet",
+   "file": "category=other_unknown/area=atsubetsu/part-0.parquet",
    "id": "other_unknown__atsubetsu",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1422,7 +1422,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__chuo.parquet",
+   "file": "category=other_unknown/area=chuo/part-0.parquet",
    "id": "other_unknown__chuo",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1456,7 +1456,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__higashi.parquet",
+   "file": "category=other_unknown/area=higashi/part-0.parquet",
    "id": "other_unknown__higashi",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1490,7 +1490,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__kita.parquet",
+   "file": "category=other_unknown/area=kita/part-0.parquet",
    "id": "other_unknown__kita",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1524,7 +1524,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__kiyota.parquet",
+   "file": "category=other_unknown/area=kiyota/part-0.parquet",
    "id": "other_unknown__kiyota",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1558,7 +1558,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__minami.parquet",
+   "file": "category=other_unknown/area=minami/part-0.parquet",
    "id": "other_unknown__minami",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1592,7 +1592,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__nishi.parquet",
+   "file": "category=other_unknown/area=nishi/part-0.parquet",
    "id": "other_unknown__nishi",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1626,7 +1626,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__shiroishi.parquet",
+   "file": "category=other_unknown/area=shiroishi/part-0.parquet",
    "id": "other_unknown__shiroishi",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1660,7 +1660,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__teine.parquet",
+   "file": "category=other_unknown/area=teine/part-0.parquet",
    "id": "other_unknown__teine",
    "category": "other_unknown",
    "category_label": "Other / not classified",
@@ -1694,7 +1694,7 @@
    ]
   },
   {
-   "file": "parts/other_unknown__toyohira.parquet",
+   "file": "category=other_unknown/area=toyohira/part-0.parquet",
    "id": "other_unknown__toyohira",
    "category": "other_unknown",
    "category_label": "Other / not classified",
