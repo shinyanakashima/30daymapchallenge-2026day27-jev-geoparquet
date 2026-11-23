@@ -67,7 +67,7 @@ class Searcher:
 
     def city(self, con, city):
         if city not in self._cities:
-            base = f"{self.base}/{city}"
+            base = f"{self.base}/city={city}"
             manifest = json.loads(con.sql(f"SELECT content FROM read_text({sql_str(base + '/manifest.m1.json')})").fetchone()[0])
             gj = json.loads(con.sql(f"SELECT content FROM read_text({sql_str(base + '/boundary.geojson')})").fetchone()[0])
             geom = json.dumps(gj.get("geometry", gj))

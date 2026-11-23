@@ -1,7 +1,8 @@
 """Split the extracted features into GeoParquet files by attribute category x area,
 and write a manifest (one entry per file) that the file selector reads.
 
-Files are laid out Hive-style: <data_dir>/category=<category>/area=<area>/part-0.parquet.
+Files are laid out Hive-style: <data_dir>/category=<category>/area=<area>/part-0.parquet,
+with <data_dir> itself named city=<city> (for example data/city=sapporo).
 The manifest is <data_dir>/manifest.m1.json ("m1" is the manifest format version).
 
 Area: the city's wards when <work_dir>/wards.geojson exists (Sapporo), otherwise four

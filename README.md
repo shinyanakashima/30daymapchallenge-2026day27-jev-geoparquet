@@ -20,7 +20,7 @@
 
 ## 作品について
 
-北海道の 2 つの地域の OpenStreetMap の地物を、属性のカテゴリ（5 種）と区域で GeoParquet ファイルに分けました。ファイルごとの要約は、目録（`data/<地域>/manifest.json`）にまとめています。
+北海道の 2 つの地域の OpenStreetMap の地物を、属性のカテゴリ（5 種）と区域で GeoParquet ファイルに分けました。ファイルごとの要約は、目録（`data/city=<地域>/manifest.m1.json`）にまとめています。
 
 | 地域 | 地物 | ファイル | 区域の分け方 |
 |---|---:|---:|---|
@@ -54,7 +54,7 @@
    - `public_culture`（文化・公共施設）
    - `other_unknown`（その他／分類不明）
 
-   区域×カテゴリごとに 1 ファイルとし、GeoParquet 1.0（点のジオメトリ・WKB、zstd 圧縮）で書き出します。ファイルは Hive 形式（`data/<地域>/category=<カテゴリ>/area=<区域>/part-0.parquet`）で並べています。
+   区域×カテゴリごとに 1 ファイルとし、GeoParquet 1.0（点のジオメトリ・WKB、zstd 圧縮）で書き出します。ファイルは Hive 形式（`data/city=<地域>/category=<カテゴリ>/area=<区域>/part-0.parquet`）で並べています。
 3. 目録 `manifest.m1.json`（`m1` は目録の書き方の版）には、ファイルごとに次の項目を入れています。
    - ファイル名、カテゴリ、区域、bbox、行数、ファイルサイズ
    - 多いタグの上位 8 件とその件数
@@ -67,9 +67,9 @@ R2 には、バケット `geo-opendata` のほかのデータと同じ決まり�
 
 ```
 geo-opendata/osm-poi/source/2026-11-21/_source.json        出典・ライセンス・抽出の条件
-geo-opendata/osm-poi/parquet/2026-11-21/<地域>/manifest.m1.json
-geo-opendata/osm-poi/parquet/2026-11-21/<地域>/boundary.geojson
-geo-opendata/osm-poi/parquet/2026-11-21/<地域>/category=<カテゴリ>/area=<区域>/part-0.parquet
+geo-opendata/osm-poi/parquet/2026-11-21/city=<地域>/manifest.m1.json
+geo-opendata/osm-poi/parquet/2026-11-21/city=<地域>/boundary.geojson
+geo-opendata/osm-poi/parquet/2026-11-21/city=<地域>/category=<カテゴリ>/area=<区域>/part-0.parquet
 ```
 
 ## 比較の方法
@@ -164,7 +164,7 @@ SELECT osm_id, jev_choice({attributes: 'name: ...; leisure: ...'}, '<質問>',
 ## 注記
 
 - 判定は、各地物の OpenStreetMap の属性だけに基づきます。実際の安全性、営業状況、適否を保証しません。
-- データ: OpenStreetMap の北海道の抽出データ `hokkaido-latest.osm.pbf`（2026-11-21T00:15:44Z 時点）。取得元は OpenStreetMap France の extracts です（`data/<地域>/source.json`）。© OpenStreetMap contributors, ODbL 1.0。
+- データ: OpenStreetMap の北海道の抽出データ `hokkaido-latest.osm.pbf`（2026-11-21T00:15:44Z 時点）。取得元は OpenStreetMap France の extracts です（`data/city=<地域>/source.json`）。© OpenStreetMap contributors, ODbL 1.0。
 - 背景地図: 地理院タイル（淡色地図、国土地理院）。
 - Jev の出力の扱いは、TypeSafe の Master Customer Agreement に従います。
 
@@ -174,10 +174,10 @@ SELECT osm_id, jev_choice({attributes: 'name: ...; leisure: ...'}, '<質問>',
 pip install -r requirements.txt
 curl -LO https://download.openstreetmap.fr/extracts/asia/japan/hokkaido-latest.osm.pbf
 python pipeline/extract.py hokkaido-latest.osm.pbf work/sapporo sapporo
-python pipeline/partition.py work/sapporo data/sapporo Sapporo
-cp work/sapporo/boundary.geojson data/sapporo/
-python pipeline/run_compare.py data/sapporo pipeline/questions.json results/sapporo/runs.json --reps 3
-python pipeline/summarize.py data/sapporo pipeline/questions.json results/sapporo/runs.json web/public/data/sapporo
+python pipeline/partition.py work/sapporo "data/city=sapporo" Sapporo
+cp work/sapporo/boundary.geojson "data/city=sapporo/"
+python pipeline/run_compare.py "data/city=sapporo" pipeline/questions.json results/sapporo/runs.json --reps 3
+python pipeline/summarize.py "data/city=sapporo" pipeline/questions.json results/sapporo/runs.json web/public/data/sapporo
 cd web && npm ci && npm run build && npx vite preview
 ```
 

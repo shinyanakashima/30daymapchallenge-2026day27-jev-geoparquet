@@ -3,9 +3,11 @@
 Layout in the bucket (same convention as the other datasets in geo-opendata: <source>-<dataset>/<format>/<date>/):
 
   osm-poi/source/<date>/_source.json
-  osm-poi/parquet/<date>/<city>/manifest.m1.json
-  osm-poi/parquet/<date>/<city>/boundary.geojson
-  osm-poi/parquet/<date>/<city>/category=<category>/area=<area>/part-0.parquet
+  osm-poi/parquet/<date>/city=<city>/manifest.m1.json
+  osm-poi/parquet/<date>/city=<city>/boundary.geojson
+  osm-poi/parquet/<date>/city=<city>/category=<category>/area=<area>/part-0.parquet
+
+The local data/ folder has the same layout below <date>/: data/city=<city>/...
 
 Usage:
   R2_ACCOUNT_ID=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... \\
@@ -31,11 +33,11 @@ def main():
 
     uploads = []
     for city in CITIES:
-        d = root / city
+        d = root / f"city={city}"
         files = [d / "manifest.m1.json", d / "boundary.geojson"] + sorted(d.glob("category=*/area=*/part-0.parquet"))
         for p in files:
-            uploads.append((p, f"osm-poi/parquet/{args.date}/{city}/{p.relative_to(d).as_posix()}"))
-    source = json.loads((root / CITIES[0] / "source.json").read_text())
+            uploads.append((p, f"osm-poi/parquet/{args.date}/city={city}/{p.relative_to(d).as_posix()}"))
+    source = json.loads((root / f"city={CITIES[0]}" / "source.json").read_text())
     source["cities"] = list(CITIES)
     source["extraction"] = "pipeline/extract.py and pipeline/partition.py in github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet"
     source_body = json.dumps(source, ensure_ascii=False, indent=1).encode()

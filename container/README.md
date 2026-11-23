@@ -7,7 +7,7 @@
 
 ```
 ブラウザ / curl ──> Worker ──> Durable Object ──> Container（Python + DuckDB 1.5.5 + spatial / httpfs / jev）
-                                                     ├─ r2://geo-opendata/osm-poi/parquet/2026-11-21/<地域>/…
+                                                     ├─ r2://geo-opendata/osm-poi/parquet/2026-11-21/city=<地域>/…
                                                      └─ api.typesafe.ai（Jev）
 ```
 
@@ -50,7 +50,7 @@
    R2_ACCOUNT_ID=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... python pipeline/upload_r2.py
    ```
 
-   送り先は `osm-poi/parquet/2026-11-21/<地域>/`（目録・境界・Hive 形式の GeoParquet）と `osm-poi/source/2026-11-21/_source.json` です（全部で 75 オブジェクト、約 1 MB）。`geo-opendata` は公開 URL でも読めるバケットなので、置いたものは公開されます（OSM 由来のデータは ODbL で、出典を `_source.json` に書いています）。
+   送り先は `osm-poi/parquet/2026-11-21/city=<地域>/`（目録・境界・Hive 形式の GeoParquet）と `osm-poi/source/2026-11-21/_source.json` です（全部で 75 オブジェクト、約 1 MB）。`geo-opendata` は公開 URL でも読めるバケットなので、置いたものは公開されます（OSM 由来のデータは ODbL で、出典を `_source.json` に書いています）。
 
 2. **秘密情報を登録する**（コンテナから R2 を読むためのキーは、`geo-opendata` の読み取り専用のトークンで作ります）
 
