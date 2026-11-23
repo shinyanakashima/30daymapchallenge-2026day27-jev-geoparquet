@@ -4,3 +4,4 @@ shapely>=2.0
 pyarrow>=15
 pandas>=2.0
 requests>=2.31
+boto3>=1.34
