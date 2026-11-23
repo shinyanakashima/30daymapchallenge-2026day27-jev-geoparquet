@@ -222,12 +222,15 @@ python pipeline/manifest_m4.py "data/city=sapporo"
 python pipeline/run_compare.py "data/city=sapporo" pipeline/questions.json results/sapporo/runs_c_m4.json --reps 3 --methods C --manifest manifest.m4.json
 python pipeline/selection_compare.py "data/city=sapporo" pipeline/questions.json results/sapporo/runs.json results/sapporo/selection_m4.json --manifests manifest.m4.json --reps 10
 python pipeline/compare_manifests.py "data/city=sapporo" results/sapporo
+python pipeline/input_experiments.py "data/city=kitahiroshima" results/kitahiroshima/input_experiments.json
+R2_ACCOUNT_ID=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... python pipeline/r2_read_timing.py "r2://geo-opendata/osm-poi/parquet/2026-11-21/city=sapporo" "data/city=sapporo/manifest.m1.json" results/sapporo/r2_read_timing.json
 cd web && npm ci && npm run build && npx vite preview
 ```
 
 - 北広島市は `sapporo` / `Sapporo` を `kitahiroshima` / `Kitahiroshima` に置き換えて実行します。
 - `run_compare.py` と `selection_compare.py` は Jev の API を呼びます。先に環境変数 `TYPESAFE_API_KEY` を設定してください（`read -rs TYPESAFE_API_KEY && export TYPESAFE_API_KEY`）。
 - `compare_manifests.py` は、`runs.json`・`runs_a_20261123.json`・`runs_c_m2.json`〜`runs_c_m4.json`・`selection_*.json` がそろっている前提で集計します（API は呼びません）。
+- `input_experiments.py` は、Jev への送り方（空の列も含めるか、まとめる件数）による答えの違いを測ります。`r2_read_timing.py` は、R2 から読む時間を測ります（Jev は呼びません。R2 の読み取り用のキーが要ります）。
 - Jev の答えは毎回少し揺れるので、測り直した数字は完全には一致しません。
 - Geofabrik の抽出データ（`https://download.geofabrik.de/asia/japan/hokkaido-latest.osm.pbf`）も同じ形式なので、そのまま使えます。
 - 抽出データの時点が違うと、地物の件数や結果が変わります。
