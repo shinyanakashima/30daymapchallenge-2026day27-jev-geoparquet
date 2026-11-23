@@ -1,0 +1,56 @@
+{
+ "started_utc": "2026-11-23T06:50:40+00:00",
+ "base": "r2://geo-opendata/osm-poi/parquet/2026-11-21/city=sapporo",
+ "files_total": 50,
+ "files_commercial": 10,
+ "duckdb": "1.5.5",
+ "tests": {
+  "all_files_glob": {
+   "rows": 16610,
+   "times_s": [
+    6.659,
+    4.219,
+    4.14
+   ],
+   "median_s": 4.219
+  },
+  "all_files_glob_where_category_commercial": {
+   "rows": 6998,
+   "times_s": [
+    2.132,
+    1.689,
+    1.523
+   ],
+   "median_s": 1.689
+  },
+  "commercial_files_listed": {
+   "rows": 6998,
+   "times_s": [
+    1.547,
+    1.883,
+    1.96
+   ],
+   "median_s": 1.883
+  },
+  "all_files_listed": {
+   "rows": 16610,
+   "times_s": [
+    6.206,
+    5.205,
+    5.15
+   ],
+   "median_s": 5.205
+  },
+  "all_files_glob_without_hive": {
+   "rows": 16610,
+   "times_s": [
+    7.744,
+    3.834,
+    3.945
+   ],
+   "median_s": 3.945
+  }
+ },
+ "explain_where_category": "Scanning Files: 10/50",
+ "finished_utc": "2026-11-23T06:51:39+00:00"
+}
