@@ -41,7 +41,7 @@ export const T = {
     statusShort: { candidate: 'Cand.', exclude: 'Excl.', insufficient_information: 'Insuff.', read: 'Read', skipped: 'Skip' },
     judg: {
       supported: 'Supported', contradicted: 'Contradicted', insufficient_information: 'Insufficient information',
-      notread: 'Not read', missed: 'Missed (supported in A, file not read)',
+      notread: 'In a file this method does not read', missed: 'Missed (supported by full judging, in a file this method does not read)',
     },
     legendFiles: 'File extent (bbox of its data; not where features are)',
     legendPoints: 'Feature judgment',
@@ -99,8 +99,8 @@ export const T = {
     },
     statusShort: { candidate: '候補', exclude: '除外', insufficient_information: '不足', read: '読む', skipped: '読まない' },
     judg: {
-      supported: '該当（supported）', contradicted: '非該当（contradicted）', insufficient_information: '判断材料不足',
-      notread: '読まなかった', missed: '取りこぼし（Aで該当・ファイルを読まず）',
+      supported: '当てはまる（supported）', contradicted: '当てはまらない（contradicted）', insufficient_information: '判断材料不足',
+      notread: 'このやり方では読まないファイルの地物', missed: '取りこぼし（全件判定で当てはまるが、このやり方では読まないファイルにある）',
     },
     legendFiles: 'ファイルの範囲（データの bbox。地物の位置ではない）',
     legendPoints: '地物の判定',
