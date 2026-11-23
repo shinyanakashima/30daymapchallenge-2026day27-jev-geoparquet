@@ -1,0 +1,1279 @@
+{
+ "version": "m3",
+ "dataset": "OpenStreetMap POIs, Kitahiroshima, Hokkaido",
+ "zone_split": {
+  "method": "median",
+  "lon": 141.546084,
+  "lat": 42.9790985
+ },
+ "zones": [
+  {
+   "id": "nw",
+   "ja": "北西",
+   "en": "NW"
+  },
+  {
+   "id": "ne",
+   "ja": "北東",
+   "en": "NE"
+  },
+  {
+   "id": "sw",
+   "ja": "南西",
+   "en": "SW"
+  },
+  {
+   "id": "se",
+   "ja": "南東",
+   "en": "SE"
+  }
+ ],
+ "files": [
+  {
+   "file": "category=parks_play/area=nw/part-0.parquet",
+   "id": "parks_play__nw",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "nw",
+   "rows": 19,
+   "bytes": 3587,
+   "bbox": [
+    141.473121,
+    42.979415,
+    141.506907,
+    43.022502
+   ]
+  },
+  {
+   "file": "category=parks_play/area=ne/part-0.parquet",
+   "id": "parks_play__ne",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "ne",
+   "rows": 35,
+   "bytes": 4268,
+   "bbox": [
+    141.547089,
+    42.979635,
+    141.573658,
+    43.002412
+   ]
+  },
+  {
+   "file": "category=parks_play/area=sw/part-0.parquet",
+   "id": "parks_play__sw",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "sw",
+   "rows": 35,
+   "bytes": 4895,
+   "bbox": [
+    141.469332,
+    42.91815,
+    141.54525,
+    42.978891
+   ]
+  },
+  {
+   "file": "category=parks_play/area=se/part-0.parquet",
+   "id": "parks_play__se",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "se",
+   "rows": 32,
+   "bytes": 4599,
+   "bbox": [
+    141.546304,
+    42.945109,
+    141.572125,
+    42.978541
+   ]
+  },
+  {
+   "file": "category=sports/area=nw/part-0.parquet",
+   "id": "sports__nw",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "nw",
+   "rows": 29,
+   "bytes": 4563,
+   "bbox": [
+    141.480592,
+    42.980361,
+    141.536775,
+    43.019663
+   ]
+  },
+  {
+   "file": "category=sports/area=ne/part-0.parquet",
+   "id": "sports__ne",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "ne",
+   "rows": 30,
+   "bytes": 5363,
+   "bbox": [
+    141.547179,
+    42.983966,
+    141.573783,
+    42.996152
+   ]
+  },
+  {
+   "file": "category=sports/area=sw/part-0.parquet",
+   "id": "sports__sw",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "sw",
+   "rows": 37,
+   "bytes": 5173,
+   "bbox": [
+    141.457559,
+    42.907535,
+    141.545398,
+    42.978434
+   ]
+  },
+  {
+   "file": "category=sports/area=se/part-0.parquet",
+   "id": "sports__se",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "se",
+   "rows": 11,
+   "bytes": 4035,
+   "bbox": [
+    141.548988,
+    42.955261,
+    141.559314,
+    42.978489
+   ]
+  },
+  {
+   "file": "category=commercial/area=nw/part-0.parquet",
+   "id": "commercial__nw",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "nw",
+   "rows": 18,
+   "bytes": 5372,
+   "bbox": [
+    141.483034,
+    42.97938,
+    141.52256,
+    43.021935
+   ]
+  },
+  {
+   "file": "category=commercial/area=ne/part-0.parquet",
+   "id": "commercial__ne",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "ne",
+   "rows": 55,
+   "bytes": 7636,
+   "bbox": [
+    141.548635,
+    42.979103,
+    141.569927,
+    43.010514
+   ]
+  },
+  {
+   "file": "category=commercial/area=sw/part-0.parquet",
+   "id": "commercial__sw",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "sw",
+   "rows": 56,
+   "bytes": 7333,
+   "bbox": [
+    141.468352,
+    42.937432,
+    141.54603,
+    42.978437
+   ]
+  },
+  {
+   "file": "category=commercial/area=se/part-0.parquet",
+   "id": "commercial__se",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "se",
+   "rows": 25,
+   "bytes": 5634,
+   "bbox": [
+    141.551743,
+    42.964164,
+    141.56916,
+    42.978907
+   ]
+  },
+  {
+   "file": "category=public_culture/area=nw/part-0.parquet",
+   "id": "public_culture__nw",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "nw",
+   "rows": 33,
+   "bytes": 5998,
+   "bbox": [
+    141.482219,
+    42.979732,
+    141.545457,
+    43.019512
+   ]
+  },
+  {
+   "file": "category=public_culture/area=ne/part-0.parquet",
+   "id": "public_culture__ne",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "ne",
+   "rows": 48,
+   "bytes": 7123,
+   "bbox": [
+    141.547096,
+    42.979098,
+    141.576039,
+    43.010546
+   ]
+  },
+  {
+   "file": "category=public_culture/area=sw/part-0.parquet",
+   "id": "public_culture__sw",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "sw",
+   "rows": 48,
+   "bytes": 6596,
+   "bbox": [
+    141.451125,
+    42.923999,
+    141.545943,
+    42.97895
+   ]
+  },
+  {
+   "file": "category=public_culture/area=se/part-0.parquet",
+   "id": "public_culture__se",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "se",
+   "rows": 35,
+   "bytes": 6549,
+   "bbox": [
+    141.54628,
+    42.927173,
+    141.573587,
+    42.978927
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=nw/part-0.parquet",
+   "id": "other_unknown__nw",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "nw",
+   "rows": 9,
+   "bytes": 4549,
+   "bbox": [
+    141.489837,
+    42.992634,
+    141.524804,
+    43.017995
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=ne/part-0.parquet",
+   "id": "other_unknown__ne",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "ne",
+   "rows": 19,
+   "bytes": 4955,
+   "bbox": [
+    141.546084,
+    42.979426,
+    141.573016,
+    43.002696
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=sw/part-0.parquet",
+   "id": "other_unknown__sw",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "sw",
+   "rows": 10,
+   "bytes": 4434,
+   "bbox": [
+    141.454149,
+    42.936226,
+    141.544437,
+    42.979
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=se/part-0.parquet",
+   "id": "other_unknown__se",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "se",
+   "rows": 5,
+   "bytes": 3784,
+   "bbox": [
+    141.55084,
+    42.964415,
+    141.562816,
+    42.979093
+   ]
+  }
+ ],
+ "tags": [
+  {
+   "tag": "leisure=park",
+   "rows": 110,
+   "files": {
+    "parks_play__nw": 19,
+    "parks_play__ne": 31,
+    "parks_play__sw": 31,
+    "parks_play__se": 29
+   }
+  },
+  {
+   "tag": "leisure=pitch",
+   "rows": 68,
+   "files": {
+    "sports__nw": 20,
+    "sports__ne": 20,
+    "sports__sw": 21,
+    "sports__se": 7
+   }
+  },
+  {
+   "tag": "sport=multi",
+   "rows": 30,
+   "files": {
+    "sports__nw": 8,
+    "sports__ne": 7,
+    "sports__sw": 11,
+    "sports__se": 4
+   }
+  },
+  {
+   "tag": "amenity=place_of_worship",
+   "rows": 28,
+   "files": {
+    "public_culture__nw": 2,
+    "public_culture__ne": 9,
+    "public_culture__sw": 8,
+    "public_culture__se": 9
+   }
+  },
+  {
+   "tag": "sport=tennis",
+   "rows": 28,
+   "files": {
+    "sports__nw": 9,
+    "sports__ne": 10,
+    "sports__sw": 6,
+    "sports__se": 3
+   }
+  },
+  {
+   "tag": "shop=convenience",
+   "rows": 26,
+   "files": {
+    "commercial__nw": 3,
+    "commercial__ne": 10,
+    "commercial__sw": 11,
+    "commercial__se": 2
+   }
+  },
+  {
+   "tag": "amenity=school",
+   "rows": 23,
+   "files": {
+    "public_culture__nw": 9,
+    "public_culture__ne": 5,
+    "public_culture__sw": 7,
+    "public_culture__se": 2
+   }
+  },
+  {
+   "tag": "amenity=community_centre",
+   "rows": 19,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 4,
+    "public_culture__sw": 10,
+    "public_culture__se": 4
+   }
+  },
+  {
+   "tag": "amenity=bicycle_rental",
+   "rows": 17,
+   "files": {
+    "other_unknown__nw": 2,
+    "other_unknown__ne": 9,
+    "other_unknown__sw": 2,
+    "other_unknown__se": 4
+   }
+  },
+  {
+   "tag": "amenity=fuel",
+   "rows": 16,
+   "files": {
+    "commercial__nw": 3,
+    "commercial__ne": 5,
+    "commercial__sw": 7,
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "amenity=social_facility",
+   "rows": 16,
+   "files": {
+    "public_culture__nw": 9,
+    "public_culture__ne": 1,
+    "public_culture__sw": 5,
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "sport=baseball",
+   "rows": 15,
+   "files": {
+    "sports__nw": 4,
+    "sports__ne": 5,
+    "sports__sw": 5,
+    "sports__se": 1
+   }
+  },
+  {
+   "tag": "amenity=pharmacy",
+   "rows": 12,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 3,
+    "commercial__sw": 3,
+    "public_culture__ne": 3,
+    "public_culture__sw": 1,
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "healthcare=pharmacy",
+   "rows": 12,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 3,
+    "commercial__sw": 3,
+    "public_culture__ne": 3,
+    "public_culture__sw": 1,
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "amenity=restaurant",
+   "rows": 11,
+   "files": {
+    "commercial__ne": 3,
+    "commercial__sw": 4,
+    "commercial__se": 4
+   }
+  },
+  {
+   "tag": "leisure=golf_course",
+   "rows": 11,
+   "files": {
+    "sports__nw": 2,
+    "sports__sw": 9
+   }
+  },
+  {
+   "tag": "leisure=sports_centre",
+   "rows": 11,
+   "files": {
+    "sports__nw": 2,
+    "sports__ne": 3,
+    "sports__sw": 4,
+    "sports__se": 2
+   }
+  },
+  {
+   "tag": "amenity=kindergarten",
+   "rows": 9,
+   "files": {
+    "public_culture__nw": 2,
+    "public_culture__ne": 3,
+    "public_culture__sw": 2,
+    "public_culture__se": 2
+   }
+  },
+  {
+   "tag": "leisure=sports_hall",
+   "rows": 9,
+   "files": {
+    "sports__nw": 2,
+    "sports__ne": 3,
+    "sports__sw": 2,
+    "sports__se": 2
+   }
+  },
+  {
+   "tag": "shop=supermarket",
+   "rows": 8,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 2,
+    "commercial__sw": 2,
+    "commercial__se": 3
+   }
+  },
+  {
+   "tag": "amenity=doctors",
+   "rows": 7,
+   "files": {
+    "public_culture__ne": 4,
+    "public_culture__se": 3
+   }
+  },
+  {
+   "tag": "amenity=post_office",
+   "rows": 7,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 1,
+    "public_culture__sw": 2,
+    "public_culture__se": 3
+   }
+  },
+  {
+   "tag": "amenity=toilets",
+   "rows": 7,
+   "files": {
+    "other_unknown__nw": 1,
+    "other_unknown__ne": 3,
+    "other_unknown__sw": 3
+   }
+  },
+  {
+   "tag": "healthcare=doctor",
+   "rows": 7,
+   "files": {
+    "public_culture__ne": 4,
+    "public_culture__se": 3
+   }
+  },
+  {
+   "tag": "office=company",
+   "rows": 7,
+   "files": {
+    "commercial__nw": 3,
+    "commercial__sw": 2,
+    "commercial__se": 2
+   }
+  },
+  {
+   "tag": "shop=car",
+   "rows": 7,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 1,
+    "commercial__sw": 4,
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "shop=chemist",
+   "rows": 7,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 3,
+    "commercial__sw": 3
+   }
+  },
+  {
+   "tag": "sport=swimming",
+   "rows": 6,
+   "files": {
+    "sports__nw": 1,
+    "sports__ne": 1,
+    "sports__sw": 2,
+    "sports__se": 2
+   }
+  },
+  {
+   "tag": "amenity=cafe",
+   "rows": 5,
+   "files": {
+    "commercial__ne": 2,
+    "commercial__sw": 1,
+    "commercial__se": 2
+   }
+  },
+  {
+   "tag": "amenity=dentist",
+   "rows": 5,
+   "files": {
+    "public_culture__ne": 2,
+    "public_culture__sw": 2,
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "amenity=fast_food",
+   "rows": 5,
+   "files": {
+    "commercial__ne": 3,
+    "commercial__sw": 2
+   }
+  },
+  {
+   "tag": "amenity=police",
+   "rows": 5,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 2,
+    "public_culture__sw": 2
+   }
+  },
+  {
+   "tag": "amenity=veterinary",
+   "rows": 5,
+   "files": {
+    "public_culture__ne": 3,
+    "public_culture__se": 2
+   }
+  },
+  {
+   "tag": "healthcare=dentist",
+   "rows": 5,
+   "files": {
+    "public_culture__ne": 2,
+    "public_culture__sw": 2,
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "sport=soccer",
+   "rows": 5,
+   "files": {
+    "sports__nw": 1,
+    "sports__ne": 2,
+    "sports__sw": 1,
+    "sports__se": 1
+   }
+  },
+  {
+   "tag": "amenity=bank",
+   "rows": 4,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__sw": 1,
+    "commercial__se": 2
+   }
+  },
+  {
+   "tag": "amenity=hospital",
+   "rows": 4,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 3
+   }
+  },
+  {
+   "tag": "amenity=public_building",
+   "rows": 4,
+   "files": {
+    "public_culture__nw": 2,
+    "public_culture__sw": 2
+   }
+  },
+  {
+   "tag": "healthcare=hospital",
+   "rows": 4,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 3
+   }
+  },
+  {
+   "tag": "leisure=garden",
+   "rows": 4,
+   "files": {
+    "parks_play__ne": 4
+   }
+  },
+  {
+   "tag": "shop=bakery",
+   "rows": 4,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 1,
+    "commercial__sw": 2
+   }
+  },
+  {
+   "tag": "shop=clothes",
+   "rows": 4,
+   "files": {
+    "commercial__ne": 4
+   }
+  },
+  {
+   "tag": "tourism=camp_site",
+   "rows": 4,
+   "files": {
+    "parks_play__sw": 4
+   }
+  },
+  {
+   "tag": "amenity=fire_station",
+   "rows": 3,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 1,
+    "public_culture__sw": 1
+   }
+  },
+  {
+   "tag": "amenity=public_bath",
+   "rows": 3,
+   "files": {
+    "other_unknown__nw": 2,
+    "other_unknown__sw": 1
+   }
+  },
+  {
+   "tag": "amenity=taxi",
+   "rows": 3,
+   "files": {
+    "other_unknown__ne": 2,
+    "other_unknown__se": 1
+   }
+  },
+  {
+   "tag": "historic=archaeological_site",
+   "rows": 3,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__sw": 1,
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "leisure=swimming_pool",
+   "rows": 3,
+   "files": {
+    "sports__nw": 1,
+    "sports__ne": 1,
+    "sports__sw": 1
+   }
+  },
+  {
+   "tag": "shop=mobile_phone",
+   "rows": 3,
+   "files": {
+    "commercial__ne": 3
+   }
+  },
+  {
+   "tag": "shop=newsagent",
+   "rows": 3,
+   "files": {
+    "commercial__se": 3
+   }
+  },
+  {
+   "tag": "shop=variety_store",
+   "rows": 3,
+   "files": {
+    "commercial__ne": 2,
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "shop=yes",
+   "rows": 3,
+   "files": {
+    "parks_play__sw": 1,
+    "commercial__sw": 2
+   }
+  },
+  {
+   "tag": "tourism=attraction",
+   "rows": 3,
+   "files": {
+    "public_culture__se": 3
+   }
+  },
+  {
+   "tag": "amenity=childcare",
+   "rows": 2,
+   "files": {
+    "public_culture__ne": 2
+   }
+  },
+  {
+   "tag": "amenity=driver_training",
+   "rows": 2,
+   "files": {
+    "other_unknown__nw": 1,
+    "other_unknown__ne": 1
+   }
+  },
+  {
+   "tag": "amenity=driving_school",
+   "rows": 2,
+   "files": {
+    "other_unknown__nw": 1,
+    "other_unknown__ne": 1
+   }
+  },
+  {
+   "tag": "amenity=food_court",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 2
+   }
+  },
+  {
+   "tag": "amenity=pub",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "amenity=townhall",
+   "rows": 2,
+   "files": {
+    "public_culture__ne": 1,
+    "public_culture__sw": 1
+   }
+  },
+  {
+   "tag": "amenity=university",
+   "rows": 2,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__sw": 1
+   }
+  },
+  {
+   "tag": "cuisine=burger",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 2
+   }
+  },
+  {
+   "tag": "cuisine=ramen",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 1,
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "cuisine=sushi",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 2
+   }
+  },
+  {
+   "tag": "leisure=adult_gaming_centre",
+   "rows": 2,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "leisure=miniature_golf",
+   "rows": 2,
+   "files": {
+    "sports__nw": 2
+   }
+  },
+  {
+   "tag": "leisure=track",
+   "rows": 2,
+   "files": {
+    "sports__ne": 2
+   }
+  },
+  {
+   "tag": "office=government",
+   "rows": 2,
+   "files": {
+    "public_culture__ne": 1,
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "office=research",
+   "rows": 2,
+   "files": {
+    "other_unknown__nw": 1,
+    "other_unknown__sw": 1
+   }
+  },
+  {
+   "tag": "office=yes",
+   "rows": 2,
+   "files": {
+    "other_unknown__sw": 2
+   }
+  },
+  {
+   "tag": "shop=car_parts",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "shop=car_repair",
+   "rows": 2,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "shop=doityourself",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 2
+   }
+  },
+  {
+   "tag": "shop=electronics",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "shop=funeral_directors",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "shop=hairdresser",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "shop=mall",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 2
+   }
+  },
+  {
+   "tag": "shop=sports",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 2
+   }
+  },
+  {
+   "tag": "shop=video",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 2
+   }
+  },
+  {
+   "tag": "tourism=artwork",
+   "rows": 2,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "tourism=hotel",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 1,
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "tourism=information",
+   "rows": 2,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__sw": 1
+   }
+  },
+  {
+   "tag": "tourism=viewpoint",
+   "rows": 2,
+   "files": {
+    "parks_play__se": 2
+   }
+  },
+  {
+   "tag": "amenity=arts_centre",
+   "rows": 1,
+   "files": {
+    "public_culture__ne": 1
+   }
+  },
+  {
+   "tag": "amenity=clinic",
+   "rows": 1,
+   "files": {
+    "public_culture__sw": 1
+   }
+  },
+  {
+   "tag": "amenity=college",
+   "rows": 1,
+   "files": {
+    "public_culture__ne": 1
+   }
+  },
+  {
+   "tag": "amenity=gambling",
+   "rows": 1,
+   "files": {
+    "other_unknown__ne": 1
+   }
+  },
+  {
+   "tag": "amenity=grave_yard",
+   "rows": 1,
+   "files": {
+    "other_unknown__sw": 1
+   }
+  },
+  {
+   "tag": "amenity=ice_cream",
+   "rows": 1,
+   "files": {
+    "commercial__nw": 1
+   }
+  },
+  {
+   "tag": "amenity=karaoke_box",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "amenity=library",
+   "rows": 1,
+   "files": {
+    "public_culture__se": 1
+   }
+  },
+  {
+   "tag": "amenity=love_hotel",
+   "rows": 1,
+   "files": {
+    "other_unknown__nw": 1
+   }
+  },
+  {
+   "tag": "amenity=theatre",
+   "rows": 1,
+   "files": {
+    "public_culture__ne": 1
+   }
+  },
+  {
+   "tag": "craft=gardener",
+   "rows": 1,
+   "files": {
+    "commercial__nw": 1
+   }
+  },
+  {
+   "tag": "cuisine=chicken",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "cuisine=coffee_shop",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "cuisine=italian",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "cuisine=pizza",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "cuisine=seafood",
+   "rows": 1,
+   "files": {
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "healthcare=clinic",
+   "rows": 1,
+   "files": {
+    "public_culture__sw": 1
+   }
+  },
+  {
+   "tag": "leisure=nature_reserve",
+   "rows": 1,
+   "files": {
+    "parks_play__se": 1
+   }
+  },
+  {
+   "tag": "leisure=stadium",
+   "rows": 1,
+   "files": {
+    "sports__ne": 1
+   }
+  },
+  {
+   "tag": "office=chamber",
+   "rows": 1,
+   "files": {
+    "other_unknown__ne": 1
+   }
+  },
+  {
+   "tag": "office=ngo",
+   "rows": 1,
+   "files": {
+    "other_unknown__ne": 1
+   }
+  },
+  {
+   "tag": "shop=baby_goods",
+   "rows": 1,
+   "files": {
+    "commercial__nw": 1
+   }
+  },
+  {
+   "tag": "shop=beauty",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "shop=bicycle",
+   "rows": 1,
+   "files": {
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "shop=confectionery",
+   "rows": 1,
+   "files": {
+    "commercial__se": 1
+   }
+  },
+  {
+   "tag": "shop=florist",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "shop=motorcycle",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "shop=optician",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "shop=outdoor",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "shop=second_hand",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "shop=ticket",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   }
+  },
+  {
+   "tag": "sport=athletics",
+   "rows": 1,
+   "files": {
+    "sports__ne": 1
+   }
+  },
+  {
+   "tag": "sport=golf",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   }
+  },
+  {
+   "tag": "tourism=museum",
+   "rows": 1,
+   "files": {
+    "public_culture__sw": 1
+   }
+  }
+ ]
+}

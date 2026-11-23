@@ -1,0 +1,6048 @@
+{
+ "version": "m3",
+ "dataset": "OpenStreetMap POIs, Sapporo, Hokkaido",
+ "zone_split": {
+  "method": "ward"
+ },
+ "zones": [
+  {
+   "id": "atsubetsu",
+   "ja": "厚別区",
+   "en": "Atsubetsu"
+  },
+  {
+   "id": "chuo",
+   "ja": "中央区",
+   "en": "Chuo"
+  },
+  {
+   "id": "higashi",
+   "ja": "東区",
+   "en": "Higashi"
+  },
+  {
+   "id": "kita",
+   "ja": "北区",
+   "en": "Kita"
+  },
+  {
+   "id": "kiyota",
+   "ja": "清田区",
+   "en": "Kiyota"
+  },
+  {
+   "id": "minami",
+   "ja": "南区",
+   "en": "Minami"
+  },
+  {
+   "id": "nishi",
+   "ja": "西区",
+   "en": "Nishi"
+  },
+  {
+   "id": "shiroishi",
+   "ja": "白石区",
+   "en": "Shiroishi"
+  },
+  {
+   "id": "teine",
+   "ja": "手稲区",
+   "en": "Teine"
+  },
+  {
+   "id": "toyohira",
+   "ja": "豊平区",
+   "en": "Toyohira"
+  }
+ ],
+ "files": [
+  {
+   "file": "category=parks_play/area=atsubetsu/part-0.parquet",
+   "id": "parks_play__atsubetsu",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "atsubetsu",
+   "rows": 189,
+   "bytes": 8002,
+   "bbox": [
+    141.446559,
+    43.010557,
+    141.501484,
+    43.072024
+   ]
+  },
+  {
+   "file": "category=parks_play/area=chuo/part-0.parquet",
+   "id": "parks_play__chuo",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "chuo",
+   "rows": 198,
+   "bytes": 12588,
+   "bbox": [
+    141.28227,
+    43.021699,
+    141.387395,
+    43.076074
+   ]
+  },
+  {
+   "file": "category=parks_play/area=higashi/part-0.parquet",
+   "id": "parks_play__higashi",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "higashi",
+   "rows": 326,
+   "bytes": 14317,
+   "bbox": [
+    141.345232,
+    43.06968,
+    141.445871,
+    43.140484
+   ]
+  },
+  {
+   "file": "category=parks_play/area=kita/part-0.parquet",
+   "id": "parks_play__kita",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "kita",
+   "rows": 533,
+   "bytes": 21005,
+   "bbox": [
+    141.271478,
+    43.067093,
+    141.416212,
+    43.177335
+   ]
+  },
+  {
+   "file": "category=parks_play/area=kiyota/part-0.parquet",
+   "id": "parks_play__kiyota",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "kiyota",
+   "rows": 198,
+   "bytes": 8048,
+   "bbox": [
+    141.413593,
+    42.932836,
+    141.478071,
+    43.023527
+   ]
+  },
+  {
+   "file": "category=parks_play/area=minami/part-0.parquet",
+   "id": "parks_play__minami",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "minami",
+   "rows": 351,
+   "bytes": 16679,
+   "bbox": [
+    141.152019,
+    42.912464,
+    141.393161,
+    43.022289
+   ]
+  },
+  {
+   "file": "category=parks_play/area=nishi/part-0.parquet",
+   "id": "parks_play__nishi",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "nishi",
+   "rows": 338,
+   "bytes": 11703,
+   "bbox": [
+    141.210575,
+    43.040494,
+    141.32679,
+    43.11418
+   ]
+  },
+  {
+   "file": "category=parks_play/area=shiroishi/part-0.parquet",
+   "id": "parks_play__shiroishi",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "shiroishi",
+   "rows": 165,
+   "bytes": 7898,
+   "bbox": [
+    141.369043,
+    43.024633,
+    141.452017,
+    43.09024
+   ]
+  },
+  {
+   "file": "category=parks_play/area=teine/part-0.parquet",
+   "id": "parks_play__teine",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "teine",
+   "rows": 336,
+   "bytes": 11247,
+   "bbox": [
+    141.189374,
+    43.089173,
+    141.283429,
+    43.149542
+   ]
+  },
+  {
+   "file": "category=parks_play/area=toyohira/part-0.parquet",
+   "id": "parks_play__toyohira",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "toyohira",
+   "rows": 229,
+   "bytes": 10075,
+   "bbox": [
+    141.353783,
+    42.980979,
+    141.429878,
+    43.054713
+   ]
+  },
+  {
+   "file": "category=sports/area=atsubetsu/part-0.parquet",
+   "id": "sports__atsubetsu",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "atsubetsu",
+   "rows": 99,
+   "bytes": 6461,
+   "bbox": [
+    141.447945,
+    43.014234,
+    141.502892,
+    43.070498
+   ]
+  },
+  {
+   "file": "category=sports/area=chuo/part-0.parquet",
+   "id": "sports__chuo",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "chuo",
+   "rows": 111,
+   "bytes": 8078,
+   "bbox": [
+    141.278815,
+    43.02124,
+    141.37689,
+    43.08494
+   ]
+  },
+  {
+   "file": "category=sports/area=higashi/part-0.parquet",
+   "id": "sports__higashi",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "higashi",
+   "rows": 152,
+   "bytes": 8628,
+   "bbox": [
+    141.348446,
+    43.069303,
+    141.449762,
+    43.152129
+   ]
+  },
+  {
+   "file": "category=sports/area=kita/part-0.parquet",
+   "id": "sports__kita",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "kita",
+   "rows": 174,
+   "bytes": 8298,
+   "bbox": [
+    141.286127,
+    43.068918,
+    141.422634,
+    43.172355
+   ]
+  },
+  {
+   "file": "category=sports/area=kiyota/part-0.parquet",
+   "id": "sports__kiyota",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "kiyota",
+   "rows": 96,
+   "bytes": 7432,
+   "bbox": [
+    141.393444,
+    42.924529,
+    141.476543,
+    43.017848
+   ]
+  },
+  {
+   "file": "category=sports/area=minami/part-0.parquet",
+   "id": "sports__minami",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "minami",
+   "rows": 125,
+   "bytes": 7413,
+   "bbox": [
+    141.158455,
+    42.904161,
+    141.388189,
+    43.017388
+   ]
+  },
+  {
+   "file": "category=sports/area=nishi/part-0.parquet",
+   "id": "sports__nishi",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "nishi",
+   "rows": 70,
+   "bytes": 6245,
+   "bbox": [
+    141.245126,
+    43.053975,
+    141.317746,
+    43.113892
+   ]
+  },
+  {
+   "file": "category=sports/area=shiroishi/part-0.parquet",
+   "id": "sports__shiroishi",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "shiroishi",
+   "rows": 101,
+   "bytes": 6825,
+   "bbox": [
+    141.379741,
+    43.025242,
+    141.458012,
+    43.093032
+   ]
+  },
+  {
+   "file": "category=sports/area=teine/part-0.parquet",
+   "id": "sports__teine",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "teine",
+   "rows": 92,
+   "bytes": 6530,
+   "bbox": [
+    141.18934,
+    43.096861,
+    141.280751,
+    43.156359
+   ]
+  },
+  {
+   "file": "category=sports/area=toyohira/part-0.parquet",
+   "id": "sports__toyohira",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "toyohira",
+   "rows": 127,
+   "bytes": 8151,
+   "bbox": [
+    141.355386,
+    42.964236,
+    141.430366,
+    43.04878
+   ]
+  },
+  {
+   "file": "category=commercial/area=atsubetsu/part-0.parquet",
+   "id": "commercial__atsubetsu",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "atsubetsu",
+   "rows": 331,
+   "bytes": 19573,
+   "bbox": [
+    141.44588,
+    43.010459,
+    141.500241,
+    43.061522
+   ]
+  },
+  {
+   "file": "category=commercial/area=chuo/part-0.parquet",
+   "id": "commercial__chuo",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "chuo",
+   "rows": 2432,
+   "bytes": 107799,
+   "bbox": [
+    141.273864,
+    43.01784,
+    141.387407,
+    43.074337
+   ]
+  },
+  {
+   "file": "category=commercial/area=higashi/part-0.parquet",
+   "id": "commercial__higashi",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "higashi",
+   "rows": 732,
+   "bytes": 36304,
+   "bbox": [
+    141.343999,
+    43.069102,
+    141.440385,
+    43.129346
+   ]
+  },
+  {
+   "file": "category=commercial/area=kita/part-0.parquet",
+   "id": "commercial__kita",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "kita",
+   "rows": 831,
+   "bytes": 41792,
+   "bbox": [
+    141.278477,
+    43.067363,
+    141.412301,
+    43.172479
+   ]
+  },
+  {
+   "file": "category=commercial/area=kiyota/part-0.parquet",
+   "id": "commercial__kiyota",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "kiyota",
+   "rows": 349,
+   "bytes": 21138,
+   "bbox": [
+    141.424917,
+    42.94513,
+    141.475414,
+    43.025609
+   ]
+  },
+  {
+   "file": "category=commercial/area=minami/part-0.parquet",
+   "id": "commercial__minami",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "minami",
+   "rows": 361,
+   "bytes": 22248,
+   "bbox": [
+    141.153991,
+    42.913499,
+    141.387036,
+    43.022262
+   ]
+  },
+  {
+   "file": "category=commercial/area=nishi/part-0.parquet",
+   "id": "commercial__nishi",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "nishi",
+   "rows": 565,
+   "bytes": 30230,
+   "bbox": [
+    141.196773,
+    43.055974,
+    141.327203,
+    43.111216
+   ]
+  },
+  {
+   "file": "category=commercial/area=shiroishi/part-0.parquet",
+   "id": "commercial__shiroishi",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "shiroishi",
+   "rows": 512,
+   "bytes": 26336,
+   "bbox": [
+    141.368325,
+    43.023911,
+    141.454301,
+    43.081126
+   ]
+  },
+  {
+   "file": "category=commercial/area=teine/part-0.parquet",
+   "id": "commercial__teine",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "teine",
+   "rows": 216,
+   "bytes": 14891,
+   "bbox": [
+    141.192663,
+    43.091202,
+    141.280043,
+    43.145098
+   ]
+  },
+  {
+   "file": "category=commercial/area=toyohira/part-0.parquet",
+   "id": "commercial__toyohira",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "toyohira",
+   "rows": 669,
+   "bytes": 33712,
+   "bbox": [
+    141.355724,
+    42.989563,
+    141.433601,
+    43.055405
+   ]
+  },
+  {
+   "file": "category=public_culture/area=atsubetsu/part-0.parquet",
+   "id": "public_culture__atsubetsu",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "atsubetsu",
+   "rows": 253,
+   "bytes": 15260,
+   "bbox": [
+    141.445721,
+    43.014219,
+    141.503259,
+    43.067156
+   ]
+  },
+  {
+   "file": "category=public_culture/area=chuo/part-0.parquet",
+   "id": "public_culture__chuo",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "chuo",
+   "rows": 1106,
+   "bytes": 45963,
+   "bbox": [
+    141.267568,
+    43.014303,
+    141.386958,
+    43.076647
+   ]
+  },
+  {
+   "file": "category=public_culture/area=higashi/part-0.parquet",
+   "id": "public_culture__higashi",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "higashi",
+   "rows": 597,
+   "bytes": 26998,
+   "bbox": [
+    141.344479,
+    43.069236,
+    141.437235,
+    43.151556
+   ]
+  },
+  {
+   "file": "category=public_culture/area=kita/part-0.parquet",
+   "id": "public_culture__kita",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "kita",
+   "rows": 682,
+   "bytes": 31238,
+   "bbox": [
+    141.272526,
+    43.067532,
+    141.412992,
+    43.169835
+   ]
+  },
+  {
+   "file": "category=public_culture/area=kiyota/part-0.parquet",
+   "id": "public_culture__kiyota",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "kiyota",
+   "rows": 152,
+   "bytes": 10869,
+   "bbox": [
+    141.424701,
+    42.949893,
+    141.47764,
+    43.025569
+   ]
+  },
+  {
+   "file": "category=public_culture/area=minami/part-0.parquet",
+   "id": "public_culture__minami",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "minami",
+   "rows": 509,
+   "bytes": 22199,
+   "bbox": [
+    141.152268,
+    42.913308,
+    141.387534,
+    43.031012
+   ]
+  },
+  {
+   "file": "category=public_culture/area=nishi/part-0.parquet",
+   "id": "public_culture__nishi",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "nishi",
+   "rows": 303,
+   "bytes": 16303,
+   "bbox": [
+    141.242577,
+    43.051538,
+    141.326109,
+    43.113463
+   ]
+  },
+  {
+   "file": "category=public_culture/area=shiroishi/part-0.parquet",
+   "id": "public_culture__shiroishi",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "shiroishi",
+   "rows": 241,
+   "bytes": 14012,
+   "bbox": [
+    141.369533,
+    43.023374,
+    141.456466,
+    43.081375
+   ]
+  },
+  {
+   "file": "category=public_culture/area=teine/part-0.parquet",
+   "id": "public_culture__teine",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "teine",
+   "rows": 179,
+   "bytes": 11611,
+   "bbox": [
+    141.19551,
+    43.093875,
+    141.277761,
+    43.159028
+   ]
+  },
+  {
+   "file": "category=public_culture/area=toyohira/part-0.parquet",
+   "id": "public_culture__toyohira",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "toyohira",
+   "rows": 410,
+   "bytes": 20069,
+   "bbox": [
+    141.355911,
+    42.986586,
+    141.428286,
+    43.055641
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=atsubetsu/part-0.parquet",
+   "id": "other_unknown__atsubetsu",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "atsubetsu",
+   "rows": 47,
+   "bytes": 6767,
+   "bbox": [
+    141.445188,
+    43.020701,
+    141.500398,
+    43.057621
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=chuo/part-0.parquet",
+   "id": "other_unknown__chuo",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "chuo",
+   "rows": 343,
+   "bytes": 20092,
+   "bbox": [
+    141.277952,
+    43.023253,
+    141.381545,
+    43.074428
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=higashi/part-0.parquet",
+   "id": "other_unknown__higashi",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "higashi",
+   "rows": 124,
+   "bytes": 8823,
+   "bbox": [
+    141.346602,
+    43.070226,
+    141.446048,
+    43.131207
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=kita/part-0.parquet",
+   "id": "other_unknown__kita",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "kita",
+   "rows": 229,
+   "bytes": 12642,
+   "bbox": [
+    141.27129,
+    43.068015,
+    141.424505,
+    43.172471
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=kiyota/part-0.parquet",
+   "id": "other_unknown__kiyota",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "kiyota",
+   "rows": 29,
+   "bytes": 6034,
+   "bbox": [
+    141.41306,
+    42.932135,
+    141.462855,
+    43.022439
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=minami/part-0.parquet",
+   "id": "other_unknown__minami",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "minami",
+   "rows": 136,
+   "bytes": 9060,
+   "bbox": [
+    141.058344,
+    42.912706,
+    141.392316,
+    43.113683
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=nishi/part-0.parquet",
+   "id": "other_unknown__nishi",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "nishi",
+   "rows": 65,
+   "bytes": 7662,
+   "bbox": [
+    141.227197,
+    43.05193,
+    141.321426,
+    43.110472
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=shiroishi/part-0.parquet",
+   "id": "other_unknown__shiroishi",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "shiroishi",
+   "rows": 69,
+   "bytes": 7644,
+   "bbox": [
+    141.368075,
+    43.027922,
+    141.463238,
+    43.090491
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=teine/part-0.parquet",
+   "id": "other_unknown__teine",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "teine",
+   "rows": 29,
+   "bytes": 5525,
+   "bbox": [
+    141.205114,
+    43.084351,
+    141.272137,
+    43.153147
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=toyohira/part-0.parquet",
+   "id": "other_unknown__toyohira",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "toyohira",
+   "rows": 99,
+   "bytes": 9253,
+   "bbox": [
+    141.354834,
+    42.985506,
+    141.428439,
+    43.054208
+   ]
+  }
+ ],
+ "tags": [
+  {
+   "tag": "leisure=park",
+   "rows": 2511,
+   "files": {
+    "parks_play__atsubetsu": 158,
+    "parks_play__chuo": 138,
+    "parks_play__higashi": 301,
+    "parks_play__kita": 497,
+    "parks_play__kiyota": 177,
+    "parks_play__minami": 307,
+    "parks_play__nishi": 305,
+    "parks_play__shiroishi": 153,
+    "parks_play__teine": 273,
+    "parks_play__toyohira": 202
+   }
+  },
+  {
+   "tag": "amenity=restaurant",
+   "rows": 1278,
+   "files": {
+    "commercial__atsubetsu": 35,
+    "commercial__chuo": 565,
+    "commercial__higashi": 97,
+    "commercial__kita": 153,
+    "commercial__kiyota": 68,
+    "commercial__minami": 45,
+    "commercial__nishi": 82,
+    "commercial__shiroishi": 81,
+    "commercial__teine": 27,
+    "commercial__toyohira": 125
+   }
+  },
+  {
+   "tag": "shop=convenience",
+   "rows": 1002,
+   "files": {
+    "commercial__atsubetsu": 45,
+    "commercial__chuo": 264,
+    "commercial__higashi": 138,
+    "commercial__kita": 145,
+    "commercial__kiyota": 29,
+    "commercial__minami": 63,
+    "commercial__nishi": 78,
+    "commercial__shiroishi": 100,
+    "commercial__teine": 36,
+    "commercial__toyohira": 104
+   }
+  },
+  {
+   "tag": "leisure=pitch",
+   "rows": 789,
+   "files": {
+    "sports__atsubetsu": 72,
+    "sports__chuo": 73,
+    "sports__higashi": 103,
+    "sports__kita": 129,
+    "sports__kiyota": 65,
+    "sports__minami": 86,
+    "sports__nishi": 46,
+    "sports__shiroishi": 70,
+    "sports__teine": 57,
+    "sports__toyohira": 88
+   }
+  },
+  {
+   "tag": "amenity=dentist",
+   "rows": 515,
+   "files": {
+    "public_culture__atsubetsu": 15,
+    "public_culture__chuo": 85,
+    "public_culture__higashi": 125,
+    "public_culture__kita": 151,
+    "public_culture__kiyota": 16,
+    "public_culture__minami": 26,
+    "public_culture__nishi": 23,
+    "public_culture__shiroishi": 21,
+    "public_culture__teine": 6,
+    "public_culture__toyohira": 47
+   }
+  },
+  {
+   "tag": "healthcare=dentist",
+   "rows": 510,
+   "files": {
+    "public_culture__atsubetsu": 15,
+    "public_culture__chuo": 85,
+    "public_culture__higashi": 125,
+    "public_culture__kita": 151,
+    "public_culture__kiyota": 16,
+    "public_culture__minami": 21,
+    "public_culture__nishi": 23,
+    "public_culture__shiroishi": 21,
+    "public_culture__teine": 6,
+    "public_culture__toyohira": 47
+   }
+  },
+  {
+   "tag": "amenity=toilets",
+   "rows": 492,
+   "files": {
+    "parks_play__chuo": 1,
+    "other_unknown__atsubetsu": 17,
+    "other_unknown__chuo": 92,
+    "other_unknown__higashi": 85,
+    "other_unknown__kita": 107,
+    "other_unknown__kiyota": 4,
+    "other_unknown__minami": 91,
+    "other_unknown__nishi": 13,
+    "other_unknown__shiroishi": 23,
+    "other_unknown__teine": 14,
+    "other_unknown__toyohira": 45
+   }
+  },
+  {
+   "tag": "amenity=doctors",
+   "rows": 471,
+   "files": {
+    "public_culture__atsubetsu": 10,
+    "public_culture__chuo": 107,
+    "public_culture__higashi": 93,
+    "public_culture__kita": 117,
+    "public_culture__kiyota": 9,
+    "public_culture__minami": 30,
+    "public_culture__nishi": 34,
+    "public_culture__shiroishi": 18,
+    "public_culture__teine": 5,
+    "public_culture__toyohira": 48
+   }
+  },
+  {
+   "tag": "healthcare=doctor",
+   "rows": 467,
+   "files": {
+    "public_culture__atsubetsu": 10,
+    "public_culture__chuo": 107,
+    "public_culture__higashi": 93,
+    "public_culture__kita": 117,
+    "public_culture__kiyota": 9,
+    "public_culture__minami": 26,
+    "public_culture__nishi": 34,
+    "public_culture__shiroishi": 18,
+    "public_culture__teine": 5,
+    "public_culture__toyohira": 48
+   }
+  },
+  {
+   "tag": "amenity=school",
+   "rows": 424,
+   "files": {
+    "public_culture__atsubetsu": 30,
+    "public_culture__chuo": 40,
+    "public_culture__higashi": 54,
+    "public_culture__kita": 62,
+    "public_culture__kiyota": 28,
+    "public_culture__minami": 50,
+    "public_culture__nishi": 39,
+    "public_culture__shiroishi": 41,
+    "public_culture__teine": 35,
+    "public_culture__toyohira": 45
+   }
+  },
+  {
+   "tag": "amenity=pharmacy",
+   "rows": 354,
+   "files": {
+    "commercial__atsubetsu": 9,
+    "commercial__chuo": 34,
+    "commercial__higashi": 29,
+    "commercial__kita": 24,
+    "commercial__kiyota": 12,
+    "commercial__minami": 7,
+    "commercial__nishi": 19,
+    "commercial__shiroishi": 22,
+    "commercial__teine": 6,
+    "commercial__toyohira": 16,
+    "public_culture__atsubetsu": 9,
+    "public_culture__chuo": 53,
+    "public_culture__higashi": 20,
+    "public_culture__kita": 13,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 12,
+    "public_culture__nishi": 24,
+    "public_culture__shiroishi": 11,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 23
+   }
+  },
+  {
+   "tag": "healthcare=pharmacy",
+   "rows": 350,
+   "files": {
+    "commercial__atsubetsu": 9,
+    "commercial__chuo": 33,
+    "commercial__higashi": 30,
+    "commercial__kita": 23,
+    "commercial__kiyota": 12,
+    "commercial__minami": 7,
+    "commercial__nishi": 19,
+    "commercial__shiroishi": 22,
+    "commercial__teine": 6,
+    "commercial__toyohira": 16,
+    "public_culture__atsubetsu": 9,
+    "public_culture__chuo": 53,
+    "public_culture__higashi": 20,
+    "public_culture__kita": 13,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 9,
+    "public_culture__nishi": 24,
+    "public_culture__shiroishi": 11,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 23
+   }
+  },
+  {
+   "tag": "amenity=cafe",
+   "rows": 329,
+   "files": {
+    "commercial__atsubetsu": 9,
+    "commercial__chuo": 187,
+    "commercial__higashi": 20,
+    "commercial__kita": 30,
+    "commercial__kiyota": 14,
+    "commercial__minami": 20,
+    "commercial__nishi": 20,
+    "commercial__shiroishi": 12,
+    "commercial__teine": 4,
+    "commercial__toyohira": 13
+   }
+  },
+  {
+   "tag": "amenity=place_of_worship",
+   "rows": 329,
+   "files": {
+    "public_culture__atsubetsu": 16,
+    "public_culture__chuo": 110,
+    "public_culture__higashi": 40,
+    "public_culture__kita": 41,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 53,
+    "public_culture__nishi": 13,
+    "public_culture__shiroishi": 13,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 32
+   }
+  },
+  {
+   "tag": "amenity=public_building",
+   "rows": 321,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 68,
+    "public_culture__higashi": 22,
+    "public_culture__kita": 11,
+    "public_culture__kiyota": 9,
+    "public_culture__minami": 52,
+    "public_culture__nishi": 57,
+    "public_culture__shiroishi": 18,
+    "public_culture__teine": 52,
+    "public_culture__toyohira": 31
+   }
+  },
+  {
+   "tag": "sport=tennis",
+   "rows": 313,
+   "files": {
+    "sports__atsubetsu": 27,
+    "sports__chuo": 32,
+    "sports__higashi": 35,
+    "sports__kita": 54,
+    "sports__kiyota": 21,
+    "sports__minami": 36,
+    "sports__nishi": 19,
+    "sports__shiroishi": 25,
+    "sports__teine": 24,
+    "sports__toyohira": 32,
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 4,
+    "other_unknown__teine": 1
+   }
+  },
+  {
+   "tag": "office=company",
+   "rows": 308,
+   "files": {
+    "commercial__atsubetsu": 15,
+    "commercial__chuo": 189,
+    "commercial__higashi": 13,
+    "commercial__kita": 7,
+    "commercial__kiyota": 6,
+    "commercial__minami": 6,
+    "commercial__nishi": 27,
+    "commercial__shiroishi": 11,
+    "commercial__teine": 2,
+    "commercial__toyohira": 32
+   }
+  },
+  {
+   "tag": "amenity=fast_food",
+   "rows": 306,
+   "files": {
+    "commercial__atsubetsu": 22,
+    "commercial__chuo": 70,
+    "commercial__higashi": 46,
+    "commercial__kita": 48,
+    "commercial__kiyota": 15,
+    "commercial__minami": 10,
+    "commercial__nishi": 25,
+    "commercial__shiroishi": 33,
+    "commercial__teine": 8,
+    "commercial__toyohira": 29
+   }
+  },
+  {
+   "tag": "shop=supermarket",
+   "rows": 298,
+   "files": {
+    "commercial__atsubetsu": 20,
+    "commercial__chuo": 53,
+    "commercial__higashi": 44,
+    "commercial__kita": 44,
+    "commercial__kiyota": 20,
+    "commercial__minami": 17,
+    "commercial__nishi": 25,
+    "commercial__shiroishi": 23,
+    "commercial__teine": 20,
+    "commercial__toyohira": 32
+   }
+  },
+  {
+   "tag": "amenity=fuel",
+   "rows": 265,
+   "files": {
+    "commercial__atsubetsu": 11,
+    "commercial__chuo": 34,
+    "commercial__higashi": 48,
+    "commercial__kita": 33,
+    "commercial__kiyota": 15,
+    "commercial__minami": 20,
+    "commercial__nishi": 25,
+    "commercial__shiroishi": 33,
+    "commercial__teine": 18,
+    "commercial__toyohira": 28
+   }
+  },
+  {
+   "tag": "shop=car",
+   "rows": 260,
+   "files": {
+    "commercial__atsubetsu": 21,
+    "commercial__chuo": 34,
+    "commercial__higashi": 48,
+    "commercial__kita": 22,
+    "commercial__kiyota": 24,
+    "commercial__minami": 13,
+    "commercial__nishi": 25,
+    "commercial__shiroishi": 27,
+    "commercial__teine": 11,
+    "commercial__toyohira": 35
+   }
+  },
+  {
+   "tag": "amenity=bank",
+   "rows": 246,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 67,
+    "commercial__higashi": 33,
+    "commercial__kita": 36,
+    "commercial__kiyota": 8,
+    "commercial__minami": 18,
+    "commercial__nishi": 24,
+    "commercial__shiroishi": 21,
+    "commercial__teine": 9,
+    "commercial__toyohira": 23
+   }
+  },
+  {
+   "tag": "leisure=playground",
+   "rows": 240,
+   "files": {
+    "parks_play__atsubetsu": 25,
+    "parks_play__chuo": 19,
+    "parks_play__higashi": 12,
+    "parks_play__kita": 28,
+    "parks_play__kiyota": 13,
+    "parks_play__minami": 28,
+    "parks_play__nishi": 24,
+    "parks_play__shiroishi": 12,
+    "parks_play__teine": 60,
+    "parks_play__toyohira": 19
+   }
+  },
+  {
+   "tag": "amenity=kindergarten",
+   "rows": 218,
+   "files": {
+    "public_culture__atsubetsu": 4,
+    "public_culture__chuo": 32,
+    "public_culture__higashi": 51,
+    "public_culture__kita": 56,
+    "public_culture__kiyota": 9,
+    "public_culture__minami": 26,
+    "public_culture__nishi": 7,
+    "public_culture__shiroishi": 10,
+    "public_culture__teine": 2,
+    "public_culture__toyohira": 21
+   }
+  },
+  {
+   "tag": "amenity=post_office",
+   "rows": 213,
+   "files": {
+    "public_culture__atsubetsu": 8,
+    "public_culture__chuo": 50,
+    "public_culture__higashi": 30,
+    "public_culture__kita": 33,
+    "public_culture__kiyota": 10,
+    "public_culture__minami": 20,
+    "public_culture__nishi": 15,
+    "public_culture__shiroishi": 21,
+    "public_culture__teine": 8,
+    "public_culture__toyohira": 18
+   }
+  },
+  {
+   "tag": "tourism=hotel",
+   "rows": 211,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 146,
+    "commercial__higashi": 4,
+    "commercial__kita": 21,
+    "commercial__minami": 29,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=pub",
+   "rows": 198,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 103,
+    "commercial__higashi": 6,
+    "commercial__kita": 36,
+    "commercial__kiyota": 8,
+    "commercial__minami": 7,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 19,
+    "commercial__toyohira": 11
+   }
+  },
+  {
+   "tag": "shop=chemist",
+   "rows": 198,
+   "files": {
+    "commercial__atsubetsu": 9,
+    "commercial__chuo": 44,
+    "commercial__higashi": 31,
+    "commercial__kita": 25,
+    "commercial__kiyota": 12,
+    "commercial__minami": 7,
+    "commercial__nishi": 19,
+    "commercial__shiroishi": 22,
+    "commercial__teine": 9,
+    "commercial__toyohira": 20
+   }
+  },
+  {
+   "tag": "tourism=artwork",
+   "rows": 195,
+   "files": {
+    "public_culture__atsubetsu": 2,
+    "public_culture__chuo": 116,
+    "public_culture__higashi": 3,
+    "public_culture__kita": 7,
+    "public_culture__minami": 62,
+    "public_culture__nishi": 2,
+    "public_culture__shiroishi": 1,
+    "public_culture__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=hospital",
+   "rows": 187,
+   "files": {
+    "public_culture__atsubetsu": 16,
+    "public_culture__chuo": 38,
+    "public_culture__higashi": 26,
+    "public_culture__kita": 21,
+    "public_culture__kiyota": 12,
+    "public_culture__minami": 19,
+    "public_culture__nishi": 22,
+    "public_culture__shiroishi": 12,
+    "public_culture__teine": 8,
+    "public_culture__toyohira": 13
+   }
+  },
+  {
+   "tag": "tourism=information",
+   "rows": 181,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__toyohira": 1,
+    "public_culture__atsubetsu": 41,
+    "public_culture__chuo": 81,
+    "public_culture__higashi": 1,
+    "public_culture__kita": 4,
+    "public_culture__minami": 29,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 8,
+    "public_culture__toyohira": 14
+   }
+  },
+  {
+   "tag": "healthcare=hospital",
+   "rows": 179,
+   "files": {
+    "public_culture__atsubetsu": 16,
+    "public_culture__chuo": 38,
+    "public_culture__higashi": 26,
+    "public_culture__kita": 21,
+    "public_culture__kiyota": 12,
+    "public_culture__minami": 11,
+    "public_culture__nishi": 22,
+    "public_culture__shiroishi": 12,
+    "public_culture__teine": 8,
+    "public_culture__toyohira": 13
+   }
+  },
+  {
+   "tag": "sport=swimming",
+   "rows": 178,
+   "files": {
+    "sports__atsubetsu": 18,
+    "sports__chuo": 4,
+    "sports__higashi": 28,
+    "sports__kita": 27,
+    "sports__kiyota": 14,
+    "sports__minami": 7,
+    "sports__nishi": 14,
+    "sports__shiroishi": 18,
+    "sports__teine": 20,
+    "sports__toyohira": 21,
+    "other_unknown__kita": 7
+   }
+  },
+  {
+   "tag": "amenity=community_centre",
+   "rows": 176,
+   "files": {
+    "public_culture__atsubetsu": 8,
+    "public_culture__chuo": 29,
+    "public_culture__higashi": 33,
+    "public_culture__kita": 30,
+    "public_culture__kiyota": 8,
+    "public_culture__minami": 19,
+    "public_culture__nishi": 14,
+    "public_culture__shiroishi": 7,
+    "public_culture__teine": 8,
+    "public_culture__toyohira": 20
+   }
+  },
+  {
+   "tag": "cuisine=ramen",
+   "rows": 172,
+   "files": {
+    "commercial__atsubetsu": 8,
+    "commercial__chuo": 60,
+    "commercial__higashi": 15,
+    "commercial__kita": 21,
+    "commercial__kiyota": 10,
+    "commercial__minami": 6,
+    "commercial__nishi": 11,
+    "commercial__shiroishi": 8,
+    "commercial__teine": 6,
+    "commercial__toyohira": 27
+   }
+  },
+  {
+   "tag": "leisure=swimming_pool",
+   "rows": 166,
+   "files": {
+    "sports__atsubetsu": 16,
+    "sports__chuo": 5,
+    "sports__higashi": 26,
+    "sports__kita": 26,
+    "sports__kiyota": 15,
+    "sports__minami": 10,
+    "sports__nishi": 16,
+    "sports__shiroishi": 20,
+    "sports__teine": 14,
+    "sports__toyohira": 18
+   }
+  },
+  {
+   "tag": "amenity=social_facility",
+   "rows": 157,
+   "files": {
+    "public_culture__atsubetsu": 9,
+    "public_culture__chuo": 31,
+    "public_culture__higashi": 22,
+    "public_culture__kita": 16,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 12,
+    "public_culture__nishi": 11,
+    "public_culture__shiroishi": 13,
+    "public_culture__teine": 19,
+    "public_culture__toyohira": 17
+   }
+  },
+  {
+   "tag": "sport=multi",
+   "rows": 156,
+   "files": {
+    "sports__atsubetsu": 22,
+    "sports__chuo": 10,
+    "sports__higashi": 11,
+    "sports__kita": 17,
+    "sports__kiyota": 22,
+    "sports__minami": 8,
+    "sports__nishi": 14,
+    "sports__shiroishi": 20,
+    "sports__teine": 12,
+    "sports__toyohira": 18,
+    "commercial__toyohira": 1,
+    "other_unknown__minami": 1
+   }
+  },
+  {
+   "tag": "shop=hairdresser",
+   "rows": 138,
+   "files": {
+    "commercial__atsubetsu": 11,
+    "commercial__chuo": 33,
+    "commercial__higashi": 3,
+    "commercial__kita": 13,
+    "commercial__kiyota": 10,
+    "commercial__minami": 5,
+    "commercial__nishi": 23,
+    "commercial__shiroishi": 12,
+    "commercial__teine": 1,
+    "commercial__toyohira": 27
+   }
+  },
+  {
+   "tag": "cuisine=japanese",
+   "rows": 135,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 65,
+    "commercial__higashi": 12,
+    "commercial__kita": 13,
+    "commercial__kiyota": 9,
+    "commercial__minami": 2,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 3,
+    "commercial__toyohira": 13
+   }
+  },
+  {
+   "tag": "shop=clothes",
+   "rows": 133,
+   "files": {
+    "commercial__atsubetsu": 12,
+    "commercial__chuo": 31,
+    "commercial__higashi": 18,
+    "commercial__kita": 14,
+    "commercial__kiyota": 15,
+    "commercial__minami": 5,
+    "commercial__nishi": 14,
+    "commercial__shiroishi": 9,
+    "commercial__teine": 6,
+    "commercial__toyohira": 9
+   }
+  },
+  {
+   "tag": "sport=baseball",
+   "rows": 130,
+   "files": {
+    "sports__atsubetsu": 10,
+    "sports__chuo": 11,
+    "sports__higashi": 25,
+    "sports__kita": 23,
+    "sports__kiyota": 7,
+    "sports__minami": 15,
+    "sports__nishi": 5,
+    "sports__shiroishi": 9,
+    "sports__teine": 10,
+    "sports__toyohira": 13,
+    "other_unknown__higashi": 2
+   }
+  },
+  {
+   "tag": "historic=memorial",
+   "rows": 120,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 76,
+    "public_culture__kita": 12,
+    "public_culture__minami": 11,
+    "public_culture__nishi": 2,
+    "public_culture__shiroishi": 4,
+    "public_culture__teine": 2,
+    "public_culture__toyohira": 12
+   }
+  },
+  {
+   "tag": "shop=variety_store",
+   "rows": 114,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 26,
+    "commercial__higashi": 17,
+    "commercial__kita": 18,
+    "commercial__kiyota": 7,
+    "commercial__minami": 6,
+    "commercial__nishi": 11,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 8,
+    "commercial__toyohira": 7
+   }
+  },
+  {
+   "tag": "amenity=police",
+   "rows": 106,
+   "files": {
+    "public_culture__atsubetsu": 5,
+    "public_culture__chuo": 25,
+    "public_culture__higashi": 11,
+    "public_culture__kita": 13,
+    "public_culture__kiyota": 5,
+    "public_culture__minami": 8,
+    "public_culture__nishi": 10,
+    "public_culture__shiroishi": 10,
+    "public_culture__teine": 7,
+    "public_culture__toyohira": 12
+   }
+  },
+  {
+   "tag": "cuisine=coffee_shop",
+   "rows": 105,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 56,
+    "commercial__higashi": 11,
+    "commercial__kita": 5,
+    "commercial__kiyota": 4,
+    "commercial__minami": 5,
+    "commercial__nishi": 10,
+    "commercial__shiroishi": 3,
+    "commercial__teine": 1,
+    "commercial__toyohira": 5,
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=mobile_phone",
+   "rows": 103,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 19,
+    "commercial__higashi": 15,
+    "commercial__kita": 21,
+    "commercial__kiyota": 4,
+    "commercial__minami": 10,
+    "commercial__nishi": 13,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 1,
+    "commercial__toyohira": 11
+   }
+  },
+  {
+   "tag": "amenity=bar",
+   "rows": 95,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 72,
+    "commercial__higashi": 1,
+    "commercial__kita": 3,
+    "commercial__minami": 1,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 4
+   }
+  },
+  {
+   "tag": "amenity=veterinary",
+   "rows": 92,
+   "files": {
+    "public_culture__atsubetsu": 5,
+    "public_culture__chuo": 16,
+    "public_culture__higashi": 21,
+    "public_culture__kita": 24,
+    "public_culture__kiyota": 3,
+    "public_culture__minami": 7,
+    "public_culture__nishi": 4,
+    "public_culture__shiroishi": 4,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 7
+   }
+  },
+  {
+   "tag": "cuisine=burger",
+   "rows": 91,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 22,
+    "commercial__higashi": 8,
+    "commercial__kita": 16,
+    "commercial__kiyota": 5,
+    "commercial__minami": 4,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 4,
+    "commercial__toyohira": 10
+   }
+  },
+  {
+   "tag": "cuisine=noodle",
+   "rows": 82,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 22,
+    "commercial__higashi": 11,
+    "commercial__kita": 9,
+    "commercial__kiyota": 5,
+    "commercial__minami": 5,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 15,
+    "commercial__teine": 2,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "cuisine=sushi",
+   "rows": 79,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 20,
+    "commercial__higashi": 12,
+    "commercial__kita": 9,
+    "commercial__kiyota": 7,
+    "commercial__minami": 3,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 9,
+    "commercial__teine": 3,
+    "commercial__toyohira": 7
+   }
+  },
+  {
+   "tag": "shop=dry_cleaning",
+   "rows": 77,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 23,
+    "commercial__higashi": 6,
+    "commercial__kita": 10,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 11,
+    "commercial__shiroishi": 5,
+    "commercial__teine": 2,
+    "commercial__toyohira": 12
+   }
+  },
+  {
+   "tag": "amenity=bicycle_rental",
+   "rows": 75,
+   "files": {
+    "other_unknown__atsubetsu": 4,
+    "other_unknown__chuo": 56,
+    "other_unknown__higashi": 5,
+    "other_unknown__kita": 8,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "shop=bakery",
+   "rows": 75,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 35,
+    "commercial__higashi": 5,
+    "commercial__kita": 5,
+    "commercial__kiyota": 5,
+    "commercial__minami": 5,
+    "commercial__nishi": 9,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=confectionery",
+   "rows": 74,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 26,
+    "commercial__higashi": 11,
+    "commercial__kita": 5,
+    "commercial__kiyota": 7,
+    "commercial__minami": 3,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 4,
+    "commercial__teine": 2,
+    "commercial__toyohira": 5
+   }
+  },
+  {
+   "tag": "amenity=clinic",
+   "rows": 71,
+   "files": {
+    "public_culture__atsubetsu": 8,
+    "public_culture__chuo": 12,
+    "public_culture__higashi": 9,
+    "public_culture__kita": 10,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 6,
+    "public_culture__shiroishi": 6,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 8
+   }
+  },
+  {
+   "tag": "healthcare=clinic",
+   "rows": 71,
+   "files": {
+    "public_culture__atsubetsu": 8,
+    "public_culture__chuo": 12,
+    "public_culture__higashi": 9,
+    "public_culture__kita": 10,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 6,
+    "public_culture__shiroishi": 6,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 8
+   }
+  },
+  {
+   "tag": "cuisine=barbecue",
+   "rows": 70,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 33,
+    "commercial__higashi": 1,
+    "commercial__kita": 3,
+    "commercial__kiyota": 4,
+    "commercial__minami": 5,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 6,
+    "commercial__teine": 1,
+    "commercial__toyohira": 11
+   }
+  },
+  {
+   "tag": "leisure=garden",
+   "rows": 62,
+   "files": {
+    "parks_play__atsubetsu": 6,
+    "parks_play__chuo": 34,
+    "parks_play__higashi": 5,
+    "parks_play__kita": 3,
+    "parks_play__kiyota": 3,
+    "parks_play__minami": 2,
+    "parks_play__nishi": 2,
+    "parks_play__teine": 2,
+    "parks_play__toyohira": 5
+   }
+  },
+  {
+   "tag": "leisure=adult_gaming_centre",
+   "rows": 60,
+   "files": {
+    "commercial__atsubetsu": 5,
+    "commercial__chuo": 11,
+    "commercial__higashi": 9,
+    "commercial__kita": 7,
+    "commercial__kiyota": 3,
+    "commercial__minami": 5,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 5,
+    "commercial__teine": 4,
+    "commercial__toyohira": 5
+   }
+  },
+  {
+   "tag": "amenity=college",
+   "rows": 58,
+   "files": {
+    "public_culture__chuo": 30,
+    "public_culture__higashi": 9,
+    "public_culture__kita": 9,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 3,
+    "public_culture__shiroishi": 2,
+    "public_culture__toyohira": 4
+   }
+  },
+  {
+   "tag": "amenity=public_bath",
+   "rows": 58,
+   "files": {
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 17,
+    "other_unknown__higashi": 5,
+    "other_unknown__kita": 7,
+    "other_unknown__kiyota": 1,
+    "other_unknown__minami": 10,
+    "other_unknown__nishi": 3,
+    "other_unknown__shiroishi": 7,
+    "other_unknown__teine": 1,
+    "other_unknown__toyohira": 5
+   }
+  },
+  {
+   "tag": "office=government",
+   "rows": 57,
+   "files": {
+    "public_culture__atsubetsu": 3,
+    "public_culture__chuo": 16,
+    "public_culture__higashi": 4,
+    "public_culture__kita": 8,
+    "public_culture__kiyota": 4,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 4,
+    "public_culture__shiroishi": 7,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 9
+   }
+  },
+  {
+   "tag": "shop=second_hand",
+   "rows": 56,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 7,
+    "commercial__higashi": 8,
+    "commercial__kita": 5,
+    "commercial__kiyota": 8,
+    "commercial__nishi": 5,
+    "commercial__shiroishi": 8,
+    "commercial__teine": 2,
+    "commercial__toyohira": 10
+   }
+  },
+  {
+   "tag": "tourism=museum",
+   "rows": 56,
+   "files": {
+    "public_culture__atsubetsu": 3,
+    "public_culture__chuo": 18,
+    "public_culture__higashi": 4,
+    "public_culture__kita": 4,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 18,
+    "public_culture__nishi": 3,
+    "public_culture__toyohira": 5
+   }
+  },
+  {
+   "tag": "cuisine=chinese",
+   "rows": 51,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 23,
+    "commercial__higashi": 5,
+    "commercial__kita": 5,
+    "commercial__kiyota": 2,
+    "commercial__minami": 6,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 1,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "leisure=sports_centre",
+   "rows": 51,
+   "files": {
+    "sports__atsubetsu": 3,
+    "sports__chuo": 3,
+    "sports__higashi": 8,
+    "sports__kita": 12,
+    "sports__kiyota": 3,
+    "sports__minami": 4,
+    "sports__nishi": 3,
+    "sports__shiroishi": 2,
+    "sports__teine": 6,
+    "sports__toyohira": 7
+   }
+  },
+  {
+   "tag": "shop=car_parts",
+   "rows": 51,
+   "files": {
+    "commercial__atsubetsu": 5,
+    "commercial__chuo": 3,
+    "commercial__higashi": 11,
+    "commercial__kita": 4,
+    "commercial__kiyota": 7,
+    "commercial__minami": 2,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 3,
+    "commercial__teine": 6,
+    "commercial__toyohira": 6
+   }
+  },
+  {
+   "tag": "amenity=fire_station",
+   "rows": 49,
+   "files": {
+    "public_culture__atsubetsu": 2,
+    "public_culture__chuo": 6,
+    "public_culture__higashi": 6,
+    "public_culture__kita": 8,
+    "public_culture__kiyota": 3,
+    "public_culture__minami": 6,
+    "public_culture__nishi": 4,
+    "public_culture__shiroishi": 5,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 5
+   }
+  },
+  {
+   "tag": "sport=soccer",
+   "rows": 48,
+   "files": {
+    "sports__atsubetsu": 2,
+    "sports__chuo": 3,
+    "sports__higashi": 10,
+    "sports__kita": 7,
+    "sports__kiyota": 5,
+    "sports__minami": 6,
+    "sports__nishi": 2,
+    "sports__shiroishi": 4,
+    "sports__teine": 3,
+    "sports__toyohira": 6
+   }
+  },
+  {
+   "tag": "amenity=car_rental",
+   "rows": 47,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 17,
+    "commercial__higashi": 3,
+    "commercial__kita": 9,
+    "commercial__minami": 1,
+    "commercial__nishi": 7,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 6
+   }
+  },
+  {
+   "tag": "shop=books",
+   "rows": 47,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 12,
+    "commercial__higashi": 7,
+    "commercial__kita": 4,
+    "commercial__kiyota": 5,
+    "commercial__minami": 1,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 5,
+    "commercial__teine": 2,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "cuisine=curry",
+   "rows": 45,
+   "files": {
+    "commercial__chuo": 17,
+    "commercial__higashi": 3,
+    "commercial__kita": 6,
+    "commercial__kiyota": 4,
+    "commercial__minami": 1,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 5,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "cuisine=italian",
+   "rows": 45,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 27,
+    "commercial__higashi": 3,
+    "commercial__kita": 3,
+    "commercial__kiyota": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 4,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "shop=funeral_directors",
+   "rows": 45,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 5,
+    "commercial__higashi": 8,
+    "commercial__kita": 10,
+    "commercial__kiyota": 2,
+    "commercial__minami": 5,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 8
+   }
+  },
+  {
+   "tag": "tourism=attraction",
+   "rows": 45,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 18,
+    "public_culture__higashi": 1,
+    "public_culture__kita": 1,
+    "public_culture__minami": 20,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 3
+   }
+  },
+  {
+   "tag": "leisure=fitness_centre",
+   "rows": 44,
+   "files": {
+    "sports__atsubetsu": 2,
+    "sports__chuo": 12,
+    "sports__higashi": 4,
+    "sports__kita": 3,
+    "sports__kiyota": 3,
+    "sports__minami": 2,
+    "sports__nishi": 4,
+    "sports__shiroishi": 5,
+    "sports__teine": 3,
+    "sports__toyohira": 6
+   }
+  },
+  {
+   "tag": "shop=doityourself",
+   "rows": 40,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 2,
+    "commercial__higashi": 7,
+    "commercial__kita": 6,
+    "commercial__kiyota": 7,
+    "commercial__minami": 2,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 4,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "cuisine=beef_bowl",
+   "rows": 38,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 11,
+    "commercial__higashi": 4,
+    "commercial__kita": 6,
+    "commercial__kiyota": 4,
+    "commercial__minami": 1,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 4
+   }
+  },
+  {
+   "tag": "shop=bicycle",
+   "rows": 38,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 13,
+    "commercial__higashi": 3,
+    "commercial__kita": 5,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 4,
+    "commercial__teine": 1,
+    "commercial__toyohira": 5
+   }
+  },
+  {
+   "tag": "shop=laundry",
+   "rows": 38,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 12,
+    "commercial__higashi": 3,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 5,
+    "commercial__teine": 1,
+    "commercial__toyohira": 8
+   }
+  },
+  {
+   "tag": "shop=mall",
+   "rows": 38,
+   "files": {
+    "commercial__atsubetsu": 8,
+    "commercial__chuo": 11,
+    "commercial__higashi": 4,
+    "commercial__kita": 1,
+    "commercial__kiyota": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 3,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "amenity=university",
+   "rows": 34,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 3,
+    "public_culture__higashi": 3,
+    "public_culture__kita": 15,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 4,
+    "public_culture__teine": 2,
+    "public_culture__toyohira": 5
+   }
+  },
+  {
+   "tag": "shop=optician",
+   "rows": 34,
+   "files": {
+    "parks_play__chuo": 1,
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 9,
+    "commercial__higashi": 2,
+    "commercial__kita": 6,
+    "commercial__kiyota": 4,
+    "commercial__minami": 2,
+    "commercial__nishi": 4,
+    "commercial__teine": 2,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=electronics",
+   "rows": 32,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 5,
+    "commercial__higashi": 5,
+    "commercial__kita": 4,
+    "commercial__kiyota": 2,
+    "commercial__minami": 2,
+    "commercial__nishi": 5,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 6
+   }
+  },
+  {
+   "tag": "shop=massage",
+   "rows": 32,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 10,
+    "commercial__kita": 2,
+    "commercial__kiyota": 4,
+    "commercial__minami": 1,
+    "commercial__shiroishi": 3,
+    "commercial__teine": 2,
+    "commercial__toyohira": 8
+   }
+  },
+  {
+   "tag": "shop=florist",
+   "rows": 31,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 13,
+    "commercial__higashi": 4,
+    "commercial__kita": 7,
+    "commercial__minami": 1,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "office=research",
+   "rows": 30,
+   "files": {
+    "other_unknown__chuo": 2,
+    "other_unknown__kita": 26,
+    "other_unknown__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=bus_station",
+   "rows": 29,
+   "files": {
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 4,
+    "other_unknown__higashi": 2,
+    "other_unknown__kita": 9,
+    "other_unknown__minami": 3,
+    "other_unknown__nishi": 4,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__teine": 1,
+    "other_unknown__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=car_sharing",
+   "rows": 28,
+   "files": {
+    "other_unknown__chuo": 5,
+    "other_unknown__kita": 7,
+    "other_unknown__nishi": 15,
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "amenity=taxi",
+   "rows": 28,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 15,
+    "other_unknown__higashi": 2,
+    "other_unknown__kita": 3,
+    "other_unknown__minami": 1,
+    "other_unknown__nishi": 2,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__toyohira": 2
+   }
+  },
+  {
+   "tag": "craft=confectionery",
+   "rows": 28,
+   "files": {
+    "commercial__chuo": 13,
+    "commercial__higashi": 4,
+    "commercial__kiyota": 2,
+    "commercial__minami": 3,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "leisure=golf_course",
+   "rows": 28,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__higashi": 2,
+    "sports__kiyota": 5,
+    "sports__minami": 13,
+    "sports__shiroishi": 3,
+    "sports__teine": 2,
+    "sports__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=greengrocer",
+   "rows": 28,
+   "files": {
+    "commercial__chuo": 10,
+    "commercial__higashi": 2,
+    "commercial__kita": 2,
+    "commercial__minami": 10,
+    "commercial__shiroishi": 2,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=yes",
+   "rows": 28,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 2,
+    "commercial__higashi": 3,
+    "commercial__kita": 4,
+    "commercial__kiyota": 1,
+    "commercial__minami": 6,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 2,
+    "commercial__toyohira": 5
+   }
+  },
+  {
+   "tag": "office=estate_agent",
+   "rows": 26,
+   "files": {
+    "other_unknown__atsubetsu": 5,
+    "other_unknown__chuo": 15,
+    "other_unknown__kiyota": 1,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__toyohira": 3
+   }
+  },
+  {
+   "tag": "shop=sports",
+   "rows": 26,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 6,
+    "commercial__higashi": 4,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 4,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "shop=alcohol",
+   "rows": 25,
+   "files": {
+    "commercial__chuo": 10,
+    "commercial__higashi": 3,
+    "commercial__kita": 3,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=video",
+   "rows": 25,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 4,
+    "commercial__higashi": 4,
+    "commercial__kita": 6,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=beauty",
+   "rows": 24,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 8,
+    "commercial__kita": 2,
+    "commercial__nishi": 9,
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=shoes",
+   "rows": 24,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 7,
+    "commercial__higashi": 3,
+    "commercial__kita": 2,
+    "commercial__kiyota": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 3,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "tourism=hostel",
+   "rows": 24,
+   "files": {
+    "commercial__chuo": 17,
+    "commercial__kita": 4,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=karaoke_box",
+   "rows": 23,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 9,
+    "commercial__higashi": 1,
+    "commercial__kita": 5,
+    "commercial__kiyota": 2,
+    "commercial__shiroishi": 3,
+    "commercial__teine": 1
+   }
+  },
+  {
+   "tag": "cuisine=chicken",
+   "rows": 23,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__higashi": 2,
+    "commercial__kita": 3,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 1,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "cuisine=soba",
+   "rows": 23,
+   "files": {
+    "commercial__chuo": 6,
+    "commercial__higashi": 5,
+    "commercial__kita": 4,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "amenity=childcare",
+   "rows": 22,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 8,
+    "public_culture__kita": 2,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 4,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 3
+   }
+  },
+  {
+   "tag": "amenity=library",
+   "rows": 22,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 5,
+    "public_culture__higashi": 1,
+    "public_culture__kita": 5,
+    "public_culture__kiyota": 2,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 1,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=athletics",
+   "rows": 22,
+   "files": {
+    "sports__atsubetsu": 4,
+    "sports__chuo": 9,
+    "sports__higashi": 1,
+    "sports__kita": 2,
+    "sports__kiyota": 2,
+    "sports__minami": 1,
+    "sports__teine": 1,
+    "sports__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=prep_school",
+   "rows": 21,
+   "files": {
+    "other_unknown__chuo": 9,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 2,
+    "other_unknown__kiyota": 4,
+    "other_unknown__minami": 1,
+    "other_unknown__shiroishi": 1,
+    "other_unknown__toyohira": 3
+   }
+  },
+  {
+   "tag": "cuisine=pizza",
+   "rows": 21,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 3,
+    "commercial__higashi": 5,
+    "commercial__kita": 4,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__shiroishi": 4,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=car_repair",
+   "rows": 21,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 3,
+    "commercial__higashi": 3,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 4
+   }
+  },
+  {
+   "tag": "amenity=theatre",
+   "rows": 20,
+   "files": {
+    "public_culture__chuo": 12,
+    "public_culture__higashi": 2,
+    "public_culture__kita": 3,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 1
+   }
+  },
+  {
+   "tag": "leisure=track",
+   "rows": 20,
+   "files": {
+    "sports__atsubetsu": 3,
+    "sports__chuo": 7,
+    "sports__higashi": 3,
+    "sports__kita": 1,
+    "sports__kiyota": 1,
+    "sports__minami": 2,
+    "sports__teine": 2,
+    "sports__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=luggage_locker",
+   "rows": 19,
+   "files": {
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 9,
+    "other_unknown__kita": 7,
+    "other_unknown__minami": 1
+   }
+  },
+  {
+   "tag": "cuisine=steak_house",
+   "rows": 19,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 8,
+    "commercial__higashi": 1,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "leisure=miniature_golf",
+   "rows": 19,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__chuo": 4,
+    "sports__higashi": 3,
+    "sports__kita": 2,
+    "sports__kiyota": 2,
+    "sports__minami": 2,
+    "sports__teine": 3,
+    "sports__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=driving_school",
+   "rows": 18,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 3,
+    "other_unknown__kiyota": 1,
+    "other_unknown__minami": 2,
+    "other_unknown__nishi": 2,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__teine": 4,
+    "other_unknown__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=townhall",
+   "rows": 18,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 6,
+    "public_culture__higashi": 1,
+    "public_culture__kita": 2,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 2,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 2,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=furniture",
+   "rows": 18,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 3,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "shop=pastry",
+   "rows": 18,
+   "files": {
+    "commercial__chuo": 9,
+    "commercial__minami": 3,
+    "commercial__nishi": 4,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "tourism=camp_site",
+   "rows": 18,
+   "files": {
+    "parks_play__chuo": 2,
+    "parks_play__kita": 1,
+    "parks_play__kiyota": 1,
+    "parks_play__minami": 7,
+    "parks_play__nishi": 5,
+    "parks_play__teine": 1,
+    "parks_play__toyohira": 1
+   }
+  },
+  {
+   "tag": "tourism=viewpoint",
+   "rows": 18,
+   "files": {
+    "parks_play__chuo": 4,
+    "parks_play__kita": 1,
+    "parks_play__kiyota": 2,
+    "parks_play__minami": 7,
+    "parks_play__nishi": 2,
+    "parks_play__toyohira": 2
+   }
+  },
+  {
+   "tag": "cuisine=indian",
+   "rows": 17,
+   "files": {
+    "commercial__chuo": 8,
+    "commercial__kita": 5,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 2,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=western;japanese",
+   "rows": 17,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 2,
+    "commercial__higashi": 3,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__nishi": 1,
+    "commercial__teine": 2,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "office=yes",
+   "rows": 17,
+   "files": {
+    "other_unknown__chuo": 3,
+    "other_unknown__kita": 1,
+    "other_unknown__kiyota": 3,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 4,
+    "other_unknown__toyohira": 5
+   }
+  },
+  {
+   "tag": "shop=deli",
+   "rows": 17,
+   "files": {
+    "commercial__chuo": 7,
+    "commercial__higashi": 3,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=gift",
+   "rows": 17,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 9,
+    "commercial__higashi": 1,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=pet",
+   "rows": 17,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 4,
+    "commercial__higashi": 1,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 2,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "amenity=love_hotel",
+   "rows": 16,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 4,
+    "other_unknown__kiyota": 2,
+    "other_unknown__minami": 2,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 4,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=fitness",
+   "rows": 16,
+   "files": {
+    "sports__higashi": 1,
+    "sports__nishi": 1,
+    "other_unknown__chuo": 11,
+    "other_unknown__toyohira": 3
+   }
+  },
+  {
+   "tag": "amenity=arts_centre",
+   "rows": 15,
+   "files": {
+    "public_culture__chuo": 4,
+    "public_culture__minami": 10,
+    "public_culture__toyohira": 1
+   }
+  },
+  {
+   "tag": "leisure=sports_hall",
+   "rows": 15,
+   "files": {
+    "sports__chuo": 2,
+    "sports__higashi": 2,
+    "sports__kiyota": 1,
+    "sports__minami": 4,
+    "sports__shiroishi": 1,
+    "sports__teine": 3,
+    "sports__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=storage_rental",
+   "rows": 15,
+   "files": {
+    "commercial__chuo": 15
+   }
+  },
+  {
+   "tag": "amenity=internet_cafe",
+   "rows": 14,
+   "files": {
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 8,
+    "other_unknown__higashi": 2,
+    "other_unknown__kiyota": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=udon",
+   "rows": 14,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 4,
+    "commercial__higashi": 2,
+    "commercial__kita": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 2,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "leisure=fitness_station",
+   "rows": 14,
+   "files": {
+    "other_unknown__chuo": 11,
+    "other_unknown__toyohira": 3
+   }
+  },
+  {
+   "tag": "shop=motorcycle",
+   "rows": 14,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 1,
+    "commercial__higashi": 2,
+    "commercial__kiyota": 3,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=driver_training",
+   "rows": 13,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 3,
+    "other_unknown__kiyota": 1,
+    "other_unknown__minami": 2,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__teine": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=seafood",
+   "rows": 13,
+   "files": {
+    "commercial__chuo": 13
+   }
+  },
+  {
+   "tag": "cuisine=yakiniku",
+   "rows": 13,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__higashi": 5,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=parcel_locker",
+   "rows": 12,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__higashi": 3,
+    "other_unknown__kiyota": 1,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 4,
+    "other_unknown__toyohira": 2
+   }
+  },
+  {
+   "tag": "cuisine=donut",
+   "rows": 12,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 5,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 2,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=french",
+   "rows": 12,
+   "files": {
+    "commercial__chuo": 9,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "tourism=guest_house",
+   "rows": 12,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__higashi": 2,
+    "commercial__minami": 2,
+    "commercial__nishi": 2,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=car_wash",
+   "rows": 11,
+   "files": {
+    "commercial__kita": 1,
+    "commercial__kiyota": 3,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 3,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "amenity=studio",
+   "rows": 11,
+   "files": {
+    "commercial__chuo": 2,
+    "public_culture__chuo": 1,
+    "other_unknown__chuo": 6,
+    "other_unknown__nishi": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=curry;japanese",
+   "rows": 11,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 2,
+    "commercial__higashi": 2,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=hobby",
+   "rows": 11,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 9,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=nightclub",
+   "rows": 10,
+   "files": {
+    "commercial__chuo": 10
+   }
+  },
+  {
+   "tag": "club=sport",
+   "rows": 10,
+   "files": {
+    "sports__chuo": 1,
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 1,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 1,
+    "other_unknown__nishi": 1,
+    "other_unknown__teine": 2,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "craft=caterer",
+   "rows": 10,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__kita": 2,
+    "commercial__toyohira": 3
+   }
+  },
+  {
+   "tag": "historic=house",
+   "rows": 10,
+   "files": {
+    "public_culture__atsubetsu": 10
+   }
+  },
+  {
+   "tag": "shop=baby_goods",
+   "rows": 10,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__higashi": 2,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "tourism=yes",
+   "rows": 10,
+   "files": {
+    "commercial__chuo": 2,
+    "other_unknown__chuo": 4,
+    "other_unknown__kita": 1,
+    "other_unknown__minami": 3
+   }
+  },
+  {
+   "tag": "amenity=waste_transfer_station",
+   "rows": 9,
+   "files": {
+    "other_unknown__kita": 5,
+    "other_unknown__minami": 1,
+    "other_unknown__nishi": 2,
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=fried_food",
+   "rows": 9,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 3,
+    "commercial__kita": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "leisure=stadium",
+   "rows": 9,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__chuo": 5,
+    "sports__minami": 2,
+    "sports__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=butcher",
+   "rows": 9,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__nishi": 3,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=fishing",
+   "rows": 9,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 1,
+    "commercial__higashi": 2,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=outdoor",
+   "rows": 9,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 1,
+    "commercial__higashi": 1,
+    "commercial__kita": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1
+   }
+  },
+  {
+   "tag": "shop=tyres",
+   "rows": 9,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 1,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__kiyota": 2,
+    "commercial__minami": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=running",
+   "rows": 9,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__higashi": 2,
+    "sports__kita": 1,
+    "sports__kiyota": 1,
+    "sports__minami": 1,
+    "sports__teine": 2,
+    "sports__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=dojo",
+   "rows": 8,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__kita": 4,
+    "other_unknown__nishi": 3
+   }
+  },
+  {
+   "tag": "cuisine=soup_curry",
+   "rows": 8,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__kita": 1,
+    "commercial__shiroishi": 2
+   }
+  },
+  {
+   "tag": "historic=shop",
+   "rows": 8,
+   "files": {
+    "public_culture__atsubetsu": 8
+   }
+  },
+  {
+   "tag": "leisure=amusement_arcade",
+   "rows": 8,
+   "files": {
+    "other_unknown__chuo": 6,
+    "other_unknown__kiyota": 2
+   }
+  },
+  {
+   "tag": "leisure=common",
+   "rows": 8,
+   "files": {
+    "parks_play__higashi": 8
+   }
+  },
+  {
+   "tag": "sport=golf",
+   "rows": 8,
+   "files": {
+    "sports__minami": 1,
+    "sports__nishi": 1,
+    "sports__shiroishi": 1,
+    "commercial__higashi": 2,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1
+   }
+  },
+  {
+   "tag": "tourism=motel",
+   "rows": 8,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__toyohira": 4
+   }
+  },
+  {
+   "tag": "tourism=zoo",
+   "rows": 8,
+   "files": {
+    "other_unknown__chuo": 4,
+    "other_unknown__higashi": 2,
+    "other_unknown__minami": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=grave_yard",
+   "rows": 7,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 2,
+    "other_unknown__kita": 2,
+    "other_unknown__kiyota": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=ice_cream",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 4,
+    "commercial__kita": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "amenity=photo_booth",
+   "rows": 7,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 1,
+    "other_unknown__kita": 3,
+    "other_unknown__shiroishi": 2
+   }
+  },
+  {
+   "tag": "cuisine=asian",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__kita": 2
+   }
+  },
+  {
+   "tag": "cuisine=chinese;gyoza",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 3,
+    "commercial__kiyota": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1
+   }
+  },
+  {
+   "tag": "cuisine=sandwich",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__kita": 2,
+    "commercial__nishi": 2
+   }
+  },
+  {
+   "tag": "historic=warehouse",
+   "rows": 7,
+   "files": {
+    "public_culture__atsubetsu": 7
+   }
+  },
+  {
+   "tag": "historic=wayside_shrine",
+   "rows": 7,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 3,
+    "public_culture__minami": 3
+   }
+  },
+  {
+   "tag": "office=diplomatic",
+   "rows": 7,
+   "files": {
+    "other_unknown__chuo": 7
+   }
+  },
+  {
+   "tag": "office=educational_institution",
+   "rows": 7,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__kita": 6
+   }
+  },
+  {
+   "tag": "office=insurance",
+   "rows": 7,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 3,
+    "other_unknown__kiyota": 1,
+    "other_unknown__nishi": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=lottery",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 3,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=newsagent",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 4,
+    "commercial__nishi": 2
+   }
+  },
+  {
+   "tag": "shop=photo",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 2,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "shop=seafood",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__kita": 2,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=stationery",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 5,
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "shop=vacant",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 2,
+    "commercial__kita": 4
+   }
+  },
+  {
+   "tag": "sport=basketball",
+   "rows": 7,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__chuo": 1,
+    "sports__kita": 1,
+    "sports__kiyota": 1,
+    "sports__minami": 1,
+    "sports__teine": 2
+   }
+  },
+  {
+   "tag": "sport=horse_racing",
+   "rows": 7,
+   "files": {
+    "sports__chuo": 7
+   }
+  },
+  {
+   "tag": "cuisine=japanese;soba",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__kiyota": 1,
+    "commercial__shiroishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=western",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=yakitori",
+   "rows": 6,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 3,
+    "commercial__kita": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "office=employment_agency",
+   "rows": 6,
+   "files": {
+    "other_unknown__chuo": 2,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 1,
+    "other_unknown__shiroishi": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "office=ngo",
+   "rows": 6,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__kita": 2,
+    "other_unknown__nishi": 2,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=coffee",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__higashi": 1,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "shop=computer",
+   "rows": 6,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 1,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=religion",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__kita": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=toys",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__nishi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=funeral_hall",
+   "rows": 5,
+   "files": {
+    "other_unknown__minami": 1,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__teine": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=nursing_home",
+   "rows": 5,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 2,
+    "other_unknown__higashi": 1,
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "craft=photographer",
+   "rows": 5,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 3,
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "cuisine=regional",
+   "rows": 5,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "historic=dormitory",
+   "rows": 5,
+   "files": {
+    "public_culture__atsubetsu": 5
+   }
+  },
+  {
+   "tag": "historic=yes",
+   "rows": 5,
+   "files": {
+    "public_culture__atsubetsu": 2,
+    "public_culture__nishi": 1,
+    "public_culture__toyohira": 2
+   }
+  },
+  {
+   "tag": "office=courier",
+   "rows": 5,
+   "files": {
+    "other_unknown__chuo": 4,
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "office=religion",
+   "rows": 5,
+   "files": {
+    "other_unknown__chuo": 3,
+    "other_unknown__nishi": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "office=telecommunication",
+   "rows": 5,
+   "files": {
+    "other_unknown__chuo": 2,
+    "other_unknown__kiyota": 1,
+    "other_unknown__shiroishi": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=hardware",
+   "rows": 5,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 2
+   }
+  },
+  {
+   "tag": "shop=interior_decoration",
+   "rows": 5,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__higashi": 1,
+    "commercial__minami": 1
+   }
+  },
+  {
+   "tag": "shop=ticket",
+   "rows": 5,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=ski_jumping",
+   "rows": 5,
+   "files": {
+    "sports__chuo": 5
+   }
+  },
+  {
+   "tag": "amenity=cinema",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 4
+   }
+  },
+  {
+   "tag": "amenity=events_venue",
+   "rows": 4,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__minami": 1,
+    "other_unknown__nishi": 1,
+    "other_unknown__teine": 1
+   }
+  },
+  {
+   "tag": "amenity=gambling",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__shiroishi": 1,
+    "other_unknown__chuo": 2
+   }
+  },
+  {
+   "tag": "amenity=language_school",
+   "rows": 4,
+   "files": {
+    "other_unknown__chuo": 3,
+    "other_unknown__kita": 1
+   }
+  },
+  {
+   "tag": "amenity=prison",
+   "rows": 4,
+   "files": {
+    "other_unknown__higashi": 3,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=social_centre",
+   "rows": 4,
+   "files": {
+    "other_unknown__chuo": 2,
+    "other_unknown__kita": 2
+   }
+  },
+  {
+   "tag": "cuisine=buffet",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "cuisine=ice_cream",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;italian;french",
+   "rows": 4,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__nishi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=korean",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 4
+   }
+  },
+  {
+   "tag": "cuisine=takoyaki",
+   "rows": 4,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 1,
+    "commercial__kiyota": 1,
+    "commercial__teine": 1
+   }
+  },
+  {
+   "tag": "cuisine=スープカレー",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__higashi": 1
+   }
+  },
+  {
+   "tag": "historic=locomotive",
+   "rows": 4,
+   "files": {
+    "public_culture__higashi": 3,
+    "public_culture__nishi": 1
+   }
+  },
+  {
+   "tag": "leisure=bowling_alley",
+   "rows": 4,
+   "files": {
+    "other_unknown__higashi": 2,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "leisure=dance",
+   "rows": 4,
+   "files": {
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 1,
+    "other_unknown__toyohira": 2
+   }
+  },
+  {
+   "tag": "office=association",
+   "rows": 4,
+   "files": {
+    "other_unknown__chuo": 3,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=department_store",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 4
+   }
+  },
+  {
+   "tag": "shop=music",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__higashi": 1
+   }
+  },
+  {
+   "tag": "shop=musical_instrument",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__teine": 1
+   }
+  },
+  {
+   "tag": "amenity=brothel",
+   "rows": 3,
+   "files": {
+    "other_unknown__chuo": 3
+   }
+  },
+  {
+   "tag": "amenity=exhibition_centre",
+   "rows": 3,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__shiroishi": 2
+   }
+  },
+  {
+   "tag": "craft=carpenter",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=american",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=international",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;sushi",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=mexican",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=noodle;ramen",
+   "rows": 3,
+   "files": {
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__teine": 1
+   }
+  },
+  {
+   "tag": "cuisine=pasta",
+   "rows": 3,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__higashi": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=ramen;noodle",
+   "rows": 3,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=seafood;sushi",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 3
+   }
+  },
+  {
+   "tag": "cuisine=tea",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__minami": 2
+   }
+  },
+  {
+   "tag": "cuisine=thai",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=ラーメン;noodle",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__teine": 2
+   }
+  },
+  {
+   "tag": "healthcare=yes",
+   "rows": 3,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 1
+   }
+  },
+  {
+   "tag": "historic=building",
+   "rows": 3,
+   "files": {
+    "public_culture__chuo": 2,
+    "public_culture__higashi": 1
+   }
+  },
+  {
+   "tag": "historic=office",
+   "rows": 3,
+   "files": {
+    "public_culture__atsubetsu": 3
+   }
+  },
+  {
+   "tag": "office=coworking",
+   "rows": 3,
+   "files": {
+    "other_unknown__chuo": 3
+   }
+  },
+  {
+   "tag": "shop=e-cigarette",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 3
+   }
+  },
+  {
+   "tag": "shop=jewelry",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=locksmith",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=tea",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=trade",
+   "rows": 3,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=travel_agency",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__higashi": 1
+   }
+  },
+  {
+   "tag": "tourism=alpine_hut",
+   "rows": 3,
+   "files": {
+    "other_unknown__minami": 3
+   }
+  },
+  {
+   "tag": "tourism=apartment",
+   "rows": 3,
+   "files": {
+    "other_unknown__kita": 2,
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "tourism=caravan_site",
+   "rows": 3,
+   "files": {
+    "other_unknown__minami": 3
+   }
+  },
+  {
+   "tag": "tourism=gallery",
+   "rows": 3,
+   "files": {
+    "public_culture__chuo": 2,
+    "public_culture__kita": 1
+   }
+  },
+  {
+   "tag": "tourism=picnic_site",
+   "rows": 3,
+   "files": {
+    "parks_play__chuo": 1,
+    "parks_play__kita": 2
+   }
+  },
+  {
+   "tag": "amenity=boat_rental",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=bureau_de_change",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 2
+   }
+  },
+  {
+   "tag": "amenity=conference_centre",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "amenity=courthouse",
+   "rows": 2,
+   "files": {
+    "public_culture__chuo": 2
+   }
+  },
+  {
+   "tag": "amenity=coworking_space",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 2
+   }
+  },
+  {
+   "tag": "amenity=crematorium",
+   "rows": 2,
+   "files": {
+    "other_unknown__kiyota": 1,
+    "other_unknown__teine": 1
+   }
+  },
+  {
+   "tag": "amenity=food_court",
+   "rows": 2,
+   "files": {
+    "commercial__kita": 2
+   }
+  },
+  {
+   "tag": "amenity=marketplace",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 2
+   }
+  },
+  {
+   "tag": "amenity=music_school",
+   "rows": 2,
+   "files": {
+    "other_unknown__minami": 1,
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "amenity=research_institute",
+   "rows": 2,
+   "files": {
+    "other_unknown__higashi": 1,
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=ski_school",
+   "rows": 2,
+   "files": {
+    "other_unknown__minami": 1,
+    "other_unknown__teine": 1
+   }
+  },
+  {
+   "tag": "craft=shoemaker",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   }
+  },
+  {
+   "tag": "craft=winery",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=Gyoza",
+   "rows": 2,
+   "files": {
+    "commercial__kita": 2
+   }
+  },
+  {
+   "tag": "cuisine=bakery;cafe",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=barbecue;yakiniku",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   }
+  },
+  {
+   "tag": "cuisine=curry;soup_curry",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 1
+   }
+  },
+  {
+   "tag": "cuisine=fish",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=fish;japanese",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=friture",
+   "rows": 2,
+   "files": {
+    "commercial__kita": 1,
+    "commercial__shiroishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=indian;curry",
+   "rows": 2,
+   "files": {
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;chinese",
+   "rows": 2,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__shiroishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=local",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   }
+  },
+  {
+   "tag": "cuisine=noodles;ramen",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=nudle",
+   "rows": 2,
+   "files": {
+    "commercial__toyohira": 2
+   }
+  },
+  {
+   "tag": "cuisine=steak",
+   "rows": 2,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=taiwanese",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   }
+  },
+  {
+   "tag": "cuisine=yoshoku;soba;udon;coffee_shop",
+   "rows": 2,
+   "files": {
+    "commercial__nishi": 2
+   }
+  },
+  {
+   "tag": "cuisine=寿司",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=焼肉",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "healthcare=blood_donation",
+   "rows": 2,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 1
+   }
+  },
+  {
+   "tag": "historic=archaeological_site",
+   "rows": 2,
+   "files": {
+    "public_culture__chuo": 1,
+    "public_culture__kita": 1
+   }
+  },
+  {
+   "tag": "historic=factory",
+   "rows": 2,
+   "files": {
+    "public_culture__atsubetsu": 2
+   }
+  },
+  {
+   "tag": "historic=monument",
+   "rows": 2,
+   "files": {
+    "public_culture__nishi": 1,
+    "public_culture__toyohira": 1
+   }
+  },
+  {
+   "tag": "leisure=bandstand",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__minami": 1
+   }
+  },
+  {
+   "tag": "leisure=dog_park",
+   "rows": 2,
+   "files": {
+    "parks_play__kita": 1,
+    "parks_play__kiyota": 1
+   }
+  },
+  {
+   "tag": "leisure=horse_riding",
+   "rows": 2,
+   "files": {
+    "sports__higashi": 1,
+    "sports__kiyota": 1
+   }
+  },
+  {
+   "tag": "leisure=ice_rink",
+   "rows": 2,
+   "files": {
+    "sports__teine": 1,
+    "sports__toyohira": 1
+   }
+  },
+  {
+   "tag": "leisure=water_park",
+   "rows": 2,
+   "files": {
+    "sports__kita": 1,
+    "sports__teine": 1
+   }
+  },
+  {
+   "tag": "office=forestry",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__minami": 1
+   }
+  },
+  {
+   "tag": "office=logistics",
+   "rows": 2,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "office=newspaper",
+   "rows": 2,
+   "files": {
+    "other_unknown__toyohira": 2
+   }
+  },
+  {
+   "tag": "office=tax_advisor",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 2
+   }
+  },
+  {
+   "tag": "office=transport",
+   "rows": 2,
+   "files": {
+    "other_unknown__higashi": 1,
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=camera",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=chocolate",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=collector",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "shop=copyshop",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__minami": 1
+   }
+  },
+  {
+   "tag": "shop=cosmetics",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "shop=craft",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "shop=erotic",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   }
+  },
+  {
+   "tag": "shop=food",
+   "rows": 2,
+   "files": {
+    "commercial__kiyota": 2
+   }
+  },
+  {
+   "tag": "shop=garden_centre",
+   "rows": 2,
+   "files": {
+    "commercial__kita": 2
+   }
+  },
+  {
+   "tag": "shop=general",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=hifi",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   }
+  },
+  {
+   "tag": "shop=pawnbroker",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   }
+  },
+  {
+   "tag": "shop=pet_grooming",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__shiroishi": 1
+   }
+  },
+  {
+   "tag": "shop=rice",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=sewing",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   }
+  },
+  {
+   "tag": "shop=shoe_repair",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__minami": 1
+   }
+  },
+  {
+   "tag": "sport=10pin",
+   "rows": 2,
+   "files": {
+    "sports__chuo": 1,
+    "other_unknown__higashi": 1
+   }
+  },
+  {
+   "tag": "sport=Kyudo",
+   "rows": 2,
+   "files": {
+    "other_unknown__kita": 2
+   }
+  },
+  {
+   "tag": "sport=climbing",
+   "rows": 2,
+   "files": {
+    "sports__shiroishi": 1,
+    "other_unknown__kita": 1
+   }
+  },
+  {
+   "tag": "sport=futsal",
+   "rows": 2,
+   "files": {
+    "sports__shiroishi": 1,
+    "other_unknown__higashi": 1
+   }
+  },
+  {
+   "tag": "sport=ice_skating",
+   "rows": 2,
+   "files": {
+    "sports__minami": 2
+   }
+  },
+  {
+   "tag": "sport=martial_arts",
+   "rows": 2,
+   "files": {
+    "other_unknown__kita": 1,
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "sport=rugby_union",
+   "rows": 2,
+   "files": {
+    "sports__minami": 2
+   }
+  },
+  {
+   "tag": "tourism=aquarium",
+   "rows": 2,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "tourism=wilderness_hut",
+   "rows": 2,
+   "files": {
+    "other_unknown__minami": 2
+   }
+  },
+  {
+   "tag": "amenity=Town community",
+   "rows": 1,
+   "files": {
+    "other_unknown__kiyota": 1
+   }
+  },
+  {
+   "tag": "amenity=animal_boarding",
+   "rows": 1,
+   "files": {
+    "other_unknown__kita": 1
+   }
+  },
+  {
+   "tag": "amenity=animal_shelter",
+   "rows": 1,
+   "files": {
+    "other_unknown__kita": 1
+   }
+  },
+  {
+   "tag": "amenity=bbq",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "amenity=cafe;fountain",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "amenity=clock",
+   "rows": 1,
+   "files": {
+    "public_culture__chuo": 1
+   }
+  },
+  {
+   "tag": "amenity=dressing_room",
+   "rows": 1,
+   "files": {
+    "other_unknown__minami": 1
+   }
+  },
+  {
+   "tag": "amenity=first_aid",
+   "rows": 1,
+   "files": {
+    "other_unknown__teine": 1
+   }
+  },
+  {
+   "tag": "amenity=motorcycle_rental",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "amenity=music_venue",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "amenity=payment_centre",
+   "rows": 1,
+   "files": {
+    "other_unknown__teine": 1
+   }
+  },
+  {
+   "tag": "amenity=per",
+   "rows": 1,
+   "files": {
+    "other_unknown__kiyota": 1
+   }
+  },
+  {
+   "tag": "amenity=post_box",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "amenity=post_depot",
+   "rows": 1,
+   "files": {
+    "other_unknown__higashi": 1
+   }
+  },
+  {
+   "tag": "amenity=restaurant;bar",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "amenity=shower",
+   "rows": 1,
+   "files": {
+    "other_unknown__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "amenity=stroller_parking",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "amenity=ticket_validator",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "amenity=training",
+   "rows": 1,
+   "files": {
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "amenity=truck_stop",
+   "rows": 1,
+   "files": {
+    "other_unknown__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "amenity=vehicle_inspection",
+   "rows": 1,
+   "files": {
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "club=music",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "craft=agricultural_engines",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "craft=distillery",
+   "rows": 1,
+   "files": {
+    "commercial__minami": 1
+   }
+  },
+  {
+   "tag": "craft=electrician",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "craft=electronics_repair",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "craft=handicraft",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "craft=paper",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "craft=pottery",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "craft=stonemason",
+   "rows": 1,
+   "files": {
+    "commercial__minami": 1
+   }
+  },
+  {
+   "tag": "craft=watchmaker",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=Grilled_meat",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=Satsuma, Hokkaido",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=beef_steak;teppanyaki",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=bistro;wine",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=breakfast;cake;coffee_shop;french;sandwich;tea",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=breakfast;curry;japanese;noodles",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=breakfast;fish;ramen;sushi",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=breton;crepe",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=buffet;international",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=burger;fried_chicken",
+   "rows": 1,
+   "files": {
+    "commercial__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "cuisine=burger;german",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=cafe",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=cake;coffee_shop;pasta;tea",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=chinese;noodle",
+   "rows": 1,
+   "files": {
+    "commercial__teine": 1
+   }
+  },
+  {
+   "tag": "cuisine=chinese;餃子",
+   "rows": 1,
+   "files": {
+    "commercial__teine": 1
+   }
+  },
+  {
+   "tag": "cuisine=coffee",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=coffee;black_tea;pasta;curry;toast;bento",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=coffee_shop;cake;sandwich",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=coffee_shop;ice_cream",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=coffee_shop;pizza;sandwich",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=coffee_shop;sandwich;pasta",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=curry;asian",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=curry;chinese",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=curry;japanese;noodles",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=ddeokbokki",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=diner",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=doughnuts;bagels;sandwich;drinks;salad",
+   "rows": 1,
+   "files": {
+    "commercial__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "cuisine=fish;seafood",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=fish;sushi",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=french;japanese",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=french_toast;regional",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=fried_chicken",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=gyoza;curry",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=gyudon",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=hawaiian",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=humberg",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=humbrger",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=ice_cream,parfait",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=indian;japanese",
+   "rows": 1,
+   "files": {
+    "commercial__minami": 1
+   }
+  },
+  {
+   "tag": "cuisine=indian;nepalese",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=italian;french;spanish;bistro",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=italian;pasta;coffee_shop",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese,italian",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;breakfast;coffee_shop",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;chazuke;udon",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;curry",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;noodle",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;regional;chicken;Mizutaki",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;regional;local",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;seafood",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;seafood;fish",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;udon",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=japanese;蕎麦",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=mediteranian",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=nepalese",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=nepalese;indian;curry",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=noodle;ramen;chinese",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=okinawan",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=omelette_rice",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=omelette_rice;doria",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=oyster",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=pakistani",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=pancake;dessert;ice_cream;japanese",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "cuisine=pork",
+   "rows": 1,
+   "files": {
+    "commercial__shiroishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=ra",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "cuisine=rice",
+   "rows": 1,
+   "files": {
+    "commercial__higashi": 1
+   }
+  },
+  {
+   "tag": "cuisine=russian",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=sandwich;italian;japanese",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=sashimi",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=seafood;local",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=seafood;yakiniku",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=soba;ramen",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=steak_house;seafood",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=teppan-yaki;steak;seafood",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=tonkatsu",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=turkish",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=ちゃんぽん",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=ウエスタン料理",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=オランダ料理",
+   "rows": 1,
+   "files": {
+    "commercial__higashi": 1
+   }
+  },
+  {
+   "tag": "cuisine=カフェ",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=ジンギスカン",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=ソフトクリーム",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=ハンバーグ;ステーキ",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "cuisine=ベトナム料理",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=ホルモン",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=創作料理",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=弁当",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=沖縄料理",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "cuisine=洋食",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "cuisine=焼肉、ジンギスカン",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "cuisine=餃子",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "healthcare=centre",
+   "rows": 1,
+   "files": {
+    "public_culture__kita": 1
+   }
+  },
+  {
+   "tag": "healthcare=laboratory",
+   "rows": 1,
+   "files": {
+    "public_culture__higashi": 1
+   }
+  },
+  {
+   "tag": "healthcare=sample_collection",
+   "rows": 1,
+   "files": {
+    "public_culture__kita": 1
+   }
+  },
+  {
+   "tag": "historic=church",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=clinic",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=cowshed",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=gymnasium",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=heritage",
+   "rows": 1,
+   "files": {
+    "public_culture__higashi": 1
+   }
+  },
+  {
+   "tag": "historic=hotel",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=machine",
+   "rows": 1,
+   "files": {
+    "public_culture__chuo": 1
+   }
+  },
+  {
+   "tag": "historic=manor",
+   "rows": 1,
+   "files": {
+    "public_culture__minami": 1
+   }
+  },
+  {
+   "tag": "historic=police",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=postoffice",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=ruins",
+   "rows": 1,
+   "files": {
+    "public_culture__shiroishi": 1
+   }
+  },
+  {
+   "tag": "historic=school",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=shrine",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=silo",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=stable",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=station",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "historic=statue",
+   "rows": 1,
+   "files": {
+    "public_culture__chuo": 1
+   }
+  },
+  {
+   "tag": "historic=temple",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "leisure=fishing",
+   "rows": 1,
+   "files": {
+    "other_unknown__kiyota": 1
+   }
+  },
+  {
+   "tag": "leisure=indoor_play",
+   "rows": 1,
+   "files": {
+    "other_unknown__kiyota": 1
+   }
+  },
+  {
+   "tag": "leisure=nature_reserve",
+   "rows": 1,
+   "files": {
+    "parks_play__kiyota": 1
+   }
+  },
+  {
+   "tag": "leisure=resort",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "leisure=sports_centre;pitch",
+   "rows": 1,
+   "files": {
+    "other_unknown__kita": 1
+   }
+  },
+  {
+   "tag": "office=Polar_Star_Space_Co.,_Ltd",
+   "rows": 1,
+   "files": {
+    "other_unknown__kita": 1
+   }
+  },
+  {
+   "tag": "office=accountant",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "office=bank",
+   "rows": 1,
+   "files": {
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "office=chamber",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "office=charity",
+   "rows": 1,
+   "files": {
+    "other_unknown__minami": 1
+   }
+  },
+  {
+   "tag": "office=construction_company",
+   "rows": 1,
+   "files": {
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "office=education=training",
+   "rows": 1,
+   "files": {
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "office=energy_supplier",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "office=lawyer",
+   "rows": 1,
+   "files": {
+    "other_unknown__minami": 1
+   }
+  },
+  {
+   "tag": "office=taxi",
+   "rows": 1,
+   "files": {
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "office=waste_management",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "office=南3条西24丁目",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=agrarian",
+   "rows": 1,
+   "files": {
+    "commercial__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "shop=anime",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=bag",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=bed",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=bookmaker",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=car_repair;car_parts",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "shop=cheese",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=country_store",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "shop=estate_agent",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=farm",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   }
+  },
+  {
+   "tag": "shop=fashion_accessories",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=frame",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=gas",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=gold_buyer",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=health_food",
+   "rows": 1,
+   "files": {
+    "commercial__higashi": 1
+   }
+  },
+  {
+   "tag": "shop=hearing_aids",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=houseware",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=hunting",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "shop=kiosk",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "shop=medical_supply",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=model",
+   "rows": 1,
+   "files": {
+    "commercial__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "shop=money_lender",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=nuts",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=paint",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=printing",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=radiotechnics",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=shopping_centre",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   }
+  },
+  {
+   "tag": "shop=tailor",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=unstaffed_store",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=video_games",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   }
+  },
+  {
+   "tag": "shop=watches",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "shop=wholesale",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   }
+  },
+  {
+   "tag": "shop=wine",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   }
+  },
+  {
+   "tag": "sport=archery",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=athletics;baseball;soccer",
+   "rows": 1,
+   "files": {
+    "sports__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "sport=baseball;soccer",
+   "rows": 1,
+   "files": {
+    "sports__atsubetsu": 1
+   }
+  },
+  {
+   "tag": "sport=baseball;soccer;athletics",
+   "rows": 1,
+   "files": {
+    "sports__chuo": 1
+   }
+  },
+  {
+   "tag": "sport=billiards",
+   "rows": 1,
+   "files": {
+    "other_unknown__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=bowls",
+   "rows": 1,
+   "files": {
+    "other_unknown__shiroishi": 1
+   }
+  },
+  {
+   "tag": "sport=boxing",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=curling",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=equestrian",
+   "rows": 1,
+   "files": {
+    "sports__kita": 1
+   }
+  },
+  {
+   "tag": "sport=fitness;exercise",
+   "rows": 1,
+   "files": {
+    "sports__nishi": 1
+   }
+  },
+  {
+   "tag": "sport=fitness;swimming;golf",
+   "rows": 1,
+   "files": {
+    "sports__chuo": 1
+   }
+  },
+  {
+   "tag": "sport=hockey;handball",
+   "rows": 1,
+   "files": {
+    "sports__kita": 1
+   }
+  },
+  {
+   "tag": "sport=ice_skating;ice_hockey",
+   "rows": 1,
+   "files": {
+    "sports__teine": 1
+   }
+  },
+  {
+   "tag": "sport=kickboxing",
+   "rows": 1,
+   "files": {
+    "sports__kiyota": 1
+   }
+  },
+  {
+   "tag": "sport=running;soccer",
+   "rows": 1,
+   "files": {
+    "sports__kita": 1
+   }
+  },
+  {
+   "tag": "sport=skateboard",
+   "rows": 1,
+   "files": {
+    "sports__teine": 1
+   }
+  },
+  {
+   "tag": "sport=skiing",
+   "rows": 1,
+   "files": {
+    "sports__minami": 1
+   }
+  },
+  {
+   "tag": "sport=soccer;Cross Country skiing",
+   "rows": 1,
+   "files": {
+    "sports__kiyota": 1
+   }
+  },
+  {
+   "tag": "sport=soccer;rugby",
+   "rows": 1,
+   "files": {
+    "sports__kita": 1
+   }
+  },
+  {
+   "tag": "sport=soccer;running",
+   "rows": 1,
+   "files": {
+    "sports__kiyota": 1
+   }
+  },
+  {
+   "tag": "sport=soccer_tennis",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   }
+  },
+  {
+   "tag": "sport=sumo",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   }
+  },
+  {
+   "tag": "sport=swimming;multi",
+   "rows": 1,
+   "files": {
+    "sports__kiyota": 1
+   }
+  },
+  {
+   "tag": "sport=パーソナルトレーニングジム",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   }
+  },
+  {
+   "tag": "tourism=theme_park",
+   "rows": 1,
+   "files": {
+    "other_unknown__nishi": 1
+   }
+  },
+  {
+   "tag": "tourism=ドリームハウス",
+   "rows": 1,
+   "files": {
+    "other_unknown__toyohira": 1
+   }
+  }
+ ]
+}

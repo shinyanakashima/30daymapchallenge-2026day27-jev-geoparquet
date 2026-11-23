@@ -3,7 +3,7 @@
 Layout in the bucket (same convention as the other datasets in geo-opendata: <source>-<dataset>/<format>/<date>/):
 
   osm-poi/source/<date>/_source.json
-  osm-poi/parquet/<date>/city=<city>/manifest.m1.json
+  osm-poi/parquet/<date>/city=<city>/manifest.m1.json, manifest.m2.json, manifest.m3.json
   osm-poi/parquet/<date>/city=<city>/boundary.geojson
   osm-poi/parquet/<date>/city=<city>/category=<category>/area=<area>/part-0.parquet
 
@@ -34,7 +34,7 @@ def main():
     uploads = []
     for city in CITIES:
         d = root / f"city={city}"
-        files = [d / "manifest.m1.json", d / "boundary.geojson"] + sorted(d.glob("category=*/area=*/part-0.parquet"))
+        files = sorted(d.glob("manifest.m*.json")) + [d / "boundary.geojson"] + sorted(d.glob("category=*/area=*/part-0.parquet"))
         for p in files:
             uploads.append((p, f"osm-poi/parquet/{args.date}/city={city}/{p.relative_to(d).as_posix()}"))
     source = json.loads((root / f"city={CITIES[0]}" / "source.json").read_text())

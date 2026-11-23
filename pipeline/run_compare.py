@@ -67,14 +67,49 @@ def delta(a, b):
 
 
 def manifest_table(con, manifest):
+    """Load the manifest into a table and return the struct expression that is sent to Jev per file."""
     rows = []
+    if manifest["version"] == "m1":
+        for f in manifest["files"]:
+            tags = ", ".join(f"{k}: {v}" for k, v in f["tag_counts"].items())
+            names = ", ".join(f["sample_names"])
+            rows.append((f["id"], f["category_label"], f["rows"], f["unnamed_rows"], tags, names))
+        con.sql("CREATE OR REPLACE TABLE manifest (id VARCHAR, category VARCHAR, rows INTEGER, "
+                "unnamed_rows INTEGER, most_common_tags VARCHAR, sample_names VARCHAR)")
+        con.executemany("INSERT INTO manifest VALUES (?, ?, ?, ?, ?, ?)", rows)
+        return "struct_pack(category, rows, unnamed_rows, most_common_tags, sample_names)"
     for f in manifest["files"]:
         tags = ", ".join(f"{k}: {v}" for k, v in f["tag_counts"].items())
-        names = ", ".join(f["sample_names"])
-        rows.append((f["id"], f["category_label"], f["rows"], f["unnamed_rows"], tags, names))
-    con.sql("CREATE OR REPLACE TABLE manifest (id VARCHAR, category VARCHAR, rows INTEGER, "
-            "unnamed_rows INTEGER, most_common_tags VARCHAR, sample_names VARCHAR)")
-    con.executemany("INSERT INTO manifest VALUES (?, ?, ?, ?, ?, ?)", rows)
+        rows.append((f["id"], f["category_label"], f["rows"], f["named_share"], f["detail_share"], tags,
+                     ", ".join(f["sample_names"])))
+    con.sql("CREATE OR REPLACE TABLE manifest (id VARCHAR, category VARCHAR, rows INTEGER, named_share DOUBLE, "
+            "detail_share DOUBLE, all_tags VARCHAR, sample_names_by_tag VARCHAR)")
+    con.executemany("INSERT INTO manifest VALUES (?, ?, ?, ?, ?, ?, ?)", rows)
+    return "struct_pack(category, rows, named_share, detail_share, all_tags, sample_names_by_tag)"
+
+
+def tag_question(q):
+    return (f'This is one OpenStreetMap tag and how many places in the data carry it. Could places with this '
+            f'tag match the request "{q}"? Answer candidate if they may, exclude if they clearly do not, '
+            f'insufficient_information if the tag is not enough to tell.')
+
+
+def select_files(con, manifest, question):
+    if manifest["version"] == "m3":
+        con.sql("CREATE OR REPLACE TABLE tags (tag VARCHAR, places INTEGER)")
+        con.executemany("INSERT INTO tags VALUES (?, ?)", [(t["tag"], t["rows"]) for t in manifest["tags"]])
+        tag_status = dict(con.sql(f"""SELECT tag, jev_choice(struct_pack(tag, places), {sql_str(tag_question(question))},
+                                       {FILE_OPTIONS}) FROM tags""").fetchall())
+        status = {f["id"]: "exclude" for f in manifest["files"]}
+        rank = {"exclude": 0, "insufficient_information": 1, "candidate": 2}
+        for t in manifest["tags"]:
+            for fid in t["files"]:
+                if rank[tag_status[t["tag"]]] > rank[status[fid]]:
+                    status[fid] = tag_status[t["tag"]]
+        return status
+    struct = manifest_table(con, manifest)
+    return dict(con.sql(f"""SELECT id, jev_choice({struct}, {sql_str(file_question(question))}, {FILE_OPTIONS})
+                            FROM manifest""").fetchall())
 
 
 def run_once(args, manifest, boundary_wkt, q, method):
@@ -90,11 +125,7 @@ def run_once(args, manifest, boundary_wkt, q, method):
         cats = set(q["rule_categories"])
         file_status = {fid: ("read" if f["category"] in cats else "skipped") for fid, f in by_id.items()}
     else:
-        manifest_table(con, manifest)
-        res = con.sql(f"""SELECT id, jev_choice(struct_pack(category, rows, unnamed_rows, most_common_tags,
-                              sample_names), {sql_str(file_question(q['en']))}, {FILE_OPTIONS}) AS c
-                          FROM manifest""").fetchall()
-        file_status = {fid: c for fid, c in res}
+        file_status = select_files(con, manifest, q["en"])
     t1 = time.perf_counter()
     s1 = stats(con)
     to_read = [fid for fid, st in file_status.items() if st != "exclude" and st != "skipped"]
@@ -149,8 +180,10 @@ def main():
     ap.add_argument("--reps", type=int, default=3)
     ap.add_argument("--api-url", default=None)
     ap.add_argument("--model", default="jev-latest")
+    ap.add_argument("--manifest", default="manifest.m1.json")
+    ap.add_argument("--methods", default="A,B,C")
     args = ap.parse_args()
-    manifest = json.loads((Path(args.data_dir) / "manifest.m1.json").read_text())
+    manifest = json.loads((Path(args.data_dir) / args.manifest).read_text())
     qs = json.loads(Path(args.questions).read_text())
     con = duckdb.connect()
     con.sql("LOAD spatial")
@@ -158,9 +191,9 @@ def main():
     con.close()
     started = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     runs = []
-    methods = ["A", "B", "C"]
+    methods = args.methods.split(",")
     for rep in range(args.reps):
-        order = methods[rep % 3:] + methods[:rep % 3]  # rotate the order between repetitions
+        order = methods[rep % len(methods):] + methods[:rep % len(methods)]  # rotate the order between repetitions
         for q in qs["questions"]:
             for m in order:
                 r = run_once(args, manifest, boundary_wkt, q, m)
