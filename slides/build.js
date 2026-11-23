@@ -109,31 +109,31 @@ s.addNotes("問いは2つです。曖昧な条件で場所を検索できるか�
 // 3 ------------------------------------------------------------------------------------------
 pres.addSection({ title: "前提" });
 s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "前提" });
-s.addText("OSM の地物には「タグ」が付いている", { placeholder: "title" });
-label(s, "OpenStreetMap は、誰でも編集できる地図データ。地物ごとに「何の場所か」を表すタグ（キー=値）が付く", 0.5, 1.35, 9.0, 0.8, { fontSize: 15 });
+s.addText("OSM の地物には、種類を表す属性（タグ）が付いている", { placeholder: "title" });
+label(s, "OpenStreetMap（OSM）は、世界中の人が編集できる地図データ。OSM では属性を「タグ」と呼び、地物ごとに「キー=値」の形で付ける。GIS の属性テーブルのように列が決まっているのではなく、必要な属性を地物ごとに足していく", 0.5, 1.3, 9.0, 1.0, { fontSize: 14 });
 s.addTable([
-  [head("名前"), head("タグ"), head("意味")],
+  [head("名前（name）"), head("種類を表す属性（タグ）"), head("意味")],
   ["のびのび公園", { text: "leisure=park", options: { fontFace: "Courier New" } }, "公園"],
   ["もみじ台幼稚園", { text: "amenity=kindergarten", options: { fontFace: "Courier New" } }, "幼稚園"],
   ["ツルハドラッグ", { text: "amenity=pharmacy\nshop=chemist", options: { fontFace: "Courier New" } }, "薬局・ドラッグストア"],
-], { x: 0.5, y: 2.3, w: 9.0, colW: [2.6, 3.6, 2.8], fontSize: 14, color: HEX.dk1, border: { type: "solid", color: "DEDBD3", pt: 0.75 }, rowH: 0.55, valign: "middle" });
-label(s, "札幌市の実データ（2026年11月21日時点の OSM）", 0.5, 4.75, 9.0, 0.3, { fontSize: 10, ...muted });
-label(s, "地図アプリやGISでの検索は、ふつう「このタグを持つ地物」で絞り込む", 0.5, 5.4, 9.0, 0.6, { fontSize: 16, bold: true, color: C.accent1 });
-s.addNotes("OpenStreetMap は誰でも編集できる地図データです。地物には、何の場所かを表すタグが付いています。公園なら leisure=park、幼稚園なら amenity=kindergarten です。検索は、ふつうこのタグで絞り込みます。");
+], { x: 0.5, y: 2.45, w: 9.0, colW: [2.6, 3.6, 2.8], fontSize: 14, color: HEX.dk1, border: { type: "solid", color: "DEDBD3", pt: 0.75 }, rowH: 0.55, valign: "middle" });
+label(s, "札幌市の実データ（2026年11月21日時点の OSM）。今回は、よく使うキー（name・amenity・leisure・shop など）を属性の列にして扱った", 0.5, 4.85, 9.0, 0.5, { fontSize: 11, ...muted });
+label(s, "GIS で場所を探すときは、ふつうこの種類の属性で絞り込む（例：amenity が kindergarten の地物）", 0.5, 5.55, 9.0, 0.7, { fontSize: 16, bold: true, color: C.accent1 });
+s.addNotes("OpenStreetMap は誰でも編集できる地図データです。OSM では属性のことをタグと呼び、キーと値の組で付けます。GIS の属性テーブルと違って列は決まっておらず、地物ごとに必要な属性を足していきます。公園なら leisure=park、幼稚園なら amenity=kindergarten です。検索は、ふつうこのタグで絞り込みます。");
 
 // 4 ------------------------------------------------------------------------------------------
 s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "前提" });
-s.addText("「子どもが遊べる場所」というタグは無い", { placeholder: "title" });
-label(s, "従来のやり方：条件に合いそうなタグを、人が選んで対応表にする", 0.5, 1.35, 9.0, 0.5, { fontSize: 15, bold: true });
+s.addText("「子どもが遊べる場所」という属性は無い", { placeholder: "title" });
+label(s, "従来のやり方：条件に合いそうな種類の属性（タグ）を、人が選んで対応表にする", 0.5, 1.35, 9.0, 0.5, { fontSize: 15, bold: true });
 s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y: 1.95, w: 4.2, h: 1.5, fill: { color: HEX.lt2 }, line: { type: "none" }, objectName: "rule" });
-label(s, "子どもが遊べる場所\n→ 公園・遊び場のタグ", 0.7, 2.05, 3.9, 1.3, { fontSize: 18, bold: true, valign: "middle" });
+label(s, "子どもが遊べる場所\n→ 公園・遊び場の地物だけを見る", 0.7, 2.05, 3.9, 1.3, { fontSize: 17, bold: true, valign: "middle" });
 label(s, [
-  { text: "対応表に無いタグの地物は、検索にかからない", options: { bullet: true, breakLine: true } },
+  { text: "対応表に入れなかった種類の地物は、検索にかからない", options: { bullet: true, breakLine: true } },
   { text: "幼稚園、児童会館、子ども向けの屋内施設……をどこまで入れるかは、人の判断", options: { bullet: true, breakLine: true } },
-  { text: "「雨の日に屋内で過ごせる場所」のように、タグをまたぐ条件ほど難しい", options: { bullet: true } },
+  { text: "「雨の日に屋内で過ごせる場所」のように、いくつもの種類にまたがる条件ほど難しい", options: { bullet: true } },
 ], 5.0, 1.95, 4.5, 3.0, { fontSize: 14, paraSpaceAfter: 8 });
-label(s, "今回の試み：AI に地物の名前とタグを読ませ、条件に合うかを1件ずつ判定させる", 0.5, 5.3, 9.0, 0.8, { fontSize: 16, bold: true, color: C.accent1 });
-s.addNotes("子どもが遊べる場所、というタグはありません。従来は、合いそうなタグを人が選んで対応表を作ります。対応表に無いものは漏れますし、どこまで入れるかは人の判断です。今回は、AI に地物の名前とタグを読ませて、1件ずつ判定させました。");
+label(s, "今回の試み：AI に地物の名前と属性（タグ）を読ませ、条件に合うかを1件ずつ判定させる", 0.5, 5.3, 9.0, 0.8, { fontSize: 16, bold: true, color: C.accent1 });
+s.addNotes("子どもが遊べる場所、という属性はありません。従来は、合いそうな種類の属性を人が選んで対応表を作ります。対応表に無いものは漏れますし、どこまで入れるかは人の判断です。今回は、AI に地物の名前とタグを読ませて、1件ずつ判定させました。");
 
 // 5 ------------------------------------------------------------------------------------------
 s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "前提" });
@@ -181,7 +181,7 @@ label(s, [
 label(s, [
   { text: "地物は GeoParquet（空間データを扱える列指向のファイル形式）で、カテゴリ・区域ごとのファイルに分けて保存", options: { bullet: true, breakLine: true } },
   { text: "DuckDB（ファイルを直接 SQL で読めるデータベース）で読み、地物1件ごとに jev_choice で判定", options: { bullet: true, breakLine: true } },
-  { text: "Jev に送るのは名前とタグなど値のある属性だけ。位置（ジオメトリ）は送らない", options: { bullet: true } },
+  { text: "Jev に送るのは、名前と種類の属性（タグ）など、値の入っている属性だけ。位置（ジオメトリ）は送らない", options: { bullet: true } },
 ], 0.5, 3.6, 9.0, 2.2, { fontSize: 14, paraSpaceAfter: 8 });
 label(s, "空間条件などはいつもの SQL のまま書き、Jev の判定は列を1つ足す形で加えられる", 0.5, 5.9, 9.0, 0.6, { fontSize: 15, bold: true, color: C.accent1 });
 s.addNotes("DuckDB の jev 拡張を使うと、SQL の中で Jev を呼べます。地物は GeoParquet のファイルに保存してあり、DuckDB で読みながら、1件ずつ jev_choice で判定します。空間条件はいつもの SQL のままです。");
@@ -190,9 +190,9 @@ s.addNotes("DuckDB の jev 拡張を使うと、SQL の中で Jev を呼べま�
 s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "仕組み" });
 s.addText("jev 拡張の4つの仕組み", { placeholder: "title" });
 const feats = [
-  ["20件をまとめて1回で問い合わせる", "jev_batch_size = 20", "北広島は589件のうち、名前もタグも違う492件を問い合わせ、問い合わせは25回だった"],
+  ["20件をまとめて1回で問い合わせる", "jev_batch_size = 20", "北広島は589件のうち、名前と属性が互いに違う492件を問い合わせ、問い合わせは25回だった"],
   ["16回分の問い合わせを同時に送る", "jev_concurrency = 16", "北広島の25回分なら、同時に送るので、待ち時間は約2回分で済む"],
-  ["同じ内容への答えは覚えておく", "jev_cache_clear() で消去", "名前もタグも全く同じ地物（名前の無い公園など）は、1回だけ問い合わせる。札幌は16,610件のうち11,944件だった。計測では毎回消した"],
+  ["同じ内容への答えは覚えておく", "jev_cache_clear() で消去", "名前も属性も全く同じ地物（名前の無い公園など）は、1回だけ問い合わせる。札幌は16,610件のうち11,944件だった。計測では毎回消した"],
   ["使った量を SQL で集計できる", "jev_stats()", "問い合わせ回数・トークン数・推定費用。今日の数字はすべてこれで取得"],
 ];
 feats.forEach(([h, sub, b], i) => {
@@ -209,7 +209,7 @@ s.addNotes("jev 拡張には4つの仕組みがあります。20件をまとめ�
 pres.addSection({ title: "結果" });
 s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "結果" });
 s.addText("結果①：従来のやり方では拾えない候補を拾えた", { placeholder: "title" });
-label(s, "従来のやり方として、地物をタグで5つのカテゴリに分け、条件ごとに見るカテゴリを人が決めて検索した。その結果と、Jev で全件を判定した結果を比べた", 0.5, 1.3, 9.0, 0.65, { fontSize: 13 });
+label(s, "従来のやり方として、地物を種類の属性（タグ）で5つのカテゴリに分け、条件ごとに見るカテゴリを人が決めて検索した。その結果と、Jev で全件を判定した結果を比べた", 0.5, 1.3, 9.0, 0.65, { fontSize: 13 });
 const ex = { kids_play: "幼稚園・児童会館・学童クラブ", rainy_day: "プール・銭湯・ジム・ネットカフェ", groceries: "ドラッグストア", local_history: "博物館・郷土資料館" };
 const rule = { kids_play: "公園・遊び場", rainy_day: "商業施設、公共・文化施設", groceries: "商業施設", local_history: "公共・文化施設" };
 s.addTable([
@@ -218,8 +218,8 @@ s.addTable([
     return [short[q.id], rule[q.id], { text: `${n.toLocaleString()}件`, options: { align: "right" } }, { text: `${m}件（${Math.round(m / n * 100)}%）`, options: { align: "right", bold: m / n > 0.1 } }, ex[q.id]]; }),
 ], { x: 0.5, y: 2.05, w: 9.0, colW: [1.9, 1.9, 1.5, 1.75, 1.95], fontSize: 11, color: HEX.dk1, border: { type: "solid", color: "DEDBD3", pt: 0.75 }, rowH: 0.55, valign: "middle" });
 label(s, `札幌市の OSM の地物 ${SP.meta.features.toLocaleString()}件。Jev で全件を判定した1回目の結果`, 0.5, 5.0, 9.0, 0.3, { fontSize: 10, ...muted });
-label(s, "タグをまたぐ条件ほど、従来のやり方では見つからない地物が多い（子どもが遊べる場所で16%、雨の日に屋内で過ごせる場所で20%）", 0.5, 5.5, 9.0, 0.9, { fontSize: 15, bold: true, color: C.accent1 });
-s.addNotes("結果です。子どもが遊べる場所では、Jev が該当とした1,726件のうち268件、16%は、公園のタグだけを見る従来のやり方では拾えませんでした。幼稚園や児童会館です。雨の日では20%がプールや銭湯などでした。条件が曖昧でタグをまたぐほど、差が大きくなります。");
+label(s, "いくつもの種類にまたがる条件ほど、従来のやり方では見つからない地物が多い（子どもが遊べる場所で16%、雨の日に屋内で過ごせる場所で20%）", 0.5, 5.5, 9.0, 0.9, { fontSize: 15, bold: true, color: C.accent1 });
+s.addNotes("結果です。子どもが遊べる場所では、Jev が該当とした1,726件のうち268件、16%は、公園の属性を持つ地物だけを見る従来のやり方では拾えませんでした。幼稚園や児童会館です。雨の日では20%がプールや銭湯などでした。条件が曖昧でタグをまたぐほど、差が大きくなります。");
 
 // 9 ------------------------------------------------------------------------------------------
 s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "結果" });
@@ -261,14 +261,14 @@ pres.addSection({ title: "まとめ" });
 s = pres.addSlide({ masterName: "DARK", sectionTitle: "まとめ" });
 s.addText("まとめ", { placeholder: "title" });
 label(s, [
-  { text: "Jev を SQL の条件に使うと、タグに無い曖昧な条件でも場所を検索できた", options: { bullet: true, breakLine: true } },
-  { text: "従来のタグの対応表では拾えない候補を拾えた（札幌・子どもが遊べる場所で 16%、雨の日で 20%）", options: { bullet: true, breakLine: true } },
+  { text: "Jev を SQL の条件に使うと、属性（タグ）として用意されていない曖昧な条件でも、場所を検索できた", options: { bullet: true, breakLine: true } },
+  { text: "属性の対応表で絞る従来のやり方では見つからない候補を拾えた（札幌・子どもが遊べる場所で 16%、雨の日で 20%）", options: { bullet: true, breakLine: true } },
   { text: "代わりに件数に比例した時間がかかり、判定には誤りと揺れがある。正しさの評価が次の一歩", options: { bullet: true } },
 ], 0.6, 2.75, 8.8, 2.6, { fontSize: 16, color: C.background1, paraSpaceAfter: 10 });
 label(s, "作品：shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/", 0.6, 5.85, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "コード：github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet", 0.6, 6.2, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "データ © OpenStreetMap contributors（ODbL）／背景地図：地理院タイル／Jev は TypeSafe AI のモデル", 0.6, 6.6, 8.8, 0.3, { fontSize: 10, color: C.lt2 });
-s.addNotes("まとめです。Jev を SQL の条件に使うと、タグに無い曖昧な条件でも検索できました。従来の対応表では拾えない候補を、子どもで16%、雨の日で20%拾えました。代わりに件数に比例した時間がかかり、判定には誤りと揺れがあります。正しさの評価が次の一歩です。");
+s.addNotes("まとめです。Jev を SQL の条件に使うと、属性として用意されていない曖昧な条件でも検索できました。従来の対応表では拾えない候補を、子どもで16%、雨の日で20%拾えました。代わりに件数に比例した時間がかかり、判定には誤りと揺れがあります。正しさの評価が次の一歩です。");
 
 (async () => {
   await pres.writeFile({ fileName: OUT });
