@@ -1,0 +1,9474 @@
+{
+ "version": "m4",
+ "dataset": "OpenStreetMap POIs, Sapporo, Hokkaido",
+ "zone_split": {
+  "method": "ward"
+ },
+ "zones": [
+  {
+   "id": "atsubetsu",
+   "ja": "厚別区",
+   "en": "Atsubetsu"
+  },
+  {
+   "id": "chuo",
+   "ja": "中央区",
+   "en": "Chuo"
+  },
+  {
+   "id": "higashi",
+   "ja": "東区",
+   "en": "Higashi"
+  },
+  {
+   "id": "kita",
+   "ja": "北区",
+   "en": "Kita"
+  },
+  {
+   "id": "kiyota",
+   "ja": "清田区",
+   "en": "Kiyota"
+  },
+  {
+   "id": "minami",
+   "ja": "南区",
+   "en": "Minami"
+  },
+  {
+   "id": "nishi",
+   "ja": "西区",
+   "en": "Nishi"
+  },
+  {
+   "id": "shiroishi",
+   "ja": "白石区",
+   "en": "Shiroishi"
+  },
+  {
+   "id": "teine",
+   "ja": "手稲区",
+   "en": "Teine"
+  },
+  {
+   "id": "toyohira",
+   "ja": "豊平区",
+   "en": "Toyohira"
+  }
+ ],
+ "files": [
+  {
+   "file": "category=parks_play/area=atsubetsu/part-0.parquet",
+   "id": "parks_play__atsubetsu",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "atsubetsu",
+   "rows": 189,
+   "bytes": 8002,
+   "bbox": [
+    141.446559,
+    43.010557,
+    141.501484,
+    43.072024
+   ]
+  },
+  {
+   "file": "category=parks_play/area=chuo/part-0.parquet",
+   "id": "parks_play__chuo",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "chuo",
+   "rows": 198,
+   "bytes": 12588,
+   "bbox": [
+    141.28227,
+    43.021699,
+    141.387395,
+    43.076074
+   ]
+  },
+  {
+   "file": "category=parks_play/area=higashi/part-0.parquet",
+   "id": "parks_play__higashi",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "higashi",
+   "rows": 326,
+   "bytes": 14317,
+   "bbox": [
+    141.345232,
+    43.06968,
+    141.445871,
+    43.140484
+   ]
+  },
+  {
+   "file": "category=parks_play/area=kita/part-0.parquet",
+   "id": "parks_play__kita",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "kita",
+   "rows": 533,
+   "bytes": 21005,
+   "bbox": [
+    141.271478,
+    43.067093,
+    141.416212,
+    43.177335
+   ]
+  },
+  {
+   "file": "category=parks_play/area=kiyota/part-0.parquet",
+   "id": "parks_play__kiyota",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "kiyota",
+   "rows": 198,
+   "bytes": 8048,
+   "bbox": [
+    141.413593,
+    42.932836,
+    141.478071,
+    43.023527
+   ]
+  },
+  {
+   "file": "category=parks_play/area=minami/part-0.parquet",
+   "id": "parks_play__minami",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "minami",
+   "rows": 351,
+   "bytes": 16679,
+   "bbox": [
+    141.152019,
+    42.912464,
+    141.393161,
+    43.022289
+   ]
+  },
+  {
+   "file": "category=parks_play/area=nishi/part-0.parquet",
+   "id": "parks_play__nishi",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "nishi",
+   "rows": 338,
+   "bytes": 11703,
+   "bbox": [
+    141.210575,
+    43.040494,
+    141.32679,
+    43.11418
+   ]
+  },
+  {
+   "file": "category=parks_play/area=shiroishi/part-0.parquet",
+   "id": "parks_play__shiroishi",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "shiroishi",
+   "rows": 165,
+   "bytes": 7898,
+   "bbox": [
+    141.369043,
+    43.024633,
+    141.452017,
+    43.09024
+   ]
+  },
+  {
+   "file": "category=parks_play/area=teine/part-0.parquet",
+   "id": "parks_play__teine",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "teine",
+   "rows": 336,
+   "bytes": 11247,
+   "bbox": [
+    141.189374,
+    43.089173,
+    141.283429,
+    43.149542
+   ]
+  },
+  {
+   "file": "category=parks_play/area=toyohira/part-0.parquet",
+   "id": "parks_play__toyohira",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "toyohira",
+   "rows": 229,
+   "bytes": 10075,
+   "bbox": [
+    141.353783,
+    42.980979,
+    141.429878,
+    43.054713
+   ]
+  },
+  {
+   "file": "category=sports/area=atsubetsu/part-0.parquet",
+   "id": "sports__atsubetsu",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "atsubetsu",
+   "rows": 99,
+   "bytes": 6461,
+   "bbox": [
+    141.447945,
+    43.014234,
+    141.502892,
+    43.070498
+   ]
+  },
+  {
+   "file": "category=sports/area=chuo/part-0.parquet",
+   "id": "sports__chuo",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "chuo",
+   "rows": 111,
+   "bytes": 8078,
+   "bbox": [
+    141.278815,
+    43.02124,
+    141.37689,
+    43.08494
+   ]
+  },
+  {
+   "file": "category=sports/area=higashi/part-0.parquet",
+   "id": "sports__higashi",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "higashi",
+   "rows": 152,
+   "bytes": 8628,
+   "bbox": [
+    141.348446,
+    43.069303,
+    141.449762,
+    43.152129
+   ]
+  },
+  {
+   "file": "category=sports/area=kita/part-0.parquet",
+   "id": "sports__kita",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "kita",
+   "rows": 174,
+   "bytes": 8298,
+   "bbox": [
+    141.286127,
+    43.068918,
+    141.422634,
+    43.172355
+   ]
+  },
+  {
+   "file": "category=sports/area=kiyota/part-0.parquet",
+   "id": "sports__kiyota",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "kiyota",
+   "rows": 96,
+   "bytes": 7432,
+   "bbox": [
+    141.393444,
+    42.924529,
+    141.476543,
+    43.017848
+   ]
+  },
+  {
+   "file": "category=sports/area=minami/part-0.parquet",
+   "id": "sports__minami",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "minami",
+   "rows": 125,
+   "bytes": 7413,
+   "bbox": [
+    141.158455,
+    42.904161,
+    141.388189,
+    43.017388
+   ]
+  },
+  {
+   "file": "category=sports/area=nishi/part-0.parquet",
+   "id": "sports__nishi",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "nishi",
+   "rows": 70,
+   "bytes": 6245,
+   "bbox": [
+    141.245126,
+    43.053975,
+    141.317746,
+    43.113892
+   ]
+  },
+  {
+   "file": "category=sports/area=shiroishi/part-0.parquet",
+   "id": "sports__shiroishi",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "shiroishi",
+   "rows": 101,
+   "bytes": 6825,
+   "bbox": [
+    141.379741,
+    43.025242,
+    141.458012,
+    43.093032
+   ]
+  },
+  {
+   "file": "category=sports/area=teine/part-0.parquet",
+   "id": "sports__teine",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "teine",
+   "rows": 92,
+   "bytes": 6530,
+   "bbox": [
+    141.18934,
+    43.096861,
+    141.280751,
+    43.156359
+   ]
+  },
+  {
+   "file": "category=sports/area=toyohira/part-0.parquet",
+   "id": "sports__toyohira",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "toyohira",
+   "rows": 127,
+   "bytes": 8151,
+   "bbox": [
+    141.355386,
+    42.964236,
+    141.430366,
+    43.04878
+   ]
+  },
+  {
+   "file": "category=commercial/area=atsubetsu/part-0.parquet",
+   "id": "commercial__atsubetsu",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "atsubetsu",
+   "rows": 331,
+   "bytes": 19573,
+   "bbox": [
+    141.44588,
+    43.010459,
+    141.500241,
+    43.061522
+   ]
+  },
+  {
+   "file": "category=commercial/area=chuo/part-0.parquet",
+   "id": "commercial__chuo",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "chuo",
+   "rows": 2432,
+   "bytes": 107799,
+   "bbox": [
+    141.273864,
+    43.01784,
+    141.387407,
+    43.074337
+   ]
+  },
+  {
+   "file": "category=commercial/area=higashi/part-0.parquet",
+   "id": "commercial__higashi",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "higashi",
+   "rows": 732,
+   "bytes": 36304,
+   "bbox": [
+    141.343999,
+    43.069102,
+    141.440385,
+    43.129346
+   ]
+  },
+  {
+   "file": "category=commercial/area=kita/part-0.parquet",
+   "id": "commercial__kita",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "kita",
+   "rows": 831,
+   "bytes": 41792,
+   "bbox": [
+    141.278477,
+    43.067363,
+    141.412301,
+    43.172479
+   ]
+  },
+  {
+   "file": "category=commercial/area=kiyota/part-0.parquet",
+   "id": "commercial__kiyota",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "kiyota",
+   "rows": 349,
+   "bytes": 21138,
+   "bbox": [
+    141.424917,
+    42.94513,
+    141.475414,
+    43.025609
+   ]
+  },
+  {
+   "file": "category=commercial/area=minami/part-0.parquet",
+   "id": "commercial__minami",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "minami",
+   "rows": 361,
+   "bytes": 22248,
+   "bbox": [
+    141.153991,
+    42.913499,
+    141.387036,
+    43.022262
+   ]
+  },
+  {
+   "file": "category=commercial/area=nishi/part-0.parquet",
+   "id": "commercial__nishi",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "nishi",
+   "rows": 565,
+   "bytes": 30230,
+   "bbox": [
+    141.196773,
+    43.055974,
+    141.327203,
+    43.111216
+   ]
+  },
+  {
+   "file": "category=commercial/area=shiroishi/part-0.parquet",
+   "id": "commercial__shiroishi",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "shiroishi",
+   "rows": 512,
+   "bytes": 26336,
+   "bbox": [
+    141.368325,
+    43.023911,
+    141.454301,
+    43.081126
+   ]
+  },
+  {
+   "file": "category=commercial/area=teine/part-0.parquet",
+   "id": "commercial__teine",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "teine",
+   "rows": 216,
+   "bytes": 14891,
+   "bbox": [
+    141.192663,
+    43.091202,
+    141.280043,
+    43.145098
+   ]
+  },
+  {
+   "file": "category=commercial/area=toyohira/part-0.parquet",
+   "id": "commercial__toyohira",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "toyohira",
+   "rows": 669,
+   "bytes": 33712,
+   "bbox": [
+    141.355724,
+    42.989563,
+    141.433601,
+    43.055405
+   ]
+  },
+  {
+   "file": "category=public_culture/area=atsubetsu/part-0.parquet",
+   "id": "public_culture__atsubetsu",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "atsubetsu",
+   "rows": 253,
+   "bytes": 15260,
+   "bbox": [
+    141.445721,
+    43.014219,
+    141.503259,
+    43.067156
+   ]
+  },
+  {
+   "file": "category=public_culture/area=chuo/part-0.parquet",
+   "id": "public_culture__chuo",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "chuo",
+   "rows": 1106,
+   "bytes": 45963,
+   "bbox": [
+    141.267568,
+    43.014303,
+    141.386958,
+    43.076647
+   ]
+  },
+  {
+   "file": "category=public_culture/area=higashi/part-0.parquet",
+   "id": "public_culture__higashi",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "higashi",
+   "rows": 597,
+   "bytes": 26998,
+   "bbox": [
+    141.344479,
+    43.069236,
+    141.437235,
+    43.151556
+   ]
+  },
+  {
+   "file": "category=public_culture/area=kita/part-0.parquet",
+   "id": "public_culture__kita",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "kita",
+   "rows": 682,
+   "bytes": 31238,
+   "bbox": [
+    141.272526,
+    43.067532,
+    141.412992,
+    43.169835
+   ]
+  },
+  {
+   "file": "category=public_culture/area=kiyota/part-0.parquet",
+   "id": "public_culture__kiyota",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "kiyota",
+   "rows": 152,
+   "bytes": 10869,
+   "bbox": [
+    141.424701,
+    42.949893,
+    141.47764,
+    43.025569
+   ]
+  },
+  {
+   "file": "category=public_culture/area=minami/part-0.parquet",
+   "id": "public_culture__minami",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "minami",
+   "rows": 509,
+   "bytes": 22199,
+   "bbox": [
+    141.152268,
+    42.913308,
+    141.387534,
+    43.031012
+   ]
+  },
+  {
+   "file": "category=public_culture/area=nishi/part-0.parquet",
+   "id": "public_culture__nishi",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "nishi",
+   "rows": 303,
+   "bytes": 16303,
+   "bbox": [
+    141.242577,
+    43.051538,
+    141.326109,
+    43.113463
+   ]
+  },
+  {
+   "file": "category=public_culture/area=shiroishi/part-0.parquet",
+   "id": "public_culture__shiroishi",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "shiroishi",
+   "rows": 241,
+   "bytes": 14012,
+   "bbox": [
+    141.369533,
+    43.023374,
+    141.456466,
+    43.081375
+   ]
+  },
+  {
+   "file": "category=public_culture/area=teine/part-0.parquet",
+   "id": "public_culture__teine",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "teine",
+   "rows": 179,
+   "bytes": 11611,
+   "bbox": [
+    141.19551,
+    43.093875,
+    141.277761,
+    43.159028
+   ]
+  },
+  {
+   "file": "category=public_culture/area=toyohira/part-0.parquet",
+   "id": "public_culture__toyohira",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "toyohira",
+   "rows": 410,
+   "bytes": 20069,
+   "bbox": [
+    141.355911,
+    42.986586,
+    141.428286,
+    43.055641
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=atsubetsu/part-0.parquet",
+   "id": "other_unknown__atsubetsu",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "atsubetsu",
+   "rows": 47,
+   "bytes": 6767,
+   "bbox": [
+    141.445188,
+    43.020701,
+    141.500398,
+    43.057621
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=chuo/part-0.parquet",
+   "id": "other_unknown__chuo",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "chuo",
+   "rows": 343,
+   "bytes": 20092,
+   "bbox": [
+    141.277952,
+    43.023253,
+    141.381545,
+    43.074428
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=higashi/part-0.parquet",
+   "id": "other_unknown__higashi",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "higashi",
+   "rows": 124,
+   "bytes": 8823,
+   "bbox": [
+    141.346602,
+    43.070226,
+    141.446048,
+    43.131207
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=kita/part-0.parquet",
+   "id": "other_unknown__kita",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "kita",
+   "rows": 229,
+   "bytes": 12642,
+   "bbox": [
+    141.27129,
+    43.068015,
+    141.424505,
+    43.172471
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=kiyota/part-0.parquet",
+   "id": "other_unknown__kiyota",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "kiyota",
+   "rows": 29,
+   "bytes": 6034,
+   "bbox": [
+    141.41306,
+    42.932135,
+    141.462855,
+    43.022439
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=minami/part-0.parquet",
+   "id": "other_unknown__minami",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "minami",
+   "rows": 136,
+   "bytes": 9060,
+   "bbox": [
+    141.058344,
+    42.912706,
+    141.392316,
+    43.113683
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=nishi/part-0.parquet",
+   "id": "other_unknown__nishi",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "nishi",
+   "rows": 65,
+   "bytes": 7662,
+   "bbox": [
+    141.227197,
+    43.05193,
+    141.321426,
+    43.110472
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=shiroishi/part-0.parquet",
+   "id": "other_unknown__shiroishi",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "shiroishi",
+   "rows": 69,
+   "bytes": 7644,
+   "bbox": [
+    141.368075,
+    43.027922,
+    141.463238,
+    43.090491
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=teine/part-0.parquet",
+   "id": "other_unknown__teine",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "teine",
+   "rows": 29,
+   "bytes": 5525,
+   "bbox": [
+    141.205114,
+    43.084351,
+    141.272137,
+    43.153147
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=toyohira/part-0.parquet",
+   "id": "other_unknown__toyohira",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "toyohira",
+   "rows": 99,
+   "bytes": 9253,
+   "bbox": [
+    141.354834,
+    42.985506,
+    141.428439,
+    43.054208
+   ]
+  }
+ ],
+ "tags": [
+  {
+   "tag": "leisure=park",
+   "rows": 2511,
+   "files": {
+    "parks_play__atsubetsu": 158,
+    "parks_play__chuo": 138,
+    "parks_play__higashi": 301,
+    "parks_play__kita": 497,
+    "parks_play__kiyota": 177,
+    "parks_play__minami": 307,
+    "parks_play__nishi": 305,
+    "parks_play__shiroishi": 153,
+    "parks_play__teine": 273,
+    "parks_play__toyohira": 202
+   },
+   "example_names": [
+    "豊平川緑地",
+    "ひまわり公園",
+    "厚別いなり公園",
+    "共栄公園",
+    "知事公館",
+    "北海道庁庭園",
+    "野球場",
+    "ちえりあ広場",
+    "ウォーターガーデン",
+    "幌西ほうおん園",
+    "ぷろむなーどていね",
+    "ホロヒラタイ"
+   ]
+  },
+  {
+   "tag": "amenity=restaurant",
+   "rows": 1278,
+   "files": {
+    "commercial__atsubetsu": 35,
+    "commercial__chuo": 565,
+    "commercial__higashi": 97,
+    "commercial__kita": 153,
+    "commercial__kiyota": 68,
+    "commercial__minami": 45,
+    "commercial__nishi": 82,
+    "commercial__shiroishi": 81,
+    "commercial__teine": 27,
+    "commercial__toyohira": 125
+   },
+   "example_names": [
+    "びっくりドンキー",
+    "ガスト",
+    "みよしの",
+    "CoCo壱番屋",
+    "岩井畜産",
+    "大和軒",
+    "牛角",
+    "穂高",
+    "暖龍",
+    "鳥屋",
+    "鳥秀",
+    "信州庵"
+   ]
+  },
+  {
+   "tag": "shop=convenience",
+   "rows": 1002,
+   "files": {
+    "commercial__atsubetsu": 45,
+    "commercial__chuo": 264,
+    "commercial__higashi": 138,
+    "commercial__kita": 145,
+    "commercial__kiyota": 29,
+    "commercial__minami": 63,
+    "commercial__nishi": 78,
+    "commercial__shiroishi": 100,
+    "commercial__teine": 36,
+    "commercial__toyohira": 104
+   },
+   "example_names": [
+    "セブン-イレブン",
+    "セイコーマート",
+    "ローソン",
+    "ファミリーマート",
+    "セラーズ",
+    "にれ",
+    "セコマ",
+    "セイコーマート大谷地西店",
+    "セイコーマート北野６条店"
+   ]
+  },
+  {
+   "tag": "leisure=pitch",
+   "rows": 789,
+   "files": {
+    "sports__atsubetsu": 72,
+    "sports__chuo": 73,
+    "sports__higashi": 103,
+    "sports__kita": 129,
+    "sports__kiyota": 65,
+    "sports__minami": 86,
+    "sports__nishi": 46,
+    "sports__shiroishi": 70,
+    "sports__teine": 57,
+    "sports__toyohira": 88
+   },
+   "example_names": [
+    "坂下野球場",
+    "テニスコート",
+    "厚別区少年野球場",
+    "荒井山シャンツェ",
+    "C",
+    "B",
+    "A",
+    "ジンパスペース",
+    "北海道科学大学高等学校 総合運動場",
+    "北郷ゴルフセンター",
+    "サッポロ・イーワン・スタジアム",
+    "私立 山の手高校グランド"
+   ]
+  },
+  {
+   "tag": "amenity=dentist",
+   "rows": 515,
+   "files": {
+    "public_culture__atsubetsu": 15,
+    "public_culture__chuo": 85,
+    "public_culture__higashi": 125,
+    "public_culture__kita": 151,
+    "public_culture__kiyota": 16,
+    "public_culture__minami": 26,
+    "public_culture__nishi": 23,
+    "public_culture__shiroishi": 21,
+    "public_culture__teine": 6,
+    "public_culture__toyohira": 47
+   },
+   "example_names": [
+    "鈴木歯科医院",
+    "中村歯科医院",
+    "佐藤歯科医院",
+    "田中歯科",
+    "西町 しか",
+    "Tenyukai memorial dental clinic",
+    "Making Dental Clinic",
+    "はくすい歯カ",
+    "札幌こどものはいしゃさん",
+    "百合が原ながの総合歯科",
+    "歯科25City",
+    "南平岸フミタ歯科"
+   ]
+  },
+  {
+   "tag": "healthcare=dentist",
+   "rows": 510,
+   "files": {
+    "public_culture__atsubetsu": 15,
+    "public_culture__chuo": 85,
+    "public_culture__higashi": 125,
+    "public_culture__kita": 151,
+    "public_culture__kiyota": 16,
+    "public_culture__minami": 21,
+    "public_culture__nishi": 23,
+    "public_culture__shiroishi": 21,
+    "public_culture__teine": 6,
+    "public_culture__toyohira": 47
+   },
+   "example_names": [
+    "鈴木歯科医院",
+    "中村歯科医院",
+    "佐藤歯科医院",
+    "田中歯科",
+    "西町 しか",
+    "Tenyukai memorial dental clinic",
+    "Making Dental Clinic",
+    "はくすい歯カ",
+    "札幌こどものはいしゃさん",
+    "百合が原ながの総合歯科",
+    "歯科25City",
+    "南平岸フミタ歯科"
+   ]
+  },
+  {
+   "tag": "amenity=toilets",
+   "rows": 492,
+   "files": {
+    "parks_play__chuo": 1,
+    "other_unknown__atsubetsu": 17,
+    "other_unknown__chuo": 92,
+    "other_unknown__higashi": 85,
+    "other_unknown__kita": 107,
+    "other_unknown__kiyota": 4,
+    "other_unknown__minami": 91,
+    "other_unknown__nishi": 13,
+    "other_unknown__shiroishi": 23,
+    "other_unknown__teine": 14,
+    "other_unknown__toyohira": 45
+   },
+   "example_names": [
+    "北海道大学植物園",
+    "日本生命ビル トイレ",
+    "第3グリーンビル トイレ",
+    "赤レンガテラス1Fトイレ",
+    "モンキーハウス裏",
+    "農学部",
+    "定山渓公共駐車場２",
+    "愛隣チャペルキリスト教会",
+    "情報教育館",
+    "左岸No.23",
+    "左岸 No.6",
+    "高等教育推進機構N棟"
+   ]
+  },
+  {
+   "tag": "amenity=doctors",
+   "rows": 471,
+   "files": {
+    "public_culture__atsubetsu": 10,
+    "public_culture__chuo": 107,
+    "public_culture__higashi": 93,
+    "public_culture__kita": 117,
+    "public_culture__kiyota": 9,
+    "public_culture__minami": 30,
+    "public_culture__nishi": 34,
+    "public_culture__shiroishi": 18,
+    "public_culture__teine": 5,
+    "public_culture__toyohira": 48
+   },
+   "example_names": [
+    "療整院",
+    "おおにしクリニック",
+    "新札幌耳鼻咽喉科医院",
+    "花岡神経クリニック",
+    "A1 Clinic",
+    "三好プリベント歯科",
+    "ハーブ薬局",
+    "くろひげ整骨院",
+    "手稲渓仁会病院G棟　外来棟",
+    "東雁来ひふ科",
+    "たけうち 整骨院",
+    "札幌花園病院睡眠専門外来"
+   ]
+  },
+  {
+   "tag": "healthcare=doctor",
+   "rows": 467,
+   "files": {
+    "public_culture__atsubetsu": 10,
+    "public_culture__chuo": 107,
+    "public_culture__higashi": 93,
+    "public_culture__kita": 117,
+    "public_culture__kiyota": 9,
+    "public_culture__minami": 26,
+    "public_culture__nishi": 34,
+    "public_culture__shiroishi": 18,
+    "public_culture__teine": 5,
+    "public_culture__toyohira": 48
+   },
+   "example_names": [
+    "療整院",
+    "おおにしクリニック",
+    "新札幌耳鼻咽喉科医院",
+    "花岡神経クリニック",
+    "A1 Clinic",
+    "三好プリベント歯科",
+    "ハーブ薬局",
+    "くろひげ整骨院",
+    "手稲渓仁会病院G棟　外来棟",
+    "東雁来ひふ科",
+    "たけうち 整骨院",
+    "札幌花園病院睡眠専門外来"
+   ]
+  },
+  {
+   "tag": "amenity=school",
+   "rows": 424,
+   "files": {
+    "public_culture__atsubetsu": 30,
+    "public_culture__chuo": 40,
+    "public_culture__higashi": 54,
+    "public_culture__kita": 62,
+    "public_culture__kiyota": 28,
+    "public_culture__minami": 50,
+    "public_culture__nishi": 39,
+    "public_culture__shiroishi": 41,
+    "public_culture__teine": 35,
+    "public_culture__toyohira": 45
+   },
+   "example_names": [
+    "札幌市立ノホロの丘小学校",
+    "東海大学付属札幌高等学校",
+    "札幌市立白石小学校",
+    "札幌市立白石中学校",
+    "ちあふる・あつべつ",
+    "駿台予備校",
+    "草笛館",
+    "北海道インターナショナルスクール",
+    "北海道大学植物園",
+    "札幌市しせいかん保育園",
+    "北郷札幌幼稚園",
+    "札幌市手稲前田児童会館"
+   ]
+  },
+  {
+   "tag": "amenity=pharmacy",
+   "rows": 354,
+   "files": {
+    "commercial__atsubetsu": 9,
+    "commercial__chuo": 34,
+    "commercial__higashi": 29,
+    "commercial__kita": 24,
+    "commercial__kiyota": 12,
+    "commercial__minami": 7,
+    "commercial__nishi": 19,
+    "commercial__shiroishi": 22,
+    "commercial__teine": 6,
+    "commercial__toyohira": 16,
+    "public_culture__atsubetsu": 9,
+    "public_culture__chuo": 53,
+    "public_culture__higashi": 20,
+    "public_culture__kita": 13,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 12,
+    "public_culture__nishi": 24,
+    "public_culture__shiroishi": 11,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 23
+   },
+   "example_names": [
+    "ツルハドラッグ",
+    "サツドラ",
+    "アイン薬局",
+    "サンドラッグ",
+    "コクミン",
+    "マツモトキヨシ",
+    "セイムス",
+    "Tohyo",
+    "一の秋野の漢方薬",
+    "上村漢薬堂",
+    "ココカラファイン",
+    "アインズ&トルペ"
+   ]
+  },
+  {
+   "tag": "healthcare=pharmacy",
+   "rows": 350,
+   "files": {
+    "commercial__atsubetsu": 9,
+    "commercial__chuo": 33,
+    "commercial__higashi": 30,
+    "commercial__kita": 23,
+    "commercial__kiyota": 12,
+    "commercial__minami": 7,
+    "commercial__nishi": 19,
+    "commercial__shiroishi": 22,
+    "commercial__teine": 6,
+    "commercial__toyohira": 16,
+    "public_culture__atsubetsu": 9,
+    "public_culture__chuo": 53,
+    "public_culture__higashi": 20,
+    "public_culture__kita": 13,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 9,
+    "public_culture__nishi": 24,
+    "public_culture__shiroishi": 11,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 23
+   },
+   "example_names": [
+    "ツルハドラッグ",
+    "サツドラ",
+    "アイン薬局",
+    "サンドラッグ",
+    "Tohyo",
+    "一の秋野の漢方薬",
+    "上村漢薬堂",
+    "コクミン",
+    "マツモトキヨシ",
+    "セイムス",
+    "ココカラファイン",
+    "アインズ&トルペ"
+   ]
+  },
+  {
+   "tag": "amenity=cafe",
+   "rows": 329,
+   "files": {
+    "commercial__atsubetsu": 9,
+    "commercial__chuo": 187,
+    "commercial__higashi": 20,
+    "commercial__kita": 30,
+    "commercial__kiyota": 14,
+    "commercial__minami": 20,
+    "commercial__nishi": 20,
+    "commercial__shiroishi": 12,
+    "commercial__teine": 4,
+    "commercial__toyohira": 13
+   },
+   "example_names": [
+    "スターバックス",
+    "タリーズコーヒー",
+    "コメダ珈琲店",
+    "ドトールコーヒーショップ",
+    "アンデルセン",
+    "愚亭ななくさ",
+    "agt",
+    "あんみつ　さきの",
+    "森彦",
+    "zazi",
+    "星華楼",
+    "遊"
+   ]
+  },
+  {
+   "tag": "amenity=place_of_worship",
+   "rows": 329,
+   "files": {
+    "public_culture__atsubetsu": 16,
+    "public_culture__chuo": 110,
+    "public_culture__higashi": 40,
+    "public_culture__kita": 41,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 53,
+    "public_culture__nishi": 13,
+    "public_culture__shiroishi": 13,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 32
+   },
+   "example_names": [
+    "創価学会",
+    "伊夜日子神社",
+    "光明寺",
+    "観音寺",
+    "霊波の光",
+    "祈祷受付",
+    "信広寺",
+    "徳生寺",
+    "見真寺",
+    "密修寺",
+    "龍興寺",
+    "国安寺"
+   ]
+  },
+  {
+   "tag": "amenity=public_building",
+   "rows": 321,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 68,
+    "public_culture__higashi": 22,
+    "public_culture__kita": 11,
+    "public_culture__kiyota": 9,
+    "public_culture__minami": 52,
+    "public_culture__nishi": 57,
+    "public_culture__shiroishi": 18,
+    "public_culture__teine": 52,
+    "public_culture__toyohira": 31
+   },
+   "example_names": [
+    "札幌市エレクトロニクスセンター",
+    "工学部 課外活動・厚生施設",
+    "工学部 実験実習棟",
+    "工学部 1号館",
+    "藻岩山ロープウェイ山麓駅",
+    "知事公館",
+    "山口斎場",
+    "社会医療法人アルデバラン　手稲いなづみ病院",
+    "札幌市北方自然教育園学習館",
+    "札幌市手稲水再生プラザ",
+    "北海道職業訓練支援センター ポリテクセンター北海道",
+    "北白石地区センター"
+   ]
+  },
+  {
+   "tag": "sport=tennis",
+   "rows": 313,
+   "files": {
+    "sports__atsubetsu": 27,
+    "sports__chuo": 32,
+    "sports__higashi": 35,
+    "sports__kita": 54,
+    "sports__kiyota": 21,
+    "sports__minami": 36,
+    "sports__nishi": 19,
+    "sports__shiroishi": 25,
+    "sports__teine": 24,
+    "sports__toyohira": 32,
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 4,
+    "other_unknown__teine": 1
+   },
+   "example_names": [
+    "テニスコート",
+    "リーヴテニスクラブ",
+    "ウイング",
+    "あけぼのテニスクラブ",
+    "定山渓スポーツ公園",
+    "中島公園庭球場",
+    "ほくでん ツキサップテニスコート",
+    "アルマートテニス",
+    "白石東公園内テニスコート",
+    "月寒公園硬式テニスコート"
+   ]
+  },
+  {
+   "tag": "office=company",
+   "rows": 308,
+   "files": {
+    "commercial__atsubetsu": 15,
+    "commercial__chuo": 189,
+    "commercial__higashi": 13,
+    "commercial__kita": 7,
+    "commercial__kiyota": 6,
+    "commercial__minami": 6,
+    "commercial__nishi": 27,
+    "commercial__shiroishi": 11,
+    "commercial__teine": 2,
+    "commercial__toyohira": 32
+   },
+   "example_names": [
+    "北海道中央バス",
+    "一条工務店",
+    "ジェイ・アール北海道バス",
+    "住友不動産",
+    "わしづ",
+    "北山光社",
+    "濱建",
+    "青工",
+    "宇治園",
+    "岩脇鉄工",
+    "藤光鋼材",
+    "長谷川物産"
+   ]
+  },
+  {
+   "tag": "amenity=fast_food",
+   "rows": 306,
+   "files": {
+    "commercial__atsubetsu": 22,
+    "commercial__chuo": 70,
+    "commercial__higashi": 46,
+    "commercial__kita": 48,
+    "commercial__kiyota": 15,
+    "commercial__minami": 10,
+    "commercial__nishi": 25,
+    "commercial__shiroishi": 33,
+    "commercial__teine": 8,
+    "commercial__toyohira": 29
+   },
+   "example_names": [
+    "マクドナルド",
+    "ほっともっと",
+    "ケンタッキーフライドチキン",
+    "吉野家",
+    "Bistro Kawasaki",
+    "一口茶屋",
+    "美唄焼鳥・惣菜 炎",
+    "築地銀だこ",
+    "すき家",
+    "魚べい",
+    "丸亀製麺",
+    "なか卯"
+   ]
+  },
+  {
+   "tag": "shop=supermarket",
+   "rows": 298,
+   "files": {
+    "commercial__atsubetsu": 20,
+    "commercial__chuo": 53,
+    "commercial__higashi": 44,
+    "commercial__kita": 44,
+    "commercial__kiyota": 20,
+    "commercial__minami": 17,
+    "commercial__nishi": 25,
+    "commercial__shiroishi": 23,
+    "commercial__teine": 20,
+    "commercial__toyohira": 32
+   },
+   "example_names": [
+    "まいばすけっと",
+    "コープさっぽろ",
+    "マックスバリュ",
+    "イオン",
+    "北星学園大学生協",
+    "ローソン",
+    "ディナーベル",
+    "まるやす",
+    "MEGAドン・キホーテ",
+    "Mandarin Market",
+    "PIRIKa Sapporo",
+    "ロピア"
+   ]
+  },
+  {
+   "tag": "amenity=fuel",
+   "rows": 265,
+   "files": {
+    "commercial__atsubetsu": 11,
+    "commercial__chuo": 34,
+    "commercial__higashi": 48,
+    "commercial__kita": 33,
+    "commercial__kiyota": 15,
+    "commercial__minami": 20,
+    "commercial__nishi": 25,
+    "commercial__shiroishi": 33,
+    "commercial__teine": 18,
+    "commercial__toyohira": 28
+   },
+   "example_names": [
+    "ENEOS",
+    "apollostation",
+    "エネオス",
+    "出光",
+    "オカモト",
+    "ノグチ",
+    "ありた",
+    "ひまわり灯油川沿灯油センター",
+    "エア・ウォーター水素ステーション札幌大通東",
+    "Enos",
+    "COSMO石油 北海道カーオイル北郷",
+    "コニサーオイル"
+   ]
+  },
+  {
+   "tag": "shop=car",
+   "rows": 260,
+   "files": {
+    "commercial__atsubetsu": 21,
+    "commercial__chuo": 34,
+    "commercial__higashi": 48,
+    "commercial__kita": 22,
+    "commercial__kiyota": 24,
+    "commercial__minami": 13,
+    "commercial__nishi": 25,
+    "commercial__shiroishi": 27,
+    "commercial__teine": 11,
+    "commercial__toyohira": 35
+   },
+   "example_names": [
+    "札幌日産",
+    "ネッツトヨタ札幌",
+    "札幌トヨタ",
+    "日産プリンス札幌",
+    "Netz",
+    "Fiat",
+    "四輪館",
+    "ガリバー",
+    "Suzuki",
+    "Nissan",
+    "CROWN JAPAN",
+    "WECARS"
+   ]
+  },
+  {
+   "tag": "amenity=bank",
+   "rows": 246,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 67,
+    "commercial__higashi": 33,
+    "commercial__kita": 36,
+    "commercial__kiyota": 8,
+    "commercial__minami": 18,
+    "commercial__nishi": 24,
+    "commercial__shiroishi": 21,
+    "commercial__teine": 9,
+    "commercial__toyohira": 23
+   },
+   "example_names": [
+    "北洋銀行",
+    "北海道銀行",
+    "北海道信用金庫",
+    "北央信用組合",
+    "JAさっぽろ 西町支店",
+    "札幌市 農業協同組合",
+    "青森みちのく銀行",
+    "SBI新生銀行",
+    "ゆうちょ銀行",
+    "あおぞら銀行",
+    "第四北越銀行",
+    "北陸銀行西岡出張所"
+   ]
+  },
+  {
+   "tag": "leisure=playground",
+   "rows": 240,
+   "files": {
+    "parks_play__atsubetsu": 25,
+    "parks_play__chuo": 19,
+    "parks_play__higashi": 12,
+    "parks_play__kita": 28,
+    "parks_play__kiyota": 13,
+    "parks_play__minami": 28,
+    "parks_play__nishi": 24,
+    "parks_play__shiroishi": 12,
+    "parks_play__teine": 60,
+    "parks_play__toyohira": 19
+   },
+   "example_names": [
+    "ありのす公園",
+    "上野幌ノホロ公園",
+    "上野幌白樺公園",
+    "さんかく公園",
+    "まるっぱ",
+    "切り株迷路",
+    "リスの散歩道",
+    "木のぼりネット",
+    "溶岩滑り台",
+    "大地の広場",
+    "YayoiKouen",
+    "マウントコニーデ"
+   ]
+  },
+  {
+   "tag": "amenity=kindergarten",
+   "rows": 218,
+   "files": {
+    "public_culture__atsubetsu": 4,
+    "public_culture__chuo": 32,
+    "public_culture__higashi": 51,
+    "public_culture__kita": 56,
+    "public_culture__kiyota": 9,
+    "public_culture__minami": 26,
+    "public_culture__nishi": 7,
+    "public_culture__shiroishi": 10,
+    "public_culture__teine": 2,
+    "public_culture__toyohira": 21
+   },
+   "example_names": [
+    "もみじ台幼稚園",
+    "認定こども園 新さっぽろ幼稚園・保育園",
+    "厚別西保育園",
+    "ひばりが丘明星保育園",
+    "みるくほいくえん",
+    "カトリック聖園こどもの家",
+    "森の保育所き・きKids",
+    "北海道札幌あいの里高等支援学校",
+    "ちゃいれっく北8条東保育園",
+    "ピッコロ子ども倶楽部 桑園保育所",
+    "認定ごども園 さつなえのもり",
+    "しんことに清香保育園"
+   ]
+  },
+  {
+   "tag": "amenity=post_office",
+   "rows": 213,
+   "files": {
+    "public_culture__atsubetsu": 8,
+    "public_culture__chuo": 50,
+    "public_culture__higashi": 30,
+    "public_culture__kita": 33,
+    "public_culture__kiyota": 10,
+    "public_culture__minami": 20,
+    "public_culture__nishi": 15,
+    "public_culture__shiroishi": 21,
+    "public_culture__teine": 8,
+    "public_culture__toyohira": 18
+   },
+   "example_names": [
+    "豊平六郵便局",
+    "新札幌駅デュオ郵便局",
+    "大谷地東郵便局",
+    "厚別原始林通郵便局",
+    "ヤマト運輸",
+    "サッポロファクトリー内郵便局",
+    "さっぽろ東急百貨店内郵便局",
+    "北海道庁赤れんが前郵便局",
+    "厚別ひばりが丘郵便局",
+    "永山記念公園前郵便局",
+    "厚別上野幌郵便局",
+    "山鼻東屯田通郵便局"
+   ]
+  },
+  {
+   "tag": "tourism=hotel",
+   "rows": 211,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 146,
+    "commercial__higashi": 4,
+    "commercial__kita": 21,
+    "commercial__minami": 29,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ホテルポールスター札幌",
+    "定山渓第一寶亭留 翠山亭",
+    "小金湯温泉湯元旬の御宿；まつの湯",
+    "厨翠山",
+    "ぬくもりの宿 ふる川",
+    "芸森スタジオ&Cloud Lodge",
+    "悠久の宿 白糸",
+    "中村屋旅館",
+    "旅館 芙蓉館",
+    "旅館 志ら井",
+    "北海道青少年会館コンパス",
+    "41 PIECES"
+   ]
+  },
+  {
+   "tag": "amenity=pub",
+   "rows": 198,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 103,
+    "commercial__higashi": 6,
+    "commercial__kita": 36,
+    "commercial__kiyota": 8,
+    "commercial__minami": 7,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 19,
+    "commercial__toyohira": 11
+   },
+   "example_names": [
+    "つぼ八",
+    "串鳥",
+    "炭火居酒屋 炎",
+    "山の猿",
+    "魚鮮",
+    "味処ながしま",
+    "魚人 うおっと",
+    "円山秀円",
+    "ふく志",
+    "さぶろう",
+    "西郷酒盛",
+    "立せいす"
+   ]
+  },
+  {
+   "tag": "shop=chemist",
+   "rows": 198,
+   "files": {
+    "commercial__atsubetsu": 9,
+    "commercial__chuo": 44,
+    "commercial__higashi": 31,
+    "commercial__kita": 25,
+    "commercial__kiyota": 12,
+    "commercial__minami": 7,
+    "commercial__nishi": 19,
+    "commercial__shiroishi": 22,
+    "commercial__teine": 9,
+    "commercial__toyohira": 20
+   },
+   "example_names": [
+    "ツルハドラッグ",
+    "サツドラ",
+    "サンドラッグ",
+    "マツモトキヨシ",
+    "くすりの保命堂薬房",
+    "セイムス",
+    "ココカラファイン",
+    "丸善薬粧",
+    "コクミン",
+    "サンドラック新発寒５条店",
+    "ダイコクドラッグ"
+   ]
+  },
+  {
+   "tag": "tourism=artwork",
+   "rows": 195,
+   "files": {
+    "public_culture__atsubetsu": 2,
+    "public_culture__chuo": 116,
+    "public_culture__higashi": 3,
+    "public_culture__kita": 7,
+    "public_culture__minami": 62,
+    "public_culture__nishi": 2,
+    "public_culture__shiroishi": 1,
+    "public_culture__toyohira": 2
+   },
+   "example_names": [
+    "Dandelion Compass",
+    "ダブル・ムーン",
+    "風に旅する思いの種",
+    "三つの旅",
+    "TERMINUS",
+    "豊平墓地跡記念碑",
+    "いちばん星",
+    "PONSA",
+    "軌道と貨車",
+    "流レ行ク",
+    "山河風光",
+    "映画神像 北海道"
+   ]
+  },
+  {
+   "tag": "amenity=hospital",
+   "rows": 187,
+   "files": {
+    "public_culture__atsubetsu": 16,
+    "public_culture__chuo": 38,
+    "public_culture__higashi": 26,
+    "public_culture__kita": 21,
+    "public_culture__kiyota": 12,
+    "public_culture__minami": 19,
+    "public_culture__nishi": 22,
+    "public_culture__shiroishi": 12,
+    "public_culture__teine": 8,
+    "public_culture__toyohira": 13
+   },
+   "example_names": [
+    "医療法人社団　にれの杜クリニック",
+    "北央病院",
+    "なかやま病院",
+    "新札幌豊和会病院",
+    "北郷メディカルビル",
+    "エルク ウォール平和",
+    "さとう整骨院",
+    "札幌マタニティ・ウイメンズホスピタル",
+    "愛心メモリアル病院",
+    "芸術の森泌尿器科",
+    "北海道立子ども総合医療・療育センター",
+    "あしりべつ病院"
+   ]
+  },
+  {
+   "tag": "tourism=information",
+   "rows": 181,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__toyohira": 1,
+    "public_culture__atsubetsu": 41,
+    "public_culture__chuo": 81,
+    "public_culture__higashi": 1,
+    "public_culture__kita": 4,
+    "public_culture__minami": 29,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 8,
+    "public_culture__toyohira": 14
+   },
+   "example_names": [
+    "インフォーメーションセンター",
+    "周辺案内",
+    "定山渓温泉",
+    "旧龍雲寺",
+    "旧土谷家はねだし",
+    "廊下",
+    "旧来正旅館",
+    "窯焚き作業",
+    "旧島歌郵便局",
+    "旧若狭家たたみ倉",
+    "旧藤原車橇製作所",
+    "旧太田装蹄所"
+   ]
+  },
+  {
+   "tag": "healthcare=hospital",
+   "rows": 179,
+   "files": {
+    "public_culture__atsubetsu": 16,
+    "public_culture__chuo": 38,
+    "public_culture__higashi": 26,
+    "public_culture__kita": 21,
+    "public_culture__kiyota": 12,
+    "public_culture__minami": 11,
+    "public_culture__nishi": 22,
+    "public_culture__shiroishi": 12,
+    "public_culture__teine": 8,
+    "public_culture__toyohira": 13
+   },
+   "example_names": [
+    "医療法人社団　にれの杜クリニック",
+    "北央病院",
+    "なかやま病院",
+    "新札幌豊和会病院",
+    "北郷メディカルビル",
+    "エルク ウォール平和",
+    "さとう整骨院",
+    "札幌マタニティ・ウイメンズホスピタル",
+    "愛心メモリアル病院",
+    "北海道立子ども総合医療・療育センター",
+    "あしりべつ病院",
+    "耳鼻咽喉科麻生病院"
+   ]
+  },
+  {
+   "tag": "sport=swimming",
+   "rows": 178,
+   "files": {
+    "sports__atsubetsu": 18,
+    "sports__chuo": 4,
+    "sports__higashi": 28,
+    "sports__kita": 27,
+    "sports__kiyota": 14,
+    "sports__minami": 7,
+    "sports__nishi": 14,
+    "sports__shiroishi": 18,
+    "sports__teine": 20,
+    "sports__toyohira": 21,
+    "other_unknown__kita": 7
+   },
+   "example_names": [
+    "札幌市厚別温水プール",
+    "JSSあゆみスイミングスクール札幌",
+    "東温水プール",
+    "イトマンスイミングスクール",
+    "札幌市立手稲宮丘小学校プール",
+    "豊平公園温水プール",
+    "平岸プール",
+    "手稲曙温水プール"
+   ]
+  },
+  {
+   "tag": "amenity=community_centre",
+   "rows": 176,
+   "files": {
+    "public_culture__atsubetsu": 8,
+    "public_culture__chuo": 29,
+    "public_culture__higashi": 33,
+    "public_culture__kita": 30,
+    "public_culture__kiyota": 8,
+    "public_culture__minami": 19,
+    "public_culture__nishi": 14,
+    "public_culture__shiroishi": 7,
+    "public_culture__teine": 8,
+    "public_culture__toyohira": 20
+   },
+   "example_names": [
+    "もみじ台北 第二集会所",
+    "小野幌会館",
+    "大谷地会館",
+    "厚別区民センター",
+    "Youth+アカシア",
+    "EZOHUB SAPPORO",
+    "子どもの体験活動の場　Coミドリ",
+    "二十四軒地域会議室",
+    "さとらんど交流館",
+    "ひばりが丘西集会所",
+    "平岸三区集会所",
+    "エア・ウォーターの森"
+   ]
+  },
+  {
+   "tag": "cuisine=ramen",
+   "rows": 172,
+   "files": {
+    "commercial__atsubetsu": 8,
+    "commercial__chuo": 60,
+    "commercial__higashi": 15,
+    "commercial__kita": 21,
+    "commercial__kiyota": 10,
+    "commercial__minami": 6,
+    "commercial__nishi": 11,
+    "commercial__shiroishi": 8,
+    "commercial__teine": 6,
+    "commercial__toyohira": 27
+   },
+   "example_names": [
+    "ラーメン山岡家",
+    "味の時計台",
+    "ラーメンさんぱち",
+    "さんぱち",
+    "大和軒",
+    "穂高",
+    "とぐち",
+    "ふじ屋NOODLE",
+    "とみの屋",
+    "原丶",
+    "奥原流 久楽",
+    "一風堂"
+   ]
+  },
+  {
+   "tag": "leisure=swimming_pool",
+   "rows": 166,
+   "files": {
+    "sports__atsubetsu": 16,
+    "sports__chuo": 5,
+    "sports__higashi": 26,
+    "sports__kita": 26,
+    "sports__kiyota": 15,
+    "sports__minami": 10,
+    "sports__nishi": 16,
+    "sports__shiroishi": 20,
+    "sports__teine": 14,
+    "sports__toyohira": 18
+   },
+   "example_names": [
+    "札幌サンプラザ",
+    "札幌市立手稲宮丘小学校プール",
+    "札幌市白石温水プール"
+   ]
+  },
+  {
+   "tag": "amenity=social_facility",
+   "rows": 157,
+   "files": {
+    "public_culture__atsubetsu": 9,
+    "public_culture__chuo": 31,
+    "public_culture__higashi": 22,
+    "public_culture__kita": 16,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 12,
+    "public_culture__nishi": 11,
+    "public_culture__shiroishi": 13,
+    "public_culture__teine": 19,
+    "public_culture__toyohira": 17
+   },
+   "example_names": [
+    "SOMPOケア",
+    "特別養護老人ホーム「サポーティ・もみじ台」",
+    "メディケアホーム厚別中央",
+    "イリーゼ厚別",
+    "楽ゆう館 ふしみ",
+    "清香園",
+    "千里のこころ屯田",
+    "清明庵",
+    "柏葉荘",
+    "らいらっく",
+    "こどもねっとしんはっさむ",
+    "徳洲苑しろいし"
+   ]
+  },
+  {
+   "tag": "sport=multi",
+   "rows": 156,
+   "files": {
+    "sports__atsubetsu": 22,
+    "sports__chuo": 10,
+    "sports__higashi": 11,
+    "sports__kita": 17,
+    "sports__kiyota": 22,
+    "sports__minami": 8,
+    "sports__nishi": 14,
+    "sports__shiroishi": 20,
+    "sports__teine": 12,
+    "sports__toyohira": 18,
+    "commercial__toyohira": 1,
+    "other_unknown__minami": 1
+   },
+   "example_names": [
+    "スーパースポーツゼビオ",
+    "補助競技場",
+    "ホリディスポーツクラブ札幌清田店",
+    "小体育館",
+    "ツインキャップ",
+    "手稲区体育館",
+    "豊平区体育館"
+   ]
+  },
+  {
+   "tag": "shop=hairdresser",
+   "rows": 138,
+   "files": {
+    "commercial__atsubetsu": 11,
+    "commercial__chuo": 33,
+    "commercial__higashi": 3,
+    "commercial__kita": 13,
+    "commercial__kiyota": 10,
+    "commercial__minami": 5,
+    "commercial__nishi": 23,
+    "commercial__shiroishi": 12,
+    "commercial__teine": 1,
+    "commercial__toyohira": 27
+   },
+   "example_names": [
+    "プラージュ",
+    "サンキューカット",
+    "BALL",
+    "Qualia",
+    "アクア",
+    "夢や",
+    "GIANT・B-B",
+    "モア",
+    "バンブー",
+    "LIFE",
+    "アイダ",
+    "ワタナベ"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese",
+   "rows": 135,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 65,
+    "commercial__higashi": 12,
+    "commercial__kita": 13,
+    "commercial__kiyota": 9,
+    "commercial__minami": 2,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 3,
+    "commercial__toyohira": 13
+   },
+   "example_names": [
+    "ほっともっと",
+    "とんでん",
+    "やよい軒",
+    "焼肉きんぐ",
+    "鳥秀",
+    "Sushi Don",
+    "およばれ",
+    "牛たんの笑や",
+    "産地直送 粋な居酒屋あいよ 狸小路4丁目",
+    "大戸屋",
+    "十勝豚丼いっぴん",
+    "羊と饂飩"
+   ]
+  },
+  {
+   "tag": "shop=clothes",
+   "rows": 133,
+   "files": {
+    "commercial__atsubetsu": 12,
+    "commercial__chuo": 31,
+    "commercial__higashi": 18,
+    "commercial__kita": 14,
+    "commercial__kiyota": 15,
+    "commercial__minami": 5,
+    "commercial__nishi": 14,
+    "commercial__shiroishi": 9,
+    "commercial__teine": 6,
+    "commercial__toyohira": 9
+   },
+   "example_names": [
+    "しまむら",
+    "洋服の青山",
+    "ユニクロ",
+    "AOKI",
+    "MALAIKA",
+    "MàW",
+    "彩蔵",
+    "ロマネコ洋装店",
+    "SHARE",
+    "GU",
+    "古着屋JAM VINTAGE&SELECT",
+    "きものの奈る美"
+   ]
+  },
+  {
+   "tag": "sport=baseball",
+   "rows": 130,
+   "files": {
+    "sports__atsubetsu": 10,
+    "sports__chuo": 11,
+    "sports__higashi": 25,
+    "sports__kita": 23,
+    "sports__kiyota": 7,
+    "sports__minami": 15,
+    "sports__nishi": 5,
+    "sports__shiroishi": 9,
+    "sports__teine": 10,
+    "sports__toyohira": 13,
+    "other_unknown__higashi": 2
+   },
+   "example_names": [
+    "坂下野球場",
+    "厚別区少年野球場",
+    "C",
+    "B",
+    "A",
+    "北海道日本ハムファイターズ 室内練習場",
+    "川下公園バッティングセンター",
+    "豊平川・雁来河川健康公園野球場",
+    "札幌麻生球場",
+    "多目的広場(少年野球場)",
+    "屯田多目的広場野球場",
+    "白石東公園内野球場"
+   ]
+  },
+  {
+   "tag": "historic=memorial",
+   "rows": 120,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 76,
+    "public_culture__kita": 12,
+    "public_culture__minami": 11,
+    "public_culture__nishi": 2,
+    "public_culture__shiroishi": 4,
+    "public_culture__teine": 2,
+    "public_culture__toyohira": 12
+   },
+   "example_names": [
+    "馬頭観世音",
+    "大地の手",
+    "札幌開祖　吉田茂八碑",
+    "札幌遠友夜学校跡地",
+    "往月菊花着千秋",
+    "庖丁塚",
+    "創成の川",
+    "井之上富之助 碑",
+    "桑園延命地蔵尊",
+    "四翁表功碑",
+    "彰徳苑碑",
+    "聖恩碑"
+   ]
+  },
+  {
+   "tag": "shop=variety_store",
+   "rows": 114,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 26,
+    "commercial__higashi": 17,
+    "commercial__kita": 18,
+    "commercial__kiyota": 7,
+    "commercial__minami": 6,
+    "commercial__nishi": 11,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 8,
+    "commercial__toyohira": 7
+   },
+   "example_names": [
+    "ダイソー",
+    "セリア",
+    "キャンドゥ",
+    "無印良品",
+    "リビングもみじ台",
+    "3COINS",
+    "ドン・キホーテ",
+    "工房アルティスタ",
+    "ロフト",
+    "らる畑",
+    "Plaza",
+    "ワッツ"
+   ]
+  },
+  {
+   "tag": "amenity=police",
+   "rows": 106,
+   "files": {
+    "public_culture__atsubetsu": 5,
+    "public_culture__chuo": 25,
+    "public_culture__higashi": 11,
+    "public_culture__kita": 13,
+    "public_culture__kiyota": 5,
+    "public_culture__minami": 8,
+    "public_culture__nishi": 10,
+    "public_culture__shiroishi": 10,
+    "public_culture__teine": 7,
+    "public_culture__toyohira": 12
+   },
+   "example_names": [
+    "厚別警察署新札幌交番",
+    "厚別警察署",
+    "札幌方面厚別警察署上野幌交番",
+    "札幌方面厚別警察署信濃交番",
+    "北海道警察本部琴似庁舎",
+    "美しが丘交番",
+    "南平岸交番",
+    "東月寒交番",
+    "北海道警察本部　白石警察署交番東白石",
+    "北海道警察本部",
+    "厚別警察署 ひばりが丘交番",
+    "中央警察署北三条通警備派出所"
+   ]
+  },
+  {
+   "tag": "cuisine=coffee_shop",
+   "rows": 105,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 56,
+    "commercial__higashi": 11,
+    "commercial__kita": 5,
+    "commercial__kiyota": 4,
+    "commercial__minami": 5,
+    "commercial__nishi": 10,
+    "commercial__shiroishi": 3,
+    "commercial__teine": 1,
+    "commercial__toyohira": 5,
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "スターバックス",
+    "タリーズコーヒー",
+    "コメダ珈琲店",
+    "ドトールコーヒーショップ",
+    "森彦",
+    "北都館",
+    "アトリエ・モリヒコ",
+    "喫茶・食事処ジャン",
+    "純喫茶オリンピア",
+    "Café 倫敦館",
+    "THE END CAFE",
+    "knap sack cafe"
+   ]
+  },
+  {
+   "tag": "shop=mobile_phone",
+   "rows": 103,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 19,
+    "commercial__higashi": 15,
+    "commercial__kita": 21,
+    "commercial__kiyota": 4,
+    "commercial__minami": 10,
+    "commercial__nishi": 13,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 1,
+    "commercial__toyohira": 11
+   },
+   "example_names": [
+    "ドコモショップ",
+    "ソフトバンクショップ",
+    "auショップ",
+    "ワイモバイル",
+    "auプラザショップ 羊ヶ丘店"
+   ]
+  },
+  {
+   "tag": "amenity=bar",
+   "rows": 95,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 72,
+    "commercial__higashi": 1,
+    "commercial__kita": 3,
+    "commercial__minami": 1,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 4
+   },
+   "example_names": [
+    "居酒屋伸ちゃん",
+    "ロダン",
+    "根",
+    "bar pavane.",
+    "大和亭はなれ",
+    "さっぽろ酒飲純情派",
+    "林家",
+    "ワインビストロ 晴",
+    "ゴシップラウンジ",
+    "マリアカラス",
+    "おばんざい楓",
+    "アフロプレイ"
+   ]
+  },
+  {
+   "tag": "amenity=veterinary",
+   "rows": 92,
+   "files": {
+    "public_culture__atsubetsu": 5,
+    "public_culture__chuo": 16,
+    "public_culture__higashi": 21,
+    "public_culture__kita": 24,
+    "public_culture__kiyota": 3,
+    "public_culture__minami": 7,
+    "public_culture__nishi": 4,
+    "public_culture__shiroishi": 4,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 7
+   },
+   "example_names": [
+    "ノア動物病院",
+    "自然動物病院",
+    "北央どうぶつ病院",
+    "吉田動物病院",
+    "Maruyama Animal Hospital",
+    "ポチ＆タマ",
+    "宮の森アニマルホスピタル",
+    "三国犬猫科医院",
+    "東谷獣医科医院",
+    "どうぶつ眼科VECS",
+    "川沿小動物医院",
+    "山口動物愛護病院"
+   ]
+  },
+  {
+   "tag": "cuisine=burger",
+   "rows": 91,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 22,
+    "commercial__higashi": 8,
+    "commercial__kita": 16,
+    "commercial__kiyota": 5,
+    "commercial__minami": 4,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 4,
+    "commercial__toyohira": 10
+   },
+   "example_names": [
+    "マクドナルド",
+    "びっくりドンキー",
+    "モスバーガー",
+    "ゼッテリア",
+    "Rana",
+    "TAKAHASHI BURGER",
+    "ジャクソンビル",
+    "牛吉",
+    "ファイヤーバーグ平岸店",
+    "フレッシュネスバーガー",
+    "Jacksonville",
+    "バーガーキング"
+   ]
+  },
+  {
+   "tag": "cuisine=noodle",
+   "rows": 82,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 22,
+    "commercial__higashi": 11,
+    "commercial__kita": 9,
+    "commercial__kiyota": 5,
+    "commercial__minami": 5,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 15,
+    "commercial__teine": 2,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "丸亀製麺",
+    "ゆで太郎",
+    "遊鶴",
+    "すみれ",
+    "西むら",
+    "直伝屋",
+    "東家寿楽",
+    "ゆりや食堂",
+    "ブタキング",
+    "ゆげや",
+    "麺's 菜ヶ蔵",
+    "札幌Fuji屋"
+   ]
+  },
+  {
+   "tag": "cuisine=sushi",
+   "rows": 79,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 20,
+    "commercial__higashi": 12,
+    "commercial__kita": 9,
+    "commercial__kiyota": 7,
+    "commercial__minami": 3,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 9,
+    "commercial__teine": 3,
+    "commercial__toyohira": 7
+   },
+   "example_names": [
+    "魚べい",
+    "はま寿司",
+    "スシロー",
+    "なごやか亭",
+    "がんこ鮨",
+    "菊鮨",
+    "はらこ",
+    "和食と鮨のに条",
+    "あじこう",
+    "おたる亭 本店",
+    "海天丸",
+    "尾州鮨"
+   ]
+  },
+  {
+   "tag": "shop=dry_cleaning",
+   "rows": 77,
+   "files": {
+    "commercial__atsubetsu": 7,
+    "commercial__chuo": 23,
+    "commercial__higashi": 6,
+    "commercial__kita": 10,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 11,
+    "commercial__shiroishi": 5,
+    "commercial__teine": 2,
+    "commercial__toyohira": 12
+   },
+   "example_names": [
+    "エンパイアー",
+    "ホワイト急便",
+    "クリーンスター",
+    "クリーニングエース",
+    "白洋舎",
+    "ココ",
+    "なんばドライ",
+    "キングドライ佐藤",
+    "北郷ファクトリー",
+    "ドイツ クリーナー",
+    "チャオ",
+    "エースランドリー"
+   ]
+  },
+  {
+   "tag": "amenity=bicycle_rental",
+   "rows": 75,
+   "files": {
+    "other_unknown__atsubetsu": 4,
+    "other_unknown__chuo": 56,
+    "other_unknown__higashi": 5,
+    "other_unknown__kita": 8,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "LUUP",
+    "北海道開拓の村",
+    "北海道博物館",
+    "百年記念広場",
+    "りんゆう観光",
+    "北大工学部",
+    "カナモトホール",
+    "サツドラ本社前",
+    "富士メガネ円山店",
+    "森林公園駅東口前",
+    "メディカルスクエア北円山",
+    "エア・ウォーターの森"
+   ]
+  },
+  {
+   "tag": "shop=bakery",
+   "rows": 75,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 35,
+    "commercial__higashi": 5,
+    "commercial__kita": 5,
+    "commercial__kiyota": 5,
+    "commercial__minami": 5,
+    "commercial__nishi": 9,
+    "commercial__shiroishi": 7,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "ボストンベイク",
+    "どんぐり",
+    "ヴィ・ド・フランス",
+    "おかめや工場",
+    "ドンク",
+    "Weizen",
+    "Un Cot'e",
+    "ASUKA BAKERY",
+    "乃木坂な妻たち",
+    "LAPAN",
+    "こっぺや",
+    "京田屋"
+   ]
+  },
+  {
+   "tag": "shop=confectionery",
+   "rows": 74,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 26,
+    "commercial__higashi": 11,
+    "commercial__kita": 5,
+    "commercial__kiyota": 7,
+    "commercial__minami": 3,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 4,
+    "commercial__teine": 2,
+    "commercial__toyohira": 5
+   },
+   "example_names": [
+    "シャトレーゼ",
+    "六花亭",
+    "きのとや",
+    "ロイズ",
+    "もりもと",
+    "不二家",
+    "おむすび茶屋おはな",
+    "ひとさじ",
+    "宗家 源吉兆庵",
+    "KITAKARO L",
+    "一久 大福堂",
+    "柳月"
+   ]
+  },
+  {
+   "tag": "amenity=clinic",
+   "rows": 71,
+   "files": {
+    "public_culture__atsubetsu": 8,
+    "public_culture__chuo": 12,
+    "public_culture__higashi": 9,
+    "public_culture__kita": 10,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 6,
+    "public_culture__shiroishi": 6,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 8
+   },
+   "example_names": [
+    "上杉皮膚科医院",
+    "サンピアザたけだ眼科",
+    "小林胃腸科内科クリニック",
+    "夏井坂内科クリニック",
+    "Do-Clinic",
+    "ひらお耳鼻咽喉科",
+    "鍼灸治療院 POLARIS",
+    "たむら小児科",
+    "ひばりが丘整骨院",
+    "じゅんらく整骨院",
+    "札幌市子ども発達支援総合センター",
+    "桑園むねやす眼科"
+   ]
+  },
+  {
+   "tag": "healthcare=clinic",
+   "rows": 71,
+   "files": {
+    "public_culture__atsubetsu": 8,
+    "public_culture__chuo": 12,
+    "public_culture__higashi": 9,
+    "public_culture__kita": 10,
+    "public_culture__kiyota": 7,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 6,
+    "public_culture__shiroishi": 6,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 8
+   },
+   "example_names": [
+    "上杉皮膚科医院",
+    "サンピアザたけだ眼科",
+    "小林胃腸科内科クリニック",
+    "夏井坂内科クリニック",
+    "Do-Clinic",
+    "ひらお耳鼻咽喉科",
+    "鍼灸治療院 POLARIS",
+    "たむら小児科",
+    "ひばりが丘整骨院",
+    "じゅんらく整骨院",
+    "札幌市子ども発達支援総合センター",
+    "桑園むねやす眼科"
+   ]
+  },
+  {
+   "tag": "cuisine=barbecue",
+   "rows": 70,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 33,
+    "commercial__higashi": 1,
+    "commercial__kita": 3,
+    "commercial__kiyota": 4,
+    "commercial__minami": 5,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 6,
+    "commercial__teine": 1,
+    "commercial__toyohira": 11
+   },
+   "example_names": [
+    "牛角",
+    "すたみな太郎",
+    "ぼくぜん",
+    "松尾ジンギスカン",
+    "サッポロ ノルベサ ビール園",
+    "炭や",
+    "叙々苑",
+    "お肉家 季稟",
+    "つるが苑",
+    "ばんけい苑",
+    "だるま",
+    "南光園"
+   ]
+  },
+  {
+   "tag": "leisure=garden",
+   "rows": 62,
+   "files": {
+    "parks_play__atsubetsu": 6,
+    "parks_play__chuo": 34,
+    "parks_play__higashi": 5,
+    "parks_play__kita": 3,
+    "parks_play__kiyota": 3,
+    "parks_play__minami": 2,
+    "parks_play__nishi": 2,
+    "parks_play__teine": 2,
+    "parks_play__toyohira": 5
+   },
+   "example_names": [
+    "本郷新記念札幌彫刻美術館",
+    "東月寒おもてなし花壇",
+    "幌見峠ラベンダー園",
+    "北海道大学植物園",
+    "東家聚楽中庭",
+    "クロユリ群生地",
+    "しののめ幼稚園園庭",
+    "つきさっぷ郷土資料館緑地",
+    "栗林石庭園",
+    "カントリーガーデン",
+    "サンクガーデン"
+   ]
+  },
+  {
+   "tag": "leisure=adult_gaming_centre",
+   "rows": 60,
+   "files": {
+    "commercial__atsubetsu": 5,
+    "commercial__chuo": 11,
+    "commercial__higashi": 9,
+    "commercial__kita": 7,
+    "commercial__kiyota": 3,
+    "commercial__minami": 5,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 5,
+    "commercial__teine": 4,
+    "commercial__toyohira": 5
+   },
+   "example_names": [
+    "プレイランドハッピー",
+    "マルハン",
+    "パチンコひまわり",
+    "パーラー太陽",
+    "BIG MAX",
+    "ビッグスロット",
+    "EAGLE WEST",
+    "KEIZ",
+    "ダイナム",
+    "Mammoth'21",
+    "メガエムズ1121",
+    "Don Bang"
+   ]
+  },
+  {
+   "tag": "amenity=college",
+   "rows": 58,
+   "files": {
+    "public_culture__chuo": 30,
+    "public_culture__higashi": 9,
+    "public_culture__kita": 9,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 3,
+    "public_culture__shiroishi": 2,
+    "public_culture__toyohira": 4
+   },
+   "example_names": [
+    "札幌ベルエポック製菓調理専門学校",
+    "専門学校北海道自動車整備大学校",
+    "札幌ビューティックアカデミー",
+    "専門学校北海道リハビリテーション大学校",
+    "河合塾",
+    "看予備",
+    "藤女子大学 北16条キャンパス",
+    "札幌国際大学短期大学部",
+    "札幌YMCA英語・コミュニケーション専門学校",
+    "札幌マンガ・アニメ＆声優専門学校",
+    "札幌ブライダル＆ホテル観光専門学校",
+    "青山建築デザイン・医療事務専門学校"
+   ]
+  },
+  {
+   "tag": "amenity=public_bath",
+   "rows": 58,
+   "files": {
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 17,
+    "other_unknown__higashi": 5,
+    "other_unknown__kita": 7,
+    "other_unknown__kiyota": 1,
+    "other_unknown__minami": 10,
+    "other_unknown__nishi": 3,
+    "other_unknown__shiroishi": 7,
+    "other_unknown__teine": 1,
+    "other_unknown__toyohira": 5
+   },
+   "example_names": [
+    "北のたまゆら",
+    "円山温泉",
+    "鶴の湯",
+    "神宮温泉",
+    "北都湯",
+    "川沿湯",
+    "真駒内湯",
+    "湯元;小金湯",
+    "湯処;花ゆづき",
+    "共栄湯",
+    "大豊湯",
+    "美春湯"
+   ]
+  },
+  {
+   "tag": "office=government",
+   "rows": 57,
+   "files": {
+    "public_culture__atsubetsu": 3,
+    "public_culture__chuo": 16,
+    "public_culture__higashi": 4,
+    "public_culture__kita": 8,
+    "public_culture__kiyota": 4,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 4,
+    "public_culture__shiroishi": 7,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 9
+   },
+   "example_names": [
+    "厚別優良運転者免許更新センター",
+    "札幌市東部市税事務所",
+    "札幌東税務署",
+    "札幌市マイナンバーカードセンター",
+    "リフレ　サッポロ",
+    "石狩家畜保健衛生所",
+    "農林水産省 横浜植物防疫所 札幌支所",
+    "寒地土木研究所",
+    "自動車事故対策機構",
+    "自衛隊札幌地方協力本部",
+    "北海道開発局職員研修室",
+    "札幌国際プラザ"
+   ]
+  },
+  {
+   "tag": "shop=second_hand",
+   "rows": 56,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 7,
+    "commercial__higashi": 8,
+    "commercial__kita": 5,
+    "commercial__kiyota": 8,
+    "commercial__nishi": 5,
+    "commercial__shiroishi": 8,
+    "commercial__teine": 2,
+    "commercial__toyohira": 10
+   },
+   "example_names": [
+    "セカンドストリート",
+    "ハードオフ",
+    "オフハウス",
+    "ホビーオフ",
+    "I love store",
+    "福助",
+    "GEO",
+    "コレクトワン",
+    "リユース相談本舗 BiVi新さっぽろ店",
+    "Brand Shop AVAYA",
+    "2nd OUTDOOR",
+    "オートホーク"
+   ]
+  },
+  {
+   "tag": "tourism=museum",
+   "rows": 56,
+   "files": {
+    "public_culture__atsubetsu": 3,
+    "public_culture__chuo": 18,
+    "public_culture__higashi": 4,
+    "public_culture__kita": 4,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 18,
+    "public_culture__nishi": 3,
+    "public_culture__toyohira": 5
+   },
+   "example_names": [
+    "札幌市青少年科学館",
+    "北海道博物館",
+    "北海道開拓の村",
+    "ギャラリー大通美術館",
+    "北大植物園温室",
+    "酪農と乳の歴史館",
+    "北方自然教育園昆虫館",
+    "道路情報館",
+    "白い恋人パーク",
+    "レトロスペース 坂会館",
+    "HOKUBU記念絵画館",
+    "あしりべつ郷土館"
+   ]
+  },
+  {
+   "tag": "cuisine=chinese",
+   "rows": 51,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 23,
+    "commercial__higashi": 5,
+    "commercial__kita": 5,
+    "commercial__kiyota": 2,
+    "commercial__minami": 6,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 1,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "暖龍",
+    "中華料理 豊楽園",
+    "中国酒菜 味楽",
+    "春夏秋冬",
+    "布袋",
+    "皆招楼",
+    "はるのそら",
+    "重慶酒楼",
+    "五修堂",
+    "順香",
+    "厨華房 曼田林",
+    "上々颱風"
+   ]
+  },
+  {
+   "tag": "leisure=sports_centre",
+   "rows": 51,
+   "files": {
+    "sports__atsubetsu": 3,
+    "sports__chuo": 3,
+    "sports__higashi": 8,
+    "sports__kita": 12,
+    "sports__kiyota": 3,
+    "sports__minami": 4,
+    "sports__nishi": 3,
+    "sports__shiroishi": 2,
+    "sports__teine": 6,
+    "sports__toyohira": 7
+   },
+   "example_names": [
+    "札幌市厚別温水プール",
+    "厚別区体育館",
+    "サッポロオリンピアボウル",
+    "中島公園庭球場",
+    "つどーむ",
+    "Sports Club Zip",
+    "射撃場エアーライフル",
+    "白旗山競技場",
+    "ツインキャップ",
+    "北海きたえーる",
+    "ルネサンス",
+    "北ガスアリーナ札幌46"
+   ]
+  },
+  {
+   "tag": "shop=car_parts",
+   "rows": 51,
+   "files": {
+    "commercial__atsubetsu": 5,
+    "commercial__chuo": 3,
+    "commercial__higashi": 11,
+    "commercial__kita": 4,
+    "commercial__kiyota": 7,
+    "commercial__minami": 2,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 3,
+    "commercial__teine": 6,
+    "commercial__toyohira": 6
+   },
+   "example_names": [
+    "タイヤ館",
+    "オートバックス",
+    "イエローハット",
+    "ジェームス",
+    "TSURUOKA",
+    "トヨタ部品北海道共販株式会社 本社ＰｉＰｉｔ",
+    "フジファイブデイズ",
+    "石上車両 宮の沢店",
+    "スーパーオートバックス札幌",
+    "ミスタータイヤマン",
+    "石上車輌",
+    "タイヤセレクト"
+   ]
+  },
+  {
+   "tag": "amenity=fire_station",
+   "rows": 49,
+   "files": {
+    "public_culture__atsubetsu": 2,
+    "public_culture__chuo": 6,
+    "public_culture__higashi": 6,
+    "public_culture__kita": 8,
+    "public_culture__kiyota": 3,
+    "public_culture__minami": 6,
+    "public_culture__nishi": 4,
+    "public_culture__shiroishi": 5,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 5
+   },
+   "example_names": [
+    "厚別消防署",
+    "厚別消防署もみじ台出張所",
+    "札幌市中央消防署",
+    "札幌市中央消防署 桑園出張所",
+    "札幌市役所 消防局消防署清田消防署北野出張所",
+    "札幌北消防署 あいの里出張所",
+    "豊平消防署 東月寒出張所",
+    "札幌市消防局手稲消防署前田出張所",
+    "札幌市手稲消防署西宮の沢出張所",
+    "札幌中央消防署 幌西出張所",
+    "札幌市清田消防署里塚出張所",
+    "白石消防署北郷出張所"
+   ]
+  },
+  {
+   "tag": "sport=soccer",
+   "rows": 48,
+   "files": {
+    "sports__atsubetsu": 2,
+    "sports__chuo": 3,
+    "sports__higashi": 10,
+    "sports__kita": 7,
+    "sports__kiyota": 5,
+    "sports__minami": 6,
+    "sports__nishi": 2,
+    "sports__shiroishi": 4,
+    "sports__teine": 3,
+    "sports__toyohira": 6
+   },
+   "example_names": [
+    "西コート;東雁来公園サッカー場",
+    "東コート",
+    "東雁来コンサドーレグラウンド",
+    "札幌サッカーアミューズメントパーク",
+    "屯田多目的広場サッカー場",
+    "白い恋人サッカー場",
+    "白旗山サッカー場",
+    "人工芝サッカー場",
+    "天然芝サッカー場"
+   ]
+  },
+  {
+   "tag": "amenity=car_rental",
+   "rows": 47,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 17,
+    "commercial__higashi": 3,
+    "commercial__kita": 9,
+    "commercial__minami": 1,
+    "commercial__nishi": 7,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 6
+   },
+   "example_names": [
+    "トヨタレンタカー",
+    "ニコニコレンタカー",
+    "ニッポンレンタカー",
+    "オリックスレンタカー",
+    "Toyota",
+    "Budget",
+    "Times CAR RENTAL",
+    "ホンダレンタリース札幌　札幌駅北口店",
+    "ニコニコレンタカー札幌平岸7条店",
+    "トヨタレンタリース新札幌",
+    "ガッツレンタカー",
+    "ワンズレンタカー"
+   ]
+  },
+  {
+   "tag": "shop=books",
+   "rows": 47,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 12,
+    "commercial__higashi": 7,
+    "commercial__kita": 4,
+    "commercial__kiyota": 5,
+    "commercial__minami": 1,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 5,
+    "commercial__teine": 2,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "ブックオフ",
+    "文教堂",
+    "コーチャンフォー",
+    "紀伊國屋書店",
+    "写真と本のだいいち",
+    "Oven Universe",
+    "とらのあな",
+    "Book lab",
+    "TSUTAYA",
+    "BOOK・NET・ONE",
+    "大垣書店 東光ストア行啓通店",
+    "大垣書店 マルヤマクラス店"
+   ]
+  },
+  {
+   "tag": "cuisine=curry",
+   "rows": 45,
+   "files": {
+    "commercial__chuo": 17,
+    "commercial__higashi": 3,
+    "commercial__kita": 6,
+    "commercial__kiyota": 4,
+    "commercial__minami": 1,
+    "commercial__nishi": 6,
+    "commercial__shiroishi": 5,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "ミルチ",
+    "みよしの",
+    "エスパーイトウ",
+    "Rojiura Curry Samurai 札幌駅アピア",
+    "すあげ+",
+    "円山教授。",
+    "Onion",
+    "Voyage",
+    "なみき",
+    "咖哩屋 梵",
+    "ゴップ",
+    "lavi"
+   ]
+  },
+  {
+   "tag": "cuisine=italian",
+   "rows": 45,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 27,
+    "commercial__higashi": 3,
+    "commercial__kita": 3,
+    "commercial__kiyota": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 4,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "サイゼリヤ",
+    "トラットリア タント タヴォレッテ",
+    "Cicci Factory",
+    "アウトドアカフェミールラウンジ",
+    "カプリチョーザ",
+    "ｱﾙﾍﾞﾃｯｺ",
+    "ル・クレエ",
+    "ダルセーニョ",
+    "ポポロ広場",
+    "ラパウザ",
+    "アルベロ・ディ・オリーブ",
+    "クッチーナ 南平岸店"
+   ]
+  },
+  {
+   "tag": "shop=funeral_directors",
+   "rows": 45,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 5,
+    "commercial__higashi": 8,
+    "commercial__kita": 10,
+    "commercial__kiyota": 2,
+    "commercial__minami": 5,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 8
+   },
+   "example_names": [
+    "やわらぎ斎場",
+    "ベルコ",
+    "公益社",
+    "むすめやホール",
+    "香華殿",
+    "ディアネス屯田",
+    "ウィズハウス豊平橋",
+    "家族葬クラッセ with メモリエ",
+    "てんぱん斎場",
+    "コープの家族葬 フリエホールつきさむ",
+    "札幌ベルコ会館",
+    "やわらぎ北円山別邸"
+   ]
+  },
+  {
+   "tag": "tourism=attraction",
+   "rows": 45,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 18,
+    "public_culture__higashi": 1,
+    "public_culture__kita": 1,
+    "public_culture__minami": 20,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 3
+   },
+   "example_names": [
+    "場外市場",
+    "大地の手",
+    "さっぽろ名所 新ラーメン横丁",
+    "ニッカウヰスキー",
+    "重役室",
+    "円山公園",
+    "観覧車",
+    "ルピナス",
+    "スターすすきの",
+    "北海道の形をした切り株",
+    "小説家・武林無想庵 生誕地",
+    "豊平館"
+   ]
+  },
+  {
+   "tag": "leisure=fitness_centre",
+   "rows": 44,
+   "files": {
+    "sports__atsubetsu": 2,
+    "sports__chuo": 12,
+    "sports__higashi": 4,
+    "sports__kita": 3,
+    "sports__kiyota": 3,
+    "sports__minami": 2,
+    "sports__nishi": 4,
+    "sports__shiroishi": 5,
+    "sports__teine": 3,
+    "sports__toyohira": 6
+   },
+   "example_names": [
+    "chocoZAP",
+    "コナミスポーツクラブ",
+    "Fitness24",
+    "エニタイムフィットネス",
+    "Gold's Gym",
+    "BLINKER",
+    "Rainbow Cliff",
+    "デイサービス　エルパサ",
+    "Two Seven Bodies",
+    "24/7 SPORTS CLUB",
+    "Changes",
+    "EXIM"
+   ]
+  },
+  {
+   "tag": "shop=doityourself",
+   "rows": 40,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 2,
+    "commercial__higashi": 7,
+    "commercial__kita": 6,
+    "commercial__kiyota": 7,
+    "commercial__minami": 2,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 4,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "DCM",
+    "ビバホーム",
+    "スーパービバホーム",
+    "アストロプロダクツ",
+    "こんだ金物店",
+    "コメリパワー",
+    "ジョイフルエーケー BUILD-ON",
+    "カインズホーム",
+    "建デポ　プロ",
+    "ジョイフルエーケー",
+    "建デポ"
+   ]
+  },
+  {
+   "tag": "cuisine=beef_bowl",
+   "rows": 38,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 11,
+    "commercial__higashi": 4,
+    "commercial__kita": 6,
+    "commercial__kiyota": 4,
+    "commercial__minami": 1,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 4
+   },
+   "example_names": [
+    "吉野家",
+    "すき家",
+    "松屋",
+    "すき家札幌北野店"
+   ]
+  },
+  {
+   "tag": "shop=bicycle",
+   "rows": 38,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 13,
+    "commercial__higashi": 3,
+    "commercial__kita": 5,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 4,
+    "commercial__teine": 1,
+    "commercial__toyohira": 5
+   },
+   "example_names": [
+    "サイクルベースあさひ",
+    "サイクル小野サッポロ",
+    "サイクルショップさとう",
+    "ヤマモト",
+    "OLD NEW",
+    "フジニ",
+    "ロードキッズ",
+    "MEGAドン・キホーテ札幌狸小路本店",
+    "札幌じてんしゃ本舗",
+    "ホクトイワキ",
+    "デシクロペダリ",
+    "ヨコヤマ商会"
+   ]
+  },
+  {
+   "tag": "shop=laundry",
+   "rows": 38,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 12,
+    "commercial__higashi": 3,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 5,
+    "commercial__teine": 1,
+    "commercial__toyohira": 8
+   },
+   "example_names": [
+    "せんたくランド",
+    "Baluko Laundry Place",
+    "マンマチャオ",
+    "コインランドリーjabba 厚別中央店",
+    "Shawa shawa",
+    "ホワイト急便",
+    "白洗舎サブリナ",
+    "クリーン・デポ 南4条店",
+    "マンマチャオ美しが丘店",
+    "Coin Laundry eco",
+    "AQUA",
+    "ランドロマット・エスナイン"
+   ]
+  },
+  {
+   "tag": "shop=mall",
+   "rows": 38,
+   "files": {
+    "commercial__atsubetsu": 8,
+    "commercial__chuo": 11,
+    "commercial__higashi": 4,
+    "commercial__kita": 1,
+    "commercial__kiyota": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 3,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "サンピアザ",
+    "カテプリ",
+    "デュオ-1",
+    "デュオ-2",
+    "キャポ大谷地",
+    "ノルベサ",
+    "さっぽろ地下街",
+    "狸小路商店街",
+    "サッポロファクトリー",
+    "sitatte sapporo",
+    "東急百貨店",
+    "マルヤマクラス"
+   ]
+  },
+  {
+   "tag": "amenity=university",
+   "rows": 34,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 3,
+    "public_culture__higashi": 3,
+    "public_culture__kita": 15,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 4,
+    "public_culture__teine": 2,
+    "public_culture__toyohira": 5
+   },
+   "example_names": [
+    "光塩学園女子短期大学",
+    "北星学園大学",
+    "北海学園大学 山鼻キャンパス",
+    "札幌医科大学",
+    "材料科学系棟　南棟",
+    "理学部8号館",
+    "次世代物質生命科学研究センター",
+    "北海道大学農学部農園およびインターナショナルハウス",
+    "日本医療大学 月寒本キャンパス",
+    "北海道大学外国人研究者等宿泊施設",
+    "北海道大学 化学反応創成研究拠点",
+    "札幌大谷大学・短期大学"
+   ]
+  },
+  {
+   "tag": "shop=optician",
+   "rows": 34,
+   "files": {
+    "parks_play__chuo": 1,
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 9,
+    "commercial__higashi": 2,
+    "commercial__kita": 6,
+    "commercial__kiyota": 4,
+    "commercial__minami": 2,
+    "commercial__nishi": 4,
+    "commercial__teine": 2,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "富士メガネ",
+    "眼鏡市場",
+    "メガネのプリンス",
+    "メガネサロンルック",
+    "ジンズ",
+    "弐萬圓堂",
+    "ゾフ",
+    "Zoff",
+    "GLASSISM",
+    "JINS",
+    "ドクターアイズ",
+    "藤田眼鏡店"
+   ]
+  },
+  {
+   "tag": "shop=electronics",
+   "rows": 32,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 5,
+    "commercial__higashi": 5,
+    "commercial__kita": 4,
+    "commercial__kiyota": 2,
+    "commercial__minami": 2,
+    "commercial__nishi": 5,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 6
+   },
+   "example_names": [
+    "ヤマダデンキ",
+    "ケーズデンキ",
+    "マツヤデンキ",
+    "ゲオモバイル",
+    "Vapora",
+    "100満ボルト",
+    "エディオン",
+    "さかうえ",
+    "コンパス ささき",
+    "CaDen 平岸店",
+    "ソニーストア",
+    "ベスト電器"
+   ]
+  },
+  {
+   "tag": "shop=massage",
+   "rows": 32,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 10,
+    "commercial__kita": 2,
+    "commercial__kiyota": 4,
+    "commercial__minami": 1,
+    "commercial__shiroishi": 3,
+    "commercial__teine": 2,
+    "commercial__toyohira": 8
+   },
+   "example_names": [
+    "にしむらはりきゅう整骨院",
+    "もみじ台はりきゅう整骨院",
+    "手技治療院",
+    "てもみん",
+    "北海道カイロプラクティックセンター",
+    "りらくる",
+    "マッサージルームおさだ",
+    "筋肉整体 Cares ケアーズ",
+    "Lila Oriental",
+    "木の花　鍼灸院",
+    "Villa",
+    "ひまわり治療院"
+   ]
+  },
+  {
+   "tag": "shop=florist",
+   "rows": 31,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 13,
+    "commercial__higashi": 4,
+    "commercial__kita": 7,
+    "commercial__minami": 1,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "フラワーショップいしざか",
+    "花や",
+    "花色",
+    "大堀生花店",
+    "北花壇",
+    "札幌花材",
+    "花屋さとうはなみつ フォレスト",
+    "花一屋",
+    "GREEN SHOP TOMO",
+    "マルイチ",
+    "Botanic Life",
+    "FreeShape"
+   ]
+  },
+  {
+   "tag": "office=research",
+   "rows": 30,
+   "files": {
+    "other_unknown__chuo": 2,
+    "other_unknown__kita": 26,
+    "other_unknown__toyohira": 2
+   },
+   "example_names": [
+    "北翔大学 北方圏学術情報センター",
+    "北海道電力ネットワーク 基幹系工事センター",
+    "北海道大学 数学連携研究センター",
+    "北海道大学 電子科学研究所",
+    "放射線棟",
+    "分析棟",
+    "動物飼育室",
+    "ナトリウム試験室",
+    "データ駆動型融合研究創発拠点",
+    "畜牧体系学実験室",
+    "共同利用実験棟",
+    "遺伝子実験施設"
+   ]
+  },
+  {
+   "tag": "amenity=bus_station",
+   "rows": 29,
+   "files": {
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 4,
+    "other_unknown__higashi": 2,
+    "other_unknown__kita": 9,
+    "other_unknown__minami": 3,
+    "other_unknown__nishi": 4,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__teine": 1,
+    "other_unknown__toyohira": 2
+   },
+   "example_names": [
+    "大谷地BT",
+    "新札幌BT",
+    "円山BT",
+    "北海道中央バス 札幌ターミナル",
+    "栄町交通広場待合所",
+    "あいの里公園駅",
+    "北陵高校前",
+    "北三番橋",
+    "手稲駅北口",
+    "屯田小学校",
+    "新琴似2条13丁目",
+    "北24条BT"
+   ]
+  },
+  {
+   "tag": "amenity=car_sharing",
+   "rows": 28,
+   "files": {
+    "other_unknown__chuo": 5,
+    "other_unknown__kita": 7,
+    "other_unknown__nishi": 15,
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "タイムズカーシェア",
+    "TOYOTA SHARE",
+    "タイムズカー",
+    "タイムズカープラス",
+    "タイムズカーシェアリング"
+   ]
+  },
+  {
+   "tag": "amenity=taxi",
+   "rows": 28,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 15,
+    "other_unknown__higashi": 2,
+    "other_unknown__kita": 3,
+    "other_unknown__minami": 1,
+    "other_unknown__nishi": 2,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__toyohira": 2
+   },
+   "example_names": [
+    "タクシー乗り場",
+    "地下鉄琴似駅 5番出口"
+   ]
+  },
+  {
+   "tag": "craft=confectionery",
+   "rows": 28,
+   "files": {
+    "commercial__chuo": 13,
+    "commercial__higashi": 4,
+    "commercial__kiyota": 2,
+    "commercial__minami": 3,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "くしくしだんご",
+    "SUGER MAN",
+    "菓か舎",
+    "プリン本舗",
+    "銘菓匠 百代亭",
+    "とうりん",
+    "くるみや",
+    "かど丸餅店",
+    "フォセットフィーユ",
+    "焼きたてアップルパイの店 かぐらじゅ",
+    "コッコテラス",
+    "不二家"
+   ]
+  },
+  {
+   "tag": "leisure=golf_course",
+   "rows": 28,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__higashi": 2,
+    "sports__kiyota": 5,
+    "sports__minami": 13,
+    "sports__shiroishi": 3,
+    "sports__teine": 2,
+    "sports__toyohira": 2
+   },
+   "example_names": [
+    "豊平川・雁来河川健康公園ゴルフ場",
+    "ダイナスティゴルフクラブ有明",
+    "ツキサップゴルフクラブ",
+    "ダイナスティ有明GC",
+    "札幌ガーデンヒルズ しらかばコース",
+    "豊平川緑地五輪橋コース",
+    "ツキサップGC",
+    "ニュー真駒内ゴルフセンター",
+    "札幌芙蓉カントリー倶楽部",
+    "札幌テイネゴルフ倶楽部",
+    "豊平川・雁来河川健康公園ゴルフ練習場",
+    "札幌すずらんゴルフ場"
+   ]
+  },
+  {
+   "tag": "shop=greengrocer",
+   "rows": 28,
+   "files": {
+    "commercial__chuo": 10,
+    "commercial__higashi": 2,
+    "commercial__kita": 2,
+    "commercial__minami": 10,
+    "commercial__shiroishi": 2,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "深澤青果",
+    "Gleen Flag",
+    "相川商店 苗穂店",
+    "Wakuwaku Hiroba",
+    "スターフルーツ",
+    "あい菜亭",
+    "ザ・八百屋",
+    "やおきゅう",
+    "荒井果菜園",
+    "定山渓ファーム直売所",
+    "土田りんご園",
+    "焼き芋 いもや"
+   ]
+  },
+  {
+   "tag": "shop=yes",
+   "rows": 28,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 2,
+    "commercial__higashi": 3,
+    "commercial__kita": 4,
+    "commercial__kiyota": 1,
+    "commercial__minami": 6,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 2,
+    "commercial__toyohira": 5
+   },
+   "example_names": [
+    "和泉商店",
+    "金剛堂",
+    "(有)Earth Cover",
+    "米屋 きゅうさん",
+    "パークゴルフ管理事務所",
+    "常口アトム 北大前店",
+    "指定障害福祉サービス事業所 えるむ",
+    "AIRSTAGE",
+    "いけだ野",
+    "パディスリーヨシ",
+    "北海道フットボールクラブ",
+    "Naturie Studio"
+   ]
+  },
+  {
+   "tag": "office=estate_agent",
+   "rows": 26,
+   "files": {
+    "other_unknown__atsubetsu": 5,
+    "other_unknown__chuo": 15,
+    "other_unknown__kiyota": 1,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__toyohira": 3
+   },
+   "example_names": [
+    "アパマンショップ",
+    "常口アトム",
+    "ビッグ",
+    "不動産のビッグ",
+    "スミタス",
+    "COZY",
+    "いい部屋ネット",
+    "大東建託",
+    "Apaman",
+    "ほくと",
+    "エイブル",
+    "小川ホームサービス"
+   ]
+  },
+  {
+   "tag": "shop=sports",
+   "rows": 26,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 6,
+    "commercial__higashi": 4,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 4,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "スポーツデポ",
+    "スーパースポーツゼビオ",
+    "ゴルフ5",
+    "二木ゴルフ",
+    "東京武道具",
+    "ダイネーゼ",
+    "GOLF TSURUYA",
+    "Nissen Sports",
+    "サッカーショップKAMO",
+    "ファイターズオフィシャルストア　ON-DECK",
+    "フイッシュランド　手稲店",
+    "エイチファクトリー"
+   ]
+  },
+  {
+   "tag": "shop=alcohol",
+   "rows": 25,
+   "files": {
+    "commercial__chuo": 10,
+    "commercial__higashi": 3,
+    "commercial__kita": 3,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__nishi": 3,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "ビックリッキー",
+    "カクヤス",
+    "えびすや",
+    "ワインフードわたらい",
+    "蔵太郎",
+    "酒舗七蔵",
+    "かしわの",
+    "マツヤ",
+    "銘酒の裕多加",
+    "MARUHACHI",
+    "リカーマウンテン",
+    "酒屋D&D"
+   ]
+  },
+  {
+   "tag": "shop=video",
+   "rows": 25,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 4,
+    "commercial__higashi": 4,
+    "commercial__kita": 6,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "ゲオ",
+    "TSUTAYA",
+    "スポット"
+   ]
+  },
+  {
+   "tag": "shop=beauty",
+   "rows": 24,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 8,
+    "commercial__kita": 2,
+    "commercial__nishi": 9,
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "@RICH",
+    "グラン",
+    "イーノス",
+    "Yoshiko",
+    "アインズ＆トルペ",
+    "A'Cerdo",
+    "Rise",
+    "Sono",
+    "キャラ",
+    "らびさんて",
+    "カメリア",
+    "スズキ美容室"
+   ]
+  },
+  {
+   "tag": "shop=shoes",
+   "rows": 24,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 7,
+    "commercial__higashi": 3,
+    "commercial__kita": 2,
+    "commercial__kiyota": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 3,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "東京靴流通センター",
+    "シュープラザ",
+    "ABCマート",
+    "アスビーファム",
+    "BOSTON",
+    "Onitsuka Tiger",
+    "Crocs",
+    "ジー・エム　ジェロニモ",
+    "名取川靴店",
+    "しゃみ靴店",
+    "アスリートクラブ",
+    "靴流通センター"
+   ]
+  },
+  {
+   "tag": "tourism=hostel",
+   "rows": 24,
+   "files": {
+    "commercial__chuo": 17,
+    "commercial__kita": 4,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "Wise Owl",
+    "HELIO HOSTEL SAPPORO",
+    "plat hostel keikyu sapporo ichiba",
+    "Ezo Run",
+    "やすべえ",
+    "IGLOO",
+    "北海道青年会館",
+    "札幌円山 ゲストハウス つむり庵",
+    "札幌国際ユースホステル",
+    "Itsukiya",
+    "Time Peace Apartment",
+    "Ten to Ten NAKAJIMA-KOEN"
+   ]
+  },
+  {
+   "tag": "amenity=karaoke_box",
+   "rows": 23,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 9,
+    "commercial__higashi": 1,
+    "commercial__kita": 5,
+    "commercial__kiyota": 2,
+    "commercial__shiroishi": 3,
+    "commercial__teine": 1
+   },
+   "example_names": [
+    "キャッツアイ",
+    "カラオケ まねきねこ",
+    "カラオケ歌屋",
+    "カラオケ館",
+    "香萬街",
+    "つぼっち",
+    "ジャンカラ",
+    "カラオケ歌屋　札幌手稲前田店",
+    "スリラーカラオケ",
+    "カラオケバンバン"
+   ]
+  },
+  {
+   "tag": "cuisine=chicken",
+   "rows": 23,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__higashi": 2,
+    "commercial__kita": 3,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 8,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 1,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "ケンタッキーフライドチキン",
+    "チキンハウス515",
+    "焼鳥ダイニング いただきコッコちゃん",
+    "鶏家 とことん 宮の沢店",
+    "やきとり鳥心",
+    "居酒屋焼き鳥稲穂",
+    "千鳥庵",
+    "やまじゅう焼鳥店"
+   ]
+  },
+  {
+   "tag": "cuisine=soba",
+   "rows": 23,
+   "files": {
+    "commercial__chuo": 6,
+    "commercial__higashi": 5,
+    "commercial__kita": 4,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "信州庵",
+    "ごまそば遊鶴",
+    "山でん",
+    "そば処福住",
+    "膳",
+    "霧の下",
+    "むぎの里",
+    "高田屋",
+    "彦いち",
+    "武柳庵",
+    "蕎傳",
+    "ゆで太郎"
+   ]
+  },
+  {
+   "tag": "amenity=childcare",
+   "rows": 22,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 8,
+    "public_culture__kita": 2,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 4,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 3
+   },
+   "example_names": [
+    "認定こども園おおやち",
+    "札幌市大通保育園",
+    "Maruyama Kids Academy",
+    "Tokyo iS afterschool",
+    "ねっこぼっこのいえ",
+    "にこまるえん東札幌",
+    "札幌大谷第二幼稚園",
+    "東札幌児童会館",
+    "吉田学園くりの木保育園",
+    "保育所ともに",
+    "にれ第２こども園",
+    "札幌円山幼稚園"
+   ]
+  },
+  {
+   "tag": "amenity=library",
+   "rows": 22,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 5,
+    "public_culture__higashi": 1,
+    "public_culture__kita": 5,
+    "public_culture__kiyota": 2,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 1,
+    "public_culture__teine": 4,
+    "public_culture__toyohira": 1
+   },
+   "example_names": [
+    "厚別図書館",
+    "札幌市中央図書館 大通カウンター",
+    "中央区民センター図書室",
+    "札幌市中央図書館",
+    "書香の森",
+    "ふきのとう子ども図書館",
+    "札幌市図書・情報館",
+    "いちょうの森図書館",
+    "新発寒地区センター図書室",
+    "札幌市新琴似図書館",
+    "医学部図書館",
+    "山の手図書館"
+   ]
+  },
+  {
+   "tag": "sport=athletics",
+   "rows": 22,
+   "files": {
+    "sports__atsubetsu": 4,
+    "sports__chuo": 9,
+    "sports__higashi": 1,
+    "sports__kita": 2,
+    "sports__kiyota": 2,
+    "sports__minami": 1,
+    "sports__teine": 1,
+    "sports__toyohira": 2
+   },
+   "example_names": [
+    "札幌市円山競技場"
+   ]
+  },
+  {
+   "tag": "amenity=prep_school",
+   "rows": 21,
+   "files": {
+    "other_unknown__chuo": 9,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 2,
+    "other_unknown__kiyota": 4,
+    "other_unknown__minami": 1,
+    "other_unknown__shiroishi": 1,
+    "other_unknown__toyohira": 3
+   },
+   "example_names": [
+    "KUMON",
+    "札幌練成会",
+    "東進衛星予備校",
+    "北大学力増進会",
+    "共律塾",
+    "個別指導3.14",
+    "公文式",
+    "アドバンス",
+    "代々木ゼミナール",
+    "四谷学院",
+    "北大学力増進会　東本部",
+    "秀英予備校 元町校"
+   ]
+  },
+  {
+   "tag": "cuisine=pizza",
+   "rows": 21,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 3,
+    "commercial__higashi": 5,
+    "commercial__kita": 4,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__shiroishi": 4,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ピザハット",
+    "ドミノ・ピザ",
+    "ピザーラ",
+    "ピッツェリア・ダ・マッシモ"
+   ]
+  },
+  {
+   "tag": "shop=car_repair",
+   "rows": 21,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 3,
+    "commercial__higashi": 3,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 4
+   },
+   "example_names": [
+    "スタイルコクピットフィール",
+    "オートグロウ",
+    "宮田自動車工業",
+    "日産",
+    "SEEDS",
+    "林自工",
+    "中川 モータース",
+    "アルミ館",
+    "コバック",
+    "札幌オートガラス",
+    "スポーツコクピットJET",
+    "アップル車検 小林兄弟自動車工業"
+   ]
+  },
+  {
+   "tag": "amenity=theatre",
+   "rows": 20,
+   "files": {
+    "public_culture__chuo": 12,
+    "public_culture__higashi": 2,
+    "public_culture__kita": 3,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 1,
+    "public_culture__nishi": 1
+   },
+   "example_names": [
+    "サッポロファクトリーホール",
+    "SOUND CRUE",
+    "札幌市教育文化会館",
+    "スピリチュアルラウンジ",
+    "シアターZOO",
+    "ミュージックシェル",
+    "ペニーレーン24",
+    "ジョブキタ北八劇場",
+    "cube garden",
+    "札幌大谷学園百周年記念館",
+    "Zepp札幌",
+    "札幌文化芸術劇場 hiraru"
+   ]
+  },
+  {
+   "tag": "leisure=track",
+   "rows": 20,
+   "files": {
+    "sports__atsubetsu": 3,
+    "sports__chuo": 7,
+    "sports__higashi": 3,
+    "sports__kita": 1,
+    "sports__kiyota": 1,
+    "sports__minami": 2,
+    "sports__teine": 2,
+    "sports__toyohira": 1
+   },
+   "example_names": [
+    "陸上競技場"
+   ]
+  },
+  {
+   "tag": "amenity=luggage_locker",
+   "rows": 19,
+   "files": {
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 9,
+    "other_unknown__kita": 7,
+    "other_unknown__minami": 1
+   },
+   "example_names": [
+    "大通E",
+    "大通I",
+    "大通D",
+    "マルチエキューブ",
+    "さっぽろB",
+    "さっぽろE"
+   ]
+  },
+  {
+   "tag": "cuisine=steak_house",
+   "rows": 19,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 8,
+    "commercial__higashi": 1,
+    "commercial__nishi": 4,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "ヴィクトリアステーション",
+    "がんねん",
+    "Steak and Hamburg ひげ",
+    "ゴッドバーグ",
+    "Gluss Got",
+    "北の ホルモン 絆",
+    "味覚園",
+    "Victoria",
+    "ビーフインパクト",
+    "焼肉 万歩園",
+    "焼肉 金太郎",
+    "焼肉徳寿"
+   ]
+  },
+  {
+   "tag": "leisure=miniature_golf",
+   "rows": 19,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__chuo": 4,
+    "sports__higashi": 3,
+    "sports__kita": 2,
+    "sports__kiyota": 2,
+    "sports__minami": 2,
+    "sports__teine": 3,
+    "sports__toyohira": 2
+   },
+   "example_names": [
+    "リユースプラザ パークゴルフ場",
+    "山の手ゴルフセンター",
+    "南7条パークゴルフ場 Bコース",
+    "南大橋パークゴルフ場",
+    "札幌パークゴルフ倶楽部 福移の社コース",
+    "パークゴルフCarrotコース",
+    "前田森林公園パークゴルフ場",
+    "パークゴルフBeansコース",
+    "パークゴルフAppleコース",
+    "南22条パークゴルフ場",
+    "南7条パークゴルフ場 Aコース",
+    "東茨戸パークゴルフ場"
+   ]
+  },
+  {
+   "tag": "amenity=driving_school",
+   "rows": 18,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 3,
+    "other_unknown__kiyota": 1,
+    "other_unknown__minami": 2,
+    "other_unknown__nishi": 2,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__teine": 4,
+    "other_unknown__toyohira": 2
+   },
+   "example_names": [
+    "桑園自動車学校",
+    "北海道中央自動車学校",
+    "中央バス自動車学校",
+    "麻生自動車学校",
+    "安協真駒内自動車学園",
+    "札幌インター自動車学校",
+    "鉄工団地自動車学園",
+    "札幌中の島自動車学園",
+    "美しが丘自動車学校",
+    "白石中央自動車学園",
+    "札幌篠路自動車学校",
+    "北海道西自動車学園"
+   ]
+  },
+  {
+   "tag": "amenity=townhall",
+   "rows": 18,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 6,
+    "public_culture__higashi": 1,
+    "public_culture__kita": 2,
+    "public_culture__kiyota": 1,
+    "public_culture__minami": 2,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 2,
+    "public_culture__teine": 1,
+    "public_culture__toyohira": 1
+   },
+   "example_names": [
+    "札幌市厚別区役所",
+    "札幌市大通証明サービスコーナー",
+    "札幌市中央区役所",
+    "札幌市役所",
+    "白石まちづくりセンター",
+    "北海道庁別館西棟",
+    "札幌市定山渓出張所",
+    "札幌市北区篠路出張所",
+    "北海道庁別館",
+    "北海道庁",
+    "清田区役所",
+    "札幌市手稲区役所"
+   ]
+  },
+  {
+   "tag": "shop=furniture",
+   "rows": 18,
+   "files": {
+    "commercial__atsubetsu": 4,
+    "commercial__chuo": 3,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "ニトリ",
+    "スイートデコレーション",
+    "デコホーム",
+    "家具の丸越 札幌厚別店",
+    "Yogibo Store",
+    "inZONE with ACTUS",
+    "リビングのごとう",
+    "メトロクス札幌",
+    "笠原家具",
+    "札幌ファニシング",
+    "スイートデコレーション 新はっさむ店"
+   ]
+  },
+  {
+   "tag": "shop=pastry",
+   "rows": 18,
+   "files": {
+    "commercial__chuo": 9,
+    "commercial__minami": 3,
+    "commercial__nishi": 4,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "CHAT 札幌三越店",
+    "CHAT 円山本店",
+    "Mr.Baum",
+    "Pâtisserie Chocolaterie Liberté パティスリーショコラトリー リベルテ",
+    "ハレノクダモノ",
+    "リトルスイーツ タマヤ",
+    "六花亭",
+    "レゲバン",
+    "ケーキハウス ステラマリス",
+    "柳月",
+    "平岸ドーナツ",
+    "スウィートレディージェーン"
+   ]
+  },
+  {
+   "tag": "tourism=camp_site",
+   "rows": 18,
+   "files": {
+    "parks_play__chuo": 2,
+    "parks_play__kita": 1,
+    "parks_play__kiyota": 1,
+    "parks_play__minami": 7,
+    "parks_play__nishi": 5,
+    "parks_play__teine": 1,
+    "parks_play__toyohira": 1
+   },
+   "example_names": [
+    "Redoor Sapporo",
+    "札幌野営場by焚火人",
+    "para-to sunset river",
+    "AOYAMAEN",
+    "晴好雨喜",
+    "芸森ワーサム",
+    "＆...中の沢BASE",
+    "village杜の贈り物",
+    "ワンダーランドサッポロ",
+    "札幌市定山渓自然の村",
+    "札幌プライベートグランピングQuope",
+    "Ken's Camp 吉田農場キャンプ場"
+   ]
+  },
+  {
+   "tag": "tourism=viewpoint",
+   "rows": 18,
+   "files": {
+    "parks_play__chuo": 4,
+    "parks_play__kita": 1,
+    "parks_play__kiyota": 2,
+    "parks_play__minami": 7,
+    "parks_play__nishi": 2,
+    "parks_play__toyohira": 2
+   },
+   "example_names": [
+    "JRタワー展望室T38",
+    "JRタワー展望台　T38",
+    "ポプラ並木",
+    "札幌台",
+    "白旗山",
+    "神威岳",
+    "アシリベツの滝",
+    "藻岩山 山頂展望台",
+    "鱒見の滝",
+    "不老の滝",
+    "豊平峡展望台",
+    "Gotenzan viewing platform 2"
+   ]
+  },
+  {
+   "tag": "cuisine=indian",
+   "rows": 17,
+   "files": {
+    "commercial__chuo": 8,
+    "commercial__kita": 5,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 2,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "天馬",
+    "北緯43°のスープカレー屋さん",
+    "カレー料理専門 デリー",
+    "タージマハール",
+    "Jhad Pul",
+    "五○堂",
+    "黒岩咖哩飯店 山鼻店",
+    "モハンディッシュ",
+    "Dawat Café",
+    "みち草バザール",
+    "ビスターレビスターレ",
+    "スパイスダイニング チャンダマ"
+   ]
+  },
+  {
+   "tag": "cuisine=western;japanese",
+   "rows": 17,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 2,
+    "commercial__higashi": 3,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__nishi": 1,
+    "commercial__teine": 2,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "ガスト",
+    "ココス",
+    "ビッグボーイ"
+   ]
+  },
+  {
+   "tag": "office=yes",
+   "rows": 17,
+   "files": {
+    "other_unknown__chuo": 3,
+    "other_unknown__kita": 1,
+    "other_unknown__kiyota": 3,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 4,
+    "other_unknown__toyohira": 5
+   },
+   "example_names": [
+    "Nocosu",
+    "ほくほく札幌ビル",
+    "札幌市交通局電車事業所",
+    "北海道大学 獣医学部",
+    "宅配トドック",
+    "まごころ 宮の沢",
+    "あらた",
+    "手と手",
+    "北新ビル",
+    "北海道中央バス 月寒営業所",
+    "JAF 北海道本部・札幌支部",
+    "株式会社八神エモーション 本社"
+   ]
+  },
+  {
+   "tag": "shop=deli",
+   "rows": 17,
+   "files": {
+    "commercial__chuo": 7,
+    "commercial__higashi": 3,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 2,
+    "commercial__shiroishi": 3,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ほっともっと",
+    "ひろちゃん",
+    "丸山豆腐店",
+    "丸亀",
+    "サラミ　ハヤシ",
+    "むすんでひらいて",
+    "弁菜亭",
+    "ヤムヤム",
+    "ドリーミン・ベル",
+    "ベントス",
+    "野の花",
+    "こめしん 札幌北郷店"
+   ]
+  },
+  {
+   "tag": "shop=gift",
+   "rows": 17,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 9,
+    "commercial__higashi": 1,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__minami": 2,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "北のブランドショップ",
+    "Tshop",
+    "スーベニアショップ",
+    "佐藤水産",
+    "なとり屋",
+    "OKADA",
+    "Sanrio",
+    "定山渓物産館",
+    "kitamesse",
+    "SiestBo",
+    "D&DEPARTMENT PROJECT SAPPORO by 3KG",
+    "SAPPORO BEER GARDEN SHOP&CAFE"
+   ]
+  },
+  {
+   "tag": "shop=pet",
+   "rows": 17,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 4,
+    "commercial__higashi": 1,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 2,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "ワンダードック 厚別店",
+    "福momo",
+    "Pet Garden",
+    "アクアフレンド北水",
+    "ジョイフルエーケー",
+    "だんぼ",
+    "iLand やまがみ",
+    "G-Club",
+    "ペットランド手稲前田店",
+    "ペットワールドPROX西岡店",
+    "ワンダードック デリ ル・トロワ店",
+    "イオンペット"
+   ]
+  },
+  {
+   "tag": "amenity=love_hotel",
+   "rows": 16,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 4,
+    "other_unknown__kiyota": 2,
+    "other_unknown__minami": 2,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 4,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "ホテルアクアムーン",
+    "ブルーホテルオクタ",
+    "ススキノラヴホテル2",
+    "ススキノラヴホテル1",
+    "HOTEL CHa-CHa-Ra",
+    "ホテル クレアｄｅラメール",
+    "ホテル キャレス",
+    "ブルーホテルダリア",
+    "ホテル シエロ",
+    "ホテル アゲイン",
+    "ホテル アーデン",
+    "ホテル クイーン"
+   ]
+  },
+  {
+   "tag": "sport=fitness",
+   "rows": 16,
+   "files": {
+    "sports__higashi": 1,
+    "sports__nishi": 1,
+    "other_unknown__chuo": 11,
+    "other_unknown__toyohira": 3
+   },
+   "example_names": [
+    "JOYFIT24",
+    "ジムスタイル24"
+   ]
+  },
+  {
+   "tag": "amenity=arts_centre",
+   "rows": 15,
+   "files": {
+    "public_culture__chuo": 4,
+    "public_culture__minami": 10,
+    "public_culture__toyohira": 1
+   },
+   "example_names": [
+    "絵画アトリエ",
+    "アート136",
+    "なえぼのアートスタジオ",
+    "Maker's Base Sapporo",
+    "札幌文化芸術交流センター SCARTS",
+    "工芸館",
+    "登り窯",
+    "佐藤忠良記念子どもアトリエ",
+    "クラフト工房",
+    "さっぽろ天神山アートスタジオ",
+    "版画工房",
+    "多目的アトリエ"
+   ]
+  },
+  {
+   "tag": "leisure=sports_hall",
+   "rows": 15,
+   "files": {
+    "sports__chuo": 2,
+    "sports__higashi": 2,
+    "sports__kiyota": 1,
+    "sports__minami": 4,
+    "sports__shiroishi": 1,
+    "sports__teine": 3,
+    "sports__toyohira": 2
+   },
+   "example_names": [
+    "体育館",
+    "北海道日本ハムファイターズ 室内練習場",
+    "清田区体育館・温水プール",
+    "第1体育館",
+    "第3体育館",
+    "第2体育館",
+    "白石区体育館",
+    "手稲区体育館",
+    "小体育館"
+   ]
+  },
+  {
+   "tag": "shop=storage_rental",
+   "rows": 15,
+   "files": {
+    "commercial__chuo": 15
+   },
+   "example_names": [
+    "ハロー・コンテナ",
+    "北3条トランクルーム",
+    "福山倉庫 東営業所",
+    "シロクマトランク",
+    "KARLIE TYNER",
+    "ストレージプラス 南円山",
+    "ハローストレージ"
+   ]
+  },
+  {
+   "tag": "amenity=internet_cafe",
+   "rows": 14,
+   "files": {
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 8,
+    "other_unknown__higashi": 2,
+    "other_unknown__kiyota": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "快活CLUB",
+    "快活CLUB厚別東店",
+    "アットプレイス",
+    "DiCE",
+    "DICE",
+    "快活CLUB北42条店",
+    "快活CLUB札幌西岡店"
+   ]
+  },
+  {
+   "tag": "cuisine=udon",
+   "rows": 14,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 4,
+    "commercial__higashi": 2,
+    "commercial__kita": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 2,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "なか卯",
+    "かれーうどん椿",
+    "讃岐うどん竹の家"
+   ]
+  },
+  {
+   "tag": "leisure=fitness_station",
+   "rows": 14,
+   "files": {
+    "other_unknown__chuo": 11,
+    "other_unknown__toyohira": 3
+   },
+   "example_names": []
+  },
+  {
+   "tag": "shop=motorcycle",
+   "rows": 14,
+   "files": {
+    "commercial__atsubetsu": 3,
+    "commercial__chuo": 1,
+    "commercial__higashi": 2,
+    "commercial__kiyota": 3,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "レッドバロン",
+    "Harley-Davidson",
+    "オートランド",
+    "ホンダ札幌販売",
+    "モト・ワークス",
+    "アメヤモーターサイクル",
+    "リバーランドサービス",
+    "Honda Dream 札幌西",
+    "バイク王",
+    "ドゥカティ 札幌",
+    "KTM札幌",
+    "レッドバロン　手稲"
+   ]
+  },
+  {
+   "tag": "amenity=driver_training",
+   "rows": 13,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 3,
+    "other_unknown__kiyota": 1,
+    "other_unknown__minami": 2,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__teine": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "cuisine=seafood",
+   "rows": 13,
+   "files": {
+    "commercial__chuo": 13
+   },
+   "example_names": [
+    "浜っ子",
+    "蟹工船",
+    "うに専門店世壱屋",
+    "海鮮処 魚屋の台所",
+    "マルダイ水産",
+    "魚や がんねん",
+    "味の二幸",
+    "炉ばた焼 ウタリ",
+    "えびかに合戦",
+    "かに本家",
+    "丼兵衛 二条市場店",
+    "札幌二条市場 大磯"
+   ]
+  },
+  {
+   "tag": "cuisine=yakiniku",
+   "rows": 13,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__higashi": 5,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "炭火焼倶楽部",
+    "金獅子のホルモン",
+    "トトリ",
+    "北光園",
+    "Gaja",
+    "ぼくぜん",
+    "味覚園",
+    "ウエスタン",
+    "七輪焼肉 安安",
+    "炭火焼肉 亞茶 総本店",
+    "炭火焼肉ときん",
+    "焼肉徳寿"
+   ]
+  },
+  {
+   "tag": "amenity=parcel_locker",
+   "rows": 12,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__higashi": 3,
+    "other_unknown__kiyota": 1,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 4,
+    "other_unknown__toyohira": 2
+   },
+   "example_names": [
+    "PUDOステーション",
+    "Amazon Hub ロッカー",
+    "PUDOステーション 宅配便ロッカー サツドラ南１１条店"
+   ]
+  },
+  {
+   "tag": "cuisine=donut",
+   "rows": 12,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 5,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 2,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ミスタードーナツ"
+   ]
+  },
+  {
+   "tag": "cuisine=french",
+   "rows": 12,
+   "files": {
+    "commercial__chuo": 9,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "レストラン プロヴァンサル キムラ",
+    "ミクニ サッポロ",
+    "HOKKAIDO CUISINE KAMUY",
+    "Bistaurant Fuji",
+    "クネル",
+    "カジュアルフレンチ ル・シュクレ",
+    "バンケット",
+    "フルールド・オリーヴ",
+    "Le Barato",
+    "ラ・フランス亭",
+    "コートドール"
+   ]
+  },
+  {
+   "tag": "tourism=guest_house",
+   "rows": 12,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__higashi": 2,
+    "commercial__minami": 2,
+    "commercial__nishi": 2,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "attomi hostel",
+    "ドミトリー札幌",
+    "ドミトリー札幌 別館",
+    "札幌ヴィラ・カルタ",
+    "Dreamhouse R&D Gakuenmae",
+    "ドミトリーS・Ⅱ"
+   ]
+  },
+  {
+   "tag": "amenity=car_wash",
+   "rows": 11,
+   "files": {
+    "commercial__kita": 1,
+    "commercial__kiyota": 3,
+    "commercial__shiroishi": 2,
+    "commercial__teine": 3,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "シャワーパーク",
+    "カーウォッシュ ブルー"
+   ]
+  },
+  {
+   "tag": "amenity=studio",
+   "rows": 11,
+   "files": {
+    "commercial__chuo": 2,
+    "public_culture__chuo": 1,
+    "other_unknown__chuo": 6,
+    "other_unknown__nishi": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "アレクト",
+    "札幌テレビ放送(STV)",
+    "エフエム北海道",
+    "北海道テレビ放送(HTB)",
+    "FMアップル",
+    "STVラジオ",
+    "NHK 札幌放送局",
+    "三角山放送局",
+    "北海道文化放送 (UHB)",
+    "テレビ北海道(TVh)",
+    "北海道放送"
+   ]
+  },
+  {
+   "tag": "cuisine=curry;japanese",
+   "rows": 11,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 2,
+    "commercial__higashi": 2,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "CoCo壱番屋"
+   ]
+  },
+  {
+   "tag": "shop=hobby",
+   "rows": 11,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 9,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "らしんばん",
+    "ホビーハウス サトウ",
+    "まんだらけ",
+    "ゲーマーズ",
+    "カードラボ",
+    "ACOS",
+    "アニメイト札幌",
+    "駿河屋",
+    "模型のジョー",
+    "フロマージュ"
+   ]
+  },
+  {
+   "tag": "amenity=nightclub",
+   "rows": 10,
+   "files": {
+    "commercial__chuo": 10
+   },
+   "example_names": [
+    "club Leon",
+    "UTAGE",
+    "おニャン子クラブ",
+    "booty札幌",
+    "セクシーカフェ メイドル",
+    "VANITY SAPPORO",
+    "フラミンゴ",
+    "COLONY",
+    "Klub Counter Action",
+    "札幌DUCE"
+   ]
+  },
+  {
+   "tag": "club=sport",
+   "rows": 10,
+   "files": {
+    "sports__chuo": 1,
+    "other_unknown__atsubetsu": 2,
+    "other_unknown__chuo": 1,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 1,
+    "other_unknown__nishi": 1,
+    "other_unknown__teine": 2,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "リーヴテニスクラブ",
+    "ウイング",
+    "宮の森スポーツ倶楽部 宮の森校",
+    "フットサル 蹴",
+    "北大山岳部",
+    "Sports Club Zip",
+    "スポーツクラブNAS Vit Park 札幌",
+    "あけぼのテニスクラブ",
+    "宮の森スポーツ倶楽部　新宮の森校",
+    "ホリデイスポーツクラブ"
+   ]
+  },
+  {
+   "tag": "craft=caterer",
+   "rows": 10,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__kita": 2,
+    "commercial__toyohira": 3
+   },
+   "example_names": [
+    "手作りお総菜の店たけいち",
+    "仕出し弁当の はちわか 本店",
+    "まるべん",
+    "竹内商店",
+    "おかず屋 Riki",
+    "ほっともっと",
+    "ふくよか",
+    "日本亭 西岡店",
+    "農家の息子 中の島店"
+   ]
+  },
+  {
+   "tag": "historic=house",
+   "rows": 10,
+   "files": {
+    "public_culture__atsubetsu": 10
+   },
+   "example_names": [
+    "旧手宮駅長官舎",
+    "旧開拓使爾志通洋造家〔白官舎〕",
+    "旧有島家住宅",
+    "旧松橋家住宅",
+    "旧納内屯田兵屋",
+    "開拓小屋（再現）",
+    "旧福士家住宅",
+    "旧樋口家農家住宅",
+    "旧岩間家農家住宅",
+    "旧菊田家農家住宅"
+   ]
+  },
+  {
+   "tag": "shop=baby_goods",
+   "rows": 10,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__higashi": 2,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "西松屋"
+   ]
+  },
+  {
+   "tag": "tourism=yes",
+   "rows": 10,
+   "files": {
+    "commercial__chuo": 2,
+    "other_unknown__chuo": 4,
+    "other_unknown__kita": 1,
+    "other_unknown__minami": 3
+   },
+   "example_names": [
+    "スカイ",
+    "ファミリーショップもりやま",
+    "モンキーハウス裏",
+    "札幌市天文台",
+    "高山館",
+    "清華亭",
+    "手湯",
+    "軍艦岬",
+    "足湯"
+   ]
+  },
+  {
+   "tag": "amenity=waste_transfer_station",
+   "rows": 9,
+   "files": {
+    "other_unknown__kita": 5,
+    "other_unknown__minami": 1,
+    "other_unknown__nishi": 2,
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "札幌市北地区リサイクルセンター",
+    "札幌市 ごみ資源化工場",
+    "札幌市 篠路破砕工場",
+    "札幌市駒岡清掃工場",
+    "発寒清掃工場",
+    "発寒破砕工場"
+   ]
+  },
+  {
+   "tag": "cuisine=fried_food",
+   "rows": 9,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 3,
+    "commercial__kita": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "かつや"
+   ]
+  },
+  {
+   "tag": "leisure=stadium",
+   "rows": 9,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__chuo": 5,
+    "sports__minami": 2,
+    "sports__nishi": 1
+   },
+   "example_names": [
+    "札幌厚別公園競技場",
+    "札幌競馬場",
+    "円山球場",
+    "札幌市円山競技場",
+    "白い恋人サッカー場",
+    "真駒内セキスイハイムアイスアリーナ",
+    "真駒内セキスイハイムスタジアム",
+    "大倉山ジャンプ競技場",
+    "宮の森ジャンプ競技場"
+   ]
+  },
+  {
+   "tag": "shop=butcher",
+   "rows": 9,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__nishi": 3,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "伊藤精肉店",
+    "肉のさだかた",
+    "ミートボーイ",
+    "藤崎精肉店",
+    "S&S 畜産",
+    "さっぽろ西町ハム工房",
+    "ブッチャー丸幸",
+    "肉のサンビーム",
+    "菅原精肉店"
+   ]
+  },
+  {
+   "tag": "shop=fishing",
+   "rows": 9,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 1,
+    "commercial__higashi": 2,
+    "commercial__kita": 2,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "釣具センター",
+    "Fly Fishing & Outdoors Shop THAMES",
+    "スーパーオーシャン21",
+    "つり具センター 伏古店",
+    "フィッシュランド+アウトドア",
+    "AZem",
+    "つり具天狗屋",
+    "つり具センター 西岡店",
+    "釣り具センター"
+   ]
+  },
+  {
+   "tag": "shop=outdoor",
+   "rows": 9,
+   "files": {
+    "commercial__atsubetsu": 2,
+    "commercial__chuo": 1,
+    "commercial__higashi": 1,
+    "commercial__kita": 2,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1
+   },
+   "example_names": [
+    "秀岳荘",
+    "好日山荘",
+    "パドルクラブ",
+    "モイワ山荘",
+    "DCM",
+    "パタゴニア",
+    "アルペンアウトドアーズフラッグシップストア"
+   ]
+  },
+  {
+   "tag": "shop=tyres",
+   "rows": 9,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 1,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__kiyota": 2,
+    "commercial__minami": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "タイヤガーデン",
+    "Dunlop",
+    "新日本タイヤ販売",
+    "三共タイヤ",
+    "石上車輌",
+    "札幌西タイヤセンター西支店",
+    "タイヤショップサッポロ"
+   ]
+  },
+  {
+   "tag": "sport=running",
+   "rows": 9,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__higashi": 2,
+    "sports__kita": 1,
+    "sports__kiyota": 1,
+    "sports__minami": 1,
+    "sports__teine": 2,
+    "sports__toyohira": 1
+   },
+   "example_names": [
+    "陸上競技場"
+   ]
+  },
+  {
+   "tag": "amenity=dojo",
+   "rows": 8,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__kita": 4,
+    "other_unknown__nishi": 3
+   },
+   "example_names": [
+    "弓道場",
+    "土俵（露天）",
+    "廣田剣道場",
+    "武道場",
+    "メディアック",
+    "シニアパソコン塾",
+    "ユヤーズ空手スクール"
+   ]
+  },
+  {
+   "tag": "cuisine=soup_curry",
+   "rows": 8,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__kita": 1,
+    "commercial__shiroishi": 2
+   },
+   "example_names": [
+    "SOUP CURRY ばぐばぐ",
+    "雪道",
+    "SAMA",
+    "こおひいはうす",
+    "らっきょ大サーカス",
+    "マジックスパイス札幌店",
+    "Curry SAVOY",
+    "札幌スープカレーHIGUMA"
+   ]
+  },
+  {
+   "tag": "historic=shop",
+   "rows": 8,
+   "files": {
+    "public_culture__atsubetsu": 8
+   },
+   "example_names": [
+    "旧三〼河本そば屋",
+    "旧武井商店酒造部",
+    "旧広瀬写真館",
+    "旧武岡商店",
+    "旧大石三省堂支店",
+    "旧太田装蹄所",
+    "旧山本理髪店",
+    "旧渡辺商店"
+   ]
+  },
+  {
+   "tag": "leisure=amusement_arcade",
+   "rows": 8,
+   "files": {
+    "other_unknown__chuo": 6,
+    "other_unknown__kiyota": 2
+   },
+   "example_names": [
+    "ナムコ",
+    "ゲームコーナー",
+    "GiGO",
+    "Vegagio",
+    "タイトーステーション",
+    "ラウンドワン",
+    "ベガジオ 美しが丘店",
+    "キャッツアイ"
+   ]
+  },
+  {
+   "tag": "leisure=common",
+   "rows": 8,
+   "files": {
+    "parks_play__higashi": 8
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=golf",
+   "rows": 8,
+   "files": {
+    "sports__minami": 1,
+    "sports__nishi": 1,
+    "sports__shiroishi": 1,
+    "commercial__higashi": 2,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1
+   },
+   "example_names": [
+    "二木ゴルフ",
+    "ゴルフ・ドゥ",
+    "GOLF TSURUYA",
+    "ゴルフパートナー",
+    "エルクの森 パークゴルフクラブ",
+    "ゴルフ５ 新手稲前田店",
+    "西野ゴルフセンター",
+    "北郷ゴルフセンター"
+   ]
+  },
+  {
+   "tag": "tourism=motel",
+   "rows": 8,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__toyohira": 4
+   },
+   "example_names": [
+    "ブルーホテル　シュープリーム",
+    "Hotel la mer",
+    "Water hotel",
+    "ホテルリオ",
+    "LEAF",
+    "ＨＯＴＥＬＷｅｇｏヒラギシ",
+    "ＨＯＴＥＬＷＯＯＰａｒｔ－１",
+    "ＨＯＴＥＬＷＯＯＰａｒｔ－2"
+   ]
+  },
+  {
+   "tag": "tourism=zoo",
+   "rows": 8,
+   "files": {
+    "other_unknown__chuo": 4,
+    "other_unknown__higashi": 2,
+    "other_unknown__minami": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "HAPPY BERNARD",
+    "円山動物園",
+    "猛禽舎",
+    "ホッキョクグマ、アザラシ館",
+    "ふれあい牧場",
+    "放牧地",
+    "さっぽろフクロウとキタキツネの森",
+    "羊さんのおうち"
+   ]
+  },
+  {
+   "tag": "amenity=grave_yard",
+   "rows": 7,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 2,
+    "other_unknown__kita": 2,
+    "other_unknown__kiyota": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "千の杜",
+    "法輪閣",
+    "新琴似北の杜御廟",
+    "北野墓地"
+   ]
+  },
+  {
+   "tag": "amenity=ice_cream",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 4,
+    "commercial__kita": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "サーティワンアイスクリーム",
+    "シャモニー",
+    "Burnes",
+    "ジェラテリア クレメリーチェ",
+    "あいすの家"
+   ]
+  },
+  {
+   "tag": "amenity=photo_booth",
+   "rows": 7,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 1,
+    "other_unknown__kita": 3,
+    "other_unknown__shiroishi": 2
+   },
+   "example_names": [
+    "Ki-Re-i"
+   ]
+  },
+  {
+   "tag": "cuisine=asian",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 5,
+    "commercial__kita": 2
+   },
+   "example_names": [
+    "小料理バル ジャポニカ",
+    "GAJA",
+    "Suage3",
+    "SAMA",
+    "おくしばあちゃん",
+    "アガリコサユール",
+    "お父さんの台所カマソッ"
+   ]
+  },
+  {
+   "tag": "cuisine=chinese;gyoza",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 3,
+    "commercial__kiyota": 1,
+    "commercial__shiroishi": 1,
+    "commercial__teine": 1
+   },
+   "example_names": [
+    "餃子の王将"
+   ]
+  },
+  {
+   "tag": "cuisine=sandwich",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__kita": 2,
+    "commercial__nishi": 2
+   },
+   "example_names": [
+    "サブウェイ",
+    "サンドリア",
+    "サンドリア 屯田店",
+    "Something and Sandwiches",
+    "ことにサンド"
+   ]
+  },
+  {
+   "tag": "historic=warehouse",
+   "rows": 7,
+   "files": {
+    "public_culture__atsubetsu": 7
+   },
+   "example_names": [
+    "旧札幌拓殖倉庫",
+    "旧河西家米倉",
+    "旧山田家養蚕板倉",
+    "旧山本消防組番屋",
+    "旧若狭家たたみ倉"
+   ]
+  },
+  {
+   "tag": "historic=wayside_shrine",
+   "rows": 7,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 3,
+    "public_culture__minami": 3
+   },
+   "example_names": [
+    "天照大御神",
+    "札幌鉱霊社",
+    "狸神社",
+    "馬頭観世"
+   ]
+  },
+  {
+   "tag": "office=diplomatic",
+   "rows": 7,
+   "files": {
+    "other_unknown__chuo": 7
+   },
+   "example_names": [
+    "在札幌米国総領事館",
+    "中華人民共和国駐札幌総領事館",
+    "在札幌ロシア連邦総領事館",
+    "オーストラリア領事館",
+    "在札幌ドイツ連邦共和国名誉領事事務所",
+    "在札幌カンボジア王国名誉領事館",
+    "カナダ領事館"
+   ]
+  },
+  {
+   "tag": "office=educational_institution",
+   "rows": 7,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__kita": 6
+   },
+   "example_names": [
+    "北海道立特別支援教育センター",
+    "北海道大学 先端人材育成センター",
+    "北海道大学 ダイバーシティ・インクルージョン推進本部",
+    "北海道大学文学部事務室",
+    "北海道大学経済学部事務室",
+    "北海道大学教育学部事務室",
+    "北海道大学法学部事務室"
+   ]
+  },
+  {
+   "tag": "office=insurance",
+   "rows": 7,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 3,
+    "other_unknown__kiyota": 1,
+    "other_unknown__nishi": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "明治安田生命",
+    "かんぽ生命保険",
+    "桜庭保険事務所",
+    "インベストほけん",
+    "第一生命 平岸通営業オフィス",
+    "そうぞく・ほけんの相談プラザ",
+    "ほけんの窓口"
+   ]
+  },
+  {
+   "tag": "shop=lottery",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 3,
+    "commercial__minami": 1,
+    "commercial__nishi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "自治会館チャンスセンター",
+    "麻生イオン チャンスセンター",
+    "屯田イトーヨーカドー チャンスセンター",
+    "藻岩イオンチャンスセンター",
+    "NUMBERS"
+   ]
+  },
+  {
+   "tag": "shop=newsagent",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 4,
+    "commercial__nishi": 2
+   },
+   "example_names": [
+    "朝日新聞",
+    "道新もみじ台インフォメーションセンター",
+    "道新若林",
+    "読売センター 菊水苗穂",
+    "北海道新聞北円山・田中販売所",
+    "北海道新聞林販売所"
+   ]
+  },
+  {
+   "tag": "shop=photo",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 2,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "カメラのキタムラ",
+    "パレットプラザ",
+    "スタジオダッシュ",
+    "スタジオ・アン",
+    "キッズフォトスタジオジャム",
+    "フォトスタジオ石井"
+   ]
+  },
+  {
+   "tag": "shop=seafood",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__kita": 2,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "中西商店",
+    "魚勝",
+    "二郎丸",
+    "増毛港町市場",
+    "佐藤水産"
+   ]
+  },
+  {
+   "tag": "shop=stationery",
+   "rows": 7,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 5,
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "はんこ屋21",
+    "齊藤印舗",
+    "村本印房",
+    "はんこ屋さん21",
+    "キンコーズ",
+    "大丸藤井セントラル",
+    "はんこ広場"
+   ]
+  },
+  {
+   "tag": "shop=vacant",
+   "rows": 7,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 2,
+    "commercial__kita": 4
+   },
+   "example_names": [
+    "セイコーマート",
+    "ドコモショップ",
+    "イトーヨーカドー"
+   ]
+  },
+  {
+   "tag": "sport=basketball",
+   "rows": 7,
+   "files": {
+    "sports__atsubetsu": 1,
+    "sports__chuo": 1,
+    "sports__kita": 1,
+    "sports__kiyota": 1,
+    "sports__minami": 1,
+    "sports__teine": 2
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=horse_racing",
+   "rows": 7,
+   "files": {
+    "sports__chuo": 7
+   },
+   "example_names": [
+    "札幌競馬場"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;soba",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__kiyota": 1,
+    "commercial__shiroishi": 1
+   },
+   "example_names": [
+    "じき 南2条店",
+    "そば御殿",
+    "そば処 きすい",
+    "かるいち",
+    "農園の四季",
+    "山真"
+   ]
+  },
+  {
+   "tag": "cuisine=western",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ビストロ デジャ",
+    "Petit HANON",
+    "マーシュ亭",
+    "BistroBON tabloid table",
+    "アルタイル",
+    "シャンな"
+   ]
+  },
+  {
+   "tag": "cuisine=yakitori",
+   "rows": 6,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 3,
+    "commercial__kita": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "串鳥",
+    "美唄焼鳥・惣菜 炎",
+    "鳥屋",
+    "いただきコッコちゃん北8条店"
+   ]
+  },
+  {
+   "tag": "office=employment_agency",
+   "rows": 6,
+   "files": {
+    "other_unknown__chuo": 2,
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 1,
+    "other_unknown__shiroishi": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "ハローワークプラザ札幌",
+    "ハローワーク札幌",
+    "ハローワーク札幌北",
+    "ハローワークプラザ北24",
+    "北海道立職業能力開発支援センター",
+    "ハローワーク札幌東"
+   ]
+  },
+  {
+   "tag": "office=ngo",
+   "rows": 6,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__kita": 2,
+    "other_unknown__nishi": 2,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "JAさっぽろ",
+    "札幌市農業協同組合",
+    "北海道獣医師会"
+   ]
+  },
+  {
+   "tag": "shop=coffee",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__higashi": 1,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "豆源",
+    "カルディコーヒーファーム",
+    "Pure Work Factory",
+    "宮越屋珈琲ハウス 焙煎工場"
+   ]
+  },
+  {
+   "tag": "shop=computer",
+   "rows": 6,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 1,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__minami": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ツクモ",
+    "じゃんぱら",
+    "ドスパラ",
+    "パソコン工房",
+    "PC-PAW",
+    "パソコン何でも屋 ピー・シー・アイ"
+   ]
+  },
+  {
+   "tag": "shop=religion",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__kita": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "守札授与所",
+    "外山仏檀店",
+    "善光堂福田仏壇店",
+    "御神札頒布所",
+    "現代仏壇 memoria"
+   ]
+  },
+  {
+   "tag": "shop=toys",
+   "rows": 6,
+   "files": {
+    "commercial__chuo": 4,
+    "commercial__nishi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "#C-pla",
+    "WaWAOOミュージアム",
+    "イエロー・サブマリン",
+    "おもちゃの 平野",
+    "B's Hobby"
+   ]
+  },
+  {
+   "tag": "amenity=funeral_hall",
+   "rows": 5,
+   "files": {
+    "other_unknown__minami": 1,
+    "other_unknown__shiroishi": 2,
+    "other_unknown__teine": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "やわらぎ斎場澄川",
+    "ハート倶楽部　白石記念斎場",
+    "白石記念斎場別館",
+    "手稲シティホール",
+    "やわらぎ斎場"
+   ]
+  },
+  {
+   "tag": "amenity=nursing_home",
+   "rows": 5,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 2,
+    "other_unknown__higashi": 1,
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "ライフプレステージ白ゆり新さっぽろ",
+    "北海道中央児童相談所",
+    "北海道立心身障害者総合相談所",
+    "ブランＪＲ北12条東",
+    "五天山園"
+   ]
+  },
+  {
+   "tag": "craft=photographer",
+   "rows": 5,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 3,
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "スタジオ・アン",
+    "カメラの光映堂",
+    "kids photo studio JAM",
+    "スタジオアリス"
+   ]
+  },
+  {
+   "tag": "cuisine=regional",
+   "rows": 5,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "みよしの",
+    "こふじ",
+    "きょうど料理亭 杉ノ目",
+    "かねひろ",
+    "魚 御殿"
+   ]
+  },
+  {
+   "tag": "historic=dormitory",
+   "rows": 5,
+   "files": {
+    "public_culture__atsubetsu": 5
+   },
+   "example_names": [
+    "旧札幌農学校寄宿舎（恵迪寮）"
+   ]
+  },
+  {
+   "tag": "historic=yes",
+   "rows": 5,
+   "files": {
+    "public_culture__atsubetsu": 2,
+    "public_culture__nishi": 1,
+    "public_culture__toyohira": 2
+   },
+   "example_names": [
+    "恵庭荘",
+    "琴似屯田兵村兵屋跡",
+    "最初の月寒巡査駐在所跡",
+    "札幌市博物館活動センター敷地"
+   ]
+  },
+  {
+   "tag": "office=courier",
+   "rows": 5,
+   "files": {
+    "other_unknown__chuo": 4,
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "ヤマト運輸",
+    "札樽自動車運輸"
+   ]
+  },
+  {
+   "tag": "office=religion",
+   "rows": 5,
+   "files": {
+    "other_unknown__chuo": 3,
+    "other_unknown__nishi": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "開拓神社社務所",
+    "北海道神宮社務所",
+    "札幌伏見稲荷神社社務所",
+    "生長の家札幌教化部"
+   ]
+  },
+  {
+   "tag": "office=telecommunication",
+   "rows": 5,
+   "files": {
+    "other_unknown__chuo": 2,
+    "other_unknown__kiyota": 1,
+    "other_unknown__shiroishi": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "HBAシステムビル",
+    "ほくでん情報テクノロジー株式会社",
+    "au shop",
+    "KDDI Evolva",
+    "NTT東日本 豊平ビル"
+   ]
+  },
+  {
+   "tag": "shop=hardware",
+   "rows": 5,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 2
+   },
+   "example_names": [
+    "ツールカンパニー・ストレート",
+    "ホダカ",
+    "山本 機械",
+    "永井金物店",
+    "アストロプロダクツ札幌本通店"
+   ]
+  },
+  {
+   "tag": "shop=interior_decoration",
+   "rows": 5,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__higashi": 1,
+    "commercial__minami": 1
+   },
+   "example_names": [
+    "タカラスタンダード 札幌中央ショールーム",
+    "YKK AP ショールーム札幌",
+    "シンコール 北海道ショールーム",
+    "LIXILショールーム札幌",
+    "軟石や"
+   ]
+  },
+  {
+   "tag": "shop=ticket",
+   "rows": 5,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1,
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "金券えびすや",
+    "東みどり窓口"
+   ]
+  },
+  {
+   "tag": "sport=ski_jumping",
+   "rows": 5,
+   "files": {
+    "sports__chuo": 5
+   },
+   "example_names": [
+    "荒井山シャンツェ",
+    "大倉山ジャンプ競技場",
+    "宮の森ジャンプ競技場"
+   ]
+  },
+  {
+   "tag": "amenity=cinema",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 4
+   },
+   "example_names": [
+    "TOHO CINEMA",
+    "シアターキノ",
+    "ローソン・ユナイテッド・シネマ",
+    "札幌シネマフロンティア"
+   ]
+  },
+  {
+   "tag": "amenity=events_venue",
+   "rows": 4,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__minami": 1,
+    "other_unknown__nishi": 1,
+    "other_unknown__teine": 1
+   },
+   "example_names": [
+    "西門イベントハウス",
+    "藻岩シャローム教会",
+    "ディアネス札幌",
+    "シティホール手稲前田　ベルコ"
+   ]
+  },
+  {
+   "tag": "amenity=gambling",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__shiroishi": 1,
+    "other_unknown__chuo": 2
+   },
+   "example_names": [
+    "イーグルR-1",
+    "ボンド",
+    "空き地",
+    "ウィンズ札幌"
+   ]
+  },
+  {
+   "tag": "amenity=language_school",
+   "rows": 4,
+   "files": {
+    "other_unknown__chuo": 3,
+    "other_unknown__kita": 1
+   },
+   "example_names": [
+    "Hokkaido Japanese Language Academy Sapporo Main Campus",
+    "ECCジュニア",
+    "Meiji Academy",
+    "AGREATDREAM"
+   ]
+  },
+  {
+   "tag": "amenity=prison",
+   "rows": 4,
+   "files": {
+    "other_unknown__higashi": 3,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "札幌拘置支所",
+    "札幌少年鑑別所",
+    "札幌刑務所",
+    "札幌法務局 南出張所"
+   ]
+  },
+  {
+   "tag": "amenity=social_centre",
+   "rows": 4,
+   "files": {
+    "other_unknown__chuo": 2,
+    "other_unknown__kita": 2
+   },
+   "example_names": [
+    "北海道将棋会館",
+    "ひまわり会館",
+    "屯田創成の里記念会館"
+   ]
+  },
+  {
+   "tag": "cuisine=buffet",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "しゃぶ葉"
+   ]
+  },
+  {
+   "tag": "cuisine=ice_cream",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "サーティワンアイスクリーム",
+    "雪印パーラー",
+    "アイスクリームファクトリー"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;italian;french",
+   "rows": 4,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__kita": 1,
+    "commercial__nishi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ロイヤルホスト"
+   ]
+  },
+  {
+   "tag": "cuisine=korean",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 4
+   },
+   "example_names": [
+    "韓国屋台エチオピア",
+    "新世界",
+    "Mirine",
+    "韓食全州屋"
+   ]
+  },
+  {
+   "tag": "cuisine=takoyaki",
+   "rows": 4,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__chuo": 1,
+    "commercial__kiyota": 1,
+    "commercial__teine": 1
+   },
+   "example_names": [
+    "築地銀だこ"
+   ]
+  },
+  {
+   "tag": "cuisine=スープカレー",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__higashi": 1
+   },
+   "example_names": [
+    "元祖札幌ドミニカ",
+    "奥芝商店",
+    "SOUL STORE",
+    "BONANZA"
+   ]
+  },
+  {
+   "tag": "historic=locomotive",
+   "rows": 4,
+   "files": {
+    "public_culture__higashi": 3,
+    "public_culture__nishi": 1
+   },
+   "example_names": [
+    "C62 3",
+    "D51 237",
+    "キハニ5005",
+    "D51 11"
+   ]
+  },
+  {
+   "tag": "leisure=bowling_alley",
+   "rows": 4,
+   "files": {
+    "other_unknown__higashi": 2,
+    "other_unknown__nishi": 1,
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "ラウンドワン",
+    "サンコーボウル",
+    "ラウンドワンスタジアム"
+   ]
+  },
+  {
+   "tag": "leisure=dance",
+   "rows": 4,
+   "files": {
+    "other_unknown__higashi": 1,
+    "other_unknown__kita": 1,
+    "other_unknown__toyohira": 2
+   },
+   "example_names": [
+    "エスポワールバレエスタジオ",
+    "L-WAVEスポーツクラブ　CLUB EXTENSION",
+    "ダンスクリエイション",
+    "Fe. dance studio"
+   ]
+  },
+  {
+   "tag": "office=association",
+   "rows": 4,
+   "files": {
+    "other_unknown__chuo": 3,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "円山公園パークセンター（公園管理事務所）",
+    "日本赤十字社",
+    "一般財団法人北海道林業会館",
+    "一般社団法人 北海道薬剤師会"
+   ]
+  },
+  {
+   "tag": "shop=department_store",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 4
+   },
+   "example_names": [
+    "札幌三越",
+    "丸井今井",
+    "札幌PARCO",
+    "大丸"
+   ]
+  },
+  {
+   "tag": "shop=music",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__higashi": 1
+   },
+   "example_names": [
+    "Fresh Air Records",
+    "Beat Records",
+    "玉光堂",
+    "Music Studio Caddis"
+   ]
+  },
+  {
+   "tag": "shop=musical_instrument",
+   "rows": 4,
+   "files": {
+    "commercial__chuo": 3,
+    "commercial__teine": 1
+   },
+   "example_names": [
+    "BIG BOSS",
+    "ヤマハミュージック",
+    "カワイ札幌",
+    "ELM　エルム楽器"
+   ]
+  },
+  {
+   "tag": "amenity=brothel",
+   "rows": 3,
+   "files": {
+    "other_unknown__chuo": 3
+   },
+   "example_names": [
+    "ラブファクトリー",
+    "SOAPLAND DIANA",
+    "HANABI"
+   ]
+  },
+  {
+   "tag": "amenity=exhibition_centre",
+   "rows": 3,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__shiroishi": 2
+   },
+   "example_names": [
+    "アクセスサッポロ",
+    "北海道マイホームセンター"
+   ]
+  },
+  {
+   "tag": "craft=carpenter",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "パナソニックの住まいパートナーズ",
+    "渡部インフィル株式会社",
+    "リペアハウス 豊平ショールーム"
+   ]
+  },
+  {
+   "tag": "cuisine=american",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "NY Pizza & Wings by Phoenix",
+    "スープストックトーキョー",
+    "Famous Door"
+   ]
+  },
+  {
+   "tag": "cuisine=international",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "総健美食 がじゅまる",
+    "SOLVERT",
+    "ガブ飲みワインと合う料理 AlternA"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;sushi",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "すしざんまい",
+    "更科本家",
+    "サザエ"
+   ]
+  },
+  {
+   "tag": "cuisine=mexican",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ViVA LA ViDA",
+    "EL tope",
+    "エミーズ キッチン"
+   ]
+  },
+  {
+   "tag": "cuisine=noodle;ramen",
+   "rows": 3,
+   "files": {
+    "commercial__kita": 1,
+    "commercial__kiyota": 1,
+    "commercial__teine": 1
+   },
+   "example_names": [
+    "月見軒",
+    "175°DENO担担麺",
+    "ラーメンさんぱち"
+   ]
+  },
+  {
+   "tag": "cuisine=pasta",
+   "rows": 3,
+   "files": {
+    "commercial__atsubetsu": 1,
+    "commercial__higashi": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "ジョリーパスタ",
+    "洋麺屋五右衛門 札幌厚別店"
+   ]
+  },
+  {
+   "tag": "cuisine=ramen;noodle",
+   "rows": 3,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__nishi": 1,
+    "commercial__shiroishi": 1
+   },
+   "example_names": [
+    "ラーメンさんぱち 綜本店",
+    "旭川ラーメン ななし",
+    "いせのじょう"
+   ]
+  },
+  {
+   "tag": "cuisine=seafood;sushi",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 3
+   },
+   "example_names": [
+    "海味 羅臼料理 はちきょう",
+    "すぎ乃",
+    "さっぽろ 鮨処 海森"
+   ]
+  },
+  {
+   "tag": "cuisine=tea",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__minami": 2
+   },
+   "example_names": [
+    "宇治園 札幌直営店",
+    "カフェ アットレ",
+    "若どりの半身揚げ ふじた"
+   ]
+  },
+  {
+   "tag": "cuisine=thai",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ハチドリ食堂",
+    "Soi Maruyama",
+    "スリヨタイ"
+   ]
+  },
+  {
+   "tag": "cuisine=ラーメン;noodle",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__teine": 2
+   },
+   "example_names": [
+    "奥芝商店 札幌本店",
+    "札幌海老麺舎 手稲店",
+    "麺場 田所商店 札幌手稲店"
+   ]
+  },
+  {
+   "tag": "healthcare=yes",
+   "rows": 3,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__nishi": 1,
+    "public_culture__shiroishi": 1
+   },
+   "example_names": [
+    "PCL札幌",
+    "北海道赤十字血液センター",
+    "南雲治療院"
+   ]
+  },
+  {
+   "tag": "historic=building",
+   "rows": 3,
+   "files": {
+    "public_culture__chuo": 2,
+    "public_culture__higashi": 1
+   },
+   "example_names": [
+    "八窓庵",
+    "豊平館"
+   ]
+  },
+  {
+   "tag": "historic=office",
+   "rows": 3,
+   "files": {
+    "public_culture__atsubetsu": 3
+   },
+   "example_names": [
+    "旧浦河支庁庁舎",
+    "旧小樽新聞社",
+    "旧開拓使工業局庁舎"
+   ]
+  },
+  {
+   "tag": "office=coworking",
+   "rows": 3,
+   "files": {
+    "other_unknown__chuo": 3
+   },
+   "example_names": [
+    "ドリノキ",
+    "札幌駅前ビジネススペース",
+    "カエル・クリエイティブ・スクエア18"
+   ]
+  },
+  {
+   "tag": "shop=e-cigarette",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 3
+   },
+   "example_names": [
+    "IQOS",
+    "Ploom Shop",
+    "Vapora"
+   ]
+  },
+  {
+   "tag": "shop=jewelry",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kiyota": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "エリザベス",
+    "THE GOLD"
+   ]
+  },
+  {
+   "tag": "shop=locksmith",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__shiroishi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "カギの救急車"
+   ]
+  },
+  {
+   "tag": "shop=tea",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "玉翠園",
+    "老舗あづみ"
+   ]
+  },
+  {
+   "tag": "shop=trade",
+   "rows": 3,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__minami": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "ニチハ",
+    "菅原ガラス店",
+    "北翔建材"
+   ]
+  },
+  {
+   "tag": "shop=travel_agency",
+   "rows": 3,
+   "files": {
+    "commercial__chuo": 2,
+    "commercial__higashi": 1
+   },
+   "example_names": [
+    "日本旅行",
+    "エイチ・アイ・エス",
+    "りんゆう観光"
+   ]
+  },
+  {
+   "tag": "tourism=alpine_hut",
+   "rows": 3,
+   "files": {
+    "other_unknown__minami": 3
+   },
+   "example_names": [
+    "銀嶺荘",
+    "春香山小屋",
+    "冷水小屋"
+   ]
+  },
+  {
+   "tag": "tourism=apartment",
+   "rows": 3,
+   "files": {
+    "other_unknown__kita": 2,
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "麻生雅居",
+    "アパート"
+   ]
+  },
+  {
+   "tag": "tourism=caravan_site",
+   "rows": 3,
+   "files": {
+    "other_unknown__minami": 3
+   },
+   "example_names": [
+    "RVパーク outdoor base TRIOUT",
+    "オートリゾート滝野"
+   ]
+  },
+  {
+   "tag": "tourism=gallery",
+   "rows": 3,
+   "files": {
+    "public_culture__chuo": 2,
+    "public_culture__kita": 1
+   },
+   "example_names": [
+    "札幌市民ギャラリー",
+    "中島公園ギャラリー",
+    "saloncojica"
+   ]
+  },
+  {
+   "tag": "tourism=picnic_site",
+   "rows": 3,
+   "files": {
+    "parks_play__chuo": 1,
+    "parks_play__kita": 2
+   },
+   "example_names": [
+    "レストランプロヴァンサルキムラ屋外席",
+    "理系管理区域における火気等の使用エリア",
+    "文系管理区域における火気等の使用エリア"
+   ]
+  },
+  {
+   "tag": "amenity=boat_rental",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "ボート乗り場"
+   ]
+  },
+  {
+   "tag": "amenity=bureau_de_change",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 2
+   },
+   "example_names": [
+    "Travelex"
+   ]
+  },
+  {
+   "tag": "amenity=conference_centre",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "TKPガーデンシティ札幌駅前",
+    "札幌コンベンションセンター"
+   ]
+  },
+  {
+   "tag": "amenity=courthouse",
+   "rows": 2,
+   "files": {
+    "public_culture__chuo": 2
+   },
+   "example_names": [
+    "札幌家庭裁判所",
+    "札幌高等裁判所"
+   ]
+  },
+  {
+   "tag": "amenity=coworking_space",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 2
+   },
+   "example_names": [
+    "HOKKAIDOxStation01",
+    "創成の場"
+   ]
+  },
+  {
+   "tag": "amenity=crematorium",
+   "rows": 2,
+   "files": {
+    "other_unknown__kiyota": 1,
+    "other_unknown__teine": 1
+   },
+   "example_names": [
+    "里塚斎場",
+    "山口斎場"
+   ]
+  },
+  {
+   "tag": "amenity=food_court",
+   "rows": 2,
+   "files": {
+    "commercial__kita": 2
+   },
+   "example_names": [
+    "プールサイドフードコート",
+    "フードコート"
+   ]
+  },
+  {
+   "tag": "amenity=marketplace",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 2
+   },
+   "example_names": [
+    "札幌市中央卸売市場",
+    "二条市場"
+   ]
+  },
+  {
+   "tag": "amenity=music_school",
+   "rows": 2,
+   "files": {
+    "other_unknown__minami": 1,
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "光山ピアノ教室"
+   ]
+  },
+  {
+   "tag": "amenity=research_institute",
+   "rows": 2,
+   "files": {
+    "other_unknown__higashi": 1,
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "トレイン・オン・トレイン　試験場",
+    "産業技術総合研究所 北海道センター"
+   ]
+  },
+  {
+   "tag": "amenity=ski_school",
+   "rows": 2,
+   "files": {
+    "other_unknown__minami": 1,
+    "other_unknown__teine": 1
+   },
+   "example_names": [
+    "マミ・スキースクール",
+    "Yuichiro Miura & Snowdolphin Ski School"
+   ]
+  },
+  {
+   "tag": "craft=shoemaker",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   },
+   "example_names": [
+    "野坂義肢製作所",
+    "Ânon"
+   ]
+  },
+  {
+   "tag": "craft=winery",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ばんけい峠のワイナリー",
+    "北海道ワインテイスティング・ラボ"
+   ]
+  },
+  {
+   "tag": "cuisine=Gyoza",
+   "rows": 2,
+   "files": {
+    "commercial__kita": 2
+   },
+   "example_names": [
+    "みよしの"
+   ]
+  },
+  {
+   "tag": "cuisine=bakery;cafe",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ペンギンベーカリーカフェ",
+    "ペンギンベーカリーカフェ 美園店"
+   ]
+  },
+  {
+   "tag": "cuisine=barbecue;yakiniku",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   },
+   "example_names": [
+    "徳寿",
+    "牛乃家"
+   ]
+  },
+  {
+   "tag": "cuisine=curry;soup_curry",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__higashi": 1
+   },
+   "example_names": [
+    "Rojiura curry SAMURAI.",
+    "Curry Power パンチ"
+   ]
+  },
+  {
+   "tag": "cuisine=fish",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ほっ貝亭",
+    "刺身と焼魚 北海道鮮魚店 北口店"
+   ]
+  },
+  {
+   "tag": "cuisine=fish;japanese",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "風香",
+    "魚吉札幌駅前本店"
+   ]
+  },
+  {
+   "tag": "cuisine=friture",
+   "rows": 2,
+   "files": {
+    "commercial__kita": 1,
+    "commercial__shiroishi": 1
+   },
+   "example_names": [
+    "からやま"
+   ]
+  },
+  {
+   "tag": "cuisine=indian;curry",
+   "rows": 2,
+   "files": {
+    "commercial__teine": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "SAMA 手稲店",
+    "スープカレーShanti豊平店"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;chinese",
+   "rows": 2,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__shiroishi": 1
+   },
+   "example_names": [
+    "大阪王将",
+    "麺心 毛利"
+   ]
+  },
+  {
+   "tag": "cuisine=local",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   },
+   "example_names": [
+    "Restaurant Ivy"
+   ]
+  },
+  {
+   "tag": "cuisine=noodles;ramen",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "つけ麺 八芒星",
+    "麺屋 高橋"
+   ]
+  },
+  {
+   "tag": "cuisine=nudle",
+   "rows": 2,
+   "files": {
+    "commercial__toyohira": 2
+   },
+   "example_names": [
+    "油そば専門店たおか",
+    "らーめん　心繋"
+   ]
+  },
+  {
+   "tag": "cuisine=steak",
+   "rows": 2,
+   "files": {
+    "commercial__higashi": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ステーキガスト",
+    "ステーキ宮"
+   ]
+  },
+  {
+   "tag": "cuisine=taiwanese",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   },
+   "example_names": [
+    "REAL台北",
+    "suEzou アバアバ"
+   ]
+  },
+  {
+   "tag": "cuisine=yoshoku;soba;udon;coffee_shop",
+   "rows": 2,
+   "files": {
+    "commercial__nishi": 2
+   },
+   "example_names": [
+    "キッチン青い橋"
+   ]
+  },
+  {
+   "tag": "cuisine=寿司",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "匠鮨"
+   ]
+  },
+  {
+   "tag": "cuisine=焼肉",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "焼肉金八",
+    "徳寿"
+   ]
+  },
+  {
+   "tag": "healthcare=blood_donation",
+   "rows": 2,
+   "files": {
+    "public_culture__atsubetsu": 1,
+    "public_culture__chuo": 1
+   },
+   "example_names": [
+    "新さっぽろ献血ルーム",
+    "アスティ献血ルーム"
+   ]
+  },
+  {
+   "tag": "historic=archaeological_site",
+   "rows": 2,
+   "files": {
+    "public_culture__chuo": 1,
+    "public_culture__kita": 1
+   },
+   "example_names": [
+    "開拓使札幌木片本庁舎跡および旧北海道庁本方舎",
+    "遺跡保存庭園"
+   ]
+  },
+  {
+   "tag": "historic=factory",
+   "rows": 2,
+   "files": {
+    "public_culture__atsubetsu": 2
+   },
+   "example_names": [
+    "旧藤原車橇製作所",
+    "旧本庄鉄工場"
+   ]
+  },
+  {
+   "tag": "historic=monument",
+   "rows": 2,
+   "files": {
+    "public_culture__nishi": 1,
+    "public_culture__toyohira": 1
+   },
+   "example_names": [
+    "開村用水 記念碑",
+    "クラーク博士像"
+   ]
+  },
+  {
+   "tag": "leisure=bandstand",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__minami": 1
+   },
+   "example_names": [
+    "野外ステージ"
+   ]
+  },
+  {
+   "tag": "leisure=dog_park",
+   "rows": 2,
+   "files": {
+    "parks_play__kita": 1,
+    "parks_play__kiyota": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "leisure=horse_riding",
+   "rows": 2,
+   "files": {
+    "sports__higashi": 1,
+    "sports__kiyota": 1
+   },
+   "example_names": [
+    "ホースランド",
+    "モモセライディングファーム"
+   ]
+  },
+  {
+   "tag": "leisure=ice_rink",
+   "rows": 2,
+   "files": {
+    "sports__teine": 1,
+    "sports__toyohira": 1
+   },
+   "example_names": [
+    "星置スケート場",
+    "どうぎんカーリングスタジアム"
+   ]
+  },
+  {
+   "tag": "leisure=water_park",
+   "rows": 2,
+   "files": {
+    "sports__kita": 1,
+    "sports__teine": 1
+   },
+   "example_names": [
+    "フェアリーフォンテーヌ",
+    "ていねプール"
+   ]
+  },
+  {
+   "tag": "office=forestry",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 1,
+    "other_unknown__minami": 1
+   },
+   "example_names": [
+    "石狩森林管理署",
+    "石狩森林管理署 定山渓合同森林事務所"
+   ]
+  },
+  {
+   "tag": "office=logistics",
+   "rows": 2,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "ヤマト運輸 札幌主管支店",
+    "佐川急便"
+   ]
+  },
+  {
+   "tag": "office=newspaper",
+   "rows": 2,
+   "files": {
+    "other_unknown__toyohira": 2
+   },
+   "example_names": [
+    "北海道新聞永田販売所",
+    "日新聞サービスアンカー 豊平区ＡＳＡ平岸"
+   ]
+  },
+  {
+   "tag": "office=tax_advisor",
+   "rows": 2,
+   "files": {
+    "other_unknown__chuo": 2
+   },
+   "example_names": [
+    "丸山昭一税理士事務所",
+    "さくら総合会計"
+   ]
+  },
+  {
+   "tag": "office=transport",
+   "rows": 2,
+   "files": {
+    "other_unknown__higashi": 1,
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "ヤマト運輸",
+    "村井運輸"
+   ]
+  },
+  {
+   "tag": "shop=camera",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "カメラのイシオ",
+    "北海道カラーサッポロ"
+   ]
+  },
+  {
+   "tag": "shop=chocolate",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "レールデュトン",
+    "久遠チョコレート"
+   ]
+  },
+  {
+   "tag": "shop=collector",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "トクイ印房",
+    "Be"
+   ]
+  },
+  {
+   "tag": "shop=copyshop",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__minami": 1
+   },
+   "example_names": [
+    "アクセア"
+   ]
+  },
+  {
+   "tag": "shop=cosmetics",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "Shiseido",
+    "@cosme STORE"
+   ]
+  },
+  {
+   "tag": "shop=craft",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "ペーパーショップサクマ",
+    "アートファクトリー"
+   ]
+  },
+  {
+   "tag": "shop=erotic",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   },
+   "example_names": [
+    "BrothelsHandJob"
+   ]
+  },
+  {
+   "tag": "shop=food",
+   "rows": 2,
+   "files": {
+    "commercial__kiyota": 2
+   },
+   "example_names": [
+    "美唄焼鳥・惣菜 炎",
+    "大槻食品館・キャロット"
+   ]
+  },
+  {
+   "tag": "shop=garden_centre",
+   "rows": 2,
+   "files": {
+    "commercial__kita": 2
+   },
+   "example_names": [
+    "ヤマグチガーデン",
+    "ジョイフルエーケー"
+   ]
+  },
+  {
+   "tag": "shop=general",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "松本商店",
+    "セカンドストリート札幌平岸アーバンサイト店"
+   ]
+  },
+  {
+   "tag": "shop=hifi",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   },
+   "example_names": [
+    "Reference",
+    "キャビン大阪屋"
+   ]
+  },
+  {
+   "tag": "shop=pawnbroker",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   },
+   "example_names": [
+    "質蔵屋",
+    "及川質店"
+   ]
+  },
+  {
+   "tag": "shop=pet_grooming",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__shiroishi": 1
+   },
+   "example_names": [
+    "Bored Dog",
+    "Dog Salon Le'a"
+   ]
+  },
+  {
+   "tag": "shop=rice",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "森商店",
+    "前島米穀店"
+   ]
+  },
+  {
+   "tag": "shop=sewing",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 2
+   },
+   "example_names": [
+    "BERNINA",
+    "マリヤ手芸店"
+   ]
+  },
+  {
+   "tag": "shop=shoe_repair",
+   "rows": 2,
+   "files": {
+    "commercial__chuo": 1,
+    "commercial__minami": 1
+   },
+   "example_names": [
+    "クラップ"
+   ]
+  },
+  {
+   "tag": "sport=10pin",
+   "rows": 2,
+   "files": {
+    "sports__chuo": 1,
+    "other_unknown__higashi": 1
+   },
+   "example_names": [
+    "ラウンドワン",
+    "サッポロオリンピアボウル"
+   ]
+  },
+  {
+   "tag": "sport=Kyudo",
+   "rows": 2,
+   "files": {
+    "other_unknown__kita": 2
+   },
+   "example_names": [
+    "弓道場"
+   ]
+  },
+  {
+   "tag": "sport=climbing",
+   "rows": 2,
+   "files": {
+    "sports__shiroishi": 1,
+    "other_unknown__kita": 1
+   },
+   "example_names": [
+    "北大山岳部",
+    "Rainbow Cliff"
+   ]
+  },
+  {
+   "tag": "sport=futsal",
+   "rows": 2,
+   "files": {
+    "sports__shiroishi": 1,
+    "other_unknown__higashi": 1
+   },
+   "example_names": [
+    "フットサル 蹴",
+    "サッポロ・イーワン・スタジアム"
+   ]
+  },
+  {
+   "tag": "sport=ice_skating",
+   "rows": 2,
+   "files": {
+    "sports__minami": 2
+   },
+   "example_names": [
+    "真駒内セキスイハイムアイスアリーナ"
+   ]
+  },
+  {
+   "tag": "sport=martial_arts",
+   "rows": 2,
+   "files": {
+    "other_unknown__kita": 1,
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "武道場",
+    "ユヤーズ空手スクール"
+   ]
+  },
+  {
+   "tag": "sport=rugby_union",
+   "rows": 2,
+   "files": {
+    "sports__minami": 2
+   },
+   "example_names": []
+  },
+  {
+   "tag": "tourism=aquarium",
+   "rows": 2,
+   "files": {
+    "other_unknown__atsubetsu": 1,
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "サンピアザ水族館",
+    "AOAO Sapporo"
+   ]
+  },
+  {
+   "tag": "tourism=wilderness_hut",
+   "rows": 2,
+   "files": {
+    "other_unknown__minami": 2
+   },
+   "example_names": [
+    "宝来小屋",
+    "無意根尻小屋（Muine Hütte）"
+   ]
+  },
+  {
+   "tag": "amenity=Town community",
+   "rows": 1,
+   "files": {
+    "other_unknown__kiyota": 1
+   },
+   "example_names": [
+    "真栄第一町内会"
+   ]
+  },
+  {
+   "tag": "amenity=animal_boarding",
+   "rows": 1,
+   "files": {
+    "other_unknown__kita": 1
+   },
+   "example_names": [
+    "Doghouse Berry"
+   ]
+  },
+  {
+   "tag": "amenity=animal_shelter",
+   "rows": 1,
+   "files": {
+    "other_unknown__kita": 1
+   },
+   "example_names": [
+    "札幌市動物管理センター 福移支所"
+   ]
+  },
+  {
+   "tag": "amenity=bbq",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "焼鳥正太郎"
+   ]
+  },
+  {
+   "tag": "amenity=cafe;fountain",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "徳光珈琲;大通西3"
+   ]
+  },
+  {
+   "tag": "amenity=clock",
+   "rows": 1,
+   "files": {
+    "public_culture__chuo": 1
+   },
+   "example_names": [
+    "星の大時計"
+   ]
+  },
+  {
+   "tag": "amenity=dressing_room",
+   "rows": 1,
+   "files": {
+    "other_unknown__minami": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=first_aid",
+   "rows": 1,
+   "files": {
+    "other_unknown__teine": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=motorcycle_rental",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "ヤマハバイクレンタル"
+   ]
+  },
+  {
+   "tag": "amenity=music_venue",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "DUCE札幌"
+   ]
+  },
+  {
+   "tag": "amenity=payment_centre",
+   "rows": 1,
+   "files": {
+    "other_unknown__teine": 1
+   },
+   "example_names": [
+    "手稲稲積公園管理事務所"
+   ]
+  },
+  {
+   "tag": "amenity=per",
+   "rows": 1,
+   "files": {
+    "other_unknown__kiyota": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=post_box",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=post_depot",
+   "rows": 1,
+   "files": {
+    "other_unknown__higashi": 1
+   },
+   "example_names": [
+    "道央札幌郵便局"
+   ]
+  },
+  {
+   "tag": "amenity=restaurant;bar",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "札幌グランドホテル"
+   ]
+  },
+  {
+   "tag": "amenity=shower",
+   "rows": 1,
+   "files": {
+    "other_unknown__atsubetsu": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=stroller_parking",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "ベビーカー置き場"
+   ]
+  },
+  {
+   "tag": "amenity=ticket_validator",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=training",
+   "rows": 1,
+   "files": {
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "島津ピアノ教室"
+   ]
+  },
+  {
+   "tag": "amenity=truck_stop",
+   "rows": 1,
+   "files": {
+    "other_unknown__atsubetsu": 1
+   },
+   "example_names": [
+    "札幌トラックステーション"
+   ]
+  },
+  {
+   "tag": "amenity=vehicle_inspection",
+   "rows": 1,
+   "files": {
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "北進車輛"
+   ]
+  },
+  {
+   "tag": "club=music",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Slow boat"
+   ]
+  },
+  {
+   "tag": "craft=agricultural_engines",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "星野燃料店有限会社"
+   ]
+  },
+  {
+   "tag": "craft=distillery",
+   "rows": 1,
+   "files": {
+    "commercial__minami": 1
+   },
+   "example_names": [
+    "紅櫻蒸溜所"
+   ]
+  },
+  {
+   "tag": "craft=electrician",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "北央電設"
+   ]
+  },
+  {
+   "tag": "craft=electronics_repair",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "スマホファクトリー"
+   ]
+  },
+  {
+   "tag": "craft=handicraft",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Hayashi"
+   ]
+  },
+  {
+   "tag": "craft=paper",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ペーパーショップサクマ"
+   ]
+  },
+  {
+   "tag": "craft=pottery",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "pots of"
+   ]
+  },
+  {
+   "tag": "craft=stonemason",
+   "rows": 1,
+   "files": {
+    "commercial__minami": 1
+   },
+   "example_names": [
+    "辻石材工業  札幌軟石採掘場"
+   ]
+  },
+  {
+   "tag": "craft=watchmaker",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "cuisine=Grilled_meat",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "焼肉平和園"
+   ]
+  },
+  {
+   "tag": "cuisine=Satsuma, Hokkaido",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "だいやめ"
+   ]
+  },
+  {
+   "tag": "cuisine=beef_steak;teppanyaki",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ステーキハウス ハマ 札幌店"
+   ]
+  },
+  {
+   "tag": "cuisine=bistro;wine",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "くろね WINEHOUSE"
+   ]
+  },
+  {
+   "tag": "cuisine=breakfast;cake;coffee_shop;french;sandwich;tea",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Restaurant LUONTO"
+   ]
+  },
+  {
+   "tag": "cuisine=breakfast;curry;japanese;noodles",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "北部食堂"
+   ]
+  },
+  {
+   "tag": "cuisine=breakfast;fish;ramen;sushi",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "定食めし屋"
+   ]
+  },
+  {
+   "tag": "cuisine=breton;crepe",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Armor"
+   ]
+  },
+  {
+   "tag": "cuisine=buffet;international",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ヴィーニュ"
+   ]
+  },
+  {
+   "tag": "cuisine=burger;fried_chicken",
+   "rows": 1,
+   "files": {
+    "commercial__atsubetsu": 1
+   },
+   "example_names": [
+    "チキンペッカー"
+   ]
+  },
+  {
+   "tag": "cuisine=burger;german",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "エッセンサッポロ平岸本店"
+   ]
+  },
+  {
+   "tag": "cuisine=cafe",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "OWN WAY CAFE"
+   ]
+  },
+  {
+   "tag": "cuisine=cake;coffee_shop;pasta;tea",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ワールドブックカフェ"
+   ]
+  },
+  {
+   "tag": "cuisine=chinese;noodle",
+   "rows": 1,
+   "files": {
+    "commercial__teine": 1
+   },
+   "example_names": [
+    "三八飯店"
+   ]
+  },
+  {
+   "tag": "cuisine=chinese;餃子",
+   "rows": 1,
+   "files": {
+    "commercial__teine": 1
+   },
+   "example_names": [
+    "餃子苑 富丘の里"
+   ]
+  },
+  {
+   "tag": "cuisine=coffee",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "菊地珈琲"
+   ]
+  },
+  {
+   "tag": "cuisine=coffee;black_tea;pasta;curry;toast;bento",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "珈琲倶楽部"
+   ]
+  },
+  {
+   "tag": "cuisine=coffee_shop;cake;sandwich",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Sato coffee"
+   ]
+  },
+  {
+   "tag": "cuisine=coffee_shop;ice_cream",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "北大マルシェ Café & Labo"
+   ]
+  },
+  {
+   "tag": "cuisine=coffee_shop;pizza;sandwich",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "IN ROCK CAFE"
+   ]
+  },
+  {
+   "tag": "cuisine=coffee_shop;sandwich;pasta",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "カフェ・ブラン"
+   ]
+  },
+  {
+   "tag": "cuisine=curry;asian",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "RAMAI"
+   ]
+  },
+  {
+   "tag": "cuisine=curry;chinese",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "みよしの"
+   ]
+  },
+  {
+   "tag": "cuisine=curry;japanese;noodles",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "中央食堂"
+   ]
+  },
+  {
+   "tag": "cuisine=ddeokbokki",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ボンガ サッポロ"
+   ]
+  },
+  {
+   "tag": "cuisine=diner",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ロイヤル"
+   ]
+  },
+  {
+   "tag": "cuisine=doughnuts;bagels;sandwich;drinks;salad",
+   "rows": 1,
+   "files": {
+    "commercial__atsubetsu": 1
+   },
+   "example_names": [
+    "ふわもちカフェ"
+   ]
+  },
+  {
+   "tag": "cuisine=fish;seafood",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "海へ"
+   ]
+  },
+  {
+   "tag": "cuisine=fish;sushi",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "みゆきちゃん定食"
+   ]
+  },
+  {
+   "tag": "cuisine=french;japanese",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Dining & Bar 179"
+   ]
+  },
+  {
+   "tag": "cuisine=french_toast;regional",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "CAFE びいだま"
+   ]
+  },
+  {
+   "tag": "cuisine=fried_chicken",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "札幌ザンギ本舗 札幌駅北口店"
+   ]
+  },
+  {
+   "tag": "cuisine=gyoza;curry",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "みよしの"
+   ]
+  },
+  {
+   "tag": "cuisine=gyudon",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "マルハのカルビ丼"
+   ]
+  },
+  {
+   "tag": "cuisine=hawaiian",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ALWAYS HAWAII COFFEE STAND(ﾊﾜｲｱﾝ&ｶﾌｪ)"
+   ]
+  },
+  {
+   "tag": "cuisine=humberg",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "円山マッシュルーム"
+   ]
+  },
+  {
+   "tag": "cuisine=humbrger",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "友達んち"
+   ]
+  },
+  {
+   "tag": "cuisine=ice_cream,parfait",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ミッシュハウス"
+   ]
+  },
+  {
+   "tag": "cuisine=indian;japanese",
+   "rows": 1,
+   "files": {
+    "commercial__minami": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "cuisine=indian;nepalese",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ネパール・インド料理 RaRa"
+   ]
+  },
+  {
+   "tag": "cuisine=italian;french;spanish;bistro",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Bistro TRANVIA"
+   ]
+  },
+  {
+   "tag": "cuisine=italian;pasta;coffee_shop",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "チェントペルチェント"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese,italian",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ぜん屋"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;breakfast;coffee_shop",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "さえら"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;chazuke;udon",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "えん;札幌パン・洋菓子教室"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;curry",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "松のや"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;noodle",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "葉実皮"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;regional;chicken;Mizutaki",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ぶあいそ　別邸"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;regional;local",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "第三モッキリセンター"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;seafood",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "札幌海鮮丼専門店 すしどんぶり"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;seafood;fish",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "海へ"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;udon",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "はなまるうどん"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese;蕎麦",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "そば処 まる山"
+   ]
+  },
+  {
+   "tag": "cuisine=mediteranian",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Terra"
+   ]
+  },
+  {
+   "tag": "cuisine=nepalese",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ネパリカ"
+   ]
+  },
+  {
+   "tag": "cuisine=nepalese;indian;curry",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "アース"
+   ]
+  },
+  {
+   "tag": "cuisine=noodle;ramen;chinese",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "中華・ラーメン 福留"
+   ]
+  },
+  {
+   "tag": "cuisine=okinawan",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "うみんちゅぬ　やまんちゅぬ　北大前店"
+   ]
+  },
+  {
+   "tag": "cuisine=omelette_rice",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "Kitchen SAKA"
+   ]
+  },
+  {
+   "tag": "cuisine=omelette_rice;doria",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "オムライスとドリア パラティーノ"
+   ]
+  },
+  {
+   "tag": "cuisine=oyster",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Nagomiyahitoyo"
+   ]
+  },
+  {
+   "tag": "cuisine=pakistani",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ラールディン"
+   ]
+  },
+  {
+   "tag": "cuisine=pancake;dessert;ice_cream;japanese",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "コッコテラス"
+   ]
+  },
+  {
+   "tag": "cuisine=pork",
+   "rows": 1,
+   "files": {
+    "commercial__shiroishi": 1
+   },
+   "example_names": [
+    "サッポロトンテキ"
+   ]
+  },
+  {
+   "tag": "cuisine=ra",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "虎鉄"
+   ]
+  },
+  {
+   "tag": "cuisine=rice",
+   "rows": 1,
+   "files": {
+    "commercial__higashi": 1
+   },
+   "example_names": [
+    "おむすび きゅうさん"
+   ]
+  },
+  {
+   "tag": "cuisine=russian",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "カチューシャ"
+   ]
+  },
+  {
+   "tag": "cuisine=sandwich;italian;japanese",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "カフェdeごはん"
+   ]
+  },
+  {
+   "tag": "cuisine=sashimi",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "小熊商店"
+   ]
+  },
+  {
+   "tag": "cuisine=seafood;local",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "海鮮バイキング 難陀"
+   ]
+  },
+  {
+   "tag": "cuisine=seafood;yakiniku",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "焼肉と海鮮 じゃんごー"
+   ]
+  },
+  {
+   "tag": "cuisine=soba;ramen",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "手打ちそば さくらの定食屋"
+   ]
+  },
+  {
+   "tag": "cuisine=steak_house;seafood",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "北海道ﾋﾞｰﾙ園"
+   ]
+  },
+  {
+   "tag": "cuisine=teppan-yaki;steak;seafood",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "甲斐路"
+   ]
+  },
+  {
+   "tag": "cuisine=tonkatsu",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "松のや"
+   ]
+  },
+  {
+   "tag": "cuisine=turkish",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "トルコカフェ＆レストラン LALE"
+   ]
+  },
+  {
+   "tag": "cuisine=ちゃんぽん",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ちゃんぽん一鶴本店"
+   ]
+  },
+  {
+   "tag": "cuisine=ウエスタン料理",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "円山カルネ"
+   ]
+  },
+  {
+   "tag": "cuisine=オランダ料理",
+   "rows": 1,
+   "files": {
+    "commercial__higashi": 1
+   },
+   "example_names": [
+    "スタンポット"
+   ]
+  },
+  {
+   "tag": "cuisine=カフェ",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "ウッドランドヒル"
+   ]
+  },
+  {
+   "tag": "cuisine=ジンギスカン",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "松尾ジンギスカン"
+   ]
+  },
+  {
+   "tag": "cuisine=ソフトクリーム",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "カラメル雑菓店"
+   ]
+  },
+  {
+   "tag": "cuisine=ハンバーグ;ステーキ",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "ミンチェッタ"
+   ]
+  },
+  {
+   "tag": "cuisine=ベトナム料理",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "HOA SEN"
+   ]
+  },
+  {
+   "tag": "cuisine=ホルモン",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "塩ホルモンずんぐり"
+   ]
+  },
+  {
+   "tag": "cuisine=創作料理",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "mon-ichi"
+   ]
+  },
+  {
+   "tag": "cuisine=弁当",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "ほっともっと"
+   ]
+  },
+  {
+   "tag": "cuisine=沖縄料理",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "もいわ太陽食堂"
+   ]
+  },
+  {
+   "tag": "cuisine=洋食",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "黄色いたま葱"
+   ]
+  },
+  {
+   "tag": "cuisine=焼肉、ジンギスカン",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "勇払ファーム"
+   ]
+  },
+  {
+   "tag": "cuisine=餃子",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "みよしの"
+   ]
+  },
+  {
+   "tag": "healthcare=centre",
+   "rows": 1,
+   "files": {
+    "public_culture__kita": 1
+   },
+   "example_names": [
+    "保健センター"
+   ]
+  },
+  {
+   "tag": "healthcare=laboratory",
+   "rows": 1,
+   "files": {
+    "public_culture__higashi": 1
+   },
+   "example_names": [
+    "第一岸本臨床検査センター"
+   ]
+  },
+  {
+   "tag": "healthcare=sample_collection",
+   "rows": 1,
+   "files": {
+    "public_culture__kita": 1
+   },
+   "example_names": [
+    "タイムズ北２４条第６出張所"
+   ]
+  },
+  {
+   "tag": "historic=church",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧浦河公会会堂"
+   ]
+  },
+  {
+   "tag": "historic=clinic",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧近藤医院"
+   ]
+  },
+  {
+   "tag": "historic=cowshed",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧小川家酪農畜舎"
+   ]
+  },
+  {
+   "tag": "historic=gymnasium",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧札幌師範学校武道場"
+   ]
+  },
+  {
+   "tag": "historic=heritage",
+   "rows": 1,
+   "files": {
+    "public_culture__higashi": 1
+   },
+   "example_names": [
+    "DMV"
+   ]
+  },
+  {
+   "tag": "historic=hotel",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧来正旅館"
+   ]
+  },
+  {
+   "tag": "historic=machine",
+   "rows": 1,
+   "files": {
+    "public_culture__chuo": 1
+   },
+   "example_names": [
+    "札幌市時計台の時計装置"
+   ]
+  },
+  {
+   "tag": "historic=manor",
+   "rows": 1,
+   "files": {
+    "public_culture__minami": 1
+   },
+   "example_names": [
+    "旧黒岩家住宅"
+   ]
+  },
+  {
+   "tag": "historic=police",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧札幌警察署南一条巡査派出所"
+   ]
+  },
+  {
+   "tag": "historic=postoffice",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧島歌郵便局"
+   ]
+  },
+  {
+   "tag": "historic=ruins",
+   "rows": 1,
+   "files": {
+    "public_culture__shiroishi": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "historic=school",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧北海中学校"
+   ]
+  },
+  {
+   "tag": "historic=shrine",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧信濃神社"
+   ]
+  },
+  {
+   "tag": "historic=silo",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "サイロ"
+   ]
+  },
+  {
+   "tag": "historic=stable",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧ソーケシュオマベツ駅逓所〔厩舎〕"
+   ]
+  },
+  {
+   "tag": "historic=station",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧ソーケシュオマベツ駅逓所"
+   ]
+  },
+  {
+   "tag": "historic=statue",
+   "rows": 1,
+   "files": {
+    "public_culture__chuo": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "historic=temple",
+   "rows": 1,
+   "files": {
+    "public_culture__atsubetsu": 1
+   },
+   "example_names": [
+    "旧龍雲寺"
+   ]
+  },
+  {
+   "tag": "leisure=fishing",
+   "rows": 1,
+   "files": {
+    "other_unknown__kiyota": 1
+   },
+   "example_names": [
+    "藍鱗"
+   ]
+  },
+  {
+   "tag": "leisure=indoor_play",
+   "rows": 1,
+   "files": {
+    "other_unknown__kiyota": 1
+   },
+   "example_names": [
+    "トドックステーション"
+   ]
+  },
+  {
+   "tag": "leisure=nature_reserve",
+   "rows": 1,
+   "files": {
+    "parks_play__kiyota": 1
+   },
+   "example_names": [
+    "真栄特別緑地保全地区"
+   ]
+  },
+  {
+   "tag": "leisure=resort",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "シャトレーゼ ガトーキングダム サッポロ ホテル＆スパリゾート"
+   ]
+  },
+  {
+   "tag": "leisure=sports_centre;pitch",
+   "rows": 1,
+   "files": {
+    "other_unknown__kita": 1
+   },
+   "example_names": [
+    "北海道大学　体育館"
+   ]
+  },
+  {
+   "tag": "office=Polar_Star_Space_Co.,_Ltd",
+   "rows": 1,
+   "files": {
+    "other_unknown__kita": 1
+   },
+   "example_names": [
+    "株式会社ポーラスター・スペース"
+   ]
+  },
+  {
+   "tag": "office=accountant",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "税理士法人大谷会計事務所"
+   ]
+  },
+  {
+   "tag": "office=bank",
+   "rows": 1,
+   "files": {
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "東札幌道銀ビル"
+   ]
+  },
+  {
+   "tag": "office=chamber",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "札幌商工会議所"
+   ]
+  },
+  {
+   "tag": "office=charity",
+   "rows": 1,
+   "files": {
+    "other_unknown__minami": 1
+   },
+   "example_names": [
+    "ワークショップ実の里"
+   ]
+  },
+  {
+   "tag": "office=construction_company",
+   "rows": 1,
+   "files": {
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "(株)花井組"
+   ]
+  },
+  {
+   "tag": "office=education=training",
+   "rows": 1,
+   "files": {
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "高齢者向けスマホ使い方教室キガルナ"
+   ]
+  },
+  {
+   "tag": "office=energy_supplier",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "ENEOS GAS"
+   ]
+  },
+  {
+   "tag": "office=lawyer",
+   "rows": 1,
+   "files": {
+    "other_unknown__minami": 1
+   },
+   "example_names": [
+    "司法書士すみかわ事務所"
+   ]
+  },
+  {
+   "tag": "office=taxi",
+   "rows": 1,
+   "files": {
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "平岸ハイヤー株式会社"
+   ]
+  },
+  {
+   "tag": "office=waste_management",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "生活応援エコスタイル"
+   ]
+  },
+  {
+   "tag": "office=南3条西24丁目",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "南3条西24"
+   ]
+  },
+  {
+   "tag": "shop=agrarian",
+   "rows": 1,
+   "files": {
+    "commercial__atsubetsu": 1
+   },
+   "example_names": [
+    "雪印種苗 園芸センター"
+   ]
+  },
+  {
+   "tag": "shop=anime",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ポケモンセンター"
+   ]
+  },
+  {
+   "tag": "shop=bag",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Kalua's"
+   ]
+  },
+  {
+   "tag": "shop=bed",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "打越ふとん店"
+   ]
+  },
+  {
+   "tag": "shop=bookmaker",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "サテライト札幌競輪 場外車券売場"
+   ]
+  },
+  {
+   "tag": "shop=car_repair;car_parts",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "石上車両"
+   ]
+  },
+  {
+   "tag": "shop=cheese",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "Cheese & Cafe Caprino"
+   ]
+  },
+  {
+   "tag": "shop=country_store",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "北海道大学生協"
+   ]
+  },
+  {
+   "tag": "shop=estate_agent",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "常口アトム"
+   ]
+  },
+  {
+   "tag": "shop=farm",
+   "rows": 1,
+   "files": {
+    "commercial__toyohira": 1
+   },
+   "example_names": [
+    "八紘学園農産物直売所"
+   ]
+  },
+  {
+   "tag": "shop=fashion_accessories",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "THE CAP"
+   ]
+  },
+  {
+   "tag": "shop=frame",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "野田額縁店"
+   ]
+  },
+  {
+   "tag": "shop=gas",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "前河 燃料店"
+   ]
+  },
+  {
+   "tag": "shop=gold_buyer",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ゴールドバリュー"
+   ]
+  },
+  {
+   "tag": "shop=health_food",
+   "rows": 1,
+   "files": {
+    "commercial__higashi": 1
+   },
+   "example_names": [
+    "ポラン広場の店　オーガニックフーズショップ　あすらん"
+   ]
+  },
+  {
+   "tag": "shop=hearing_aids",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "E・テラス"
+   ]
+  },
+  {
+   "tag": "shop=houseware",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "TAMI"
+   ]
+  },
+  {
+   "tag": "shop=hunting",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "小宮銃砲火薬店"
+   ]
+  },
+  {
+   "tag": "shop=kiosk",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": [
+    "キヨスク"
+   ]
+  },
+  {
+   "tag": "shop=medical_supply",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "パナソニック エイジフリーショップ"
+   ]
+  },
+  {
+   "tag": "shop=model",
+   "rows": 1,
+   "files": {
+    "commercial__atsubetsu": 1
+   },
+   "example_names": [
+    "タムタム"
+   ]
+  },
+  {
+   "tag": "shop=money_lender",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "アイフル"
+   ]
+  },
+  {
+   "tag": "shop=nuts",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "北海道きなり"
+   ]
+  },
+  {
+   "tag": "shop=paint",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "北浩塗料店"
+   ]
+  },
+  {
+   "tag": "shop=printing",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "MARK工房"
+   ]
+  },
+  {
+   "tag": "shop=radiotechnics",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "梅沢無線電機株式会社 札幌営業所"
+   ]
+  },
+  {
+   "tag": "shop=shopping_centre",
+   "rows": 1,
+   "files": {
+    "commercial__nishi": 1
+   },
+   "example_names": [
+    "LUCKY"
+   ]
+  },
+  {
+   "tag": "shop=tailor",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "洋服お直し専門店 プラスオン 行啓通店"
+   ]
+  },
+  {
+   "tag": "shop=unstaffed_store",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "札幌みそぎょうざ 南10条店"
+   ]
+  },
+  {
+   "tag": "shop=video_games",
+   "rows": 1,
+   "files": {
+    "commercial__kita": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "shop=watches",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "GRACIS"
+   ]
+  },
+  {
+   "tag": "shop=wholesale",
+   "rows": 1,
+   "files": {
+    "commercial__kiyota": 1
+   },
+   "example_names": [
+    "コストコ"
+   ]
+  },
+  {
+   "tag": "shop=wine",
+   "rows": 1,
+   "files": {
+    "commercial__chuo": 1
+   },
+   "example_names": [
+    "ヴィノスやまざき"
+   ]
+  },
+  {
+   "tag": "sport=archery",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=athletics;baseball;soccer",
+   "rows": 1,
+   "files": {
+    "sports__atsubetsu": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=baseball;soccer",
+   "rows": 1,
+   "files": {
+    "sports__atsubetsu": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=baseball;soccer;athletics",
+   "rows": 1,
+   "files": {
+    "sports__chuo": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=billiards",
+   "rows": 1,
+   "files": {
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "スポーツビリヤードキャノン札幌"
+   ]
+  },
+  {
+   "tag": "sport=bowls",
+   "rows": 1,
+   "files": {
+    "other_unknown__shiroishi": 1
+   },
+   "example_names": [
+    "ラウンドワンスタジアム"
+   ]
+  },
+  {
+   "tag": "sport=boxing",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   },
+   "example_names": [
+    "Changes"
+   ]
+  },
+  {
+   "tag": "sport=curling",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   },
+   "example_names": [
+    "どうぎんカーリングスタジアム"
+   ]
+  },
+  {
+   "tag": "sport=equestrian",
+   "rows": 1,
+   "files": {
+    "sports__kita": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=fitness;exercise",
+   "rows": 1,
+   "files": {
+    "sports__nishi": 1
+   },
+   "example_names": [
+    "パーソナルジム キースタイルフィットネス"
+   ]
+  },
+  {
+   "tag": "sport=fitness;swimming;golf",
+   "rows": 1,
+   "files": {
+    "sports__chuo": 1
+   },
+   "example_names": [
+    "スポーツクラブNAS Vit Park 札幌"
+   ]
+  },
+  {
+   "tag": "sport=hockey;handball",
+   "rows": 1,
+   "files": {
+    "sports__kita": 1
+   },
+   "example_names": [
+    "ホッケー・ハンドボール場"
+   ]
+  },
+  {
+   "tag": "sport=ice_skating;ice_hockey",
+   "rows": 1,
+   "files": {
+    "sports__teine": 1
+   },
+   "example_names": [
+    "星置スケート場"
+   ]
+  },
+  {
+   "tag": "sport=kickboxing",
+   "rows": 1,
+   "files": {
+    "sports__kiyota": 1
+   },
+   "example_names": [
+    "サームリアムキックボクシングジム"
+   ]
+  },
+  {
+   "tag": "sport=running;soccer",
+   "rows": 1,
+   "files": {
+    "sports__kita": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=skateboard",
+   "rows": 1,
+   "files": {
+    "sports__teine": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=skiing",
+   "rows": 1,
+   "files": {
+    "sports__minami": 1
+   },
+   "example_names": [
+    "札幌藻岩山スキー場"
+   ]
+  },
+  {
+   "tag": "sport=soccer;Cross Country skiing",
+   "rows": 1,
+   "files": {
+    "sports__kiyota": 1
+   },
+   "example_names": [
+    "白旗山競技場"
+   ]
+  },
+  {
+   "tag": "sport=soccer;rugby",
+   "rows": 1,
+   "files": {
+    "sports__kita": 1
+   },
+   "example_names": [
+    "サッカー・ラグビー場"
+   ]
+  },
+  {
+   "tag": "sport=soccer;running",
+   "rows": 1,
+   "files": {
+    "sports__kiyota": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=soccer_tennis",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   },
+   "example_names": [
+    "スポーツフィールド キャロット"
+   ]
+  },
+  {
+   "tag": "sport=sumo",
+   "rows": 1,
+   "files": {
+    "other_unknown__chuo": 1
+   },
+   "example_names": [
+    "土俵（露天）"
+   ]
+  },
+  {
+   "tag": "sport=swimming;multi",
+   "rows": 1,
+   "files": {
+    "sports__kiyota": 1
+   },
+   "example_names": [
+    "清田区体育館・温水プール"
+   ]
+  },
+  {
+   "tag": "sport=パーソナルトレーニングジム",
+   "rows": 1,
+   "files": {
+    "sports__toyohira": 1
+   },
+   "example_names": [
+    "EXIM"
+   ]
+  },
+  {
+   "tag": "tourism=theme_park",
+   "rows": 1,
+   "files": {
+    "other_unknown__nishi": 1
+   },
+   "example_names": [
+    "白い恋人パーク"
+   ]
+  },
+  {
+   "tag": "tourism=ドリームハウス",
+   "rows": 1,
+   "files": {
+    "other_unknown__toyohira": 1
+   },
+   "example_names": [
+    "ドリームハウスR&D 学園前"
+   ]
+  }
+ ]
+}

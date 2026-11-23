@@ -94,12 +94,23 @@ def tag_question(q):
             f'insufficient_information if the tag is not enough to tell.')
 
 
+def tag_names_question(q):
+    return (f'This is one OpenStreetMap tag, how many places in the data carry it, and example names of those '
+            f'places. Could any of the places with this tag match the request "{q}"? Answer candidate if some '
+            f'may, exclude if none clearly do, insufficient_information if this is not enough to tell.')
+
+
 def select_files(con, manifest, question):
-    if manifest["version"] == "m3":
-        con.sql("CREATE OR REPLACE TABLE tags (tag VARCHAR, places INTEGER)")
-        con.executemany("INSERT INTO tags VALUES (?, ?)", [(t["tag"], t["rows"]) for t in manifest["tags"]])
-        tag_status = dict(con.sql(f"""SELECT tag, jev_choice(struct_pack(tag, places), {sql_str(tag_question(question))},
-                                       {FILE_OPTIONS}) FROM tags""").fetchall())
+    if manifest["version"] in ("m3", "m4"):
+        con.sql("CREATE OR REPLACE TABLE tags (tag VARCHAR, places INTEGER, example_names VARCHAR)")
+        con.executemany("INSERT INTO tags VALUES (?, ?, ?)",
+                        [(t["tag"], t["rows"], ", ".join(t.get("example_names", []))) for t in manifest["tags"]])
+        if manifest["version"] == "m3":
+            expr, qtext = "struct_pack(tag, places)", tag_question(question)
+        else:
+            expr, qtext = "struct_pack(tag, places, example_names)", tag_names_question(question)
+        tag_status = dict(con.sql(f"""SELECT tag, jev_choice({expr}, {sql_str(qtext)}, {FILE_OPTIONS})
+                                       FROM tags""").fetchall())
         status = {f["id"]: "exclude" for f in manifest["files"]}
         rank = {"exclude": 0, "insufficient_information": 1, "candidate": 2}
         for t in manifest["tags"]:

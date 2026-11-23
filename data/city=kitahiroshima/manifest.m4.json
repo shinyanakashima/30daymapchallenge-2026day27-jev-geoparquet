@@ -1,0 +1,1846 @@
+{
+ "version": "m4",
+ "dataset": "OpenStreetMap POIs, Kitahiroshima, Hokkaido",
+ "zone_split": {
+  "method": "median",
+  "lon": 141.546084,
+  "lat": 42.9790985
+ },
+ "zones": [
+  {
+   "id": "nw",
+   "ja": "北西",
+   "en": "NW"
+  },
+  {
+   "id": "ne",
+   "ja": "北東",
+   "en": "NE"
+  },
+  {
+   "id": "sw",
+   "ja": "南西",
+   "en": "SW"
+  },
+  {
+   "id": "se",
+   "ja": "南東",
+   "en": "SE"
+  }
+ ],
+ "files": [
+  {
+   "file": "category=parks_play/area=nw/part-0.parquet",
+   "id": "parks_play__nw",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "nw",
+   "rows": 19,
+   "bytes": 3587,
+   "bbox": [
+    141.473121,
+    42.979415,
+    141.506907,
+    43.022502
+   ]
+  },
+  {
+   "file": "category=parks_play/area=ne/part-0.parquet",
+   "id": "parks_play__ne",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "ne",
+   "rows": 35,
+   "bytes": 4268,
+   "bbox": [
+    141.547089,
+    42.979635,
+    141.573658,
+    43.002412
+   ]
+  },
+  {
+   "file": "category=parks_play/area=sw/part-0.parquet",
+   "id": "parks_play__sw",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "sw",
+   "rows": 35,
+   "bytes": 4895,
+   "bbox": [
+    141.469332,
+    42.91815,
+    141.54525,
+    42.978891
+   ]
+  },
+  {
+   "file": "category=parks_play/area=se/part-0.parquet",
+   "id": "parks_play__se",
+   "category": "parks_play",
+   "category_label": "Parks and play areas",
+   "zone": "se",
+   "rows": 32,
+   "bytes": 4599,
+   "bbox": [
+    141.546304,
+    42.945109,
+    141.572125,
+    42.978541
+   ]
+  },
+  {
+   "file": "category=sports/area=nw/part-0.parquet",
+   "id": "sports__nw",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "nw",
+   "rows": 29,
+   "bytes": 4563,
+   "bbox": [
+    141.480592,
+    42.980361,
+    141.536775,
+    43.019663
+   ]
+  },
+  {
+   "file": "category=sports/area=ne/part-0.parquet",
+   "id": "sports__ne",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "ne",
+   "rows": 30,
+   "bytes": 5363,
+   "bbox": [
+    141.547179,
+    42.983966,
+    141.573783,
+    42.996152
+   ]
+  },
+  {
+   "file": "category=sports/area=sw/part-0.parquet",
+   "id": "sports__sw",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "sw",
+   "rows": 37,
+   "bytes": 5173,
+   "bbox": [
+    141.457559,
+    42.907535,
+    141.545398,
+    42.978434
+   ]
+  },
+  {
+   "file": "category=sports/area=se/part-0.parquet",
+   "id": "sports__se",
+   "category": "sports",
+   "category_label": "Sports facilities",
+   "zone": "se",
+   "rows": 11,
+   "bytes": 4035,
+   "bbox": [
+    141.548988,
+    42.955261,
+    141.559314,
+    42.978489
+   ]
+  },
+  {
+   "file": "category=commercial/area=nw/part-0.parquet",
+   "id": "commercial__nw",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "nw",
+   "rows": 18,
+   "bytes": 5372,
+   "bbox": [
+    141.483034,
+    42.97938,
+    141.52256,
+    43.021935
+   ]
+  },
+  {
+   "file": "category=commercial/area=ne/part-0.parquet",
+   "id": "commercial__ne",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "ne",
+   "rows": 55,
+   "bytes": 7636,
+   "bbox": [
+    141.548635,
+    42.979103,
+    141.569927,
+    43.010514
+   ]
+  },
+  {
+   "file": "category=commercial/area=sw/part-0.parquet",
+   "id": "commercial__sw",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "sw",
+   "rows": 56,
+   "bytes": 7333,
+   "bbox": [
+    141.468352,
+    42.937432,
+    141.54603,
+    42.978437
+   ]
+  },
+  {
+   "file": "category=commercial/area=se/part-0.parquet",
+   "id": "commercial__se",
+   "category": "commercial",
+   "category_label": "Shops, food and other businesses",
+   "zone": "se",
+   "rows": 25,
+   "bytes": 5634,
+   "bbox": [
+    141.551743,
+    42.964164,
+    141.56916,
+    42.978907
+   ]
+  },
+  {
+   "file": "category=public_culture/area=nw/part-0.parquet",
+   "id": "public_culture__nw",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "nw",
+   "rows": 33,
+   "bytes": 5998,
+   "bbox": [
+    141.482219,
+    42.979732,
+    141.545457,
+    43.019512
+   ]
+  },
+  {
+   "file": "category=public_culture/area=ne/part-0.parquet",
+   "id": "public_culture__ne",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "ne",
+   "rows": 48,
+   "bytes": 7123,
+   "bbox": [
+    141.547096,
+    42.979098,
+    141.576039,
+    43.010546
+   ]
+  },
+  {
+   "file": "category=public_culture/area=sw/part-0.parquet",
+   "id": "public_culture__sw",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "sw",
+   "rows": 48,
+   "bytes": 6596,
+   "bbox": [
+    141.451125,
+    42.923999,
+    141.545943,
+    42.97895
+   ]
+  },
+  {
+   "file": "category=public_culture/area=se/part-0.parquet",
+   "id": "public_culture__se",
+   "category": "public_culture",
+   "category_label": "Public, cultural, education and health facilities",
+   "zone": "se",
+   "rows": 35,
+   "bytes": 6549,
+   "bbox": [
+    141.54628,
+    42.927173,
+    141.573587,
+    42.978927
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=nw/part-0.parquet",
+   "id": "other_unknown__nw",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "nw",
+   "rows": 9,
+   "bytes": 4549,
+   "bbox": [
+    141.489837,
+    42.992634,
+    141.524804,
+    43.017995
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=ne/part-0.parquet",
+   "id": "other_unknown__ne",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "ne",
+   "rows": 19,
+   "bytes": 4955,
+   "bbox": [
+    141.546084,
+    42.979426,
+    141.573016,
+    43.002696
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=sw/part-0.parquet",
+   "id": "other_unknown__sw",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "sw",
+   "rows": 10,
+   "bytes": 4434,
+   "bbox": [
+    141.454149,
+    42.936226,
+    141.544437,
+    42.979
+   ]
+  },
+  {
+   "file": "category=other_unknown/area=se/part-0.parquet",
+   "id": "other_unknown__se",
+   "category": "other_unknown",
+   "category_label": "Other / not classified",
+   "zone": "se",
+   "rows": 5,
+   "bytes": 3784,
+   "bbox": [
+    141.55084,
+    42.964415,
+    141.562816,
+    42.979093
+   ]
+  }
+ ],
+ "tags": [
+  {
+   "tag": "leisure=park",
+   "rows": 110,
+   "files": {
+    "parks_play__nw": 19,
+    "parks_play__ne": 31,
+    "parks_play__sw": 31,
+    "parks_play__se": 29
+   },
+   "example_names": [
+    "里見緑地",
+    "アドベンチャーパーク",
+    "ユニ・チャーム DOG PARK",
+    "あじさい公園",
+    "レクの森林間学園",
+    "コオロギの家",
+    "リンリン広場",
+    "見晴広場",
+    "西部パーク",
+    "遮断緑地 光-1",
+    "青葉第二緑地",
+    "マーガレット公園"
+   ]
+  },
+  {
+   "tag": "leisure=pitch",
+   "rows": 68,
+   "files": {
+    "sports__nw": 20,
+    "sports__ne": 20,
+    "sports__sw": 21,
+    "sports__se": 7
+   },
+   "example_names": [
+    "きたひろサンパークテニスコート",
+    "緑葉球場"
+   ]
+  },
+  {
+   "tag": "sport=multi",
+   "rows": 30,
+   "files": {
+    "sports__nw": 8,
+    "sports__ne": 7,
+    "sports__sw": 11,
+    "sports__se": 4
+   },
+   "example_names": [
+    "北広島市総合体育館"
+   ]
+  },
+  {
+   "tag": "amenity=place_of_worship",
+   "rows": 28,
+   "files": {
+    "public_culture__nw": 2,
+    "public_culture__ne": 9,
+    "public_culture__sw": 8,
+    "public_culture__se": 9
+   },
+   "example_names": [
+    "光顕寺",
+    "日本キリスト教団北広島教会",
+    "興教寺",
+    "無碍光寺",
+    "龍仙寺",
+    "大曲馬頭観世音大菩薩",
+    "昌福寺",
+    "達磨寺",
+    "エホバ会館",
+    "興徳寺",
+    "照道寺",
+    "来広寺"
+   ]
+  },
+  {
+   "tag": "sport=tennis",
+   "rows": 28,
+   "files": {
+    "sports__nw": 9,
+    "sports__ne": 10,
+    "sports__sw": 6,
+    "sports__se": 3
+   },
+   "example_names": [
+    "きたひろサンパークテニスコート"
+   ]
+  },
+  {
+   "tag": "shop=convenience",
+   "rows": 26,
+   "files": {
+    "commercial__nw": 3,
+    "commercial__ne": 10,
+    "commercial__sw": 11,
+    "commercial__se": 2
+   },
+   "example_names": [
+    "セイコーマート",
+    "ローソン",
+    "セブン-イレブン",
+    "ファミリーマート"
+   ]
+  },
+  {
+   "tag": "amenity=school",
+   "rows": 23,
+   "files": {
+    "public_culture__nw": 9,
+    "public_culture__ne": 5,
+    "public_culture__sw": 7,
+    "public_culture__se": 2
+   },
+   "example_names": [
+    "北の台小学校",
+    "東部小学校",
+    "東部中学校",
+    "北広島高校",
+    "北海道立向陽学院",
+    "北広島西高校",
+    "北海道白樺高等養護学校",
+    "札幌日本大学高等学校",
+    "緑ヶ丘小学校",
+    "札幌養護学校",
+    "札幌日本大学中学校",
+    "西の里中学校 陽香分校"
+   ]
+  },
+  {
+   "tag": "amenity=community_centre",
+   "rows": 19,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 4,
+    "public_culture__sw": 10,
+    "public_culture__se": 4
+   },
+   "example_names": [
+    "北広島市中央公民館",
+    "東部学童クラブ",
+    "石狩教育研修センター",
+    "美咲き野会館",
+    "中の沢会館",
+    "西の里公民館・北広島市役所西の里出張所",
+    "大曲ふれあいプラザ",
+    "輪厚中央会館",
+    "広葉交流センター",
+    "輪厚会館",
+    "大曲会館",
+    "北広島市ふれあい学習センター 夢プラザ"
+   ]
+  },
+  {
+   "tag": "amenity=bicycle_rental",
+   "rows": 17,
+   "files": {
+    "other_unknown__nw": 2,
+    "other_unknown__ne": 9,
+    "other_unknown__sw": 2,
+    "other_unknown__se": 4
+   },
+   "example_names": [
+    "キャンパーズアンドアングラーズ北広島",
+    "北広島市役所",
+    "北広島駅東口駐輪場",
+    "総合体育館駐輪場",
+    "天然温泉 森のゆ",
+    "エルフィンロード自転車の駅",
+    "団地地域サポートセンターともに",
+    "広葉交流センターいこーよ",
+    "北海道エネルギー 北広島SS",
+    "星槎道都大学駐輪場",
+    "Bicycle Lot B（Fビレッジ外周駐輪場）",
+    "Bicycle Lot A(Fビレッジ外周駐輪場）"
+   ]
+  },
+  {
+   "tag": "amenity=fuel",
+   "rows": 16,
+   "files": {
+    "commercial__nw": 3,
+    "commercial__ne": 5,
+    "commercial__sw": 7,
+    "commercial__se": 1
+   },
+   "example_names": [
+    "apollostation",
+    "エネオス",
+    "ENEOS",
+    "出光",
+    "COSMO",
+    "コスモ石油",
+    "コスモ"
+   ]
+  },
+  {
+   "tag": "amenity=social_facility",
+   "rows": 16,
+   "files": {
+    "public_culture__nw": 9,
+    "public_culture__ne": 1,
+    "public_culture__sw": 5,
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "天使の園",
+    "えみの里 順天",
+    "北広島市児童活動センター",
+    "東部緑の苑",
+    "北光社ふくじゅ園",
+    "ケアハウスきたひろしま",
+    "グループホームみのり山手",
+    "地域交流ホーム",
+    "就労センタージョブ",
+    "地域サポートセンター",
+    "北広島リハビリセンター",
+    "輪厚児童センター"
+   ]
+  },
+  {
+   "tag": "sport=baseball",
+   "rows": 15,
+   "files": {
+    "sports__nw": 4,
+    "sports__ne": 5,
+    "sports__sw": 5,
+    "sports__se": 1
+   },
+   "example_names": [
+    "ES CON FIELD HOKKAIDO",
+    "緑葉球場"
+   ]
+  },
+  {
+   "tag": "amenity=pharmacy",
+   "rows": 12,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 3,
+    "commercial__sw": 3,
+    "public_culture__ne": 3,
+    "public_culture__sw": 1,
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "ツルハドラッグ",
+    "サツドラ",
+    "なの花薬局",
+    "サンドラッグ",
+    "コスモス保険薬局",
+    "アイランド薬局",
+    "アイン薬局"
+   ]
+  },
+  {
+   "tag": "healthcare=pharmacy",
+   "rows": 12,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 3,
+    "commercial__sw": 3,
+    "public_culture__ne": 3,
+    "public_culture__sw": 1,
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "ツルハドラッグ",
+    "サツドラ",
+    "なの花薬局",
+    "サンドラッグ",
+    "コスモス保険薬局",
+    "アイランド薬局",
+    "アイン薬局"
+   ]
+  },
+  {
+   "tag": "amenity=restaurant",
+   "rows": 11,
+   "files": {
+    "commercial__ne": 3,
+    "commercial__sw": 4,
+    "commercial__se": 4
+   },
+   "example_names": [
+    "回転寿し銀次郎 北広島店",
+    "海転寿司シーランド",
+    "良寿し",
+    "ふなこしや",
+    "ラーメン山岡家",
+    "まんぷく",
+    "菜味亭",
+    "あぷかの森",
+    "サイゼリヤ",
+    "らーめん加茂川",
+    "くるるの杜 農村レストラン"
+   ]
+  },
+  {
+   "tag": "leisure=golf_course",
+   "rows": 11,
+   "files": {
+    "sports__nw": 2,
+    "sports__sw": 9
+   },
+   "example_names": [
+    "山根園パークゴルフ 里のコース",
+    "山根園パークゴルフ 森のコース",
+    "サンパーク札幌ゴルフコース",
+    "札幌国際カントリークラブ",
+    "ＧＯＬＦ５ 大曲ゴルフセンター",
+    "ダイナスティゴルフクラブ北広島",
+    "ゴールド札幌カントリークラブ",
+    "札幌リージェントゴルフ倶楽部",
+    "札幌ゴルフ倶楽部輪厚コース",
+    "クラークカントリークラブ",
+    "札幌北広島ゴルフ倶楽部"
+   ]
+  },
+  {
+   "tag": "leisure=sports_centre",
+   "rows": 11,
+   "files": {
+    "sports__nw": 2,
+    "sports__ne": 3,
+    "sports__sw": 4,
+    "sports__se": 2
+   },
+   "example_names": [
+    "北海道ボールパーク",
+    "北広島市総合体育館",
+    "東部住民プール",
+    "西の里ファミリー体育館",
+    "輪厚児童体育館",
+    "緑葉公園プール",
+    "大曲ファミリー体育館",
+    "白樺プール",
+    "西部プール",
+    "大曲住民プール"
+   ]
+  },
+  {
+   "tag": "amenity=kindergarten",
+   "rows": 9,
+   "files": {
+    "public_culture__nw": 2,
+    "public_culture__ne": 3,
+    "public_culture__sw": 2,
+    "public_culture__se": 2
+   },
+   "example_names": [
+    "広島天使幼稚園",
+    "キッズラボ 北海道ボールパークFビレッジ 認定こども園",
+    "稲穂保育園",
+    "大地太陽幼稚園",
+    "西の里きらきら保育園",
+    "すずらん保育園",
+    "認定こども園北広島かおり幼稚園",
+    "あおぞら保育園",
+    "広島大谷幼稚園"
+   ]
+  },
+  {
+   "tag": "leisure=sports_hall",
+   "rows": 9,
+   "files": {
+    "sports__nw": 2,
+    "sports__ne": 3,
+    "sports__sw": 2,
+    "sports__se": 2
+   },
+   "example_names": []
+  },
+  {
+   "tag": "shop=supermarket",
+   "rows": 8,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 2,
+    "commercial__sw": 2,
+    "commercial__se": 3
+   },
+   "example_names": [
+    "コープさっぽろ",
+    "マックスバリュ",
+    "フードD",
+    "東光ストア",
+    "ショッピング 北広",
+    "産直生鮮市場",
+    "スーパーアークス"
+   ]
+  },
+  {
+   "tag": "amenity=doctors",
+   "rows": 7,
+   "files": {
+    "public_culture__ne": 4,
+    "public_culture__se": 3
+   },
+   "example_names": [
+    "北広島緑ヶ丘内科",
+    "北広島耳鼻咽喉科",
+    "北広島中央クリニック",
+    "東部さくら眼科",
+    "北進内科胃腸科クリニック",
+    "高台内科クリニック",
+    "広葉クリニック"
+   ]
+  },
+  {
+   "tag": "amenity=post_office",
+   "rows": 7,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 1,
+    "public_culture__sw": 2,
+    "public_culture__se": 3
+   },
+   "example_names": [
+    "北広島元町郵便局",
+    "北広島西の里郵便局",
+    "北広島郵便局",
+    "北広島中央六郵便局",
+    "北広島広葉郵便局",
+    "北広島里見郵便局",
+    "北広島西郵便局"
+   ]
+  },
+  {
+   "tag": "amenity=toilets",
+   "rows": 7,
+   "files": {
+    "other_unknown__nw": 1,
+    "other_unknown__ne": 3,
+    "other_unknown__sw": 3
+   },
+   "example_names": []
+  },
+  {
+   "tag": "healthcare=doctor",
+   "rows": 7,
+   "files": {
+    "public_culture__ne": 4,
+    "public_culture__se": 3
+   },
+   "example_names": [
+    "北広島緑ヶ丘内科",
+    "北広島耳鼻咽喉科",
+    "北広島中央クリニック",
+    "東部さくら眼科",
+    "北進内科胃腸科クリニック",
+    "高台内科クリニック",
+    "広葉クリニック"
+   ]
+  },
+  {
+   "tag": "office=company",
+   "rows": 7,
+   "files": {
+    "commercial__nw": 3,
+    "commercial__sw": 2,
+    "commercial__se": 2
+   },
+   "example_names": [
+    "H.CS観光 北広島バスセンター",
+    "北海広島食品株式会社",
+    "ニッポンレンタカー北海道 自動車販売部",
+    "(株)松永商会",
+    "北海道中央バス 大曲営業所",
+    "日本食研(株)",
+    "株式会社 彩香 本社・北広島工場"
+   ]
+  },
+  {
+   "tag": "shop=car",
+   "rows": 7,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 1,
+    "commercial__sw": 4,
+    "commercial__se": 1
+   },
+   "example_names": [
+    "AGHトヨタ札幌 アンビシャス北広島",
+    "カークラフト",
+    "北海道マツダ",
+    "北海道軽パーク 北広島店",
+    "トヨタ"
+   ]
+  },
+  {
+   "tag": "shop=chemist",
+   "rows": 7,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 3,
+    "commercial__sw": 3
+   },
+   "example_names": [
+    "ツルハドラッグ",
+    "サツドラ",
+    "サンドラッグ"
+   ]
+  },
+  {
+   "tag": "sport=swimming",
+   "rows": 6,
+   "files": {
+    "sports__nw": 1,
+    "sports__ne": 1,
+    "sports__sw": 2,
+    "sports__se": 2
+   },
+   "example_names": [
+    "東部住民プール",
+    "西の里住民プール",
+    "白樺プール",
+    "緑葉公園プール",
+    "西部プール",
+    "大曲住民プール"
+   ]
+  },
+  {
+   "tag": "amenity=cafe",
+   "rows": 5,
+   "files": {
+    "commercial__ne": 2,
+    "commercial__sw": 1,
+    "commercial__se": 2
+   },
+   "example_names": [
+    "Cafe 小春日和",
+    "喫茶ハッセル",
+    "スターバックス"
+   ]
+  },
+  {
+   "tag": "amenity=dentist",
+   "rows": 5,
+   "files": {
+    "public_culture__ne": 2,
+    "public_culture__sw": 2,
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "マイス歯科クリニック",
+    "あさひファミリー歯科",
+    "北進歯科クリニック",
+    "セリオ歯科",
+    "藤川歯科小児歯科医院"
+   ]
+  },
+  {
+   "tag": "amenity=fast_food",
+   "rows": 5,
+   "files": {
+    "commercial__ne": 3,
+    "commercial__sw": 2
+   },
+   "example_names": [
+    "シマウマバーガー 北広島店",
+    "モスバーガー",
+    "ほっともっと",
+    "石窯焼グラッチェ",
+    "ケンタッキーフライドチキン"
+   ]
+  },
+  {
+   "tag": "amenity=police",
+   "rows": 5,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 2,
+    "public_culture__sw": 2
+   },
+   "example_names": [
+    "札幌方面厚別警察署 北広島駅前交番",
+    "札幌方面厚別警察署 北広島交番",
+    "札幌方面厚別警察署西の里駐在所",
+    "大曲交番",
+    "厚別警察署輪厚駐在所"
+   ]
+  },
+  {
+   "tag": "amenity=veterinary",
+   "rows": 5,
+   "files": {
+    "public_culture__ne": 3,
+    "public_culture__se": 2
+   },
+   "example_names": [
+    "広島動物病院",
+    "北愛動物病院",
+    "あすか動物病院",
+    "フルヤマペットクリニック",
+    "やすだ動物病院"
+   ]
+  },
+  {
+   "tag": "healthcare=dentist",
+   "rows": 5,
+   "files": {
+    "public_culture__ne": 2,
+    "public_culture__sw": 2,
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "マイス歯科クリニック",
+    "あさひファミリー歯科",
+    "北進歯科クリニック",
+    "セリオ歯科",
+    "藤川歯科小児歯科医院"
+   ]
+  },
+  {
+   "tag": "sport=soccer",
+   "rows": 5,
+   "files": {
+    "sports__nw": 1,
+    "sports__ne": 2,
+    "sports__sw": 1,
+    "sports__se": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=bank",
+   "rows": 4,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__sw": 1,
+    "commercial__se": 2
+   },
+   "example_names": [
+    "北海道信用金庫",
+    "北洋銀行",
+    "北海道銀行",
+    "JAバンク"
+   ]
+  },
+  {
+   "tag": "amenity=hospital",
+   "rows": 4,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 3
+   },
+   "example_names": [
+    "北広島病院",
+    "我汝会きたひろしま整形外科",
+    "Fビレッジ メディカルスクエア",
+    "順天病院"
+   ]
+  },
+  {
+   "tag": "amenity=public_building",
+   "rows": 4,
+   "files": {
+    "public_culture__nw": 2,
+    "public_culture__sw": 2
+   },
+   "example_names": []
+  },
+  {
+   "tag": "healthcare=hospital",
+   "rows": 4,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 3
+   },
+   "example_names": [
+    "北広島病院",
+    "我汝会きたひろしま整形外科",
+    "Fビレッジ メディカルスクエア",
+    "順天病院"
+   ]
+  },
+  {
+   "tag": "leisure=garden",
+   "rows": 4,
+   "files": {
+    "parks_play__ne": 4
+   },
+   "example_names": []
+  },
+  {
+   "tag": "shop=bakery",
+   "rows": 4,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 1,
+    "commercial__sw": 2
+   },
+   "example_names": [
+    "COGUMELO TELHADO",
+    "パン酵房 麦の香",
+    "乃が美"
+   ]
+  },
+  {
+   "tag": "shop=clothes",
+   "rows": 4,
+   "files": {
+    "commercial__ne": 4
+   },
+   "example_names": [
+    "ワークマン",
+    "しまむら",
+    "アベイル",
+    "はるやまチェーン"
+   ]
+  },
+  {
+   "tag": "tourism=camp_site",
+   "rows": 4,
+   "files": {
+    "parks_play__sw": 4
+   },
+   "example_names": [
+    "キツツキの森キャンプ場",
+    "北広島かえるキャンプ場",
+    "エーデルワイスファームのBBQ&グランピング",
+    "北広島市自然の森キャンプ場"
+   ]
+  },
+  {
+   "tag": "amenity=fire_station",
+   "rows": 3,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__ne": 1,
+    "public_culture__sw": 1
+   },
+   "example_names": [
+    "消防本部・消防署",
+    "北広島市消防署西の里出張所",
+    "北広島市消防署大曲出張所"
+   ]
+  },
+  {
+   "tag": "amenity=public_bath",
+   "rows": 3,
+   "files": {
+    "other_unknown__nw": 2,
+    "other_unknown__sw": 1
+   },
+   "example_names": [
+    "湯処ほのか",
+    "里の森 天然温泉 森のゆ",
+    "竹山高原温泉"
+   ]
+  },
+  {
+   "tag": "amenity=taxi",
+   "rows": 3,
+   "files": {
+    "other_unknown__ne": 2,
+    "other_unknown__se": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "historic=archaeological_site",
+   "rows": 3,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__sw": 1,
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "北広島市の大規模斜交葉理",
+    "島松川左岸チャシ跡",
+    "中の沢チャシ跡"
+   ]
+  },
+  {
+   "tag": "leisure=swimming_pool",
+   "rows": 3,
+   "files": {
+    "sports__nw": 1,
+    "sports__ne": 1,
+    "sports__sw": 1
+   },
+   "example_names": [
+    "西の里住民プール"
+   ]
+  },
+  {
+   "tag": "shop=mobile_phone",
+   "rows": 3,
+   "files": {
+    "commercial__ne": 3
+   },
+   "example_names": [
+    "ソフトバンクショップ",
+    "auショップ",
+    "ドコモショップ"
+   ]
+  },
+  {
+   "tag": "shop=newsagent",
+   "rows": 3,
+   "files": {
+    "commercial__se": 3
+   },
+   "example_names": [
+    "読売新聞",
+    "朝日新聞",
+    "北海道新聞"
+   ]
+  },
+  {
+   "tag": "shop=variety_store",
+   "rows": 3,
+   "files": {
+    "commercial__ne": 2,
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "無印良品",
+    "セリア",
+    "ダイソー"
+   ]
+  },
+  {
+   "tag": "shop=yes",
+   "rows": 3,
+   "files": {
+    "parks_play__sw": 1,
+    "commercial__sw": 2
+   },
+   "example_names": [
+    "北広島かえるキャンプ場"
+   ]
+  },
+  {
+   "tag": "tourism=attraction",
+   "rows": 3,
+   "files": {
+    "public_culture__se": 3
+   },
+   "example_names": [
+    "見晴広場",
+    "さつき公園の鉄のバスケット",
+    "輪厚自然村"
+   ]
+  },
+  {
+   "tag": "amenity=childcare",
+   "rows": 2,
+   "files": {
+    "public_culture__ne": 2
+   },
+   "example_names": [
+    "広島てんしのおうち",
+    "学校法人北広島竜谷学園広島幼稚園"
+   ]
+  },
+  {
+   "tag": "amenity=driver_training",
+   "rows": 2,
+   "files": {
+    "other_unknown__nw": 1,
+    "other_unknown__ne": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=driving_school",
+   "rows": 2,
+   "files": {
+    "other_unknown__nw": 1,
+    "other_unknown__ne": 1
+   },
+   "example_names": [
+    "北広島自動車学校",
+    "新札幌自動車学園"
+   ]
+  },
+  {
+   "tag": "amenity=food_court",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 2
+   },
+   "example_names": [
+    "きたみちフードコート",
+    "彩キッチン輪厚亭"
+   ]
+  },
+  {
+   "tag": "amenity=pub",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__se": 1
+   },
+   "example_names": [
+    "あじと",
+    "串鳥"
+   ]
+  },
+  {
+   "tag": "amenity=townhall",
+   "rows": 2,
+   "files": {
+    "public_culture__ne": 1,
+    "public_culture__sw": 1
+   },
+   "example_names": [
+    "北広島市役所",
+    "北広島市大曲出張所"
+   ]
+  },
+  {
+   "tag": "amenity=university",
+   "rows": 2,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__sw": 1
+   },
+   "example_names": [
+    "星槎道都大学 第2キャンパス",
+    "星槎道都大学"
+   ]
+  },
+  {
+   "tag": "cuisine=burger",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 2
+   },
+   "example_names": [
+    "シマウマバーガー 北広島店",
+    "モスバーガー"
+   ]
+  },
+  {
+   "tag": "cuisine=ramen",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 1,
+    "commercial__se": 1
+   },
+   "example_names": [
+    "ラーメン山岡家",
+    "らーめん加茂川"
+   ]
+  },
+  {
+   "tag": "cuisine=sushi",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 2
+   },
+   "example_names": [
+    "回転寿し銀次郎 北広島店",
+    "良寿し"
+   ]
+  },
+  {
+   "tag": "leisure=adult_gaming_centre",
+   "rows": 2,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 1
+   },
+   "example_names": [
+    "ダイナム"
+   ]
+  },
+  {
+   "tag": "leisure=miniature_golf",
+   "rows": 2,
+   "files": {
+    "sports__nw": 2
+   },
+   "example_names": []
+  },
+  {
+   "tag": "leisure=track",
+   "rows": 2,
+   "files": {
+    "sports__ne": 2
+   },
+   "example_names": []
+  },
+  {
+   "tag": "office=government",
+   "rows": 2,
+   "files": {
+    "public_culture__ne": 1,
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "エルフィンパーク 市民サービスコーナー",
+    "札幌開発建設部 札幌南農業事務所"
+   ]
+  },
+  {
+   "tag": "office=research",
+   "rows": 2,
+   "files": {
+    "other_unknown__nw": 1,
+    "other_unknown__sw": 1
+   },
+   "example_names": [
+    "種苗管理センター北海道中央農場",
+    "よつ葉乳業中央研究所"
+   ]
+  },
+  {
+   "tag": "office=yes",
+   "rows": 2,
+   "files": {
+    "other_unknown__sw": 2
+   },
+   "example_names": [
+    "沿岸バス 札幌営業所",
+    "NEXCO東日本 北海道支社 北広島管理事務所"
+   ]
+  },
+  {
+   "tag": "shop=car_parts",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "ミスタータイヤマン",
+    "伊丹車輌(株) 北広島支店パーツセンター36"
+   ]
+  },
+  {
+   "tag": "shop=car_repair",
+   "rows": 2,
+   "files": {
+    "commercial__nw": 1,
+    "commercial__ne": 1
+   },
+   "example_names": [
+    "ガレージライト"
+   ]
+  },
+  {
+   "tag": "shop=doityourself",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 2
+   },
+   "example_names": [
+    "カインズホーム",
+    "ジョイフルエーケー"
+   ]
+  },
+  {
+   "tag": "shop=electronics",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "ヤマダデンキ",
+    "ケーズデンキ"
+   ]
+  },
+  {
+   "tag": "shop=funeral_directors",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__se": 1
+   },
+   "example_names": [
+    "香華殿 北広島斎場",
+    "やわらぎ斎場"
+   ]
+  },
+  {
+   "tag": "shop=hairdresser",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 1,
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "髪メイクサロン",
+    "Cut Life Amu"
+   ]
+  },
+  {
+   "tag": "shop=mall",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 2
+   },
+   "example_names": [
+    "セリオおおまがり"
+   ]
+  },
+  {
+   "tag": "shop=sports",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 2
+   },
+   "example_names": [
+    "スポーツデポ",
+    "ゴルフ5"
+   ]
+  },
+  {
+   "tag": "shop=video",
+   "rows": 2,
+   "files": {
+    "commercial__ne": 2
+   },
+   "example_names": [
+    "ゲオ",
+    "ビデオ100　北広島店"
+   ]
+  },
+  {
+   "tag": "tourism=artwork",
+   "rows": 2,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "時の街モニュメント",
+    "新生"
+   ]
+  },
+  {
+   "tag": "tourism=hotel",
+   "rows": 2,
+   "files": {
+    "commercial__sw": 1,
+    "commercial__se": 1
+   },
+   "example_names": [
+    "エスコンフィールドHOKKAIDOホテル北広島駅前",
+    "札幌 北広島クラッセホテル"
+   ]
+  },
+  {
+   "tag": "tourism=information",
+   "rows": 2,
+   "files": {
+    "public_culture__nw": 1,
+    "public_culture__sw": 1
+   },
+   "example_names": [
+    "学習の森",
+    "遊歩道入口の看板"
+   ]
+  },
+  {
+   "tag": "tourism=viewpoint",
+   "rows": 2,
+   "files": {
+    "parks_play__se": 2
+   },
+   "example_names": [
+    "展望台"
+   ]
+  },
+  {
+   "tag": "amenity=arts_centre",
+   "rows": 1,
+   "files": {
+    "public_culture__ne": 1
+   },
+   "example_names": [
+    "北広島東記念館"
+   ]
+  },
+  {
+   "tag": "amenity=clinic",
+   "rows": 1,
+   "files": {
+    "public_culture__sw": 1
+   },
+   "example_names": [
+    "大曲こどもクリニック"
+   ]
+  },
+  {
+   "tag": "amenity=college",
+   "rows": 1,
+   "files": {
+    "public_culture__ne": 1
+   },
+   "example_names": [
+    "北海道歯科技術専門学校"
+   ]
+  },
+  {
+   "tag": "amenity=gambling",
+   "rows": 1,
+   "files": {
+    "other_unknown__ne": 1
+   },
+   "example_names": [
+    "パーラー 恵み野"
+   ]
+  },
+  {
+   "tag": "amenity=grave_yard",
+   "rows": 1,
+   "files": {
+    "other_unknown__sw": 1
+   },
+   "example_names": [
+    "北広島霊園"
+   ]
+  },
+  {
+   "tag": "amenity=ice_cream",
+   "rows": 1,
+   "files": {
+    "commercial__nw": 1
+   },
+   "example_names": [
+    "アルトラーチェ"
+   ]
+  },
+  {
+   "tag": "amenity=karaoke_box",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   },
+   "example_names": [
+    "カラオケ歌屋 北広島店"
+   ]
+  },
+  {
+   "tag": "amenity=library",
+   "rows": 1,
+   "files": {
+    "public_culture__se": 1
+   },
+   "example_names": [
+    "北広島市図書館"
+   ]
+  },
+  {
+   "tag": "amenity=love_hotel",
+   "rows": 1,
+   "files": {
+    "other_unknown__nw": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "amenity=theatre",
+   "rows": 1,
+   "files": {
+    "public_culture__ne": 1
+   },
+   "example_names": [
+    "北広島市芸術文化ホール"
+   ]
+  },
+  {
+   "tag": "craft=gardener",
+   "rows": 1,
+   "files": {
+    "commercial__nw": 1
+   },
+   "example_names": [
+    "福住造園 庭木流通センター"
+   ]
+  },
+  {
+   "tag": "cuisine=chicken",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "ケンタッキーフライドチキン"
+   ]
+  },
+  {
+   "tag": "cuisine=coffee_shop",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "スターバックス"
+   ]
+  },
+  {
+   "tag": "cuisine=italian",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "サイゼリヤ"
+   ]
+  },
+  {
+   "tag": "cuisine=japanese",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   },
+   "example_names": [
+    "ほっともっと"
+   ]
+  },
+  {
+   "tag": "cuisine=pizza",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "石窯焼グラッチェ"
+   ]
+  },
+  {
+   "tag": "cuisine=seafood",
+   "rows": 1,
+   "files": {
+    "commercial__se": 1
+   },
+   "example_names": [
+    "ふなこしや"
+   ]
+  },
+  {
+   "tag": "healthcare=clinic",
+   "rows": 1,
+   "files": {
+    "public_culture__sw": 1
+   },
+   "example_names": [
+    "大曲こどもクリニック"
+   ]
+  },
+  {
+   "tag": "leisure=nature_reserve",
+   "rows": 1,
+   "files": {
+    "parks_play__se": 1
+   },
+   "example_names": [
+    "南の里緑地"
+   ]
+  },
+  {
+   "tag": "leisure=stadium",
+   "rows": 1,
+   "files": {
+    "sports__ne": 1
+   },
+   "example_names": [
+    "ES CON FIELD HOKKAIDO"
+   ]
+  },
+  {
+   "tag": "office=chamber",
+   "rows": 1,
+   "files": {
+    "other_unknown__ne": 1
+   },
+   "example_names": [
+    "北広島商工会"
+   ]
+  },
+  {
+   "tag": "office=ngo",
+   "rows": 1,
+   "files": {
+    "other_unknown__ne": 1
+   },
+   "example_names": [
+    "JA道央"
+   ]
+  },
+  {
+   "tag": "shop=baby_goods",
+   "rows": 1,
+   "files": {
+    "commercial__nw": 1
+   },
+   "example_names": [
+    "西松屋"
+   ]
+  },
+  {
+   "tag": "shop=beauty",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "ナリス ビューティーステーション デ・アイム"
+   ]
+  },
+  {
+   "tag": "shop=bicycle",
+   "rows": 1,
+   "files": {
+    "commercial__se": 1
+   },
+   "example_names": [
+    "オカモトサイクル"
+   ]
+  },
+  {
+   "tag": "shop=confectionery",
+   "rows": 1,
+   "files": {
+    "commercial__se": 1
+   },
+   "example_names": [
+    "不二家"
+   ]
+  },
+  {
+   "tag": "shop=florist",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   },
+   "example_names": [
+    "うえはら生花店"
+   ]
+  },
+  {
+   "tag": "shop=motorcycle",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "shop=optician",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   },
+   "example_names": [
+    "眼鏡市場"
+   ]
+  },
+  {
+   "tag": "shop=outdoor",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   },
+   "example_names": [
+    "キャンパーズアンドアングラーズ北広島"
+   ]
+  },
+  {
+   "tag": "shop=second_hand",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "買取大吉"
+   ]
+  },
+  {
+   "tag": "shop=ticket",
+   "rows": 1,
+   "files": {
+    "commercial__ne": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=athletics",
+   "rows": 1,
+   "files": {
+    "sports__ne": 1
+   },
+   "example_names": []
+  },
+  {
+   "tag": "sport=golf",
+   "rows": 1,
+   "files": {
+    "commercial__sw": 1
+   },
+   "example_names": [
+    "ゴルフ5"
+   ]
+  },
+  {
+   "tag": "tourism=museum",
+   "rows": 1,
+   "files": {
+    "public_culture__sw": 1
+   },
+   "example_names": [
+    "旧島松駅逓所"
+   ]
+  }
+ ]
+}
