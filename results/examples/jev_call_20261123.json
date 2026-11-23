@@ -1,0 +1,16 @@
+{
+ "called_at": "2026-11-23",
+ "endpoint": "POST https://api.typesafe.ai/v1/systemone",
+ "feature": {"osm_id": "node/10296386800", "name": "もみじ台幼稚園", "amenity": "kindergarten", "city": "sapporo"},
+ "request": {
+  "model": "jev-latest",
+  "state": {"attributes": "name: もみじ台幼稚園; amenity: kindergarten"},
+  "questions": {"q": {"type": "choice",
+   "instructions": "Does this place match the request \"A place where children can play\"? Judge only from the attributes given.",
+   "criteria": {"supported": null, "contradicted": null, "insufficient_information": null}}}
+ },
+ "response": {"model": "jev-1.14.0", "answers": {"q": {"type": "choice", "choice": "supported", "confidence": 0.86,
+  "probabilities": {"supported": 0.91, "contradicted": 0.0, "insufficient_information": 0.09}}},
+  "usage": {"input_tokens": 338, "output_tokens": 45}},
+ "elapsed_s": 0.49
+}
