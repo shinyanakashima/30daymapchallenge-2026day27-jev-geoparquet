@@ -269,6 +269,36 @@ label(s, [
 ], 6.0, 3.95, 3.5, 2.6, { fontSize: 12, paraSpaceAfter: 6 });
 s.addNotes("固定ルールの方式Bは最も速く安いのですが、子どもの質問で児童会館や幼稚園など268件を落としました。方式Cは中央値で100%を保ちました。ただ札幌では3回のうち1回、1件ずつ取りこぼしています。薬局は目録の上位8タグに入っておらず、同じファイルの判定も回によって変わりました。");
 
+
+// 9b -----------------------------------------------------------------------------------------
+const MC = JSON.parse(fs.readFileSync(path.join(ROOT, "results/sapporo/manifest_comparison_summary.json"), "utf8"));
+s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "結果" });
+s.addText("目録の書き方で、速さと取りこぼしが入れ替わる", { placeholder: "title" });
+const vers = ["A", "m1", "m2", "m3", "m4"];
+const vlab = { A: "方式A", m1: "C・m1", m2: "C・m2", m3: "C・m3", m4: "C・m4" };
+s.addChart(pres.charts.BAR, [{ name: "総時間", labels: vers.map((v) => vlab[v]), values: vers.map((v) => MC.full[v].groceries.total) }], {
+  x: 0.5, y: 1.35, w: 4.4, h: 3.6, barDir: "col", ...chartBase, showLegend: false,
+  chartColors: [COL.A, "7FB8A4", "4E9C81", "2E8667", COL.C], invertedColors: [COL.A, "7FB8A4", "4E9C81", "2E8667", COL.C],
+  showTitle: true, title: "札幌・食料品の総時間（秒、方式C 3回の中央値）", titleFontSize: 12, titleColor: HEX.dk1, titleFontFace: "+mn-lt",
+  dataLabelFormatCode: "0.0", valAxisMinVal: 0,
+});
+const pctf = (v) => `${(v * 100).toFixed(1)}%`;
+s.addTable([
+  [{ text: "版", options: { bold: true, fill: { color: HEX.lt2 } } }, { text: "Jev に見せるもの", options: { bold: true, fill: { color: HEX.lt2 } } },
+   { text: "食料品", options: { bold: true, align: "right", fill: { color: HEX.lt2 } } }, { text: "歴史・文化", options: { bold: true, align: "right", fill: { color: HEX.lt2 } } }],
+  ["m1", "ファイル要約・上位8タグ", { text: pctf(MC.selection["m1|groceries"].ret_min), options: { align: "right" } }, { text: pctf(MC.selection["m1|local_history"].ret_min), options: { align: "right" } }],
+  ["m2", "ファイル要約・全タグ", { text: pctf(MC.selection["m2|groceries"].ret_min), options: { align: "right" } }, { text: pctf(MC.selection["m2|local_history"].ret_min), options: { align: "right" } }],
+  ["m3", "タグごとに判断", { text: pctf(MC.selection["m3|groceries"].ret_min), options: { align: "right" } }, { text: pctf(MC.selection["m3|local_history"].ret_min), options: { align: "right" } }],
+  ["m4", "タグ＋名前の例", { text: pctf(MC.selection["m4|groceries"].ret_min), options: { align: "right", bold: true } }, { text: pctf(MC.selection["m4|local_history"].ret_min), options: { align: "right", bold: true } }],
+], { x: 5.1, y: 1.45, w: 4.4, colW: [0.5, 1.9, 0.95, 1.05], fontSize: 11, color: HEX.dk1, border: { type: "solid", color: "DEDBD3", pt: 0.75 }, rowH: 0.42 });
+label(s, "数値は候補保持率（ファイル選択のみ10回の最小値）", 5.1, 3.85, 4.4, 0.3, { fontSize: 10, ...muted });
+label(s, [
+  { text: "要約を詳しくする（m2）・タグ単位にする（m3）と、Jev は大胆に除外する。食料品は方式A の約半分の時間とトークンで済んだ", options: { bullet: true, breakLine: true } },
+  { text: "落ちたのは少数派。薬局（ドラッグストア）や「記念館」の公園など、決め手がタグではなく名前にある地物", options: { bullet: true, breakLine: true } },
+  { text: "名前の例を添えた m4 は保持率 100%。その代わり短縮は約15%に縮んだ", options: { bullet: true } },
+], 0.5, 5.15, 9.0, 1.7, { fontSize: 13, paraSpaceAfter: 5 });
+s.addNotes("目録の書き方を4通り比べました。要約を詳しくしたり、タグ単位で判断させたりすると、Jev は自信を持ってファイルを除外し、食料品では方式Aの約半分の時間で済みました。ただし落ちたのは少数派で、薬局のドラッグストアや、公園のタグが付いた記念館など、決め手が名前にある地物でした。タグに名前の例を添えると取りこぼしは無くなりましたが、短縮は約15%に縮みました。速さと取りこぼしは、目録の書き方で入れ替わります。");
+
 // 10 -----------------------------------------------------------------------------------------
 s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "結果" });
 s.addText("見えてきた課題", { placeholder: "title" });
@@ -276,7 +306,7 @@ const agr = [...KH.questions, ...SP.questions].map((q) => q.a_judgment_agreement
 const issues = [
   ["地物の判定は回によって揺れる", `同じ地物の判定が3回とも一致した割合は ${(Math.min(...agr) * 100).toFixed(1)}〜${(Math.max(...agr) * 100).toFixed(1)}%。属性が同じ公園でも「該当」と「判断材料不足」に分かれた（北広島：110件中38件が該当）`],
   ["判定の誤りもある", "「地域の歴史や文化を学べる場所」で、薬局と歯科医院が該当になった。図書館や芸術文化ホールは該当にならなかった"],
-  ["ファイル選択は目録の書き方しだい", "要約に載らない地物は、ファイルごと除外されうる。同じファイルでも回によって選択が変わった"],
+  ["要約で決められるのはタグで決まる地物まで", "名前が決め手の地物（ドラッグストアの薬局、「記念館」の公園など）は、名前の例を見せないと落ちる。同じ目録でも回によって選択が変わる"],
 ];
 issues.forEach(([h, b], i) => {
   const y = 1.45 + i * 1.55;
@@ -325,7 +355,7 @@ const spG = med(SP, "groceries", "A"), spGC = med(SP, "groceries", "C");
 label(s, [
   { text: "目録を Jev に読ませてファイルを選ぶと、候補保持率はほぼ100%を保てた（札幌で3回中1回、1件ずつの取りこぼし）", options: { bullet: true, breakLine: true } },
   { text: `速く・安くなるかは規模と質問しだい。589件では遅くなり、16,610件では除外できた質問で最大 ${Math.abs(pct(spG.total_s, spGC.total_s))}% 短縮・トークン ${Math.abs(pct(spG.input_tokens, spGC.input_tokens))}% 減`, options: { bullet: true, breakLine: true } },
-  { text: "効くのは目録の書き方。要約に載らない地物はファイルごと落ちうる", options: { bullet: true } },
+  { text: "目録の書き方で、速さと取りこぼしが入れ替わる。札幌の食料品は、タグ単位の目録で約半分の時間（保持率99.2%）、名前の例を添えると保持率100%で約15%短縮", options: { bullet: true } },
 ], 0.6, 2.75, 8.8, 2.6, { fontSize: 16, color: C.background1, paraSpaceAfter: 10 });
 label(s, "次：正解データでの評価、目録の改善、COGP の詳細度を使った段階的な検索", 0.6, 5.45, 8.8, 0.5, { fontSize: 13, color: C.lt2 });
 label(s, "作品：shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/", 0.6, 5.95, 8.8, 0.3, { fontSize: 11, color: C.lt2 });

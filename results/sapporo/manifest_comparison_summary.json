@@ -1,0 +1,312 @@
+{
+ "full": {
+  "A": {
+   "kids_play": {
+    "total": 13.3592,
+    "sel": 0.0,
+    "files": 50,
+    "rows": 16610,
+    "tok": 1449239,
+    "cost": 0.060868038,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "rainy_day": {
+    "total": 12.6122,
+    "sel": 0.0,
+    "files": 50,
+    "rows": 16610,
+    "tok": 1497015,
+    "cost": 0.06287463,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "groceries": {
+    "total": 12.4172,
+    "sel": 0.0,
+    "files": 50,
+    "rows": 16610,
+    "tok": 1473127,
+    "cost": 0.061871334,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "local_history": {
+    "total": 12.5386,
+    "sel": 0.0,
+    "files": 50,
+    "rows": 16610,
+    "tok": 1485071,
+    "cost": 0.062372982,
+    "ret_min": 1.0,
+    "date": "null"
+   }
+  },
+  "m1": {
+   "kids_play": {
+    "total": 12.7792,
+    "sel": 0.3375,
+    "files": 50,
+    "rows": 16610,
+    "tok": 1463886,
+    "cost": 0.061483212,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "rainy_day": {
+    "total": 10.8683,
+    "sel": 0.2767,
+    "files": 42,
+    "rows": 14174,
+    "tok": 1309756,
+    "cost": 0.055009752,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "groceries": {
+    "total": 10.454,
+    "sel": 0.2794,
+    "files": 31,
+    "rows": 12957,
+    "tok": 1240853,
+    "cost": 0.052115826,
+    "ret_min": 0.9993815708101422,
+    "date": "null"
+   },
+   "local_history": {
+    "total": 11.9811,
+    "sel": 0.2742,
+    "files": 39,
+    "rows": 15132,
+    "tok": 1448048,
+    "cost": 0.060818015999999996,
+    "ret_min": 0.996078431372549,
+    "date": "null"
+   }
+  },
+  "m2": {
+   "kids_play": {
+    "total": 13.7035,
+    "sel": 0.3442,
+    "files": 50,
+    "rows": 16610,
+    "tok": 1486878,
+    "cost": 0.062448876,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "rainy_day": {
+    "total": 11.8124,
+    "sel": 0.3476,
+    "files": 41,
+    "rows": 13945,
+    "tok": 1312474,
+    "cost": 0.055123908,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "groceries": {
+    "total": 6.9105,
+    "sel": 0.3244,
+    "files": 20,
+    "rows": 8230,
+    "tok": 790827,
+    "cost": 0.033214733999999996,
+    "ret_min": 0.992269635126778,
+    "date": "null"
+   },
+   "local_history": {
+    "total": 9.3809,
+    "sel": 0.3412,
+    "files": 29,
+    "rows": 10876,
+    "tok": 1117057,
+    "cost": 0.046916394,
+    "ret_min": 0.9882352941176471,
+    "date": "null"
+   }
+  },
+  "m3": {
+   "kids_play": {
+    "total": 13.4888,
+    "sel": 0.8521,
+    "files": 50,
+    "rows": 16610,
+    "tok": 1524063,
+    "cost": 0.064010646,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "rainy_day": {
+    "total": 11.2525,
+    "sel": 0.8927,
+    "files": 42,
+    "rows": 14271,
+    "tok": 1387350,
+    "cost": 0.0582687,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "groceries": {
+    "total": 6.6207,
+    "sel": 0.8667,
+    "files": 14,
+    "rows": 7686,
+    "tok": 799140,
+    "cost": 0.033563880000000004,
+    "ret_min": 0.992269635126778,
+    "date": "null"
+   },
+   "local_history": {
+    "total": 10.1305,
+    "sel": 0.8144,
+    "files": 25,
+    "rows": 11749,
+    "tok": 1232324,
+    "cost": 0.051757608000000004,
+    "ret_min": 0.9846153846153847,
+    "date": "null"
+   }
+  },
+  "m4": {
+   "kids_play": {
+    "total": 12.9813,
+    "sel": 0.8315,
+    "files": 50,
+    "rows": 16610,
+    "tok": 1554577,
+    "cost": 0.065292234,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "rainy_day": {
+    "total": 12.4849,
+    "sel": 0.8523,
+    "files": 47,
+    "rows": 15920,
+    "tok": 1557290,
+    "cost": 0.06540618,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "groceries": {
+    "total": 10.5264,
+    "sel": 0.9205,
+    "files": 29,
+    "rows": 12553,
+    "tok": 1307855,
+    "cost": 0.05492991,
+    "ret_min": 1.0,
+    "date": "null"
+   },
+   "local_history": {
+    "total": 12.3392,
+    "sel": 0.8675,
+    "files": 38,
+    "rows": 15405,
+    "tok": 1559341,
+    "cost": 0.06549232199999999,
+    "ret_min": 1.0,
+    "date": "null"
+   }
+  }
+ },
+ "selection": {
+  "m1|kids_play": {
+   "ret_min": 1.0,
+   "flips": 4,
+   "files": 50.0,
+   "tok": 14647.0
+  },
+  "m1|rainy_day": {
+   "ret_min": 1.0,
+   "flips": 3,
+   "files": 42.0,
+   "tok": 14847.0
+  },
+  "m1|groceries": {
+   "ret_min": 0.9966,
+   "flips": 15,
+   "files": 30.0,
+   "tok": 14747.0
+  },
+  "m1|local_history": {
+   "ret_min": 0.9922,
+   "flips": 11,
+   "files": 39.0,
+   "tok": 14797.0
+  },
+  "m2|kids_play": {
+   "ret_min": 1.0,
+   "flips": 1,
+   "files": 50.0,
+   "tok": 37639.0
+  },
+  "m2|rainy_day": {
+   "ret_min": 1.0,
+   "flips": 2,
+   "files": 41.0,
+   "tok": 37839.0
+  },
+  "m2|groceries": {
+   "ret_min": 0.9923,
+   "flips": 11,
+   "files": 20.0,
+   "tok": 37739.0
+  },
+  "m2|local_history": {
+   "ret_min": 0.9882,
+   "flips": 5,
+   "files": 28.0,
+   "tok": 37789.0
+  },
+  "m3|kids_play": {
+   "ret_min": 1.0,
+   "flips": 3,
+   "files": 50.0,
+   "tok": 74824.0
+  },
+  "m3|rainy_day": {
+   "ret_min": 1.0,
+   "flips": 1,
+   "files": 42.0,
+   "tok": 77016.0
+  },
+  "m3|groceries": {
+   "ret_min": 0.9951,
+   "flips": 3,
+   "files": 15.0,
+   "tok": 75920.0
+  },
+  "m3|local_history": {
+   "ret_min": 0.9846,
+   "flips": 8,
+   "files": 26.0,
+   "tok": 76468.0
+  },
+  "m4|kids_play": {
+   "ret_min": 1.0,
+   "flips": 4,
+   "files": 50.0,
+   "tok": 105338.0
+  },
+  "m4|rainy_day": {
+   "ret_min": 1.0,
+   "flips": 6,
+   "files": 47.0,
+   "tok": 107530.0
+  },
+  "m4|groceries": {
+   "ret_min": 1.0,
+   "flips": 13,
+   "files": 29.0,
+   "tok": 106434.0
+  },
+  "m4|local_history": {
+   "ret_min": 1.0,
+   "flips": 0,
+   "files": 38.0,
+   "tok": 106982.0
+  }
+ }
+}
