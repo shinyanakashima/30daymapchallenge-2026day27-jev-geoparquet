@@ -216,10 +216,19 @@ python pipeline/partition.py work/sapporo "data/city=sapporo" Sapporo
 cp work/sapporo/boundary.geojson "data/city=sapporo/"
 python pipeline/run_compare.py "data/city=sapporo" pipeline/questions.json results/sapporo/runs.json --reps 3
 python pipeline/summarize.py "data/city=sapporo" pipeline/questions.json results/sapporo/runs.json web/public/data/sapporo
+python pipeline/manifest_m2.py "data/city=sapporo"
+python pipeline/manifest_m3.py "data/city=sapporo"
+python pipeline/manifest_m4.py "data/city=sapporo"
+python pipeline/run_compare.py "data/city=sapporo" pipeline/questions.json results/sapporo/runs_c_m4.json --reps 3 --methods C --manifest manifest.m4.json
+python pipeline/selection_compare.py "data/city=sapporo" pipeline/questions.json results/sapporo/runs.json results/sapporo/selection_m4.json --manifests manifest.m4.json --reps 10
+python pipeline/compare_manifests.py "data/city=sapporo" results/sapporo
 cd web && npm ci && npm run build && npx vite preview
 ```
 
 - 北広島市は `sapporo` / `Sapporo` を `kitahiroshima` / `Kitahiroshima` に置き換えて実行します。
+- `run_compare.py` と `selection_compare.py` は Jev の API を呼びます。先に環境変数 `TYPESAFE_API_KEY` を設定してください（`read -rs TYPESAFE_API_KEY && export TYPESAFE_API_KEY`）。
+- `compare_manifests.py` は、`runs.json`・`runs_a_20261123.json`・`runs_c_m2.json`〜`runs_c_m4.json`・`selection_*.json` がそろっている前提で集計します（API は呼びません）。
+- Jev の答えは毎回少し揺れるので、測り直した数字は完全には一致しません。
 - Geofabrik の抽出データ（`https://download.geofabrik.de/asia/japan/hokkaido-latest.osm.pbf`）も同じ形式なので、そのまま使えます。
 - 抽出データの時点が違うと、地物の件数や結果が変わります。
 

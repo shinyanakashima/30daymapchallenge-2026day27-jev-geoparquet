@@ -8,8 +8,7 @@
     "rows": 16610,
     "tok": 1449239,
     "cost": 0.060868038,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "rainy_day": {
     "total": 12.6122,
@@ -18,8 +17,7 @@
     "rows": 16610,
     "tok": 1497015,
     "cost": 0.06287463,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "groceries": {
     "total": 12.4172,
@@ -28,8 +26,7 @@
     "rows": 16610,
     "tok": 1473127,
     "cost": 0.061871334,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "local_history": {
     "total": 12.5386,
@@ -38,8 +35,7 @@
     "rows": 16610,
     "tok": 1485071,
     "cost": 0.062372982,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    }
   },
   "m1": {
@@ -50,8 +46,7 @@
     "rows": 16610,
     "tok": 1463886,
     "cost": 0.061483212,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "rainy_day": {
     "total": 10.8683,
@@ -60,8 +55,7 @@
     "rows": 14174,
     "tok": 1309756,
     "cost": 0.055009752,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "groceries": {
     "total": 10.454,
@@ -70,8 +64,7 @@
     "rows": 12957,
     "tok": 1240853,
     "cost": 0.052115826,
-    "ret_min": 0.9993815708101422,
-    "date": "null"
+    "ret_min": 0.9993815708101422
    },
    "local_history": {
     "total": 11.9811,
@@ -80,8 +73,7 @@
     "rows": 15132,
     "tok": 1448048,
     "cost": 0.060818015999999996,
-    "ret_min": 0.996078431372549,
-    "date": "null"
+    "ret_min": 0.996078431372549
    }
   },
   "m2": {
@@ -92,8 +84,7 @@
     "rows": 16610,
     "tok": 1486878,
     "cost": 0.062448876,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "rainy_day": {
     "total": 11.8124,
@@ -102,8 +93,7 @@
     "rows": 13945,
     "tok": 1312474,
     "cost": 0.055123908,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "groceries": {
     "total": 6.9105,
@@ -112,8 +102,7 @@
     "rows": 8230,
     "tok": 790827,
     "cost": 0.033214733999999996,
-    "ret_min": 0.992269635126778,
-    "date": "null"
+    "ret_min": 0.992269635126778
    },
    "local_history": {
     "total": 9.3809,
@@ -122,8 +111,7 @@
     "rows": 10876,
     "tok": 1117057,
     "cost": 0.046916394,
-    "ret_min": 0.9882352941176471,
-    "date": "null"
+    "ret_min": 0.9882352941176471
    }
   },
   "m3": {
@@ -134,8 +122,7 @@
     "rows": 16610,
     "tok": 1524063,
     "cost": 0.064010646,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "rainy_day": {
     "total": 11.2525,
@@ -144,8 +131,7 @@
     "rows": 14271,
     "tok": 1387350,
     "cost": 0.0582687,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "groceries": {
     "total": 6.6207,
@@ -154,8 +140,7 @@
     "rows": 7686,
     "tok": 799140,
     "cost": 0.033563880000000004,
-    "ret_min": 0.992269635126778,
-    "date": "null"
+    "ret_min": 0.992269635126778
    },
    "local_history": {
     "total": 10.1305,
@@ -164,8 +149,7 @@
     "rows": 11749,
     "tok": 1232324,
     "cost": 0.051757608000000004,
-    "ret_min": 0.9846153846153847,
-    "date": "null"
+    "ret_min": 0.9846153846153847
    }
   },
   "m4": {
@@ -176,8 +160,7 @@
     "rows": 16610,
     "tok": 1554577,
     "cost": 0.065292234,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "rainy_day": {
     "total": 12.4849,
@@ -186,8 +169,7 @@
     "rows": 15920,
     "tok": 1557290,
     "cost": 0.06540618,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "groceries": {
     "total": 10.5264,
@@ -196,8 +178,7 @@
     "rows": 12553,
     "tok": 1307855,
     "cost": 0.05492991,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    },
    "local_history": {
     "total": 12.3392,
@@ -206,8 +187,7 @@
     "rows": 15405,
     "tok": 1559341,
     "cost": 0.06549232199999999,
-    "ret_min": 1.0,
-    "date": "null"
+    "ret_min": 1.0
    }
   }
  },

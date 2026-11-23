@@ -14,6 +14,7 @@ Usage: python pipeline/run_compare.py <data_dir> <questions.json> <out.json> [--
 import argparse
 import datetime as dt
 import json
+import os
 import time
 from pathlib import Path
 
@@ -47,7 +48,7 @@ def sql_str(s):
 
 def connect(args):
     con = duckdb.connect()
-    con.sql("LOAD spatial; LOAD jev;")
+    con.sql("INSTALL spatial; LOAD spatial; INSTALL jev FROM community; LOAD jev;")
     if args.api_url:
         con.sql(f"SET jev_api_url = {sql_str(args.api_url)}")
         con.sql("SET jev_api_key = 'proxy-injected'")
@@ -179,7 +180,9 @@ def served_model(args):
     url = (args.api_url or "https://api.typesafe.ai/v1/systemone")
     body = {"model": args.model, "state": "ping",
             "questions": {"q": {"type": "noul", "instructions": "This text is a greeting."}}}
-    r = requests.post(url, json=body, headers={"Authorization": "Bearer proxy-injected"}, timeout=30)
+    # With a relay (--api-url) the key is added on the way; otherwise send TYPESAFE_API_KEY.
+    key = os.environ.get("TYPESAFE_API_KEY", "proxy-injected")
+    r = requests.post(url, json=body, headers={"Authorization": f"Bearer {key}"}, timeout=30)
     return r.json().get("model")
 
 

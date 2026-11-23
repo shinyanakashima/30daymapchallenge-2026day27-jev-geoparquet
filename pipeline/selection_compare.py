@@ -14,9 +14,12 @@ import time
 from collections import Counter
 from pathlib import Path
 
+import sys
+
 import duckdb
 
-from run_compare import connect, delta, select_files, stats
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # allow running from the repository root
+from run_compare import connect, delta, select_files, stats  # noqa: E402
 
 
 def main():
