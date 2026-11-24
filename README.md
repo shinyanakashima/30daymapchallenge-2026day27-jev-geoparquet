@@ -199,6 +199,28 @@ SELECT osm_id, jev_choice({attributes: 'name: ...; leisure: ...'}, '<質問>',
 - m2 では、文化・公共施設のファイルの要約に薬局が載っていても、ファイル全体の性格で「除外」と判断された。m3 では、`amenity=pharmacy` や `leisure=park` のタグだけでは「除外」になった。地物の判定で「該当」になったのは、名前（「ツルハドラッグ」「札幌手稲記念館」など）が決め手の地物だった。
 - タグに名前の例を添えた m4 は、どの質問でも候補保持率 100%（選択のみ 10 回・方式C 3 回）だった。その代わり、読むファイルは m1 と同じ程度に戻り、短縮は食料品で約 15% にとどまった。
 
+## Cloudflare 上の時間の内訳
+
+Cloudflare 上の API（`container/`）で全件判定（方式A、子どもが遊べる場所）を 3 回呼び、API が返す内訳の中央値をとりました（2026-11-24）。
+
+| 地域 | 読み込み（R2 から読み、市の範囲で絞る） | Jev の判定 | 合計 |
+|---|---:|---:|---:|
+| 北広島市（20 ファイル・589 件） | 6.7 秒 | 0.2 秒 | 6.9 秒 |
+| 札幌市（50 ファイル・16,610 件） | 21.6 秒 | 4.5 秒 | 25.8 秒 |
+
+同じ読み込みの SQL を、手元のファイルと R2 のファイルにかけた時間です（作業用の環境から測定。Jev は呼ばない。3 回の中央値）。
+
+| 地域 | 手元のファイル | R2 のファイル | R2：各ファイルの目次（フッター）を読むだけ |
+|---|---:|---:|---:|
+| 北広島市（約 106KB） | 0.01 秒 | 3.00 秒 | 2.11 秒 |
+| 札幌市（約 0.9MB） | 0.20 秒 | 5.37 秒 | 4.41 秒 |
+
+- Cloudflare 上では、時間の大半が R2 からの読み込みでした。DuckDB の計算は、手元のファイルなら札幌でも約 0.2 秒です。
+- R2 から読む時間の大半は、ファイルを 1 つずつ開いて目次を読む部分で、データ量より開くファイルの数で決まります。
+- Cloudflare 上の読み込みは、作業用の環境から R2 を読むよりさらに遅く、理由は確認していません。
+- データをコンテナの中に置けば読み込みは大きく縮む見込みですが、Cloudflare 上では未計測です。
+- 「結果」の表の時間は、API キーを渡す中継プログラムを通して測ったため、Jev の判定は Cloudflare 上より長くなっています。
+
 ## 注記
 
 - 判定は、各地物の OpenStreetMap の属性だけに基づきます。実際の安全性、営業状況、適否を保証しません。
@@ -224,13 +246,15 @@ python pipeline/selection_compare.py "data/city=sapporo" pipeline/questions.json
 python pipeline/compare_manifests.py "data/city=sapporo" results/sapporo
 python pipeline/input_experiments.py "data/city=kitahiroshima" results/kitahiroshima/input_experiments.json
 R2_ACCOUNT_ID=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... python pipeline/r2_read_timing.py "r2://geo-opendata/osm-poi/parquet/2026-11-21/city=sapporo" "data/city=sapporo/manifest.m1.json" results/sapporo/r2_read_timing.json
+R2_ACCOUNT_ID=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... python pipeline/local_vs_r2_timing.py "data/city=sapporo" "r2://geo-opendata/osm-poi/parquet/2026-11-21/city=sapporo" results/sapporo/local_vs_r2_timing.json
+python pipeline/cloudflare_timing.py <API の URL> sapporo A kids_play results/sapporo/cloudflare_timing.json
 cd web && npm ci && npm run build && npx vite preview
 ```
 
 - 北広島市は `sapporo` / `Sapporo` を `kitahiroshima` / `Kitahiroshima` に置き換えて実行します。
 - `run_compare.py` と `selection_compare.py` は Jev の API を呼びます。先に環境変数 `TYPESAFE_API_KEY` を設定してください（`read -rs TYPESAFE_API_KEY && export TYPESAFE_API_KEY`）。
 - `compare_manifests.py` は、`runs.json`・`runs_a_20261123.json`・`runs_c_m2.json`〜`runs_c_m4.json`・`selection_*.json` がそろっている前提で集計します（API は呼びません）。
-- `input_experiments.py` は、Jev への送り方（空の列も含めるか、まとめる件数）による答えの違いを測ります。`r2_read_timing.py` は、R2 から読む時間を測ります（Jev は呼びません。R2 の読み取り用のキーが要ります）。
+- `input_experiments.py` は、Jev への送り方（空の列も含めるか、まとめる件数）による答えの違いを測ります。`r2_read_timing.py` と `local_vs_r2_timing.py` は、R2 から読む時間を測ります（Jev は呼びません。R2 の読み取り用のキーが要ります）。`cloudflare_timing.py` は、配信した API を呼んで時間の内訳を記録します（Jev の費用がかかります。札幌の全件判定 3 回で約 $0.18）。
 - Jev の答えは毎回少し揺れるので、測り直した数字は完全には一致しません。
 - Geofabrik の抽出データ（`https://download.geofabrik.de/asia/japan/hokkaido-latest.osm.pbf`）も同じ形式なので、そのまま使えます。
 - 抽出データの時点が違うと、地物の件数や結果が変わります。

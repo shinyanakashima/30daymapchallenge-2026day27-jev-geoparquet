@@ -1,0 +1,48 @@
+{
+ "started_utc": "2026-11-24T00:58:57+00:00",
+ "local": "data/city=kitahiroshima",
+ "r2base": "r2://geo-opendata/osm-poi/parquet/2026-11-21/city=kitahiroshima",
+ "files": 20,
+ "bytes_total": 106446,
+ "duckdb": "1.5.5",
+ "note": "measured from the machine running this script; a new connection for every run",
+ "tests": {
+  "local_search_read": {
+   "rows": 589,
+   "times_s": [
+    0.018,
+    0.011,
+    0.011
+   ],
+   "median_s": 0.011
+  },
+  "r2_search_read": {
+   "rows": 589,
+   "times_s": [
+    3.135,
+    2.999,
+    2.473
+   ],
+   "median_s": 2.999
+  },
+  "r2_footers_only": {
+   "rows": 520,
+   "times_s": [
+    2.482,
+    1.965,
+    2.107
+   ],
+   "median_s": 2.107
+  },
+  "r2_one_file_search_read": {
+   "rows": 19,
+   "times_s": [
+    0.345,
+    0.39,
+    0.241
+   ],
+   "median_s": 0.345
+  }
+ },
+ "finished_utc": "2026-11-24T00:59:15+00:00"
+}

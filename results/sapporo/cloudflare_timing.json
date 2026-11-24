@@ -1,0 +1,68 @@
+{
+ "started_utc": "2026-11-24T01:00:35+00:00",
+ "city": "sapporo",
+ "method": "A",
+ "question_id": "kids_play",
+ "runs": [
+  {
+   "http_s": 30.33,
+   "time_s": {
+    "select": 0.0,
+    "read": 22.0761,
+    "judge": 4.8966,
+    "total": 26.9726
+   },
+   "files_read": 50,
+   "rows_read": 16610,
+   "judgment_counts": {
+    "supported": 1689,
+    "contradicted": 712,
+    "insufficient_information": 14209
+   },
+   "requests_judge": 602,
+   "cost_usd": 0.060868
+  },
+  {
+   "http_s": 28.809,
+   "time_s": {
+    "select": 0.0,
+    "read": 21.5782,
+    "judge": 4.2012,
+    "total": 25.7795
+   },
+   "files_read": 50,
+   "rows_read": 16610,
+   "judgment_counts": {
+    "supported": 1726,
+    "contradicted": 723,
+    "insufficient_information": 14161
+   },
+   "requests_judge": 602,
+   "cost_usd": 0.060868
+  },
+  {
+   "http_s": 27.902,
+   "time_s": {
+    "select": 0.0,
+    "read": 20.5195,
+    "judge": 4.4561,
+    "total": 24.9756
+   },
+   "files_read": 50,
+   "rows_read": 16610,
+   "judgment_counts": {
+    "supported": 1722,
+    "contradicted": 707,
+    "insufficient_information": 14181
+   },
+   "requests_judge": 602,
+   "cost_usd": 0.060868
+  }
+ ],
+ "median_select_s": 0.0,
+ "median_read_s": 21.5782,
+ "median_judge_s": 4.4561,
+ "median_total_s": 25.7795,
+ "median_http_s": 28.809,
+ "finished_utc": "2026-11-24T01:02:02+00:00"
+}

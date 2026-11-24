@@ -1,0 +1,48 @@
+{
+ "started_utc": "2026-11-24T00:59:15+00:00",
+ "local": "data/city=sapporo",
+ "r2base": "r2://geo-opendata/osm-poi/parquet/2026-11-21/city=sapporo",
+ "files": 50,
+ "bytes_total": 857670,
+ "duckdb": "1.5.5",
+ "note": "measured from the machine running this script; a new connection for every run",
+ "tests": {
+  "local_search_read": {
+   "rows": 16610,
+   "times_s": [
+    0.243,
+    0.179,
+    0.2
+   ],
+   "median_s": 0.2
+  },
+  "r2_search_read": {
+   "rows": 16610,
+   "times_s": [
+    5.368,
+    5.365,
+    5.609
+   ],
+   "median_s": 5.368
+  },
+  "r2_footers_only": {
+   "rows": 1300,
+   "times_s": [
+    4.382,
+    4.407,
+    4.541
+   ],
+   "median_s": 4.407
+  },
+  "r2_one_file_search_read": {
+   "rows": 189,
+   "times_s": [
+    0.444,
+    0.318,
+    0.31
+   ],
+   "median_s": 0.318
+  }
+ },
+ "finished_utc": "2026-11-24T00:59:48+00:00"
+}

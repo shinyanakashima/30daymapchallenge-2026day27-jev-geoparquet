@@ -80,6 +80,9 @@ const MC = JSON.parse(fs.readFileSync(path.join(ROOT, "results/sapporo/manifest_
 const CALL = JSON.parse(fs.readFileSync(path.join(ROOT, "results/examples/jev_call_20261123.json"), "utf8"));
 const INP = JSON.parse(fs.readFileSync(path.join(ROOT, "results/kitahiroshima/input_experiments.json"), "utf8"));
 const R2T = JSON.parse(fs.readFileSync(path.join(ROOT, "results/sapporo/r2_read_timing.json"), "utf8"));
+const RJ = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, f), "utf8"));
+const LVR = { kh: RJ("results/kitahiroshima/local_vs_r2_timing.json"), sp: RJ("results/sapporo/local_vs_r2_timing.json") };
+const CF = { kh: RJ("results/kitahiroshima/cloudflare_timing.json"), sp: RJ("results/sapporo/cloudflare_timing.json") };
 const KH4 = JSON.parse(fs.readFileSync(path.join(ROOT, "results/kitahiroshima/runs_a_c_m4_20261123.json"), "utf8"));
 const MAN = (v) => JSON.parse(fs.readFileSync(path.join(ROOT, `data/city=sapporo/manifest.${v}.json`), "utf8"));
 const M1 = MAN("m1"), M2 = MAN("m2"), M4 = MAN("m4");
@@ -450,9 +453,57 @@ s.addTable([
   ["判定が揺れる", "1件ずつ送る", "一緒に送る地物の影響を受けない", "60件で試すと、2回の一致はかえって下がり（88%）、問い合わせは約19倍", "試したが効果なし"],
   ["時間がかかる", "Jev が先にファイルを選ぶ。一覧には名前の例を入れる（m4）", "札幌で取りこぼし無し", `速くなったのは食料品の約15%。北広島では4条件とも遅くなった（11/23 計測、4条件×3回の中央値で全件 ${khA.toFixed(2)}秒 → ${khC.toFixed(2)}秒）`, "試した"],
   ["時間がかかる（速さを優先）", "一覧を詳しくする（m2）か、種類ごとに聞く（m3）", "食料品で約半分の時間", "少数の地物を取りこぼす（98.5〜99.5%）", "試した"],
-], tableOpts(0.5, 1.35, 9.0, [1.5, 2.2, 2.0, 2.3, 1.0], { fontSize: 10, rowH: [0.38, 0.8, 0.85, 0.85, 0.9, 0.8] }));
+  ["Cloudflare 上では R2 からの読み込みに時間がかかる", "データをコンテナの中に置く（起動時に R2 から1回だけ取る）", `手元のファイルと同じ読み方になる（札幌で約${LVR.sp.tests.local_search_read.median_s.toFixed(1)}秒）`, "データを更新したらコンテナの起動し直しが要る。Cloudflare 上の効果は未計測", "未実装"],
+], tableOpts(0.5, 1.3, 9.0, [1.5, 2.2, 2.0, 2.3, 1.0], { fontSize: 9.5, rowH: [0.34, 0.75, 0.82, 0.75, 0.85, 0.7, 0.8] }));
 repro(s, "results/sapporo/manifest_comparison_summary.json、results/kitahiroshima/input_experiments.json・runs_a_c_m4_20261123.json");
 s.addNotes("対策です。誤りには、人が正解を付けて評価する。揺れには、判定結果を保存して同じ答えを返せるようにする。1件ずつ送る方法は試しましたが効果がありませんでした。時間には、Jev が先にファイルを選ぶ方法があり、一覧に名前の例を入れれば取りこぼしなく少し速くなりますが、小さいデータでは遅くなります。");
+
+// 22 動かす構成 -----------------------------------------------------------------------------------
+s = content("動かす構成：Cloudflare で API として動かす", "課題と対策");
+[["ブラウザ／curl", 0.5, 1.7], ["Cloudflare の入口\n（Worker）", 2.6, 1.7], ["コンテナの管理\n（Durable Object）", 4.7, 1.8]].forEach(([t, x, w], i) => {
+  s.addShape(pres.shapes.RECTANGLE, { x, y: 2.0, w, h: 0.9, fill: { color: "F4F5F6" }, line: { type: "none" }, objectName: `arch-${i}` });
+  label(s, t, x, 2.0, w, 0.9, { fontSize: 11, align: "center", valign: "middle" });
+});
+arrow(s, 2.2, 2.45, 2.6, 2.45); arrow(s, 4.3, 2.45, 4.7, 2.45); arrow(s, 6.5, 2.45, 6.8, 2.45);
+dashedBox(s, 6.8, 1.6, 2.7, 1.7, HEX.accent1, "EAF3EF", "arch-container");
+label(s, "コンテナ（Container）\nPython ＋ DuckDB 1.5.5\n＋ jev 拡張", 6.9, 1.7, 2.5, 1.5, { fontSize: 11, align: "center", valign: "middle" });
+s.addShape(pres.shapes.RECTANGLE, { x: 6.8, y: 3.9, w: 1.25, h: 1.0, fill: { color: HEX.lt2 }, line: { type: "none" }, objectName: "arch-r2" });
+label(s, "R2\nGeoParquet\nと一覧", 6.8, 3.9, 1.25, 1.0, { fontSize: 10, align: "center", valign: "middle" });
+s.addShape(pres.shapes.RECTANGLE, { x: 8.25, y: 3.9, w: 1.25, h: 1.0, fill: { color: HEX.lt2 }, line: { type: "none" }, objectName: "arch-jev" });
+label(s, "Jev の API\n（TypeSafe AI）", 8.25, 3.9, 1.25, 1.0, { fontSize: 10, align: "center", valign: "middle" });
+arrow(s, 7.42, 3.3, 7.42, 3.9); arrow(s, 8.87, 3.3, 8.87, 3.9);
+bullets(s, [
+  "地域・やり方・質問を送ると、ファイル選択・読み込み・判定の結果と、使った量を返す。自由文の質問も受け付ける",
+  "コンテナ＝プログラムを動かす環境一式。DuckDB と jev 拡張は普通の Worker では動かないので、コンテナで動かす",
+  "地図の作品は GitHub Pages で公開（計算済みの結果を表示）。Cloudflare 上での時間は次のスライド",
+], 0.5, 5.1, 9.0, 1.4, 12, 5);
+repro(s, "container/（README.md に配信手順）、tutorial/README.md の「2. Docker」で手元でも動かせる");
+s.addNotes("同じ処理を Cloudflare で API として動かす構成です。DuckDB と jev 拡張はコンテナの中で動かします。");
+
+// 22b Cloudflare 上の時間 -------------------------------------------------------------------------
+s = content("Cloudflare 上の時間の大半は R2 からの読み込み", "課題と対策");
+const sec = (v) => `${v.toFixed(1)}秒`, sec2 = (v) => `${v < 0.1 ? v.toFixed(2) : v.toFixed(1)}秒`;
+label(s, "① Cloudflare 上の API で全件判定（全ファイルを読む）。3回の中央値", 0.5, 1.25, 9.0, 0.35, { fontSize: 13, bold: true });
+s.addTable([
+  [head("地域"), head("読み込み（R2 から読み、市の範囲で絞る）", "right"), head("Jev の判定", "right"), head("合計", "right")],
+  [`北広島（${LVR.kh.files}ファイル・${LVR.kh.tests.local_search_read.rows}件）`, { text: sec(CF.kh.median_read_s), options: { align: "right", bold: true } }, { text: sec(CF.kh.median_judge_s), options: { align: "right" } }, { text: sec(CF.kh.median_total_s), options: { align: "right" } }],
+  [`札幌（${LVR.sp.files}ファイル・${LVR.sp.tests.local_search_read.rows.toLocaleString()}件）`, { text: sec(CF.sp.median_read_s), options: { align: "right", bold: true } }, { text: sec(CF.sp.median_judge_s), options: { align: "right" } }, { text: sec(CF.sp.median_total_s), options: { align: "right" } }],
+], tableOpts(0.5, 1.6, 9.0, [3.0, 2.8, 1.6, 1.6], { rowH: 0.38 }));
+label(s, "② 同じ読み込みの SQL を、手元と R2 のファイルで比べた（Jev なし。3回の中央値）", 0.5, 2.9, 9.0, 0.35, { fontSize: 13, bold: true });
+s.addTable([
+  [head("地域"), head("手元のファイル", "right"), head("R2 のファイル", "right"), head("R2：各ファイルの目次を読むだけ", "right")],
+  [`北広島（${LVR.kh.files}ファイル・約${Math.round(LVR.kh.bytes_total / 1000)}KB）`, { text: sec2(LVR.kh.tests.local_search_read.median_s), options: { align: "right", bold: true } }, { text: sec2(LVR.kh.tests.r2_search_read.median_s), options: { align: "right" } }, { text: sec2(LVR.kh.tests.r2_footers_only.median_s), options: { align: "right" } }],
+  [`札幌（${LVR.sp.files}ファイル・約${(LVR.sp.bytes_total / 1e6).toFixed(1)}MB）`, { text: sec2(LVR.sp.tests.local_search_read.median_s), options: { align: "right", bold: true } }, { text: sec2(LVR.sp.tests.r2_search_read.median_s), options: { align: "right" } }, { text: sec2(LVR.sp.tests.r2_footers_only.median_s), options: { align: "right" } }],
+], tableOpts(0.5, 3.25, 9.0, [3.0, 1.8, 1.8, 2.4], { rowH: 0.38 }));
+bullets(s, [
+  "DuckDB の計算（読み込みと市の範囲での絞り込み）は、手元のファイルなら札幌でも0.2秒。時間がかかるのは R2 とのやり取り",
+  "R2 から読むときは、データの中身に入る前の「ファイルを1つずつ開いて目次を読む」だけで大半の時間を使う。データ量より、開くファイルの数で決まる",
+  "Cloudflare 上の読み込みは、作業用のパソコンから R2 を読むよりさらに遅かった（理由は未確認）",
+], 0.5, 4.55, 9.0, 1.4, 11, 4);
+keyline(s, "データをコンテナの中に置けば、読み込みは大きく縮む見込み（Cloudflare 上では未計測）", 5.9, 0.4);
+label(s, "②は作業用のパソコンから測った。結果②の手元の計測（札幌の全件で約12秒）は、API キーを渡す中継プログラムを通しているので、Jev の判定は Cloudflare 上より遅い", 0.5, 6.28, 9.0, 0.3, { fontSize: 8, color: C.accent6 });
+repro(s, "pipeline/local_vs_r2_timing.py → results/*/local_vs_r2_timing.json、pipeline/cloudflare_timing.py → results/*/cloudflare_timing.json");
+s.addNotes("Cloudflare で動かすと、時間の大半は R2 からの読み込みでした。同じ SQL を手元のファイルにかけると、札幌でも0.2秒です。R2 では、ファイルを開いて目次を読むだけで大半の時間を使います。データをコンテナの中に置けば、大きく縮む見込みです。");
 
 // 16 補足 R2（NEW） ---------------------------------------------------------------------------------
 s = content("補足：R2 では、開くファイルが少ないほど速い", "課題と対策");
@@ -473,28 +524,6 @@ bullets(s, [
 ], 0.5, 4.5, 9.0, 1.9, 11, 5);
 repro(s, "python pipeline/r2_read_timing.py \"r2://…/city=sapporo\" data/city=sapporo/manifest.m1.json results/sapporo/r2_read_timing.json");
 s.addNotes("補足です。R2 から読むと、開くファイルを減らすほど速くなりました。フォルダ名のカテゴリを条件にすると、DuckDB は合わないファイルを開かずに飛ばしました。");
-
-// 22 動かす構成 -----------------------------------------------------------------------------------
-s = content("動かす構成：Cloudflare で API として動かす", "課題と対策");
-[["ブラウザ／curl", 0.5, 1.7], ["Cloudflare の入口\n（Worker）", 2.6, 1.7], ["コンテナの管理\n（Durable Object）", 4.7, 1.8]].forEach(([t, x, w], i) => {
-  s.addShape(pres.shapes.RECTANGLE, { x, y: 2.0, w, h: 0.9, fill: { color: "F4F5F6" }, line: { type: "none" }, objectName: `arch-${i}` });
-  label(s, t, x, 2.0, w, 0.9, { fontSize: 11, align: "center", valign: "middle" });
-});
-arrow(s, 2.2, 2.45, 2.6, 2.45); arrow(s, 4.3, 2.45, 4.7, 2.45); arrow(s, 6.5, 2.45, 6.8, 2.45);
-dashedBox(s, 6.8, 1.6, 2.7, 1.7, HEX.accent1, "EAF3EF", "arch-container");
-label(s, "コンテナ（Container）\nPython ＋ DuckDB 1.5.5\n＋ jev 拡張", 6.9, 1.7, 2.5, 1.5, { fontSize: 11, align: "center", valign: "middle" });
-s.addShape(pres.shapes.RECTANGLE, { x: 6.8, y: 3.9, w: 1.25, h: 1.0, fill: { color: HEX.lt2 }, line: { type: "none" }, objectName: "arch-r2" });
-label(s, "R2\nGeoParquet\nと一覧", 6.8, 3.9, 1.25, 1.0, { fontSize: 10, align: "center", valign: "middle" });
-s.addShape(pres.shapes.RECTANGLE, { x: 8.25, y: 3.9, w: 1.25, h: 1.0, fill: { color: HEX.lt2 }, line: { type: "none" }, objectName: "arch-jev" });
-label(s, "Jev の API\n（TypeSafe AI）", 8.25, 3.9, 1.25, 1.0, { fontSize: 10, align: "center", valign: "middle" });
-arrow(s, 7.42, 3.3, 7.42, 3.9); arrow(s, 8.87, 3.3, 8.87, 3.9);
-bullets(s, [
-  "地域・やり方・質問を送ると、ファイル選択・読み込み・判定の結果と、使った量を返す。自由文の質問も受け付ける",
-  "コンテナ＝プログラムを動かす環境一式。DuckDB と jev 拡張は普通の Worker では動かないので、コンテナで動かす",
-  "地図の作品は GitHub Pages で公開（計算済みの結果を表示）。Cloudflare 上での処理時間は測っていない",
-], 0.5, 5.1, 9.0, 1.4, 12, 5);
-repro(s, "container/（README.md に配信手順）、tutorial/README.md の「2. Docker」で手元でも動かせる");
-s.addNotes("同じ処理を Cloudflare で API として動かす構成です。DuckDB と jev 拡張はコンテナの中で動かします。");
 
 // 23 再現：データの準備 -------------------------------------------------------------------------------
 pres.addSection({ title: "再現" });
@@ -531,7 +560,9 @@ code(s, [
   "#   m4 も同じ形（selection_m4.json）",
   "python pipeline/compare_manifests.py $D $R                 # 一覧の版の比較をまとめる（API は呼ばない）",
   "python pipeline/summarize.py $D $Q $R/runs.json web/public/data/sapporo",
-], 0.5, 1.35, 9.0, 3.65, 8.5);
+  "python pipeline/local_vs_r2_timing.py $D r2://geo-opendata/osm-poi/parquet/2026-11-21/city=sapporo $R/local_vs_r2_timing.json",
+  "python pipeline/cloudflare_timing.py <API の URL> sapporo A kids_play $R/cloudflare_timing.json   # 約 $0.18",
+], 0.5, 1.35, 9.0, 3.65, 8);
 bullets(s, [
   "札幌で1行目（4条件 × 3つのやり方 × 3回）は約6分・約 $1.7。m4 の検索3回分は約 $0.75。北広島は全部で約30秒・約 $0.07",
   "出力先のファイル名を変えると、リポジトリにある元の結果を残せる（同じ名前だと上書きする）",
@@ -569,8 +600,9 @@ label(s, [
   { text: "Jev を SQL の条件に使うと、属性（タグ）として用意されていない曖昧な条件でも、地物を絞り込めた（判定の正しさは未確認）", options: { bullet: true, breakLine: true } },
   { text: "従来のやり方では見るカテゴリの外にあった候補も拾えた（札幌・子どもが遊べる場所で16%、雨の日に屋内で過ごせる場所で14〜20%）", options: { bullet: true, breakLine: true } },
   { text: "代わりに件数に応じた時間がかかる。Jev が先にファイルを選ぶと、名前の例を入れた一覧で、全件判定と比べて取りこぼし無く、札幌・食料品で約15%速くなった。北広島の589件では、かえって遅くなった", options: { bullet: true, breakLine: true } },
+  { text: "Cloudflare で動かすと、時間の大半は Jev の判定ではなく R2 からの読み込みだった", options: { bullet: true, breakLine: true } },
   { text: "判定には誤りと揺れがある。正しさを確かめることが次の一歩", options: { bullet: true } },
-], 0.6, 2.65, 8.8, 3.1, { fontSize: 14, color: C.background1, paraSpaceAfter: 8 });
+], 0.6, 2.7, 8.8, 3.15, { fontSize: 12.5, color: C.background1, paraSpaceAfter: 8 });
 label(s, "作品：shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/", 0.6, 5.95, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "コード：github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet", 0.6, 6.25, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "データ © OpenStreetMap contributors（ODbL）／背景地図：地理院タイル／Jev は TypeSafe AI のモデル", 0.6, 6.6, 8.8, 0.3, { fontSize: 10, color: C.lt2 });

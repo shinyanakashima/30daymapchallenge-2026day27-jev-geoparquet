@@ -1,0 +1,68 @@
+{
+ "started_utc": "2026-11-24T01:00:03+00:00",
+ "city": "kitahiroshima",
+ "method": "A",
+ "question_id": "kids_play",
+ "runs": [
+  {
+   "http_s": 12.143,
+   "time_s": {
+    "select": 0.0,
+    "read": 7.8007,
+    "judge": 0.4502,
+    "total": 8.2509
+   },
+   "files_read": 20,
+   "rows_read": 589,
+   "judgment_counts": {
+    "supported": 58,
+    "contradicted": 15,
+    "insufficient_information": 516
+   },
+   "requests_judge": 25,
+   "cost_usd": 0.002428
+  },
+  {
+   "http_s": 9.795,
+   "time_s": {
+    "select": 0.0,
+    "read": 6.745,
+    "judge": 0.1885,
+    "total": 6.9335
+   },
+   "files_read": 20,
+   "rows_read": 589,
+   "judgment_counts": {
+    "supported": 49,
+    "contradicted": 17,
+    "insufficient_information": 523
+   },
+   "requests_judge": 25,
+   "cost_usd": 0.002428
+  },
+  {
+   "http_s": 9.103,
+   "time_s": {
+    "select": 0.0,
+    "read": 6.1635,
+    "judge": 0.1991,
+    "total": 6.3625
+   },
+   "files_read": 20,
+   "rows_read": 589,
+   "judgment_counts": {
+    "supported": 56,
+    "contradicted": 17,
+    "insufficient_information": 516
+   },
+   "requests_judge": 25,
+   "cost_usd": 0.002428
+  }
+ ],
+ "median_select_s": 0.0,
+ "median_read_s": 6.745,
+ "median_judge_s": 0.1991,
+ "median_total_s": 6.9335,
+ "median_http_s": 9.795,
+ "finished_utc": "2026-11-24T01:00:35+00:00"
+}
