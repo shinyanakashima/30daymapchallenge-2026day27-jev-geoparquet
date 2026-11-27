@@ -198,6 +198,33 @@ keyline(s, "答えは、こちらが決めた選択肢のどれかで返る。�
 repro(s, "results/examples/jev_call_20261123.json の request を POST https://api.typesafe.ai/v1/systemone に送る");
 s.addNotes("Jev は TypeSafe AI 社の AI モデルです。地物の情報、質問、選択肢を送ると、選択肢の中から答えを1つ返し、選択肢ごとの確率も返します。");
 
+// 5b Jev は OSS？ ------------------------------------------------------------------------------------
+s = content("Jev ＝ OSS？", "前提");
+label(s, [{ text: "いいえ。", options: { fontSize: 28, bold: true, color: C.accent1 } }, { text: "Jev のモデルは API で使うサービス。まわりは OSS とオープンデータ", options: { fontSize: 18, bold: true } }], 0.5, 1.25, 9.0, 0.6, { valign: "middle" });
+[
+  ["OSS ではないもの", "F4F5F6", HEX.accent6, [
+    ["Jev（モデル）", "TypeSafe AI が API で提供。API キーが要り、使った量に応じて費用がかかる"],
+    ["使うときの決まり", "TypeSafe の利用規約（Master Customer Agreement）。出力は利用者のもの。Jev の出力で別のモデルを学習させることは禁止"],
+  ]],
+  ["OSS・オープンなもの", "EAF3EF", HEX.accent1, [
+    ["jev 拡張", "DuckDB のコミュニティ拡張。MIT ライセンス"],
+    ["DuckDB・hyparquet・MapLibre", "データを読む・地図に出す部品。どれも OSS"],
+    ["GeoParquet", "オープンな仕様"],
+    ["OpenStreetMap", "オープンデータ（ODbL）"],
+    ["今回のコード", "MIT ライセンスで公開"],
+  ]],
+].forEach(([h, fill, line, rows], k) => {
+  const x = 0.5 + k * 4.6;
+  dashedBox(s, x, 2.1, 4.4, 3.3, line, fill, `oss-${k}`);
+  label(s, h, x + 0.2, 2.2, 4.0, 0.4, { fontSize: 15, bold: true, color: line === HEX.accent1 ? C.accent1 : C.text1 });
+  label(s, rows.flatMap(([a, b], i) => [
+    { text: a, options: { bold: true, breakLine: true } },
+    { text: b, options: { color: C.accent6, fontSize: 11, breakLine: i < rows.length - 1, paraSpaceAfter: 6 } },
+  ]), x + 0.2, 2.7, 4.0, 2.6, { fontSize: 13 });
+});
+keyline(s, "Jev を呼ぶ部分（API）以外は、OSS とオープンデータだけで再現できる", 5.65, 0.4);
+s.addNotes("Jev は OSS か。答えはいいえです。TypeSafe AI が API で提供するモデルで、API キーと利用料が要ります。一方、DuckDB から呼ぶ jev 拡張は MIT ライセンスの OSS で、データを読む部品や地図、データそのものもオープンです。");
+
 // 9 データの作り方 -------------------------------------------------------------------------------
 pres.addSection({ title: "仕組み" });
 s = content("データの作り方：OSM から GeoParquet へ", "仕組み");
