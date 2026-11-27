@@ -295,13 +295,13 @@ s = content("Jev への送り方で、答えが変わる", "仕組み");
 const fA = INP.experiments.format_struct_all_columns, fB = INP.experiments.format_text_non_empty;
 const b1 = INP.experiments.batch_1, b20 = INP.experiments.batch_20;
 label(s, "北広島の地物で、「子どもが遊べる場所」を2回ずつ判定した（jev 拡張の答えの記憶は毎回消した）", 0.5, 1.25, 9.0, 0.4, { fontSize: 12 });
-label(s, "① 何を送るか（589件・20件ずつ）", 0.5, 1.75, 9.0, 0.35, { fontSize: 13, bold: true });
+label(s, "1. 何を送るか（589件・20件ずつ）", 0.5, 1.75, 9.0, 0.35, { fontSize: 13, bold: true });
 s.addTable([
   [head("送り方"), head("当てはまる", "right"), head("当てはまらない", "right"), head("判断材料不足", "right"), head("読んだ量（トークン）", "right")],
   ["空の列も含めて、全部の列をそのまま送る", { text: `${fA.runs[0].counts.supported}件`, options: { align: "right" } }, { text: `${fA.runs[0].counts.contradicted || 0}件`, options: { align: "right" } }, { text: `${fA.runs[0].counts.insufficient_information}件`, options: { align: "right" } }, { text: fA.runs[0].input_tokens.toLocaleString(), options: { align: "right" } }],
   ["値の入っている属性だけを「キー: 値」の文字列にして送る（今回の方法）", { text: `${fB.runs[0].counts.supported}件`, options: { align: "right", bold: true } }, { text: `${fB.runs[0].counts.contradicted || 0}件`, options: { align: "right" } }, { text: `${fB.runs[0].counts.insufficient_information}件`, options: { align: "right" } }, { text: fB.runs[0].input_tokens.toLocaleString(), options: { align: "right", bold: true } }],
 ], tableOpts(0.5, 2.1, 9.0, [4.0, 1.1, 1.3, 1.2, 1.4], { rowH: [0.38, 0.5, 0.6] }));
-label(s, "② 何件ずつまとめて送るか（北広島の地物のうち、ID 順の先頭60件）", 0.5, 3.75, 9.0, 0.35, { fontSize: 13, bold: true });
+label(s, "2. 何件ずつまとめて送るか（北広島の地物のうち、ID 順の先頭60件）", 0.5, 3.75, 9.0, 0.35, { fontSize: 13, bold: true });
 s.addTable([
   [head("まとめる件数"), head("問い合わせ回数", "right"), head("読んだ量（トークン）", "right"), head("2回の答えの一致", "right")],
   ["1件ずつ", { text: `${b1.runs[0].requests}回`, options: { align: "right" } }, { text: b1.runs[0].input_tokens.toLocaleString(), options: { align: "right" } }, { text: pctf(b1.agreement_between_runs), options: { align: "right" } }],
@@ -318,9 +318,9 @@ s.addNotes("送り方で答えが変わります。空の列も含めて送る�
 // 10 比べた3つのやり方 ------------------------------------------------------------------------------
 s = content("比べた3つのやり方", "仕組み");
 const ways = [
-  ["全件判定", "すべてのファイルを読み、全地物を Jev が判定する", "取りこぼしが無い。比べるときの基準"],
-  ["従来のやり方", "条件ごとに見るカテゴリを人が決め（対応表）、そのカテゴリのファイルだけを読んで、Jev が判定する", "例：子どもが遊べる場所 → 公園・遊び場のファイルだけ。比べやすくするため、最後の判定は Jev で行った"],
-  ["Jev が先にファイルを選ぶ", "ファイルごとの中身の一覧を Jev に読ませ、当てはまる地物がありそうなファイルだけを読んで、Jev が判定する", "読まないファイルの地物は判定しないので、速くなりうる"],
+  ["A 全件判定", "すべてのファイルを読み、全地物を Jev が判定する", "取りこぼしが無い。比べるときの基準"],
+  ["B 従来のやり方", "条件ごとに見るカテゴリを人が決め（対応表）、そのカテゴリのファイルだけを読んで、Jev が判定する", "例：子どもが遊べる場所 → 公園・遊び場のファイルだけ。比べやすくするため、最後の判定は Jev で行った"],
+  ["C Jev がファイルを選ぶ", "ファイルごとの中身の一覧を Jev に読ませ、当てはまる地物がありそうなファイルだけを読んで、Jev が判定する", "読まないファイルの地物は判定しないので、速くなりうる"],
 ];
 ways.forEach(([h, d, n], i) => {
   const y = 1.35 + i * 1.45;
@@ -329,7 +329,7 @@ ways.forEach(([h, d, n], i) => {
   label(s, d, 3.4, y + 0.1, 5.9, 0.6, { fontSize: 12 });
   label(s, n, 3.4, y + 0.75, 5.9, 0.5, { fontSize: 11, ...muted });
 });
-label(s, "3つのやり方の差は「どのファイルを読むか」だけ。4条件 × 各3回測った", 0.5, 5.75, 9.0, 0.35, { fontSize: 12 });
+label(s, "どのやり方も ①読むファイルを決める → ②読んだ地物を Jev が判定する。違うのは①だけ。4条件 × 各3回測った", 0.5, 5.75, 9.0, 0.35, { fontSize: 12 });
 label(s, `${BASIS}。Jev の判定に誤りがあっても、それは数に含まれる`, 0.5, 6.1, 9.0, 0.45, { fontSize: 11, ...muted });
 repro(s, "pipeline/questions.json（4条件と対応表）、run_compare.py --methods A,B,C（A＝全件、B＝従来、C＝Jev が選ぶ）");
 s.addNotes("比べたのは3つのやり方です。違いはどのファイルを読むかだけで、最後の判定はどれも Jev です。取りこぼしは、正解ではなく、Jev の全件判定を基準に数えます。");
@@ -339,24 +339,24 @@ s = content("時間を測った環境", "仕組み");
 label(s, "このあとの時間の数字は、次の3つの環境で測った。環境が違う数字どうしは、そのまま比べられない", 0.5, 1.25, 9.0, 0.4, { fontSize: 12 });
 s.addTable([
   [head("環境"), head("どこで動かしたか"), head("データの置き場所"), head("Jev への経路"), head("使ったスライド")],
-  [{ text: "A\n作業環境", options: { bold: true } }, "クラウドの作業用コンテナ（米国と推定。Intel Xeon 4コア・メモリ15GB）\nPython 3.13・DuckDB 1.5.5・jev 拡張 0.1.0", "同じコンテナの中のファイル", "作業環境の中継プログラム（API キーを付ける）を経由。そのぶん判定の時間が長めに出る可能性がある", "結果②・結果③・一覧の書き方の比較\n（11/22・11/23）"],
-  [{ text: "B\n作業環境から R2", options: { bold: true } }, "A と同じコンテナ", "Cloudflare R2（r2:// で読む）", "Jev は呼ばない（読み込みだけ）", "Cloudflare 上の時間の②、R2 の補足\n（11/23・11/24）"],
-  [{ text: "C\nCloudflare", options: { bold: true } }, "Cloudflare Containers（インスタンス standard-1）\nPython 3.13・DuckDB 1.5.5・jev 拡張 0.1.0", "Cloudflare R2（r2:// で読む）", "コンテナから Jev の API を直接呼ぶ", "Cloudflare 上の時間の①\n（11/24）"],
+  [{ text: "作業環境", options: { bold: true } }, "クラウドの作業用コンテナ（米国と推定。Intel Xeon 4コア・メモリ15GB）\nPython 3.13・DuckDB 1.5.5・jev 拡張 0.1.0", "同じコンテナの中のファイル", "作業環境の中継プログラム（API キーを付ける）を経由。そのぶん判定の時間が長めに出る可能性がある", "結果2・結果3・一覧の書き方の比較\n（11/22・11/23）"],
+  [{ text: "作業環境→R2", options: { bold: true } }, "作業環境と同じコンテナ", "Cloudflare R2（r2:// で読む）", "Jev は呼ばない（読み込みだけ）", "Cloudflare 上の時間の表2、R2 の補足\n（11/23・11/24）"],
+  [{ text: "Cloudflare", options: { bold: true } }, "Cloudflare Containers（インスタンス standard-1）\nPython 3.13・DuckDB 1.5.5・jev 拡張 0.1.0", "Cloudflare R2（r2:// で読む）", "コンテナから Jev の API を直接呼ぶ", "Cloudflare 上の時間の表1\n（11/24）"],
 ], tableOpts(0.5, 1.75, 9.0, [1.2, 2.6, 1.6, 2.0, 1.6], { fontSize: 9.5, rowH: [0.36, 1.15, 0.8, 1.0] }));
 bullets(s, [
   "時間はすべて、検索1回にかかった時間を同じ条件で3回測った中央値（ファイル選択だけの計測は10回）",
   "Jev の API の場所は公開されていないので、どの環境から Jev までの距離が近いかは分からない",
-  "手元の PC では測っていない。手元で試す方法は「再現の手順③」",
+  "手元の PC では測っていない。手元で試す方法は「再現の手順3」",
 ], 0.5, 5.25, 9.0, 1.0, 11, 4);
-s.addNotes("時間の数字は3つの環境で測りました。A は作業用のクラウド環境、B はそこから R2 を読んだもの、C は Cloudflare 上で API として動かしたものです。環境が違う数字は、そのまま比べられません。");
+s.addNotes("時間の数字は3つの環境で測りました。作業用のクラウド環境、そこから R2 を読んだもの、Cloudflare 上で API として動かしたものの3つです。環境が違う数字は、そのまま比べられません。");
 
-// 11 結果① --------------------------------------------------------------------------------------
+// 11 結果1 --------------------------------------------------------------------------------------
 pres.addSection({ title: "結果" });
-s = content("結果①：従来のやり方では見つからない候補を拾えた", "結果");
+s = content("結果1：従来のやり方では見つからない候補を拾えた", "結果");
 label(s, "札幌市 16,610件。Jev が全件判定で「当てはまる」とした地物のうち、従来のやり方で見るカテゴリの外にあったものを数えた", 0.5, 1.25, 9.0, 0.6, { fontSize: 13 });
 const ex = { kids_play: "幼稚園・児童会館・学童クラブ", rainy_day: "プール・銭湯・ジム・ネットカフェ", groceries: "ドラッグストア", local_history: "博物館・郷土資料館" };
 s.addTable([
-  [head("条件"), head("従来のやり方で見たカテゴリ"), head("当てはまる（1回目）", "right"), head("カテゴリの外（1回目）", "right"), head("外の割合（3回）", "right"), head("外にあった地物の例")],
+  [head("条件"), head("B（対応表）で見たカテゴリ"), head("当てはまる（1回目）", "right"), head("カテゴリの外（1回目）", "right"), head("外の割合（3回）", "right"), head("外にあった地物の例")],
   ...SP.questions.map((q) => { const n = supportedCount(q.id), m = q.methods.B.runs[0].missed.length, r = missRate(q.id);
     const lo = Math.round(Math.min(...r) * 100), hi = Math.round(Math.max(...r) * 100);
     return [QN[q.id], RULE[q.id], { text: `${n.toLocaleString()}件`, options: { align: "right" } }, { text: `${m}件`, options: { align: "right" } }, { text: lo === hi ? `${lo}%` : `${lo}〜${hi}%`, options: { align: "right", bold: hi >= 10 } }, ex[q.id]]; }),
@@ -367,7 +367,7 @@ repro(s, "results/sapporo/runs.json → pipeline/summarize.py → web/public/dat
 s.addNotes("子どもが遊べる場所では、Jev が当てはまるとした地物の16%が、従来のやり方では見るカテゴリの外にありました。雨の日では3回で14から20%です。");
 
 // 12 地図 ----------------------------------------------------------------------------------------
-s = content("結果①の地図：札幌・子どもが遊べる場所", "結果");
+s = content("結果1の地図：札幌・子どもが遊べる場所", "結果");
 s.addImage({ path: path.join(__dirname, "img/sapporo_kids_fixed_rule.png"), x: 0.5, y: 1.3, w: 5.4, h: 4.85, objectName: "map-fixed-rule", altText: "札幌・子どもが遊べる場所。従来のやり方では見つからない地物を赤い輪で示した地図" });
 bullets(s, [
   "赤い輪：全件判定で当てはまるとされたが、従来のやり方（公園・遊び場のファイルだけ見る）では読まないファイルにあった地物",
@@ -378,8 +378,8 @@ bullets(s, [
 repro(s, "作品の画面（shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/?lang=ja&city=sapporo&q=0&m=B）");
 s.addNotes("赤い輪が、従来のやり方では読まないファイルにあった地物です。市街地の全体に散らばっています。");
 
-// 13 結果② --------------------------------------------------------------------------------------
-s = content("結果②：代わりに、時間と費用がかかる", "結果");
+// 13 結果2 --------------------------------------------------------------------------------------
+s = content("結果2：代わりに、時間と費用がかかる", "結果");
 const [kt0, kt1] = rng(KH, "A", "total_s"), [st0, st1] = rng(SP, "A", "total_s"), [kr0, kr1] = rng(KH, "A", "read_s"), [sr0, sr1] = rng(SP, "A", "read_s");
 const [kc0, kc1] = rng(KH, "A", "estimated_cost_usd"), [sc0, sc1] = rng(SP, "A", "estimated_cost_usd");
 s.addTable([
@@ -395,7 +395,7 @@ bullets(s, [
   "問題になるのは待ち時間。札幌の全件では、1回の検索に約12秒かかった",
 ], 0.5, 4.5, 9.0, 1.95, 13, 6);
 repro(s, "results/kitahiroshima/runs.json・results/sapporo/runs.json の method A（time_s・usage_judge）");
-envTag(s, "A");
+envTag(s, "作業環境");
 s.addNotes("北広島の589件なら1秒弱ですが、札幌の16,610件では約12秒かかりました。費用は小さく、問題は待ち時間です。");
 
 // 14 ファイルの中身の一覧 ---------------------------------------------------------------------------
@@ -416,9 +416,9 @@ bullets(s, [
 repro(s, "data/city=sapporo/manifest.m1.json（pipeline/partition.py が作る）");
 s.addNotes("Jev がファイルを選ぶときに読むのは、この中身の一覧だけです。一覧に何を書くかで、選び方が変わります。");
 
-// 15 結果③ ---------------------------------------------------------------------------------------
-s = content("結果③：Jev が先にファイルを選んだ場合の速さ", "結果");
-const twoCharts = (city, x, title, fmt) => s.addChart(pres.charts.BAR, ["A", "C"].map((m) => ({ name: m === "A" ? "全件判定" : "Jev が先にファイルを選ぶ", labels: city.questions.map((q) => QS[q.id]), values: city.questions.map((q) => q.methods[m].median.total_s) })), {
+// 15 結果3 ---------------------------------------------------------------------------------------
+s = content("結果3：Jev が先にファイルを選んだ場合の速さ", "結果");
+const twoCharts = (city, x, title, fmt) => s.addChart(pres.charts.BAR, ["A", "C"].map((m) => ({ name: m === "A" ? "A 全件判定" : "C Jev がファイルを選ぶ", labels: city.questions.map((q) => QS[q.id]), values: city.questions.map((q) => q.methods[m].median.total_s) })), {
   x, y: 1.3, w: 4.4, h: 3.6, barDir: "bar", ...chartBase, chartColors: [COL.A, COL.C],
   showTitle: true, title, titleFontSize: 12, titleColor: HEX.dk1, titleFontFace: "+mn-lt", dataLabelFormatCode: fmt, valAxisMinVal: 0, catAxisOrientation: "maxMin",
 });
@@ -432,7 +432,7 @@ bullets(s, [
   `一覧は簡易な一覧（m1）。札幌の取りこぼしは、検索3回で最大${lossFull.toFixed(1)}%、ファイル選択だけを10回くり返すと最大${lossSel.toFixed(1)}%`,
 ], 0.5, 5.0, 9.0, 1.5, 12, 4);
 repro(s, "results/*/runs.json の method A と C（2026-11-22。pipeline/run_compare.py、一覧は manifest.m1.json）");
-envTag(s, "A");
+envTag(s, "作業環境");
 s.addNotes("Jev が先にファイルを選ぶと、北広島の589件ではかえって遅くなり、札幌の16,610件では、読まないファイルがあった条件で速くなりました。");
 
 // 17 一覧の4つの版 ----------------------------------------------------------------------------------
@@ -455,7 +455,7 @@ s.addNotes("一覧の書き方を4通り試しました。m1 は最初に使っ�
 // 18 一覧の比較結果 ----------------------------------------------------------------------------------
 s = content("一覧の書き方ごとの、速さと取りこぼし", "一覧の改良");
 const vers = ["A", "m1", "m2", "m3", "m4"];
-const vlab = { A: "全件判定", m1: "m1", m2: "m2", m3: "m3", m4: "m4" };
+const vlab = { A: "A 全件判定", m1: "m1", m2: "m2", m3: "m3", m4: "m4" };
 s.addChart(pres.charts.BAR, [{ name: "時間", labels: vers.map((v) => vlab[v]), values: vers.map((v) => MC.full[v].groceries.total) }], {
   x: 0.5, y: 1.3, w: 4.4, h: 3.4, barDir: "col", ...chartBase, showLegend: false,
   chartColors: [COL.A, "7FB8A4", "4E9C81", "2E8667", COL.C], invertedColors: [COL.A, "7FB8A4", "4E9C81", "2E8667", COL.C],
@@ -475,7 +475,7 @@ bullets(s, [
 ], 0.5, 4.85, 9.0, 1.3, 12, 5);
 label(s, "全件判定と m2〜m4 は 2026-11-23、m1 は 11/22 に測った（そのため前のスライドの全件判定 12.5秒と少し違う）", 0.5, 6.15, 9.0, 0.35, { fontSize: 9, ...muted });
 repro(s, "pipeline/selection_compare.py（10回）・run_compare.py --methods C --manifest manifest.m4.json（3回）→ compare_manifests.py");
-envTag(s, "A");
+envTag(s, "作業環境");
 s.addNotes("一覧を詳しくしたり、種類ごとに聞いたりすると、食料品では約半分の時間で済みましたが、少数の地物を取りこぼしました。名前の例を添えた m4 では取りこぼしが無くなりましたが、速くなったのは食料品の約15%で、ほかの条件はほぼ変わりませんでした。");
 
 // 19 なぜ落ちたか ------------------------------------------------------------------------------------
@@ -549,13 +549,13 @@ s.addNotes("同じ処理を Cloudflare で API として動かす構成です。
 // 22b Cloudflare 上の時間 -------------------------------------------------------------------------
 s = content("Cloudflare 上の時間の大半は R2 からの読み込み", "課題と対策");
 const sec = (v) => `${v.toFixed(1)}秒`, sec2 = (v) => `${v < 0.1 ? v.toFixed(2) : v.toFixed(1)}秒`;
-label(s, "① Cloudflare 上の API で全件判定（全ファイルを読む）。3回の中央値", 0.5, 1.25, 9.0, 0.35, { fontSize: 13, bold: true });
+label(s, "表1：Cloudflare 上の API で A 全件判定（全ファイルを読む）。3回の中央値", 0.5, 1.25, 9.0, 0.35, { fontSize: 13, bold: true });
 s.addTable([
   [head("地域"), head("読み込み（R2 から読み、市の範囲で絞る）", "right"), head("Jev の判定", "right"), head("合計", "right")],
   [`北広島（${LVR.kh.files}ファイル・${LVR.kh.tests.local_search_read.rows}件）`, { text: sec(CF.kh.median_read_s), options: { align: "right", bold: true } }, { text: sec(CF.kh.median_judge_s), options: { align: "right" } }, { text: sec(CF.kh.median_total_s), options: { align: "right" } }],
   [`札幌（${LVR.sp.files}ファイル・${LVR.sp.tests.local_search_read.rows.toLocaleString()}件）`, { text: sec(CF.sp.median_read_s), options: { align: "right", bold: true } }, { text: sec(CF.sp.median_judge_s), options: { align: "right" } }, { text: sec(CF.sp.median_total_s), options: { align: "right" } }],
 ], tableOpts(0.5, 1.6, 9.0, [3.0, 2.8, 1.6, 1.6], { rowH: 0.38 }));
-label(s, "② 同じ読み込みの SQL を、手元と R2 のファイルで比べた（Jev なし。3回の中央値）", 0.5, 2.9, 9.0, 0.35, { fontSize: 13, bold: true });
+label(s, "表2：同じ読み込みの SQL を、手元と R2 のファイルで比べた（Jev なし。3回の中央値）", 0.5, 2.9, 9.0, 0.35, { fontSize: 13, bold: true });
 s.addTable([
   [head("地域"), head("手元のファイル", "right"), head("R2 のファイル", "right"), head("R2：各ファイルの目次を読むだけ", "right")],
   [`北広島（${LVR.kh.files}ファイル・約${Math.round(LVR.kh.bytes_total / 1000)}KB）`, { text: sec2(LVR.kh.tests.local_search_read.median_s), options: { align: "right", bold: true } }, { text: sec2(LVR.kh.tests.r2_search_read.median_s), options: { align: "right" } }, { text: sec2(LVR.kh.tests.r2_footers_only.median_s), options: { align: "right" } }],
@@ -567,9 +567,9 @@ bullets(s, [
   "Cloudflare 上の読み込みは、作業用のパソコンから R2 を読むよりさらに遅かった（理由は未確認）",
 ], 0.5, 4.55, 9.0, 1.4, 11, 4);
 keyline(s, "データをコンテナの中に置けば、読み込みは大きく縮む見込み（Cloudflare 上では未計測）", 5.9, 0.4);
-label(s, "②は作業用のパソコンから測った。結果②の手元の計測（札幌の全件で約12秒）は、API キーを渡す中継プログラムを通しているので、Jev の判定は Cloudflare 上より遅い", 0.5, 6.28, 9.0, 0.3, { fontSize: 8, color: C.accent6 });
+label(s, "表2は作業用のパソコンから測った。結果2の手元の計測（札幌の全件で約12秒）は、API キーを渡す中継プログラムを通しているので、Jev の判定は Cloudflare 上より遅い", 0.5, 6.28, 9.0, 0.3, { fontSize: 8, color: C.accent6 });
 repro(s, "pipeline/local_vs_r2_timing.py → results/*/local_vs_r2_timing.json、pipeline/cloudflare_timing.py → results/*/cloudflare_timing.json");
-envTag(s, "①は C、②は B");
+envTag(s, "表1は Cloudflare、表2は 作業環境→R2");
 s.addNotes("Cloudflare で動かすと、時間の大半は R2 からの読み込みでした。同じ SQL を手元のファイルにかけると、札幌でも0.2秒です。R2 では、ファイルを開いて目次を読むだけで大半の時間を使います。データをコンテナの中に置けば、大きく縮む見込みです。");
 
 // 16 補足 R2（NEW） ---------------------------------------------------------------------------------
@@ -590,7 +590,7 @@ bullets(s, [
   "Jev が選んだファイルだけを読むやり方は、R2 から読むとこの分も速くなる見込み。ただし Jev の判定を含めた R2 での時間は未計測",
 ], 0.5, 4.5, 9.0, 1.9, 11, 5);
 repro(s, "python pipeline/r2_read_timing.py \"r2://…/city=sapporo\" data/city=sapporo/manifest.m1.json results/sapporo/r2_read_timing.json");
-envTag(s, "B");
+envTag(s, "作業環境→R2");
 s.addNotes("補足です。R2 から読むと、開くファイルを減らすほど速くなりました。フォルダ名のカテゴリを条件にすると、DuckDB は合わないファイルを開かずに飛ばしました。");
 
 // 発展課題 ----------------------------------------------------------------------------------------
@@ -619,7 +619,7 @@ s.addNotes("発展課題です。COGP の詳細度は、ズームに合わせて
 
 // 23 再現：データの準備 -------------------------------------------------------------------------------
 pres.addSection({ title: "再現" });
-s = content("再現の手順①：データを作る", "再現");
+s = content("再現の手順1：データを作る", "再現");
 code(s, [
   "git clone https://github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet.git",
   "cd 30daymapchallenge-2026day27-jev-geoparquet && pip install -r requirements.txt",
@@ -639,7 +639,7 @@ bullets(s, [
 s.addNotes("データを作る手順です。リポジトリのスクリプトで、OSM のデータから GeoParquet と一覧を作り、R2 に置けます。");
 
 // 24 再現：計測 ------------------------------------------------------------------------------------
-s = content("再現の手順②：計測する", "再現");
+s = content("再現の手順2：計測する", "再現");
 code(s, [
   "read -rs TYPESAFE_API_KEY && export TYPESAFE_API_KEY       # API キーを画面に出さずに設定",
   "D=\"data/city=sapporo\"; Q=pipeline/questions.json; R=results/sapporo",
@@ -663,7 +663,7 @@ bullets(s, [
 s.addNotes("計測の手順です。TypeSafe の API キーを環境変数に入れて、スクリプトを実行します。");
 
 // 25 再現：手元で試す・計測の条件 -----------------------------------------------------------------------
-s = content("再現の手順③：手元で試す／計測の条件", "再現");
+s = content("再現の手順3：手元で試す／計測の条件", "再現");
 label(s, "手元で1段ずつ試す", 0.5, 1.35, 4.3, 0.4, { fontSize: 14, bold: true });
 bullets(s, [
   "Google Colab または手元の Jupyter：tutorial/jev_geoparquet_colab.ipynb",
@@ -679,7 +679,7 @@ s.addTable([
   ["回数", "各3回。ファイル選択だけは10回"],
   ["jev 拡張の答えの記憶", "1回ごとに jev_cache_clear() で消去"],
   ["日時（UTC）", "3つのやり方：11/22。一覧の比較：11/23。R2・Cloudflare：11/23〜24"],
-  ["場所", "「時間を測った環境」のスライドの A〜C。A では、API キーを付ける中継プログラム（pipeline/jev_relay.py）を通した"],
+  ["場所", "「時間を測った環境」のスライドの3つ。作業環境では、API キーを付ける中継プログラム（pipeline/jev_relay.py）を通した"],
 ], tableOpts(5.2, 1.8, 4.3, [1.3, 3.0], { fontSize: 10, rowH: [0.42, 0.42, 0.42, 0.42, 0.42, 0.42, 1.0] }));
 repro(s, "計測の日時は各結果ファイルの started_utc、実際に答えたモデルの版は results/*/runs*.json の model_served に記録");
 s.addNotes("手元で試すには、Colab か Jupyter のノートブックが一番簡単です。計測の条件は右のとおりです。");
