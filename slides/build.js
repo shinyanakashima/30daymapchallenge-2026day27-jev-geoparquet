@@ -199,8 +199,8 @@ repro(s, "results/examples/jev_call_20261123.json の request を POST https://a
 s.addNotes("Jev は TypeSafe AI 社の AI モデルです。地物の情報、質問、選択肢を送ると、選択肢の中から答えを1つ返し、選択肢ごとの確率も返します。");
 
 // 5b Jev は OSS？ ------------------------------------------------------------------------------------
-s = content("Jev ＝ OSS？", "前提");
-label(s, [{ text: "いいえ。", options: { fontSize: 28, bold: true, color: C.accent1 } }, { text: "Jev のモデルは API で使うサービス。まわりは OSS とオープンデータ", options: { fontSize: 18, bold: true } }], 0.5, 1.25, 9.0, 0.6, { valign: "middle" });
+s = content("OSS の中に、Jev がひとつ", "前提");
+label(s, [{ text: "Jev ＝ OSS？　", options: { fontSize: 22, bold: true } }, { text: "いいえ。", options: { fontSize: 28, bold: true, color: C.accent1 } }, { text: "Jev は API で使うサービス。まわりは OSS とオープンデータ", options: { fontSize: 17, bold: true } }], 0.5, 1.25, 9.0, 0.6, { valign: "middle" });
 [
   ["OSS ではないもの", "F4F5F6", HEX.accent6, [
     ["Jev（モデル）", "TypeSafe AI が API で提供。API キーが要り、使った量に応じて費用がかかる"],
@@ -222,8 +222,8 @@ label(s, [{ text: "いいえ。", options: { fontSize: 28, bold: true, color: C.
     { text: b, options: { color: C.accent6, fontSize: 11, breakLine: i < rows.length - 1, paraSpaceAfter: 6 } },
   ]), x + 0.2, 2.7, 4.0, 2.6, { fontSize: 13 });
 });
-keyline(s, "Jev を呼ぶ部分（API）以外は、OSS とオープンデータだけで再現できる", 5.65, 0.4);
-s.addNotes("Jev は OSS か。答えはいいえです。TypeSafe AI が API で提供するモデルで、API キーと利用料が要ります。一方、DuckDB から呼ぶ jev 拡張は MIT ライセンスの OSS で、データを読む部品や地図、データそのものもオープンです。");
+keyline(s, "Jev を呼ぶのは1か所だけ。ここを OSS の意思決定特化 AI に差し替えられれば、すべて OSS でできる（未検証）", 5.6, 0.7);
+s.addNotes("Jev は OSS か。答えはいいえです。ただし Jev を呼ぶのは1か所だけなので、将来 OSS の意思決定特化 AI が出てくれば、そこを差し替えてすべて OSS で試せます。TypeSafe AI が API で提供するモデルで、API キーと利用料が要ります。一方、DuckDB から呼ぶ jev 拡張は MIT ライセンスの OSS で、データを読む部品や地図、データそのものもオープンです。");
 
 // 9 データの作り方 -------------------------------------------------------------------------------
 pres.addSection({ title: "仕組み" });
@@ -606,7 +606,8 @@ s = content("発展課題：使えそうな場面", "発展課題");
   label(s, sub, x + 0.2, 2.05, 4.0, 0.55, { fontSize: 11, ...muted });
   bullets(s, items, x + 0.2, 2.6, 4.0, 2.2, 12, 8);
 });
-label(s, "どちらも未検証", 0.5, 5.0, 9.0, 0.3, { fontSize: 10, ...muted });
+label(s, [{ text: "OSS の意思決定特化 AI への差し替え：", options: { bold: true } }, { text: "Jev を呼ぶのは、jev 拡張の接続先（jev_api_url）と、ブラウザ版の Jev 処理（src/jev.js）の1か所ずつ。同じ形の答えを返すモデルがあれば、ここを替えて同じ物差しで比べられる。なお、Jev の出力で別のモデルを学習させることは、TypeSafe の利用規約で禁止されている" }], 0.5, 5.0, 9.0, 0.9, { fontSize: 11 });
+label(s, "どれも未検証", 0.5, 6.0, 9.0, 0.3, { fontSize: 10, ...muted });
 s.addNotes("発展課題です。COGP の詳細度は、ズームに合わせて判定を足していく地図アプリや、数件見つかればよい検索に使えそうです。VSS は、地物が多い地域で Jev に送る件数を減らす前段に使えそうです。");
 
 // 23 再現：データの準備 -------------------------------------------------------------------------------
