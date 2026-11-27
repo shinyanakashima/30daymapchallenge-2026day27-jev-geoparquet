@@ -142,14 +142,14 @@ s.addNotes("選択肢の中から答えを選ぶタイプの AI モデル Jev �
 // 2 問い ---------------------------------------------------------------------------------------
 s = content("今日の問い", "導入");
 [["1", "「子どもが遊べる場所」のような曖昧な条件で、地図上の場所を絞り込めるか"],
- ["2", "従来のやり方と比べて、どれだけ多くの候補を拾えるか。代わりに何がかかるか"],
- ["3", "データは種類と区域ごとにたくさんのファイルに分けてある（札幌は50ファイル）。Jev に、先に読むファイルを選ばせると、かかる時間はどれだけ減るか"]].forEach(([n, t], i) => {
+ ["2", "そのとき、どれだけの時間と費用がかかるか"],
+ ["3", "データをあらかじめファイルに分けておき、読むファイルを Jev に選ばせると、分けずに全部を判定するより速くなるか"]].forEach(([n, t], i) => {
   const y = 1.5 + i * 1.3;
   label(s, n, 0.6, y, 0.6, 0.8, { fontSize: 36, bold: true, color: C.accent1 });
   label(s, t, 1.4, y + 0.1, 8.0, 1.0, { fontSize: 19, bold: true });
 });
 label(s, "対象：札幌市と北広島市の OpenStreetMap（OSM）の地物。施設・店・公園など", 0.6, 5.6, 8.8, 0.5, { fontSize: 14, ...muted });
-s.addNotes("問いは3つです。曖昧な条件で絞り込めるか。従来のやり方と比べてどれだけ拾えて、何がかかるか。Jev に先に読むファイルを選ばせると、時間はどれだけ減るか。");
+s.addNotes("問いは3つです。曖昧な条件で絞り込めるか。そのときどれだけの時間と費用がかかるか。ファイルを分けて、読むファイルを Jev に選ばせると速くなるか。");
 
 // 3 OSM の属性 ----------------------------------------------------------------------------------
 pres.addSection({ title: "前提" });
@@ -167,12 +167,12 @@ s.addNotes("OSM では属性のことをタグと呼び、キーと値の組で�
 
 // 4 属性が無い ---------------------------------------------------------------------------------
 s = content("「子どもが遊べる場所」という属性は無い", "前提");
-label(s, "従来のやり方：条件に合いそうな種類の属性（タグ）を、人が選んで対応表にする", 0.5, 1.35, 9.0, 0.5, { fontSize: 15, bold: true });
+label(s, "GIS のふつうの検索：種類の属性（タグ）で絞り込む（例：leisure=park）", 0.5, 1.35, 9.0, 0.5, { fontSize: 15, bold: true });
 s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y: 1.95, w: 4.2, h: 1.5, fill: { color: HEX.lt2 }, line: { type: "none" }, objectName: "rule" });
-label(s, "子どもが遊べる場所\n→ 公園・遊び場の地物だけを見る", 0.7, 2.05, 3.9, 1.3, { fontSize: 17, bold: true, valign: "middle" });
-bullets(s, ["対応表に入れなかった種類の地物は、検索にかからない", "幼稚園、児童会館、子ども向けの屋内施設……をどこまで入れるかは、人の判断", "「雨の日に屋内で過ごせる場所」のように、いくつもの種類にまたがる条件ほど難しい"], 5.0, 1.95, 4.5, 3.0, 14, 8);
+label(s, "子どもが遊べる場所\n→ どの属性で絞ればよい？", 0.7, 2.05, 3.9, 1.3, { fontSize: 17, bold: true, valign: "middle" });
+bullets(s, ["「子どもが遊べる」を表す属性は無い", "公園、遊び場、幼稚園、児童会館、子ども向けの屋内施設……と、いくつもの種類にまたがる", "「雨の日に屋内で過ごせる場所」のような条件も同じ"], 5.0, 1.95, 4.5, 3.0, 14, 8);
 keyline(s, "今回の試み：Jev に地物の名前と属性（タグ）を読ませ、条件に合うかを1件ずつ判定させる", 5.3, 0.8);
-s.addNotes("子どもが遊べる場所、という属性はありません。従来は、合いそうな種類の属性を人が選んで対応表を作ります。今回は Jev に1件ずつ判定させました。");
+s.addNotes("子どもが遊べる場所、という属性はありません。いくつもの種類にまたがるので、属性だけでは絞り込めません。今回は Jev に1件ずつ判定させました。");
 
 // 5 Jev の入出力 --------------------------------------------------------------------------------
 s = content("AI モデル Jev に送るもの、返ってくるもの", "前提");
@@ -315,24 +315,23 @@ label(s, "この実験はファイルを読む順番が本番の計測と違い�
 repro(s, "python pipeline/input_experiments.py \"data/city=kitahiroshima\" results/kitahiroshima/input_experiments.json");
 s.addNotes("送り方で答えが変わります。空の列も含めて送ると、ほとんどが判断材料不足になりました。値のある属性だけを文字列にして送ると、当てはまる地物が8件から64件に増え、読む量も半分以下になりました。また、まとめて送る件数を変えると、答えが変わる地物がありました。");
 
-// 10 比べた3つのやり方 ------------------------------------------------------------------------------
-s = content("比べた3つのやり方", "仕組み");
+// 10 比べた2つのやり方 ------------------------------------------------------------------------------
+s = content("比べた2つのやり方", "仕組み");
 const ways = [
-  ["A 全件判定", "すべてのファイルを読み、全地物を Jev が判定する", "取りこぼしが無い。比べるときの基準"],
-  ["B 従来のやり方", "条件ごとに見るカテゴリを人が決め（対応表）、そのカテゴリのファイルだけを読んで、Jev が判定する", "例：子どもが遊べる場所 → 公園・遊び場のファイルだけ。比べやすくするため、最後の判定は Jev で行った"],
-  ["C Jev がファイルを選ぶ", "ファイルごとの中身の一覧を Jev に読ませ、当てはまる地物がありそうなファイルだけを読んで、Jev が判定する", "読まないファイルの地物は判定しないので、速くなりうる"],
+  ["A 分割しない（全件判定）", "ファイルを選ばず、すべての地物を Jev が判定する", "取りこぼしが無い。比べるときの基準。Jev の条件には索引が効かないので、全件を判定することになる"],
+  ["B 分割して、Jev が選ぶ", "データを種類と区域でファイルに分けておく（札幌は50ファイル）。①ファイルごとの要約を Jev に読ませて読むファイルを選び、②読んだ地物を Jev が判定する", "読まないファイルの地物は判定しないので、速くなりうる。その代わり取りこぼすことがある"],
 ];
 ways.forEach(([h, d, n], i) => {
-  const y = 1.35 + i * 1.45;
-  s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y, w: 9.0, h: 1.3, fill: { color: i === 2 ? "EAF3EF" : "F4F5F6" }, line: { type: "none" }, objectName: `way-${i}` });
-  label(s, h, 0.7, y + 0.1, 2.6, 0.5, { fontSize: 15, bold: true, color: i === 2 ? C.accent1 : C.text1 });
-  label(s, d, 3.4, y + 0.1, 5.9, 0.6, { fontSize: 12 });
-  label(s, n, 3.4, y + 0.75, 5.9, 0.5, { fontSize: 11, ...muted });
+  const y = 1.45 + i * 1.9;
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y, w: 9.0, h: 1.7, fill: { color: i === 1 ? "EAF3EF" : "F4F5F6" }, line: { type: "none" }, objectName: `way-${i}` });
+  label(s, h, 0.7, y + 0.15, 2.8, 0.6, { fontSize: 15, bold: true, color: i === 1 ? C.accent1 : C.text1 });
+  label(s, d, 3.6, y + 0.15, 5.7, 0.8, { fontSize: 12 });
+  label(s, n, 3.6, y + 1.0, 5.7, 0.6, { fontSize: 11, ...muted });
 });
-label(s, "どのやり方も ①読むファイルを決める → ②読んだ地物を Jev が判定する。違うのは①だけ。4条件 × 各3回測った", 0.5, 5.75, 9.0, 0.35, { fontSize: 12 });
-label(s, `${BASIS}。Jev の判定に誤りがあっても、それは数に含まれる`, 0.5, 6.1, 9.0, 0.45, { fontSize: 11, ...muted });
-repro(s, "pipeline/questions.json（4条件と対応表）、run_compare.py --methods A,B,C（A＝全件、B＝従来、C＝Jev が選ぶ）");
-s.addNotes("比べたのは3つのやり方です。違いはどのファイルを読むかだけで、最後の判定はどれも Jev です。取りこぼしは、正解ではなく、Jev の全件判定を基準に数えます。");
+label(s, "4条件 × 各3回測った。B の取りこぼしは、A で「当てはまる」になった地物のうち、B で読まなかったファイルにあったものを数えた", 0.5, 5.4, 9.0, 0.5, { fontSize: 12 });
+label(s, "A も、分割した50ファイルを全部読んで測った。Jev の判定は1ファイルでも同じ", 0.5, 5.95, 9.0, 0.35, { fontSize: 11, ...muted });
+repro(s, "pipeline/run_compare.py --methods A,C（スクリプトでは B を C と表記）");
+s.addNotes("比べたのは2つです。A はファイルを分けずに全件を Jev が判定する。B はデータを分けておき、Jev に読むファイルを選ばせてから判定する。取りこぼしは、正解ではなく A の結果を基準に数えます。");
 
 // 10b 時間を測った環境 ------------------------------------------------------------------------------
 s = content("時間を測った環境", "仕組み");
@@ -352,31 +351,32 @@ s.addNotes("時間の数字は3つの環境で測りました。作業用のク�
 
 // 11 結果1 --------------------------------------------------------------------------------------
 pres.addSection({ title: "結果" });
-s = content("結果1：従来のやり方では見つからない候補を拾えた", "結果");
-label(s, "札幌市 16,610件。Jev が全件判定で「当てはまる」とした地物のうち、従来のやり方で見るカテゴリの外にあったものを数えた", 0.5, 1.25, 9.0, 0.6, { fontSize: 13 });
+s = content("結果1：曖昧な条件でも、Jev で地物を絞り込めた", "結果");
+label(s, "札幌市 16,610件を A（全件判定）で判定した。件数は3回の範囲", 0.5, 1.25, 9.0, 0.4, { fontSize: 13 });
 const ex = { kids_play: "幼稚園・児童会館・学童クラブ", rainy_day: "プール・銭湯・ジム・ネットカフェ", groceries: "ドラッグストア", local_history: "博物館・郷土資料館" };
+const cnt = (q, c) => { const v = q.methods.A.runs.map((r) => [...r.j].filter((x) => x === c).length); const lo = Math.min(...v), hi = Math.max(...v); return lo === hi ? lo.toLocaleString() : `${lo.toLocaleString()}〜${hi.toLocaleString()}`; };
 s.addTable([
-  [head("条件"), head("B（対応表）で見たカテゴリ"), head("当てはまる（1回目）", "right"), head("カテゴリの外（1回目）", "right"), head("外の割合（3回）", "right"), head("外にあった地物の例")],
-  ...SP.questions.map((q) => { const n = supportedCount(q.id), m = q.methods.B.runs[0].missed.length, r = missRate(q.id);
-    const lo = Math.round(Math.min(...r) * 100), hi = Math.round(Math.max(...r) * 100);
-    return [QN[q.id], RULE[q.id], { text: `${n.toLocaleString()}件`, options: { align: "right" } }, { text: `${m}件`, options: { align: "right" } }, { text: lo === hi ? `${lo}%` : `${lo}〜${hi}%`, options: { align: "right", bold: hi >= 10 } }, ex[q.id]]; }),
-], tableOpts(0.5, 1.95, 9.0, [1.65, 1.55, 1.15, 1.15, 1.05, 2.45], { fontSize: 10, rowH: [0.5, 0.55, 0.55, 0.55, 0.55] }));
-label(s, "当てはまるとした地物は Jev の判定なので、誤りも含む（正しさは未確認）", 0.5, 4.8, 9.0, 0.35, { fontSize: 11, ...muted });
-keyline(s, "今回の4条件では、種類が多岐にわたる「子ども」（16%）と「雨の日」（14〜20%）で、従来のやり方では見つからない地物が多かった", 5.3, 0.9);
-repro(s, "results/sapporo/runs.json → pipeline/summarize.py → web/public/data/sapporo/results.json の method B の missed");
-s.addNotes("子どもが遊べる場所では、Jev が当てはまるとした地物の16%が、従来のやり方では見るカテゴリの外にありました。雨の日では3回で14から20%です。");
+  [head("条件"), head("当てはまる", "right"), head("判断材料不足", "right"), head("当てはまらない", "right"), head("当てはまるとされた地物の例")],
+  ...SP.questions.map((q) => [QN[q.id], { text: `${cnt(q, "s")}件`, options: { align: "right", bold: true } }, { text: `${cnt(q, "i")}件`, options: { align: "right" } }, { text: `${cnt(q, "c")}件`, options: { align: "right" } }, ex[q.id]]),
+], tableOpts(0.5, 1.7, 9.0, [2.1, 1.35, 1.45, 1.4, 2.7], { fontSize: 11, rowH: [0.45, 0.55, 0.55, 0.55, 0.55] }));
+label(s, "当てはまるとした地物は Jev の判定なので、誤りも含む（正しさは未確認）", 0.5, 4.5, 9.0, 0.35, { fontSize: 11, ...muted });
+bullets(s, [
+  "属性に無い条件でも、名前と属性を手がかりに、当てはまる地物を選び出せた",
+  "「判断材料不足」も多い。子どもが遊べる場所では、約85%が判断材料不足だった（名前と属性だけでは決められない地物）",
+], 0.5, 4.95, 9.0, 1.2, 13, 6);
+repro(s, "results/sapporo/runs.json → pipeline/summarize.py → web/public/data/sapporo/results.json の method A");
+s.addNotes("4条件とも、属性に無い条件で地物を絞り込めました。一方で、判断材料不足になる地物も多くありました。");
 
 // 12 地図 ----------------------------------------------------------------------------------------
 s = content("結果1の地図：札幌・子どもが遊べる場所", "結果");
-s.addImage({ path: path.join(__dirname, "img/sapporo_kids_fixed_rule.png"), x: 0.5, y: 1.3, w: 5.4, h: 4.85, objectName: "map-fixed-rule", altText: "札幌・子どもが遊べる場所。従来のやり方では見つからない地物を赤い輪で示した地図" });
+s.addImage({ path: path.join(__dirname, "img/sapporo_kids_all.png"), x: 0.5, y: 1.3, w: 5.4, h: 4.85, objectName: "map-all", altText: "札幌・子どもが遊べる場所。Jev が当てはまるとした地物を緑の点で示した地図" });
 bullets(s, [
-  "赤い輪：全件判定で当てはまるとされたが、従来のやり方（公園・遊び場のファイルだけ見る）では読まないファイルにあった地物",
-  "緑・黄・灰の点：従来のやり方で読んだファイルの地物。緑＝当てはまる、黄＝判断材料不足、灰＝当てはまらない",
-  "白い点：従来のやり方では読まないファイルの地物のうち、取りこぼし以外",
-  "破線の四角：ファイルが受け持つ範囲（データの範囲で、地物の位置そのものではない）",
-], 6.1, 1.4, 3.4, 4.7, 11, 8);
-repro(s, "作品の画面（shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/?lang=ja&city=sapporo&q=0&m=B）");
-s.addNotes("赤い輪が、従来のやり方では読まないファイルにあった地物です。市街地の全体に散らばっています。");
+  "緑の点：Jev が「当てはまる」とした地物（1回目、1,726件）",
+  "灰色の小さい点：それ以外（当てはまらない・判断材料不足）",
+  "公園だけでなく、幼稚園や児童会館なども選ばれ、市街地全体に散らばっている",
+], 6.1, 1.4, 3.4, 4.7, 12, 10);
+label(s, "地図の範囲は市街地を中心に切り取った", 6.1, 5.6, 3.4, 0.4, { fontSize: 10, ...muted });
+s.addNotes("緑の点が、Jev が子どもが遊べる場所に当てはまるとした地物です。");
 
 // 13 結果2 --------------------------------------------------------------------------------------
 s = content("結果2：代わりに、時間と費用がかかる", "結果");
@@ -418,7 +418,7 @@ s.addNotes("Jev がファイルを選ぶときに読むのは、この中身の�
 
 // 15 結果3 ---------------------------------------------------------------------------------------
 s = content("結果3：Jev が先にファイルを選んだ場合の速さ", "結果");
-const twoCharts = (city, x, title, fmt) => s.addChart(pres.charts.BAR, ["A", "C"].map((m) => ({ name: m === "A" ? "A 全件判定" : "C Jev がファイルを選ぶ", labels: city.questions.map((q) => QS[q.id]), values: city.questions.map((q) => q.methods[m].median.total_s) })), {
+const twoCharts = (city, x, title, fmt) => s.addChart(pres.charts.BAR, ["A", "C"].map((m) => ({ name: m === "A" ? "A 分割しない" : "B 分割して Jev が選ぶ", labels: city.questions.map((q) => QS[q.id]), values: city.questions.map((q) => q.methods[m].median.total_s) })), {
   x, y: 1.3, w: 4.4, h: 3.6, barDir: "bar", ...chartBase, chartColors: [COL.A, COL.C],
   showTitle: true, title, titleFontSize: 12, titleColor: HEX.dk1, titleFontFace: "+mn-lt", dataLabelFormatCode: fmt, valAxisMinVal: 0, catAxisOrientation: "maxMin",
 });
@@ -455,7 +455,7 @@ s.addNotes("一覧の書き方を4通り試しました。m1 は最初に使っ�
 // 18 一覧の比較結果 ----------------------------------------------------------------------------------
 s = content("一覧の書き方ごとの、速さと取りこぼし", "一覧の改良");
 const vers = ["A", "m1", "m2", "m3", "m4"];
-const vlab = { A: "A 全件判定", m1: "m1", m2: "m2", m3: "m3", m4: "m4" };
+const vlab = { A: "A 分割しない", m1: "m1", m2: "m2", m3: "m3", m4: "m4" };
 s.addChart(pres.charts.BAR, [{ name: "時間", labels: vers.map((v) => vlab[v]), values: vers.map((v) => MC.full[v].groceries.total) }], {
   x: 0.5, y: 1.3, w: 4.4, h: 3.4, barDir: "col", ...chartBase, showLegend: false,
   chartColors: [COL.A, "7FB8A4", "4E9C81", "2E8667", COL.C], invertedColors: [COL.A, "7FB8A4", "4E9C81", "2E8667", COL.C],
@@ -604,7 +604,7 @@ s = content("発展課題：使えそうな場面", "発展課題");
   ]],
   ["DuckDB の VSS（ベクトル検索）", "名前・属性と質問の、意味の近さで並べる仕組み", [
     "地物が多い地域で、質問に近い順の上位だけを Jev が判定し、問い合わせの件数を減らす",
-    "自由文の質問で、対応表を前もって作れないときに、候補を先に集める",
+    "自由文の質問で、意味の近い候補を先に集める",
   ]],
 ].forEach(([h, sub, items], k) => {
   const x = 0.5 + k * 4.6;
@@ -690,16 +690,15 @@ s = pres.addSlide({ masterName: "DARK_TOP", sectionTitle: "まとめ" });
 s.addText("まとめ", { placeholder: "title" });
 label(s, [
   "曖昧な条件でも、Jev で地物を絞り込めた（正しさは未確認）",
-  "従来のやり方では見ない候補も拾えた（札幌・子どもが遊べる場所で16%）",
   "代わりに時間がかかる（札幌の全件で1回約12秒）",
-  "Jev にファイルを選ばせると、少し速くなった（札幌・食料品で約15%）",
+  "ファイルを分けて Jev に選ばせると、少し速くなった（札幌・食料品で約15%）",
   "Cloudflare では、時間の大半が R2 からの読み込みだった",
   "次は、判定の正しさを確かめる",
 ].map((t, i, a) => ({ text: t, options: { bullet: true, breakLine: i < a.length - 1 } })), 0.6, 1.75, 8.8, 3.9, { fontSize: 19, color: C.background1, paraSpaceAfter: 12 });
 label(s, "作品：shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/", 0.6, 5.95, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "コード：github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet", 0.6, 6.25, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "データ © OpenStreetMap contributors（ODbL）／背景地図：地理院タイル／Jev は TypeSafe AI のモデル", 0.6, 6.6, 8.8, 0.3, { fontSize: 10, color: C.lt2 });
-s.addNotes("まとめです。属性として用意されていない曖昧な条件でも、Jev で地物を絞り込めました。従来のやり方では見つからない候補も拾えました。時間はかかりますが、Jev が先にファイルを選ぶ工夫で、大きいデータでは少し短くできます。判定の正しさは、これから確かめます。");
+s.addNotes("まとめです。属性として用意されていない曖昧な条件でも、Jev で地物を絞り込めました。時間はかかりますが、ファイルを分けて Jev に選ばせる工夫で、大きいデータでは少し短くできます。判定の正しさは、これから確かめます。");
 
 (async () => {
   await pres.writeFile({ fileName: OUT });
