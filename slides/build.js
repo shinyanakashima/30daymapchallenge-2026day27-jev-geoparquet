@@ -688,19 +688,14 @@ s.addNotes("手元で試すには、Colab か Jupyter のノートブックが�
 pres.addSection({ title: "まとめ" });
 s = pres.addSlide({ masterName: "DARK_TOP", sectionTitle: "まとめ" });
 s.addText("まとめ", { placeholder: "title" });
-const SUMMARY = [
-  ["できた", "曖昧な条件でも、地物を絞り込めた", "属性（タグ）に無い「子どもが遊べる場所」などを、Jev を SQL の条件にして判定できた（正しさは未確認）"],
-  ["拾えた", "従来のやり方では見ない候補も拾えた", "札幌：子どもが遊べる場所で16%、雨の日に屋内で過ごせる場所で14〜20%"],
-  ["代わりに", "件数に応じて時間がかかる", "札幌の全件で1回約12秒。Jev が先にファイルを選ぶと、食料品で約15%速く、取りこぼし無し（小さい北広島では逆に遅い）"],
-  ["分かった", "Cloudflare では、読み込みが時間の大半", "Jev の判定より、R2 でファイルを開く時間のほうが長かった"],
-  ["次へ", "判定の正しさを確かめる", "判定には誤りと揺れがある"],
-];
-SUMMARY.forEach(([tag, head1, detail], i) => {
-  const y = 1.65 + i * 0.8;
-  label(s, tag, 0.6, y + 0.03, 1.1, 0.3, { fontSize: 13, bold: true, color: C.lt2 });
-  label(s, head1, 1.75, y, 7.7, 0.36, { fontSize: 18, bold: true, color: C.background1 });
-  label(s, detail, 1.75, y + 0.37, 7.7, 0.3, { fontSize: 12, color: C.lt2 });
-});
+label(s, [
+  "曖昧な条件でも、Jev で地物を絞り込めた（正しさは未確認）",
+  "従来のやり方では見ない候補も拾えた（札幌・子どもが遊べる場所で16%）",
+  "代わりに時間がかかる（札幌の全件で1回約12秒）",
+  "Jev にファイルを選ばせると、少し速くなった（札幌・食料品で約15%）",
+  "Cloudflare では、時間の大半が R2 からの読み込みだった",
+  "次は、判定の正しさを確かめる",
+].map((t, i, a) => ({ text: t, options: { bullet: true, breakLine: i < a.length - 1 } })), 0.6, 1.75, 8.8, 3.9, { fontSize: 19, color: C.background1, paraSpaceAfter: 12 });
 label(s, "作品：shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/", 0.6, 5.95, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "コード：github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet", 0.6, 6.25, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "データ © OpenStreetMap contributors（ODbL）／背景地図：地理院タイル／Jev は TypeSafe AI のモデル", 0.6, 6.6, 8.8, 0.3, { fontSize: 10, color: C.lt2 });
