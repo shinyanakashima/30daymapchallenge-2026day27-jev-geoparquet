@@ -407,7 +407,7 @@ code(s, [
   `多い種類の上位8件：${Object.entries(t1.tag_counts).slice(0, 4).map(([k, v]) => `${k} ${v}件`).join("、")}、…`,
   `名前の例：${t1.sample_names.slice(0, 4).join("、")}、…`,
 ], 0.5, 2.2, 9.0, 1.3, 10);
-label(s, "札幌の実際の一覧（最初に使った「簡易な一覧（m1）」）の1項目。このファイルには薬局が4件あるが、種類の上位8件には入らず、名前の例に1件（なの花薬局）だけ出ている", 0.5, 3.6, 9.0, 0.6, { fontSize: 11, ...muted });
+label(s, "札幌の実際の一覧（最初に使った一覧）の1項目。このファイルには薬局が4件あるが、種類の上位8件には入らず、名前の例に1件（なの花薬局）だけ出ている", 0.5, 3.6, 9.0, 0.6, { fontSize: 11, ...muted });
 bullets(s, [
   "Jev は、一覧の各ファイルについて「候補（読む）」「除外（読まない）」「判断材料不足（念のため読む）」のどれかを選ぶ",
   "「除外」以外のファイルを読み、中の地物を Jev が判定する",
@@ -429,7 +429,7 @@ const lossSel = 100 - Math.min(...QUESTIONS_ALL.map((q) => MC.selection[`m1|${q}
 bullets(s, [
   "北広島の589件では、ファイルを選ぶ時間（約0.25秒）の分だけ、どの条件でも遅くなった",
   "札幌の16,610件では、読まないファイルがあった条件で速くなった（食料品 12.5 → 10.5秒）。どのファイルも読んだ「子ども」は遅くなった",
-  `一覧は簡易な一覧（m1）。札幌の取りこぼしは、検索3回で最大${lossFull.toFixed(1)}%、ファイル選択だけを10回くり返すと最大${lossSel.toFixed(1)}%`,
+  `一覧は最初に使った一覧。札幌の取りこぼしは、検索3回で最大${lossFull.toFixed(1)}%、ファイル選択だけを10回くり返すと最大${lossSel.toFixed(1)}%`,
 ], 0.5, 5.0, 9.0, 1.5, 12, 4);
 repro(s, "results/*/runs.json の method A と C（2026-11-22。pipeline/run_compare.py、一覧は manifest.m1.json）");
 envTag(s, "作業環境");
@@ -437,25 +437,25 @@ s.addNotes("Jev が先にファイルを選ぶと、北広島の589件ではか�
 
 // 17 一覧の4つの版 ----------------------------------------------------------------------------------
 pres.addSection({ title: "一覧の改良" });
-s = content("一覧の書き方を4通り試した（m1〜m4）", "一覧の改良");
-label(s, "m1〜m4 は、一覧のファイル名（manifest.m1.json〜m4.json）に合わせた呼び名。手稲区の公共・文化施設のファイル（薬局4件を含む）を例にすると、Jev に見せる内容は次のとおり", 0.5, 1.25, 9.0, 0.7, { fontSize: 12 });
+s = content("取りこぼしを減らすため、一覧の書き方を4通り試した", "一覧の改良");
+label(s, "手稲区の公共・文化施設のファイル（薬局4件を含む）を例にすると、Jev に見せる内容は次のとおり", 0.5, 1.25, 9.0, 0.7, { fontSize: 12 });
 const pharm = M4.tags.find((t) => t.tag === "amenity=pharmacy");
 const t2 = M2.files.find((f) => f.id === "public_culture__teine");
 s.addTable([
   [head("版"), head("Jev に見せるもの"), head("このファイルの場合")],
-  ["m1\n簡易な一覧", "ファイルごとに、カテゴリ・件数・多い種類の上位8件・名前の例6件", "薬局は上位8件に入らない。名前の例に1件だけ出る"],
-  ["m2\n詳しい一覧", "ファイルごとに、すべての種類と件数・種類ごとに選んだ名前の例（最大30件）・名前がある割合", `${Object.keys(t2.tag_counts).length}種類の中に amenity=pharmacy（薬局）4件が見える`],
-  ["m3\n種類ごとの一覧", `ファイルではなく種類（タグ）ごとに Jev に聞く（札幌は ${M4.tags.length}種類）。当てはまりうる種類を含むファイルを読む`, `「amenity=pharmacy（札幌全体で${pharm.rows}件）」という種類だけを見て判断する`],
-  ["m4\n種類ごとの一覧\n＋名前の例", "m3 に、種類ごとの名前の例（よく出る名前4件と、珍しい名前8件）を添える", `「amenity=pharmacy：${pharm.example_names.slice(0, 3).join("、")}、…」と見せる`],
+  ["1. 最初の一覧", "ファイルごとに、カテゴリ・件数・多い種類の上位8件・名前の例6件", "薬局は上位8件に入らない。名前の例に1件だけ出る"],
+  ["2. 詳しい一覧", "ファイルごとに、すべての種類と件数・種類ごとに選んだ名前の例（最大30件）・名前がある割合", `${Object.keys(t2.tag_counts).length}種類の中に amenity=pharmacy（薬局）4件が見える`],
+  ["3. 属性ごとに聞く", `ファイルではなく種類（タグ）ごとに Jev に聞く（札幌は ${M4.tags.length}種類）。当てはまりうる種類を含むファイルを読む`, `「amenity=pharmacy（札幌全体で${pharm.rows}件）」という種類だけを見て判断する`],
+  ["4. 属性ごと＋名前の例", "3 に、種類ごとの名前の例（よく出る名前4件と、珍しい名前8件）を添える", `「amenity=pharmacy：${pharm.example_names.slice(0, 3).join("、")}、…」と見せる`],
 ], tableOpts(0.5, 2.05, 9.0, [1.5, 4.0, 3.5], { rowH: [0.4, 0.8, 0.85, 0.85, 0.95] }));
-label(s, `m3・m4 は種類の数だけ判定するので、ファイル選択に約${MC.full.m3.groceries.sel.toFixed(1)}秒かかる（m1 は約${MC.full.m1.groceries.sel.toFixed(1)}秒）。m2 → m3 → m4 の順に作る`, 0.5, 6.0, 9.0, 0.45, { fontSize: 11, ...muted });
+label(s, `3・4 は属性の数だけ判定するので、ファイル選択に約${MC.full.m3.groceries.sel.toFixed(1)}秒かかる（1 は約${MC.full.m1.groceries.sel.toFixed(1)}秒）。スクリプト上の名前は順に m1〜m4`, 0.5, 6.0, 9.0, 0.45, { fontSize: 11, ...muted });
 repro(s, "pipeline/manifest_m2.py・manifest_m3.py・manifest_m4.py \"data/city=sapporo\"");
-s.addNotes("一覧の書き方を4通り試しました。m1 は最初に使った簡易な一覧、m2 は詳しい一覧、m3 は種類ごとに聞く一覧、m4 は種類ごとに名前の例を添えた一覧です。");
+s.addNotes("取りこぼしを減らすため、一覧の書き方を4通り試しました。最初の一覧、詳しい一覧、属性ごとに聞く一覧、属性ごとに名前の例を添えた一覧です。");
 
 // 18 一覧の比較結果 ----------------------------------------------------------------------------------
 s = content("一覧の書き方ごとの、速さと取りこぼし", "一覧の改良");
 const vers = ["A", "m1", "m2", "m3", "m4"];
-const vlab = { A: "A 分割しない", m1: "m1", m2: "m2", m3: "m3", m4: "m4" };
+const vlab = { A: "全件", m1: "1 最初", m2: "2 詳しい", m3: "3 属性ごと", m4: "4 属性＋名前" };
 s.addChart(pres.charts.BAR, [{ name: "時間", labels: vers.map((v) => vlab[v]), values: vers.map((v) => MC.full[v].groceries.total) }], {
   x: 0.5, y: 1.3, w: 4.4, h: 3.4, barDir: "col", ...chartBase, showLegend: false,
   chartColors: [COL.A, "7FB8A4", "4E9C81", "2E8667", COL.C], invertedColors: [COL.A, "7FB8A4", "4E9C81", "2E8667", COL.C],
@@ -463,32 +463,32 @@ s.addChart(pres.charts.BAR, [{ name: "時間", labels: vers.map((v) => vlab[v]),
   dataLabelFormatCode: "0.0", valAxisMinVal: 0,
 });
 s.addTable([
-  [head("版"), head("読んだファイル（食料品、50中）", "right"), head("拾えた割合：食料品", "right"), head("同：歴史・文化", "right")],
-  ...["m1", "m2", "m3", "m4"].map((v) => [v, { text: String(MC.full[v].groceries.files), options: { align: "right" } },
+  [head("一覧"), head("読んだファイル（食料品、50中）", "right"), head("拾えた割合：食料品", "right"), head("同：歴史・文化", "right")],
+  ...["m1", "m2", "m3", "m4"].map((v) => [vlab[v], { text: String(MC.full[v].groceries.files), options: { align: "right" } },
     { text: pctf(MC.selection[`${v}|groceries`].ret_min), options: { align: "right", bold: v === "m4" } }, { text: pctf(MC.selection[`${v}|local_history`].ret_min), options: { align: "right", bold: v === "m4" } }]),
-], tableOpts(5.1, 1.35, 4.4, [0.5, 1.3, 1.4, 1.2], { fontSize: 10, rowH: [0.6, 0.42, 0.42, 0.42, 0.42] }));
+], tableOpts(5.1, 1.35, 4.4, [1.1, 1.1, 1.1, 1.1], { fontSize: 10, rowH: [0.6, 0.42, 0.42, 0.42, 0.42] }));
 label(s, `拾えた割合：全件判定で当てはまった地物のうち、読んだファイルに入っていた割合。ファイル選択だけを10回くり返した最小値。${BASIS}`, 5.1, 3.85, 4.4, 0.85, { fontSize: 9, ...muted });
 const sp = (v, q) => Math.round((1 - MC.full[v][q].total / MC.full.A[q].total) * 1000) / 10;
 bullets(s, [
-  "m2・m3 は、食料品で全件判定の約半分の時間（12.4 → 6.6〜6.9秒）で済んだが、少数の地物を取りこぼした（98.5〜99.5%）",
-  `m4 は、4条件すべてで1件も取りこぼさなかった（ファイル選択だけ10回、検索全体3回とも）。速さは m1 とほぼ同じで、食料品で全件判定より約${Math.round(sp("m4", "groceries"))}%速くなり、ほかの3条件はほぼ変わらなかった（${Math.min(sp("m4", "kids_play"), sp("m4", "rainy_day"), sp("m4", "local_history")).toFixed(0)}〜${Math.max(sp("m4", "kids_play"), sp("m4", "rainy_day"), sp("m4", "local_history")).toFixed(0)}%）`,
+  "2・3 は、食料品で全件判定の約半分の時間（12.4 → 6.6〜6.9秒）で済んだが、少数の地物を取りこぼした（98.5〜99.5%）",
+  `4（属性ごと＋名前の例）は、4条件すべてで1件も取りこぼさなかった（ファイル選択だけ10回、検索全体3回とも）。速さは 1 とほぼ同じで、食料品で全件判定より約${Math.round(sp("m4", "groceries"))}%速くなり、ほかの3条件はほぼ変わらなかった（${Math.min(sp("m4", "kids_play"), sp("m4", "rainy_day"), sp("m4", "local_history")).toFixed(0)}〜${Math.max(sp("m4", "kids_play"), sp("m4", "rainy_day"), sp("m4", "local_history")).toFixed(0)}%）`,
 ], 0.5, 4.85, 9.0, 1.3, 12, 5);
-label(s, "全件判定と m2〜m4 は 2026-11-23、m1 は 11/22 に測った（そのため前のスライドの全件判定 12.5秒と少し違う）", 0.5, 6.15, 9.0, 0.35, { fontSize: 9, ...muted });
+label(s, "全件判定と 2〜4 は 2026-11-23、1 は 11/22 に測った（そのため前のスライドの全件判定 12.5秒と少し違う）", 0.5, 6.15, 9.0, 0.35, { fontSize: 9, ...muted });
 repro(s, "pipeline/selection_compare.py（10回）・run_compare.py --methods C --manifest manifest.m4.json（3回）→ compare_manifests.py");
 envTag(s, "作業環境");
-s.addNotes("一覧を詳しくしたり、種類ごとに聞いたりすると、食料品では約半分の時間で済みましたが、少数の地物を取りこぼしました。名前の例を添えた m4 では取りこぼしが無くなりましたが、速くなったのは食料品の約15%で、ほかの条件はほぼ変わりませんでした。");
+s.addNotes("一覧を詳しくしたり、種類ごとに聞いたりすると、食料品では約半分の時間で済みましたが、少数の地物を取りこぼしました。名前の例を添えた4では取りこぼしが無くなりましたが、速くなったのは食料品の約15%で、ほかの条件はほぼ変わりませんでした。");
 
 // 19 なぜ落ちたか ------------------------------------------------------------------------------------
 s = content("取りこぼした地物：名前を見れば分かるものがあった", "一覧の改良");
 s.addTable([
-  [head("条件"), head("m3 で取りこぼした地物"), head("種類（タグ）"), head("Jev が選んだ答え")],
+  [head("条件"), head("3（属性ごとに聞く）で取りこぼした地物"), head("種類（タグ）"), head("Jev が選んだ答え")],
   ["食料品や日用品を買える場所", "19件。ツルハドラッグ、サツドラ、アイン薬局など", { text: "amenity=pharmacy", options: { fontFace: "Courier New" } }, "薬局という種類に「除外」（10回とも）。そのため薬局を含む公共・文化施設のファイルを読まなかった"],
   ["地域の歴史や文化を学べる場所", "4件。札幌手稲記念館、本郷新記念札幌彫刻美術館、つきさっぷ郷土資料館緑地、二中公園", { text: "leisure=park\nleisure=garden", options: { fontFace: "Courier New" } }, "公園・庭園という種類に「除外」（10回とも）"],
 ], tableOpts(0.5, 1.35, 9.0, [2.0, 2.4, 1.8, 2.8], { fontSize: 10, rowH: [0.4, 1.0, 1.1] }));
 bullets(s, [
   "食料品の19件の内訳：名前でドラッグストアと分かるもの6件、調剤薬局（アイン薬局など）9件、名前の無い薬局4件。調剤薬局を「食料品を買える」とした全件判定のほうが誤りの可能性もある",
   "歴史・文化の4件のうち3件は、名前に記念館・美術館・資料館が入っている。全件判定では、地物ごとに名前も読んで「当てはまる」になっていた",
-  "m2 では、一覧に薬局が載っていても、このファイル（大半は学校・病院）に「除外」が選ばれた。名前の例を入れた m4 では、取りこぼしは0件だった",
+  "2（詳しい一覧）では、薬局が載っていても、このファイル（大半は学校・病院）に「除外」が選ばれた。4（属性ごと＋名前の例）では、取りこぼしは0件だった",
 ], 0.5, 4.15, 9.0, 1.6, 11, 4);
 keyline(s, "Jev に選ばせる材料には、判断の決め手になる情報（今回は名前）を残す必要がある", 5.8);
 repro(s, "results/sapporo/selection_m1_m2.json・selection_m3.json の missed（どの地物を取りこぼしたか）");
@@ -517,8 +517,8 @@ s.addTable([
   ["判定に誤りがある", "人が正解を付けて、正しさを評価する", "適合率・再現率を数字で示せる。質問文の改善にも使える", "人手がかかる", "未実施"],
   ["判定が揺れる", "判定結果をファイルに保存し、次の検索でも使う（モデルの版・質問・地物の情報ごと。jev 拡張の答えの記憶は検索ごとに消えるので、それとは別に持つ）", "同じ入力には同じ答えを返せる。2回目以降は費用がかからない", "揺れそのものが減るわけではない。モデルの版が変わると作り直し", "未実装"],
   ["判定が揺れる", "1件ずつ送る", "一緒に送る地物の影響を受けない", "60件で試すと、2回の一致はかえって下がり（88%）、問い合わせは約19倍", "試したが効果なし"],
-  ["時間がかかる", "Jev が先にファイルを選ぶ。一覧には名前の例を入れる（m4）", "札幌で取りこぼし無し", `速くなったのは食料品の約15%。北広島では4条件とも遅くなった（11/23 計測、4条件×3回の中央値で全件 ${khA.toFixed(2)}秒 → ${khC.toFixed(2)}秒）`, "試した"],
-  ["時間がかかる（速さを優先）", "一覧を詳しくする（m2）か、種類ごとに聞く（m3）", "食料品で約半分の時間", "少数の地物を取りこぼす（98.5〜99.5%）", "試した"],
+  ["時間がかかる", "Jev が先にファイルを選ぶ。属性ごとに聞き、名前の例を添える", "札幌で取りこぼし無し", `速くなったのは食料品の約15%。北広島では4条件とも遅くなった（11/23 計測、4条件×3回の中央値で全件 ${khA.toFixed(2)}秒 → ${khC.toFixed(2)}秒）`, "試した"],
+  ["時間がかかる（速さを優先）", "一覧を詳しくするか、属性ごとに聞く（名前なし）", "食料品で約半分の時間", "少数の地物を取りこぼす（98.5〜99.5%）", "試した"],
   ["Cloudflare 上では R2 からの読み込みに時間がかかる", "データをコンテナの中に置く（起動時に R2 から1回だけ取る）", `手元のファイルと同じ読み方になる（札幌で約${LVR.sp.tests.local_search_read.median_s.toFixed(1)}秒）`, "データを更新したらコンテナの起動し直しが要る。Cloudflare 上の効果は未計測", "未実装"],
 ], tableOpts(0.5, 1.3, 9.0, [1.5, 2.2, 2.0, 2.3, 1.0], { fontSize: 9.5, rowH: [0.34, 0.75, 0.82, 0.75, 0.85, 0.7, 0.8] }));
 repro(s, "results/sapporo/manifest_comparison_summary.json、results/kitahiroshima/input_experiments.json・runs_a_c_m4_20261123.json");
@@ -690,15 +690,16 @@ s = pres.addSlide({ masterName: "DARK_TOP", sectionTitle: "まとめ" });
 s.addText("まとめ", { placeholder: "title" });
 label(s, [
   "曖昧な条件でも、Jev で地物を絞り込めた（正しさは未確認）",
-  "代わりに時間がかかる（札幌の全件で1回約12秒）",
-  "ファイルを分けて Jev に選ばせると、少し速くなった（札幌・食料品で約15%）",
-  "Cloudflare では、時間の大半が R2 からの読み込みだった",
-  "次は、判定の正しさを確かめる",
-].map((t, i, a) => ({ text: t, options: { bullet: true, breakLine: i < a.length - 1 } })), 0.6, 1.75, 8.8, 3.9, { fontSize: 19, color: C.background1, paraSpaceAfter: 12 });
+  "全件を判定すると時間がかかる（札幌で1回約12秒）",
+  "ファイルを分けて Jev に読むファイルを選ばせると、取りこぼしが出た",
+  "取りこぼしたのは、名前を見れば分かる地物（ドラッグストアなど）",
+  "一覧に名前の例を添えると、取りこぼしゼロで約15%速くなった（札幌・食料品）",
+].map((t, i, a) => ({ text: t, options: { bullet: true, breakLine: i < a.length - 1 } })), 0.6, 1.6, 8.8, 2.9, { fontSize: 17, color: C.background1, paraSpaceAfter: 8 });
+label(s, "AI に選ばせるなら、人が判断に使う手がかり（名前）を見せる", 0.6, 4.6, 8.8, 0.7, { fontSize: 24, bold: true, color: C.lt2 });
 label(s, "作品：shinyanakashima.github.io/30daymapchallenge-2026day27-jev-geoparquet/", 0.6, 5.95, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "コード：github.com/shinyanakashima/30daymapchallenge-2026day27-jev-geoparquet", 0.6, 6.25, 8.8, 0.3, { fontSize: 11, color: C.lt2 });
 label(s, "データ © OpenStreetMap contributors（ODbL）／背景地図：地理院タイル／Jev は TypeSafe AI のモデル", 0.6, 6.6, 8.8, 0.3, { fontSize: 10, color: C.lt2 });
-s.addNotes("まとめです。属性として用意されていない曖昧な条件でも、Jev で地物を絞り込めました。時間はかかりますが、ファイルを分けて Jev に選ばせる工夫で、大きいデータでは少し短くできます。判定の正しさは、これから確かめます。");
+s.addNotes("まとめです。属性として用意されていない曖昧な条件でも、Jev で地物を絞り込めました。AI に読むファイルを選ばせるなら、人が判断に使う手がかり、今回は名前を見せることが大事でした。時間はかかりますが、ファイルを分けて Jev に選ばせる工夫で、大きいデータでは少し短くできます。判定の正しさは、これから確かめます。");
 
 (async () => {
   await pres.writeFile({ fileName: OUT });
