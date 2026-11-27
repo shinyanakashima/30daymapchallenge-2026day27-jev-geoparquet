@@ -1,4 +1,4 @@
-// Build the FOSS4G Hokkaido 2026 deck (4:3) from the measured results in web/public/data.
+// Build the FOSS4G Hokkaido 2026 deck (16:9) from the measured results in web/public/data.
 const fs = require("fs");
 const path = require("path");
 const pptxgen = require("pptxgenjs");
@@ -23,7 +23,19 @@ const HEX = THEME.colors;
 const COL = { A: "9AA3AD", B: "D49A12", C: "0F7B5F" };
 
 const pres = new pptxgen();
-pres.layout = "LAYOUT_4x3"; // 10 x 7.5 in
+pres.layout = "LAYOUT_WIDE"; // 13.333 x 7.5 in
+// The slides were laid out on a 10-inch-wide grid; every x and width is stretched to the 13.333-inch width.
+const SX = 13.333 / 10;
+const sx = (o) => { if (!o || o.placeholder) return o; const r = { ...o }; if (typeof r.x === "number") r.x *= SX; if (typeof r.w === "number") r.w *= SX; if (Array.isArray(r.colW)) r.colW = r.colW.map((v) => v * SX); return r; };
+const _addSlide = pres.addSlide.bind(pres);
+pres.addSlide = (...args) => {
+  const sl = _addSlide(...args);
+  const wrap = (name, idx) => { const f = sl[name].bind(sl); sl[name] = (...a) => { a[idx] = sx(a[idx]); return f(...a); }; };
+  wrap("addText", 1); wrap("addShape", 1); wrap("addTable", 1); wrap("addChart", 2);
+  const img = sl.addImage.bind(sl);
+  sl.addImage = (o) => img({ ...o, x: o.x * SX + (o.w * SX - o.w) / 2 }); // keep the image's proportions, centre it in the wider space
+  return sl;
+};
 pres.theme = { headFontFace: THEME.headFontFace, bodyFontFace: THEME.bodyFontFace };
 pres.title = "意思決定特化型AIで地理空間データを「解釈」して検索する";
 pres.author = "Shinya Nakashima";
@@ -35,7 +47,7 @@ pres.defineSlideMaster({
   title: "DARK",
   background: { color: HEX.dk2 },
   objects: [
-    { placeholder: { options: { name: "title", type: "title", x: 0.6, y: 2.0, w: 8.8, h: 1.9, fontSize: 30, bold: true, color: C.background1, valign: "top", align: "left", margin: 0 }, text: "" } },
+    { placeholder: { options: { name: "title", type: "title", x: 0.8, y: 2.0, w: 11.7, h: 1.9, fontSize: 32, bold: true, color: C.background1, valign: "top", align: "left", margin: 0 }, text: "" } },
   ],
 });
 pres.defineSlideMaster({
@@ -43,10 +55,10 @@ pres.defineSlideMaster({
   background: { color: HEX.lt1 },
   margin: [0.5, 0.5, 0.5, 0.5],
   objects: [
-    { placeholder: { options: { name: "title", type: "title", x: 0.5, y: 0.35, w: 9.0, h: 0.85, fontSize: 24, bold: true, color: C.text1, valign: "middle", align: "left", margin: 0 }, text: "" } },
-    { text: { text: "FOSS4G Hokkaido 2026", options: { x: 0.5, y: 7.05, w: 4, h: 0.3, fontSize: 9, color: C.accent6, margin: 0 } } },
+    { placeholder: { options: { name: "title", type: "title", x: 0.67, y: 0.35, w: 12.0, h: 0.85, fontSize: 26, bold: true, color: C.text1, valign: "middle", align: "left", margin: 0 }, text: "" } },
+    { text: { text: "FOSS4G Hokkaido 2026", options: { x: 0.67, y: 7.05, w: 5, h: 0.3, fontSize: 9, color: C.accent6, margin: 0 } } },
   ],
-  slideNumber: { x: 9.0, y: 7.05, w: 0.5, h: 0.3, fontSize: 9, color: HEX.accent6, align: "right" },
+  slideNumber: { x: 12.0, y: 7.05, w: 0.67, h: 0.3, fontSize: 9, color: HEX.accent6, align: "right" },
 });
 
 const T = { isTextBox: true, margin: 0, color: C.text1, fontSize: 14, valign: "top" };
