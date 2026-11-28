@@ -1,6 +1,6 @@
-# Before reading, the AI picks the files
+# Jev で、属性に無い条件の地物を探す
 
-**読む前に、AIがファイルを選ぶ** — #30DayMapChallenge 2026 Day 27「New tool」
+#30DayMapChallenge 2026 Day 27「New tool」
 
 ![screenshot](docs/screenshot.png)
 
