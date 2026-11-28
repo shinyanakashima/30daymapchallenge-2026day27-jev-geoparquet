@@ -103,3 +103,7 @@ button { font: inherit; color: inherit; }
   .seg-col { grid-template-columns: 1fr; }
   .matrix tbody th { width: 70px; }
 }
+
+.more summary { cursor: pointer; color: var(--muted); font-size: 12px; margin-top: 3px; }
+.more summary:hover { color: var(--ink); }
+.more[open] summary { margin-bottom: 2px; }

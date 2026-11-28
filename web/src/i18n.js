@@ -2,6 +2,8 @@ export const T = {
   en: {
     title: 'Finding places by a request no tag describes',
     subtitle: 'OpenStreetMap has no tag for requests like "a place where children can play". Jev, a model by TypeSafe AI, judges each feature from its name and tags, and the map shows the answers. A second method splits the data into files and lets Jev pick which files to read. OpenStreetMap places in Sapporo and Kitahiroshima, Hokkaido (extract of 21 Nov 2026). #30DayMapChallenge Day 27: New tool.',
+    aboutLabel: 'About this map',
+    detailsLabel: 'Notes and measurement details',
     area: 'Area',
     cities: { kitahiroshima: 'Kitahiroshima', sapporo: 'Sapporo' },
     cityDesc: (m) => `${m.features.toLocaleString('en-US')} features in ${m.files} GeoParquet files (5 categories × ${m.files_areas} areas).`,
@@ -61,6 +63,8 @@ export const T = {
   ja: {
     title: '属性に無い条件で地物を探す',
     subtitle: 'OpenStreetMap には「子どもが遊べる場所」のような属性は無い。TypeSafe AI のモデル Jev が、地物ごとに名前と属性から判定し、その結果を地図に表示した。データを種類と区域でファイルに分け、読むファイルを Jev に選ばせるやり方も比べた。対象は札幌市と北広島市の OpenStreetMap の地物（2026年11月21日時点）。#30DayMapChallenge Day 27: New tool',
+    aboutLabel: 'この地図について',
+    detailsLabel: '注意事項と計測の条件',
     area: '地域',
     cities: { kitahiroshima: '北広島市', sapporo: '札幌市' },
     cityDesc: (m) => `地物 ${m.features.toLocaleString('en-US')} 件、GeoParquet ${m.files} ファイル（5カテゴリ × ${m.files_areas} 区域）。`,

@@ -11,7 +11,10 @@
   <header class="top">
     <div class="titles">
       <h1 data-i18n="title"></h1>
-      <p class="sub" data-i18n="subtitle"></p>
+      <details class="more">
+        <summary data-i18n="aboutLabel"></summary>
+        <p class="sub" data-i18n="subtitle"></p>
+      </details>
     </div>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" data-lang="en">EN</button>
@@ -58,9 +61,12 @@
   </main>
   <footer class="foot">
     <p class="presented"><a href="https://foss4g.hokkaido.jp/2026/" target="_blank" rel="noopener">Presented at FOSS4G Hokkaido 2026, 28 November</a></p>
-    <p data-i18n="disclaimer"></p>
-    <p id="versions"></p>
     <p data-i18n="credits"></p>
+    <details class="more">
+      <summary data-i18n="detailsLabel"></summary>
+      <p data-i18n="disclaimer"></p>
+      <p id="versions"></p>
+    </details>
   </footer>
   <script type="module" src="/src/main.js"></script>
 </body>
