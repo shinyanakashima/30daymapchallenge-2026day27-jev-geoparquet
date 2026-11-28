@@ -1,6 +1,6 @@
 export const T = {
   en: {
-    title: 'Finding places by a vague request with Jev',
+    title: 'Finding places by a request no tag describes',
     subtitle: 'OpenStreetMap has no tag for requests like "a place where children can play". Jev, a model by TypeSafe AI, judges each feature from its name and tags, and the map shows the answers. A second method splits the data into files and lets Jev pick which files to read. OpenStreetMap places in Sapporo and Kitahiroshima, Hokkaido (extract of 21 Nov 2026). #30DayMapChallenge Day 27: New tool.',
     area: 'Area',
     cities: { kitahiroshima: 'Kitahiroshima', sapporo: 'Sapporo' },
@@ -59,7 +59,7 @@ export const T = {
     versions: (m) => `Model ${m.model_served} (requested as ${m.model_alias}) · DuckDB ${m.duckdb}, ${m.jev_extension} · OSM extract ${m.osm_extract?.replication_timestamp ?? '-'} · file summary ${m.manifest_version} · questions ${m.questions_version} · measured ${m.started_utc}–${m.finished_utc.slice(11)} UTC, ${m.reps} runs per method, 20 rows per request, 16 requests in parallel.`,
   },
   ja: {
-    title: 'Jev で、属性に無い条件の地物を探す',
+    title: '属性に無い条件で地物を探す',
     subtitle: 'OpenStreetMap には「子どもが遊べる場所」のような属性は無い。TypeSafe AI のモデル Jev が、地物ごとに名前と属性から判定し、その結果を地図に表示した。データを種類と区域でファイルに分け、読むファイルを Jev に選ばせるやり方も比べた。対象は札幌市と北広島市の OpenStreetMap の地物（2026年11月21日時点）。#30DayMapChallenge Day 27: New tool',
     area: '地域',
     cities: { kitahiroshima: '北広島市', sapporo: '札幌市' },

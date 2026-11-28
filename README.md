@@ -1,4 +1,4 @@
-# Jev で、属性に無い条件の地物を探す
+# 属性に無い条件で地物を探す
 
 #30DayMapChallenge 2026 Day 27「New tool」
 
