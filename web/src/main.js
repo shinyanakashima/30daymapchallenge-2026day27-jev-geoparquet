@@ -152,6 +152,12 @@ map.on('load', () => {
       'circle-opacity': ['match', ['get', 'j'], 'notread', 0.8, 1],
     },
   });
+  map.addSource('live', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+  map.addLayer({
+    id: 'live', type: 'circle', source: 'live', layout: { visibility: 'none' },
+    paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, 5, 15, 9], 'circle-color': COLORS.supported, 'circle-stroke-color': '#ffffff', 'circle-stroke-width': 1 },
+  });
+  map.on('click', 'live', (e) => { const f = e.features[0]; const ft = featOf(f.properties.id); if (ft) showPopup(e.lngLat, ft.properties, 'supported'); });
   map.on('mouseenter', 'pts', () => { map.getCanvas().style.cursor = 'pointer'; });
   map.on('mouseleave', 'pts', () => { map.getCanvas().style.cursor = ''; });
   map.on('click', 'pts', (e) => {
@@ -192,6 +198,7 @@ async function switchCity(city) {
 
 function updateMap() {
   if (!map.getSource('pts')) return;
+  clearLive();
   map.getSource('pts').setData(pointData());
   const fs = curRun().file_status;
   map.setPaintProperty('bbox-line', 'line-color', fileStatusColorExpr(fs));
@@ -220,6 +227,7 @@ function renderControls() {
   document.documentElement.lang = state.lang;
   document.title = L.title;
   document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = L[el.dataset.i18n]; });
+  document.getElementById('live-q').placeholder = L.livePlaceholder;
   document.querySelectorAll('[data-i18n-label]').forEach((el) => { el.setAttribute('aria-label', L[el.dataset.i18nLabel]); el.title = L[el.dataset.i18nLabel]; });
   document.querySelectorAll('[data-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === state.lang)));
 
@@ -390,5 +398,47 @@ document.querySelectorAll('[data-lang]').forEach((b) => b.addEventListener('clic
   try { localStorage.setItem('lang', state.lang); } catch (e) { /* storage unavailable */ }
   render();
 }));
+
+const API = 'https://jev-geoparquet-search.it-zukosha.workers.dev';
+let liveOn = false;
+function clearLive() {
+  if (!liveOn || !map.getLayer('live')) return;
+  liveOn = false;
+  map.setLayoutProperty('live', 'visibility', 'none');
+  map.setLayoutProperty('pts', 'visibility', 'visible');
+  document.getElementById('live-status').textContent = '';
+}
+document.getElementById('live-run').addEventListener('click', async () => {
+  const L = t();
+  const q = document.getElementById('live-q').value.trim();
+  if (!q) return;
+  const btn = document.getElementById('live-run');
+  const st = document.getElementById('live-status');
+  btn.disabled = true;
+  st.textContent = L.liveRunning;
+  try {
+    const res = await fetch(`${API}/search`, {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ city: state.city, method: document.getElementById('live-m').value, question_text: q }),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status} ${(await res.text()).slice(0, 120)}`);
+    const r = await res.json();
+    map.getSource('live').setData({
+      type: 'FeatureCollection',
+      features: r.supported.filter((f) => f.lon != null).map((f) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: [f.lon, f.lat] }, properties: { id: f.id } })),
+    });
+    map.setPaintProperty('bbox-line', 'line-color', fileStatusColorExpr(r.file_status));
+    map.setPaintProperty('bbox-fill', 'fill-color', fileStatusColorExpr(r.file_status));
+    map.setLayoutProperty('pts', 'visibility', 'none');
+    map.setLayoutProperty('live', 'visibility', 'visible');
+    liveOn = true;
+    if (popup) popup.remove();
+    st.textContent = t().liveDone(r);
+  } catch (e) {
+    st.textContent = t().liveError(e.message);
+  } finally {
+    btn.disabled = false;
+  }
+});
 
 render();

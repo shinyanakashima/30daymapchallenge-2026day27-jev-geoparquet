@@ -112,3 +112,9 @@ button { font: inherit; color: inherit; }
 .more-head .pop { position: absolute; left: 0; top: calc(100% + 6px); z-index: 20; width: min(640px, calc(100vw - 32px)); background: #fff; border: 1px solid #d9dcdf; box-shadow: 0 4px 14px rgba(0,0,0,.12); padding: 10px 12px; color: var(--ink); font-size: 13px; }
 .foot .more { margin-top: 4px; }
 .foot .more[open] p { margin: 6px 0 0; }
+
+.live-row { display: flex; gap: 4px; }
+.live-row input { flex: 1; min-width: 0; padding: 5px 8px; border: 1px solid var(--line); border-radius: 4px; font: inherit; }
+.live-row select, .live-row button { border: 1px solid var(--line); background: #fff; border-radius: 4px; padding: 5px 8px; font: inherit; cursor: pointer; }
+.live-row button { background: var(--accent); color: #fff; border-color: var(--accent); }
+.live-row button:disabled { opacity: .5; }
