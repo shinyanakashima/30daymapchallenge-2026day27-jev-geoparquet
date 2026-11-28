@@ -220,6 +220,7 @@ function renderControls() {
   document.documentElement.lang = state.lang;
   document.title = L.title;
   document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = L[el.dataset.i18n]; });
+  document.querySelectorAll('[data-i18n-label]').forEach((el) => { el.setAttribute('aria-label', L[el.dataset.i18nLabel]); el.title = L[el.dataset.i18nLabel]; });
   document.querySelectorAll('[data-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === state.lang)));
 
   const cs = document.getElementById('cities');
